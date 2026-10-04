@@ -323,3 +323,7 @@ a.chip:hover { outline: 1px solid var(--gold); }
   box-shadow: 0 12px 32px rgba(0,0,0,.18); display: grid; gap: 8px; }
 .acct-pop p { margin: 0; }
 .btn.danger { color: var(--danger); border-color: var(--danger); }
+/* type-to-find boxes */
+.search.small { font-size: var(--s0); padding: 8px 12px; flex: 0 1 420px; }
+.mini-search { width: 100%; font: inherit; font-size: .92rem; padding: 5px 8px; margin-bottom: 4px; border-radius: 6px;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); }

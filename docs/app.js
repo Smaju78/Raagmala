@@ -79,6 +79,7 @@ const STR = {
     syncedAt: (o) => `Saved to your account at ${o.time}`, deleteData: "Delete my saved data",
     deleteConfirm: "Delete everything saved in your account (likes, settings, resume point) and sign out? This browser keeps its own copy.",
     syncError: (o) => `Couldn't reach your account (${o.msg}). Everything is still saved in this browser.`,
+    findArtist: "Type to find an artist (Rashid, রশিদ…)", findRaag: "Type to find a raag (Yaman, ইমন…)",
     resumeTitle: "Welcome back", resumeYes: "Continue", resumeNo: "No, go to the home page",
     resumePlaying: (o) => `Continue where you left off? You were listening to ${o.what}, at ${o.at}.`,
     resumePage: (o) => `Continue where you left off? You were on ${o.what}.`,
@@ -152,6 +153,7 @@ const STR = {
     syncedAt: (o) => `অ্যাকাউন্টে রাখা হয়েছে ${o.time}-এ`, deleteData: "অ্যাকাউন্টে রাখা তথ্য মুছুন",
     deleteConfirm: "অ্যাকাউন্টে রাখা সব কিছু (পছন্দ, সেটিংস, থামার জায়গা) মুছে সাইন আউট করবেন? এই ব্রাউজারে নিজস্ব কপি থেকে যাবে।",
     syncError: (o) => `অ্যাকাউন্টের সঙ্গে যোগাযোগ করা গেল না (${o.msg})। সব কিছু এই ব্রাউজারে রাখা আছে।`,
+    findArtist: "শিল্পীর নাম লিখে খুঁজুন (রশিদ, Rashid…)", findRaag: "রাগের নাম লিখে খুঁজুন (ইমন, Yaman…)",
     resumeTitle: "আবার স্বাগত", resumeYes: "যেখানে ছিলাম সেখান থেকে", resumeNo: "না, প্রথম পাতায় যাই",
     resumePlaying: (o) => `যেখানে থেমেছিলেন সেখান থেকে শুরু করবেন? আপনি শুনছিলেন ${o.what}, ${o.at}-এ।`,
     resumePage: (o) => `যেখানে ছিলেন সেখান থেকে শুরু করবেন? আপনি ছিলেন ${o.what} পাতায়।`,
@@ -540,8 +542,22 @@ function renderBrowse(kind) {
     view.insertAdjacentHTML("beforeend", `<p class="hint">${t("hintAz", { n: all.length, m: EXTRA.length })}</p>`);
     view.append(raagList(all, { recFirst: false, limit: 300 }));
   } else if (kind === "artists") {
-    view.insertAdjacentHTML("beforeend", `<p class="hint">${t("hintArtists")}</p>`);
-    view.append(artistList(ARTISTS.filter((a) => !a.extra || (a.videos || []).length)));
+    const all = ARTISTS.filter((a) => !a.extra || (a.videos || []).length);
+    const q0 = sessionGet("artistQ");
+    view.insertAdjacentHTML("beforeend", `<p class="hint">${t("hintArtists")}</p>
+      <div class="search-row"><input id="artist-q" class="search small" type="search" value="${esc(q0)}" autocomplete="off"
+        placeholder="${esc(t("findArtist"))}" aria-label="${esc(t("findArtist"))}"><span class="hint" id="artist-n"></span></div>
+      <div id="artist-list"></div>`);
+    const input = $("#artist-q");
+    const draw = () => {
+      const q = input.value;
+      sessionSet("artistQ", q);
+      const list = norm(q) ? search(all, q) : all;
+      $("#artist-n").textContent = norm(q) ? t("nArtists", { n: list.length }) : "";
+      $("#artist-list").replaceChildren(artistList(list, { recFirst: !norm(q) }));
+    };
+    input.addEventListener("input", draw);
+    draw();
   } else if (kind === "gharana") {
     const m = new Map();
     for (const a of ARTISTS) for (const g of a.gharana || []) m.set(g, (m.get(g) || 0) + 1);
@@ -668,6 +684,7 @@ function sessionSet(k, v) { try { sessionStorage.setItem("raagmala." + k, v); } 
 /* ---------------- jukebox (plays performances) ---------------- */
 const jb = (() => {
   const F = prefs.filters;
+  const findQ = { raag: "", artist: "" }; // text in the jukebox find boxes (not saved)
   let player = null, apiLoading = null, current = null, errors = 0, queue = [], qShown = 60;
   const history = [];
 
@@ -899,13 +916,26 @@ const jb = (() => {
       <fieldset><legend>${t("lgThaat")}</legend>${pills("thaats", Object.keys(META.thaats), thaatLabel)}</fieldset>
       <fieldset><legend>${t("lgSeason")}</legend>${pills("seasons", Object.keys(META.seasons), seasonLabel)}</fieldset>
       <fieldset><legend>${t("lgRAG")}</legend>
-        <label class="hint" for="jb-raag">${t("raag")}</label><select id="jb-raag"></select>
-        <label class="hint" for="jb-artist">${t("b_artists")}</label><select id="jb-artist"></select>
+        <label class="hint" for="jb-raag">${t("raag")}</label>
+        <input class="mini-search" type="search" id="jb-raag-q" autocomplete="off" placeholder="${esc(t("findRaag"))}" aria-label="${esc(t("findRaag"))}" value="${esc(findQ.raag)}">
+        <select id="jb-raag"></select>
+        <label class="hint" for="jb-artist">${t("b_artists")}</label>
+        <input class="mini-search" type="search" id="jb-artist-q" autocomplete="off" placeholder="${esc(t("findArtist"))}" aria-label="${esc(t("findArtist"))}" value="${esc(findQ.artist)}">
+        <select id="jb-artist"></select>
         <label class="hint" for="jb-gharana">${t("b_gharana")}</label><select id="jb-gharana"></select>
         <label class="toggle"><input type="checkbox" id="jb-liked"${F.likedOnly ? " checked" : ""}> ${t("onlyLiked")}</label>
       </fieldset>`;
+    // Typing in a find box narrows its dropdown; a single match is chosen at once.
+    for (const key of ["raag", "artist"]) {
+      $(`#jb-${key}-q`).oninput = (e) => {
+        findQ[key] = e.target.value;
+        const ids = updateSelects();
+        if (norm(findQ[key]) && ids[key].length === 1 && F[key] !== ids[key][0]) { F[key] = ids[key][0]; filtersChanged(); }
+      };
+    }
     $("#jb-filters").onchange = (e) => {
       const el = e.target;
+      if (el.classList.contains("mini-search")) return;
       if (el.id === "jb-premium") return;
       if (ARR[el.name]) F[el.name] = $$(`input[name="${el.name}"]:checked`, $("#jb-filters")).map((x) => el.name === "prahars" ? +x.value : x.value);
       else if (el.id === "jb-raag") F.raag = el.value;
@@ -926,18 +956,29 @@ const jb = (() => {
       inp.disabled = !n && !inp.checked;
       inp.nextElementSibling.querySelector("[data-count]").textContent = num(n);
     });
+    updateSelects();
+    $("#jb-liked").checked = F.likedOnly;
+    $("#jb-now-f").checked = F.now;
+    renderFilterBar();
+  }
+  // Raag / artist / gharana dropdowns: only options that would play something, narrowed by the find boxes.
+  // Returns the matching ids per dropdown.
+  function updateSelects() {
+    const out = {};
     const opts = (sel, key, items, anyLabel) => {
       const rows = items.map(([v, l]) => [v, l, countWith(key, v)]).filter(([v, , n]) => n || v === F[key]);
+      out[key] = rows.map(([v]) => v);
       sel.innerHTML = `<option value="">${anyLabel}</option>` +
         rows.map(([v, l, n]) => `<option value="${esc(v)}"${v === F[key] ? " selected" : ""}>${esc(l)} (${num(n)})</option>`).join("");
     };
     const byName = (a, b) => a[1].localeCompare(b[1], L);
-    opts($("#jb-raag"), "raag", RAAGS.filter(hasRec).map((r) => [r.id, rBoth(r)]).sort(byName), t("anyRaag"));
-    opts($("#jb-artist"), "artist", ARTISTS.filter((a) => (a.videos || []).length).map((a) => [a.id, aMain(a)]).sort(byName), t("anyArtist"));
+    const narrow = (items, key) => norm(findQ[key]) ? search(items, findQ[key]).concat(items.filter((x) => x.id === F[key])) : items;
+    const raags = [...new Set(narrow(RAAGS.filter(hasRec), "raag"))];
+    const arts = [...new Set(narrow(ARTISTS.filter((a) => (a.videos || []).length), "artist"))];
+    opts($("#jb-raag"), "raag", raags.map((r) => [r.id, rBoth(r)]).sort(byName), t("anyRaag"));
+    opts($("#jb-artist"), "artist", arts.map((a) => [a.id, aMain(a) + (aOther(a) ? ` · ${aOther(a)}` : "")]).sort(byName), t("anyArtist"));
     opts($("#jb-gharana"), "gharana", Object.keys(META.gharanas).map((g) => [g, gharanaLabel(g)]), t("anyGharana"));
-    $("#jb-liked").checked = F.likedOnly;
-    $("#jb-now-f").checked = F.now;
-    renderFilterBar();
+    return out;
   }
   function renderFilterBar() {
     const n = pool().length;
