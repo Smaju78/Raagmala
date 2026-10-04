@@ -1,0 +1,5045 @@
+{
+ "raags": [
+  {
+   "id": "yaman",
+   "rank": 1,
+   "en": "Yaman",
+   "bn": "ইমন",
+   "hi": "इमन",
+   "aliases": [
+    "Yeman",
+    "Iman",
+    "Eman",
+    "Aiman",
+    "Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S R G M P D N 'S",
+   "avaroha": "'S N D P M G R S",
+   "related": [
+    "yaman-kalyan",
+    "shuddh-kalyan",
+    "bhupali"
+   ],
+   "wikidata": "Q8047871",
+   "wiki": "Yaman (raga)",
+   "facts": true
+  },
+  {
+   "id": "bhairavi",
+   "rank": 2,
+   "en": "Bhairavi",
+   "bn": "ভৈরবী",
+   "hi": "भैरवी",
+   "aliases": [
+    "Bhairvi",
+    "Bhairavee",
+    "Bhairavi"
+   ],
+   "thaat": "bhairavi",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S r g m P d n 'S",
+   "avaroha": "'S n d P m g r S",
+   "related": [
+    "sindhu-bhairavi",
+    "bilaskhani-todi",
+    "malkauns"
+   ],
+   "wikidata": "Q4900817",
+   "wiki": "Bhairavi (Hindustani)",
+   "facts": true
+  },
+  {
+   "id": "bhairav",
+   "rank": 3,
+   "en": "Bhairav",
+   "bn": "ভৈরব",
+   "hi": "भैरव",
+   "aliases": [
+    "Bhairo",
+    "Bhairava"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "d",
+   "samvadi": "r",
+   "aroha": "S r G m P d N 'S",
+   "avaroha": "'S N d P m G r S",
+   "related": [
+    "ahir-bhairav",
+    "nat-bhairav",
+    "kalingda",
+    "ramkali"
+   ],
+   "wikidata": "Q2321739",
+   "wiki": "Bhairav (raga)",
+   "facts": true
+  },
+  {
+   "id": "malkauns",
+   "rank": 4,
+   "en": "Malkauns",
+   "bn": "মালকোষ",
+   "hi": "मालकौश",
+   "aliases": [
+    "Malkosh",
+    "Malkaush",
+    "Malkos",
+    "Malkons",
+    "Malkauns",
+    "Malkaus"
+   ],
+   "thaat": "bhairavi",
+   "prahar": [
+    7
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S g m d n 'S",
+   "avaroha": "'S n d m g S",
+   "related": [
+    "chandrakauns",
+    "bhupali"
+   ],
+   "wikidata": "Q7377646",
+   "wiki": "Malkauns",
+   "facts": true
+  },
+  {
+   "id": "darbari",
+   "rank": 5,
+   "en": "Darbari Kanada",
+   "bn": "দরবারী কানাড়া",
+   "hi": "दरबारी कान्हड़ा",
+   "aliases": [
+    "Darbari",
+    "Durbari",
+    "Darbari Kanhra",
+    "Darbari Kanhada",
+    "Darbari Kanara"
+   ],
+   "thaat": "asavari",
+   "prahar": [
+    7
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": "S R g m P d n 'S",
+   "avaroha": "'S d n P m P g m R S",
+   "related": [
+    "adana",
+    "abhogi",
+    "bageshri"
+   ],
+   "wikidata": "Q15681261",
+   "wiki": "Darbari Kanada",
+   "facts": true,
+   "bnAlt": "দরবারী-কানাড়া"
+  },
+  {
+   "id": "bhimpalasi",
+   "rank": 6,
+   "en": "Bhimpalasi",
+   "bn": "ভীমপলশ্রী",
+   "hi": "भीमपलासी",
+   "aliases": [
+    "Bhimpalas",
+    "Bheempalasi",
+    "Bhimpalashri",
+    "Bhimpalasri"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    3,
+    4
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": ".n S g m P n 'S",
+   "avaroha": "'S n D P m g R S",
+   "related": [
+    "patdeep",
+    "bageshri"
+   ],
+   "wikidata": "Q45564",
+   "wiki": "Bhimpalasi",
+   "facts": true,
+   "bnAlt": "ভীমপলাশি"
+  },
+  {
+   "id": "bageshri",
+   "rank": 7,
+   "en": "Bageshri",
+   "bn": "বাগেশ্রী",
+   "hi": "बागेश्री",
+   "aliases": [
+    "Bageshree",
+    "Bageshwari",
+    "Bagesri",
+    "Bageshari"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    6,
+    7
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S g m D n 'S",
+   "avaroha": "'S n D m P D g m g R S",
+   "related": [
+    "bhimpalasi",
+    "rageshri",
+    "abhogi"
+   ],
+   "wikidata": "Q37603",
+   "wiki": "Bageshri",
+   "facts": true
+  },
+  {
+   "id": "todi",
+   "rank": 8,
+   "en": "Todi",
+   "bn": "টোড়ি",
+   "hi": "टोड़ी",
+   "aliases": [
+    "Miyan ki Todi",
+    "Miya ki Todi",
+    "Mian ki Todi",
+    "Todi",
+    "Tori",
+    "Shuddh Todi"
+   ],
+   "thaat": "todi",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S r g M P d N 'S",
+   "avaroha": "'S N d P M g r S",
+   "related": [
+    "gurjari-todi",
+    "multani",
+    "bilaskhani-todi",
+    "bhupal-todi"
+   ],
+   "wikidata": "Q7812775",
+   "wiki": "Todi (raga)",
+   "facts": true,
+   "bnAlt": "টোড়ী"
+  },
+  {
+   "id": "yaman-kalyan",
+   "rank": 9,
+   "en": "Yaman Kalyan",
+   "bn": "ইমন কল্যাণ",
+   "hi": "इमन कल्याण",
+   "aliases": [
+    "Iman Kalyan",
+    "Eman Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S R G M P D N 'S",
+   "avaroha": "'S N D P M G m G R S",
+   "related": [
+    "yaman",
+    "shuddh-kalyan"
+   ],
+   "wikidata": "Q6457250",
+   "wiki": "Yaman Kalyan",
+   "facts": true
+  },
+  {
+   "id": "bhupali",
+   "rank": 10,
+   "en": "Bhupali",
+   "bn": "ভূপালী",
+   "hi": "भूपाली",
+   "aliases": [
+    "Bhoopali",
+    "Bhoop",
+    "Bhup",
+    "Bhupali",
+    "Bhoopali Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "G",
+   "samvadi": "D",
+   "aroha": "S R G P D 'S",
+   "avaroha": "'S D P G R S",
+   "related": [
+    "deshkar",
+    "shuddh-kalyan",
+    "yaman"
+   ],
+   "wikidata": "Q46954",
+   "wiki": "Bhoopali",
+   "facts": true
+  },
+  {
+   "id": "puriya-dhanashri",
+   "rank": 11,
+   "en": "Puriya Dhanashri",
+   "bn": "পূরিয়া ধানেশ্রী",
+   "hi": "पूरिया धानश्री",
+   "aliases": [
+    "Puriya Dhanashree",
+    "Puria Dhanashri",
+    "Puriya Dhanashri",
+    "Purya Dhanashri"
+   ],
+   "thaat": "purvi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "P",
+   "samvadi": "r",
+   "aroha": ".N r G M P d N 'S",
+   "avaroha": "'S N d P M G r S",
+   "related": [
+    "purvi",
+    "shree",
+    "marwa"
+   ],
+   "wikidata": "Q7261302",
+   "wiki": "Puriya Dhanashree",
+   "facts": true,
+   "bnAlt": "পূরিয়া ধানশ্রী"
+  },
+  {
+   "id": "marwa",
+   "rank": 12,
+   "en": "Marwa",
+   "bn": "মারোয়া",
+   "hi": "मारोया",
+   "aliases": [
+    "Marva",
+    "Marwa",
+    "Maarwa"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "shadav-shadav",
+   "vadi": "r",
+   "samvadi": "D",
+   "aroha": ".N r G M D N r' 'S",
+   "avaroha": "'S N D M G r S",
+   "related": [
+    "puriya",
+    "sohni",
+    "puriya-kalyan"
+   ],
+   "wikidata": "Q6778110",
+   "wiki": "Marva (raga)",
+   "facts": true,
+   "bnAlt": "মার্বা"
+  },
+  {
+   "id": "puriya",
+   "rank": 13,
+   "en": "Puriya",
+   "bn": "পূরিয়া",
+   "hi": "पूरिया",
+   "aliases": [
+    "Puria",
+    "Purya"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "shadav-shadav",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": ".N r G M D N r' 'S",
+   "avaroha": "'S N D M G r S",
+   "related": [
+    "marwa",
+    "sohni",
+    "puriya-kalyan"
+   ],
+   "wikidata": "Q7261299",
+   "wiki": "Puriya",
+   "facts": true
+  },
+  {
+   "id": "lalit",
+   "rank": 14,
+   "en": "Lalit",
+   "bn": "ললিত",
+   "hi": "ललित",
+   "aliases": [
+    "Lalat"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    8
+   ],
+   "season": null,
+   "jati": "shadav-shadav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": ".N r G m M d N 'S",
+   "avaroha": "'S r N d M m G r S",
+   "related": [
+    "bhatiyar",
+    "sohni"
+   ],
+   "wikidata": "Q6480358",
+   "wiki": "Lalit (raga)",
+   "facts": true
+  },
+  {
+   "id": "multani",
+   "rank": 15,
+   "en": "Multani",
+   "bn": "মুলতানী",
+   "hi": "मुलतानी",
+   "aliases": [
+    "Multani"
+   ],
+   "thaat": "todi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "P",
+   "samvadi": "S",
+   "aroha": ".N S g M P N 'S",
+   "avaroha": "'S N d P M g r S",
+   "related": [
+    "todi",
+    "madhuvanti"
+   ],
+   "wikidata": "Q6934367",
+   "wiki": "Multani (raga)",
+   "facts": true
+  },
+  {
+   "id": "bihag",
+   "rank": 16,
+   "en": "Bihag",
+   "bn": "বেহাগ",
+   "hi": "बेहाग",
+   "aliases": [
+    "Behag",
+    "Bihag",
+    "Biag"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": ".N S G m P N 'S",
+   "avaroha": "'S N D P M P G m G R S",
+   "related": [
+    "maru-bihag"
+   ],
+   "wikidata": "Q4907048",
+   "wiki": "Bihag",
+   "facts": true
+  },
+  {
+   "id": "kedar",
+   "rank": 17,
+   "en": "Kedar",
+   "bn": "কেদার",
+   "hi": "केदारा",
+   "aliases": [
+    "Kedara",
+    "Kedaar"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S m P M P D P N D 'S",
+   "avaroha": "'S N D P M P D P m G m R S",
+   "related": [
+    "kamod",
+    "hameer",
+    "chhayanat"
+   ],
+   "wikidata": "Q12420571",
+   "wiki": "Kedar (raga)",
+   "facts": true
+  },
+  {
+   "id": "hameer",
+   "rank": 18,
+   "en": "Hameer",
+   "bn": "হাম্বীর",
+   "hi": null,
+   "aliases": [
+    "Hamir",
+    "Hambir",
+    "Hamir Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S R S G m D N D 'S",
+   "avaroha": "'S N D P M P D P G m R S",
+   "related": [
+    "kedar",
+    "kamod",
+    "chhayanat"
+   ],
+   "wikidata": "Q5644481",
+   "wiki": "Hameer",
+   "facts": true,
+   "bnAlt": "হামির"
+  },
+  {
+   "id": "desh",
+   "rank": 19,
+   "en": "Desh",
+   "bn": "দেশ",
+   "hi": "देश",
+   "aliases": [
+    "Des",
+    "Desh",
+    "Desha"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6,
+    7
+   ],
+   "season": "varsha",
+   "jati": "audav-sampurna",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": "S R m P N 'S",
+   "avaroha": "'S n D P m G R G .N S",
+   "related": [
+    "tilak-kamod",
+    "jaijaiwanti",
+    "miyan-malhar"
+   ],
+   "wikidata": "Q12434145",
+   "wiki": "Desh (raga)",
+   "facts": true
+  },
+  {
+   "id": "miyan-malhar",
+   "rank": 20,
+   "en": "Miyan ki Malhar",
+   "bn": "মিয়াঁ কি মল্লার",
+   "hi": "मियान मल्हार",
+   "aliases": [
+    "Miyan Malhar",
+    "Miya ki Malhar",
+    "Miya Malhar",
+    "Mian ki Malhar",
+    "Miyan Ki Malhar",
+    "Mia Malhar",
+    "Mian Malhar"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    6
+   ],
+   "season": "varsha",
+   "jati": "sampurna-shadav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S R P g m R S m R P n D N 'S",
+   "avaroha": "'S n P m P g m R S",
+   "related": [
+    "megh",
+    "gaud-malhar",
+    "bahar"
+   ],
+   "wikidata": "Q55224875",
+   "wiki": null,
+   "facts": true,
+   "bnAlt": "মিঁয়া মল্লার"
+  },
+  {
+   "id": "megh",
+   "rank": 21,
+   "en": "Megh",
+   "bn": "মেঘ",
+   "hi": "मेघ",
+   "aliases": [
+    "Megh Malhar",
+    "Megh Malhaar",
+    "Megha"
+   ],
+   "thaat": "kafi",
+   "prahar": [],
+   "season": "varsha",
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R m P n 'S",
+   "avaroha": "'S n P m R S",
+   "related": [
+    "miyan-malhar",
+    "gaud-malhar"
+   ],
+   "wikidata": "Q4662926",
+   "wiki": "Megh (raga)",
+   "facts": true
+  },
+  {
+   "id": "gaud-malhar",
+   "rank": 22,
+   "en": "Gaud Malhar",
+   "bn": "গৌড় মল্লার",
+   "hi": null,
+   "aliases": [
+    "Gaud Malhar",
+    "Gour Malhar",
+    "Gaur Malhar"
+   ],
+   "thaat": "khamaj",
+   "prahar": [],
+   "season": "varsha",
+   "jati": "sampurna-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R G m P D N 'S",
+   "avaroha": "'S n D P m G R S",
+   "related": [
+    "miyan-malhar",
+    "megh"
+   ],
+   "wikidata": "Q60775166",
+   "wiki": "Gaud Malhar",
+   "facts": true
+  },
+  {
+   "id": "jaijaiwanti",
+   "rank": 23,
+   "en": "Jaijaiwanti",
+   "bn": "জয়জয়ন্তী",
+   "hi": "जयजयवन्ती",
+   "aliases": [
+    "Jaijaivanti",
+    "Jaijaiwanti",
+    "Jai Jaiwanti",
+    "Jaijawanti",
+    "Jaijavanti"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6,
+    7
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": "S R G m P N 'S",
+   "avaroha": "'S n D P m G R g R S",
+   "related": [
+    "desh",
+    "khamaj"
+   ],
+   "wikidata": "Q2045009",
+   "wiki": "Jaijaivanti",
+   "facts": true
+  },
+  {
+   "id": "khamaj",
+   "rank": 24,
+   "en": "Khamaj",
+   "bn": "খাম্বাজ",
+   "hi": "खाम्बाज",
+   "aliases": [
+    "Khamaj",
+    "Khambaj",
+    "Khamach"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S G m P D N 'S",
+   "avaroha": "'S n D P m G R S",
+   "related": [
+    "jhinjhoti",
+    "tilang",
+    "desh"
+   ],
+   "wikidata": "Q6399897",
+   "wiki": "Khamaj",
+   "facts": true,
+   "bnAlt": "খমাজ"
+  },
+  {
+   "id": "kafi",
+   "rank": 25,
+   "en": "Kafi",
+   "bn": "কাফি",
+   "hi": "काफि",
+   "aliases": [
+    "Kafi",
+    "Kaafi"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "P",
+   "samvadi": "S",
+   "aroha": "S R g m P D n 'S",
+   "avaroha": "'S n D P m g R S",
+   "related": [
+    "bageshri",
+    "bhimpalasi",
+    "pilu"
+   ],
+   "wikidata": "Q2560197",
+   "wiki": "Kafi (raga)",
+   "facts": true
+  },
+  {
+   "id": "asavari",
+   "rank": 26,
+   "en": "Asavari",
+   "bn": "আশাবরী",
+   "hi": "आशाबरी",
+   "aliases": [
+    "Asavari",
+    "Aasavari",
+    "Asawari",
+    "Shuddh Rishabh Asavari"
+   ],
+   "thaat": "asavari",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S R m P d 'S",
+   "avaroha": "'S n d P m g R S",
+   "related": [
+    "jaunpuri",
+    "komal-rishabh-asavari",
+    "darbari"
+   ],
+   "wikidata": "Q3630326",
+   "wiki": "Asavari",
+   "facts": true
+  },
+  {
+   "id": "jaunpuri",
+   "rank": 27,
+   "en": "Jaunpuri",
+   "bn": "জৌনপুরী",
+   "hi": "जौनपुरी",
+   "aliases": [
+    "Jaunpuri",
+    "Jonpuri",
+    "Jounpuri",
+    "Jaunpuri Todi"
+   ],
+   "thaat": "asavari",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S R m P d n 'S",
+   "avaroha": "'S n d P m g R S",
+   "related": [
+    "asavari",
+    "darbari"
+   ],
+   "wikidata": "Q6164856",
+   "wiki": "Jaunpuri (raga)",
+   "facts": true
+  },
+  {
+   "id": "shree",
+   "rank": 28,
+   "en": "Shree",
+   "bn": "শ্রী",
+   "hi": "श्री",
+   "aliases": [
+    "Shri",
+    "Sree",
+    "Shree"
+   ],
+   "thaat": "purvi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "r",
+   "samvadi": "P",
+   "aroha": "S r M P N 'S",
+   "avaroha": "'S N d P M G r S",
+   "related": [
+    "puriya-dhanashri",
+    "marwa"
+   ],
+   "wikidata": "Q45504",
+   "wiki": "Shree (Hindustani raga)",
+   "facts": true
+  },
+  {
+   "id": "basant",
+   "rank": 29,
+   "en": "Basant",
+   "bn": "বসন্ত",
+   "hi": "वसन्त",
+   "aliases": [
+    "Vasant",
+    "Basant",
+    "Basanta"
+   ],
+   "thaat": "purvi",
+   "prahar": [
+    8
+   ],
+   "season": "basant",
+   "jati": "audav-sampurna",
+   "vadi": "S",
+   "samvadi": "P",
+   "aroha": "S G M d r' 'S",
+   "avaroha": "'S N d P M G M G r S",
+   "related": [
+    "paraj",
+    "bahar",
+    "hindol"
+   ],
+   "wikidata": "Q3630105",
+   "wiki": "Basant (raga)",
+   "facts": true
+  },
+  {
+   "id": "bahar",
+   "rank": 30,
+   "en": "Bahar",
+   "bn": "বাহার",
+   "hi": "बाहार",
+   "aliases": [
+    "Bahar",
+    "Bahaar"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    7
+   ],
+   "season": "basant",
+   "jati": "shadav-shadav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S m P g m n D N 'S",
+   "avaroha": "'S n P m P g m R S",
+   "related": [
+    "basant",
+    "miyan-malhar",
+    "bageshri"
+   ],
+   "wikidata": "Q4842424",
+   "wiki": "Bahar (raga)",
+   "facts": true
+  },
+  {
+   "id": "shuddh-kalyan",
+   "rank": 31,
+   "en": "Shuddh Kalyan",
+   "bn": "শুদ্ধ কল্যাণ",
+   "hi": null,
+   "aliases": [
+    "Shuddha Kalyan",
+    "Shudh Kalyan",
+    "Bhoop Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "G",
+   "samvadi": "D",
+   "aroha": "S R G P D 'S",
+   "avaroha": "'S N D P M G R S",
+   "related": [
+    "yaman",
+    "bhupali"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "puriya-kalyan",
+   "rank": 32,
+   "en": "Puriya Kalyan",
+   "bn": "পূরিয়া কল্যাণ",
+   "hi": null,
+   "aliases": [
+    "Puria Kalyan",
+    "Purya Kalyan"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": ".N r G M P D N 'S",
+   "avaroha": "'S N D P M G r S",
+   "related": [
+    "puriya",
+    "yaman",
+    "marwa"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "gaud-sarang",
+   "rank": 33,
+   "en": "Gaud Sarang",
+   "bn": "গৌড় সারং",
+   "hi": null,
+   "aliases": [
+    "Gaud Sarang",
+    "Gour Sarang",
+    "Gaur Sarang"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    3
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "G",
+   "samvadi": "D",
+   "aroha": "S G R m G P M D P 'S",
+   "avaroha": "'S D N P D M P G m R S",
+   "related": [
+    "shuddh-sarang",
+    "brindavani-sarang"
+   ],
+   "wikidata": "Q60785224",
+   "wiki": "Gaud Sarang",
+   "facts": true
+  },
+  {
+   "id": "brindavani-sarang",
+   "rank": 34,
+   "en": "Brindavani Sarang",
+   "bn": "বৃন্দাবনী সারং",
+   "hi": "बृन्दाबनी सारं",
+   "aliases": [
+    "Brindabani Sarang",
+    "Vrindavani Sarang",
+    "Sarang",
+    "Brindavani Sarang"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    3
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": ".N S R m P N 'S",
+   "avaroha": "'S n P m R S",
+   "related": [
+    "madhmad-sarang",
+    "shuddh-sarang",
+    "megh"
+   ],
+   "wikidata": "Q4968190",
+   "wiki": "Brindavani Sarang",
+   "facts": true
+  },
+  {
+   "id": "shuddh-sarang",
+   "rank": 35,
+   "en": "Shuddh Sarang",
+   "bn": "শুদ্ধ সারং",
+   "hi": null,
+   "aliases": [
+    "Shuddha Sarang",
+    "Shudh Sarang"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    3
+   ],
+   "season": null,
+   "jati": "audav-shadav",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": ".N S R M P N 'S",
+   "avaroha": "'S N D P M P m R S",
+   "related": [
+    "brindavani-sarang",
+    "gaud-sarang"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "madhmad-sarang",
+   "rank": 36,
+   "en": "Madhmad Sarang",
+   "bn": "মধ্যমাদ সারং",
+   "hi": null,
+   "aliases": [
+    "Madhyamad Sarang",
+    "Madhmad Sarang"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    3
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": "S R m P n 'S",
+   "avaroha": "'S n P m R S",
+   "related": [
+    "brindavani-sarang"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "ahir-bhairav",
+   "rank": 37,
+   "en": "Ahir Bhairav",
+   "bn": "আহির ভৈরব",
+   "hi": "अहीर भैरव",
+   "aliases": [
+    "Ahir Bhairav",
+    "Aheer Bhairav",
+    "Ahir Bhairo"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S r G m P D n 'S",
+   "avaroha": "'S n D P m G r S",
+   "related": [
+    "bhairav",
+    "nat-bhairav"
+   ],
+   "wikidata": "Q3545959",
+   "wiki": "Ahir Bhairav",
+   "facts": true
+  },
+  {
+   "id": "nat-bhairav",
+   "rank": 38,
+   "en": "Nat Bhairav",
+   "bn": "নট ভৈরব",
+   "hi": "नट भैरव",
+   "aliases": [
+    "Nat Bhairav"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R G m P d N 'S",
+   "avaroha": "'S N d P m G R S",
+   "related": [
+    "bhairav",
+    "ahir-bhairav"
+   ],
+   "wikidata": "Q12940262",
+   "wiki": "Nat Bhairav",
+   "facts": true
+  },
+  {
+   "id": "ramkali",
+   "rank": 39,
+   "en": "Ramkali",
+   "bn": "রামকেলি",
+   "hi": "रामकेली",
+   "aliases": [
+    "Ramkali",
+    "Ramkeli",
+    "Raamkali"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S G m P d N 'S",
+   "avaroha": "'S N d P M P d n d P G m r S",
+   "related": [
+    "bhairav",
+    "kalingda"
+   ],
+   "wikidata": "Q6550175",
+   "wiki": "Ramkali",
+   "facts": true,
+   "bnAlt": "রামকেলী"
+  },
+  {
+   "id": "jogiya",
+   "rank": 40,
+   "en": "Jogiya",
+   "bn": "যোগিয়া",
+   "hi": null,
+   "aliases": [
+    "Jogia",
+    "Jogiya"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S r m P d 'S",
+   "avaroha": "'S N d P m G r S",
+   "related": [
+    "bhairav",
+    "gunakri"
+   ],
+   "wikidata": "Q21998572",
+   "wiki": "Jogiya (raga)",
+   "facts": true
+  },
+  {
+   "id": "kalingda",
+   "rank": 41,
+   "en": "Kalingda",
+   "bn": "কালেংড়া",
+   "hi": "कलिंगर",
+   "aliases": [
+    "Kalingada",
+    "Kalingra",
+    "Kalangda"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    8
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S r G m P d N 'S",
+   "avaroha": "'S N d P m G r S",
+   "related": [
+    "bhairav"
+   ],
+   "wikidata": "Q55224786",
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "gunakri",
+   "rank": 42,
+   "en": "Gunakri",
+   "bn": "গুণকেলি",
+   "hi": null,
+   "aliases": [
+    "Gunkali",
+    "Gunkri",
+    "Gunakali",
+    "Gunakri"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "d",
+   "samvadi": "r",
+   "aroha": "S r m P d 'S",
+   "avaroha": "'S d P m r S",
+   "related": [
+    "jogiya",
+    "bhairav"
+   ],
+   "wikidata": "Q60785254",
+   "wiki": "Gunakri",
+   "facts": true
+  },
+  {
+   "id": "bibhas",
+   "rank": 43,
+   "en": "Bibhas",
+   "bn": "বিভাস",
+   "hi": "बिभास",
+   "aliases": [
+    "Vibhas",
+    "Bibhas",
+    "Bibhash"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "d",
+   "samvadi": "G",
+   "aroha": "S r G P d P 'S",
+   "avaroha": "'S d P G P d P G r S",
+   "related": [
+    "bhairav"
+   ],
+   "wikidata": "Q4903003",
+   "wiki": "Bibhas",
+   "facts": true
+  },
+  {
+   "id": "bairagi",
+   "rank": 44,
+   "en": "Bairagi",
+   "bn": "বৈরাগী",
+   "hi": null,
+   "aliases": [
+    "Bairagi Bhairav",
+    "Bairagi",
+    "Vairagi"
+   ],
+   "thaat": "bhairav",
+   "prahar": [
+    1
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S r m P n 'S",
+   "avaroha": "'S n P m r S",
+   "related": [
+    "bhairav"
+   ],
+   "wikidata": "Q4848587",
+   "wiki": "Bairagi (raga)",
+   "facts": true
+  },
+  {
+   "id": "sohni",
+   "rank": 45,
+   "en": "Sohni",
+   "bn": "সোহিনী",
+   "hi": null,
+   "aliases": [
+    "Sohini",
+    "Sohni",
+    "Sohani"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    8
+   ],
+   "season": null,
+   "jati": "audav-shadav",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S G M D N 'S",
+   "avaroha": "'S r' 'S N D M G r S",
+   "related": [
+    "marwa",
+    "puriya",
+    "lalit"
+   ],
+   "wikidata": "Q45483",
+   "wiki": "Sohni",
+   "facts": true,
+   "bnAlt": "সোহনী"
+  },
+  {
+   "id": "bhatiyar",
+   "rank": 46,
+   "en": "Bhatiyar",
+   "bn": "ভাটিয়ার",
+   "hi": "भाटियार",
+   "aliases": [
+    "Bhatiyaar",
+    "Bhatiar",
+    "Bhatiyar"
+   ],
+   "thaat": "marwa",
+   "prahar": [
+    8
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S D P M P G m D 'S",
+   "avaroha": "'S r' N D P M G r S",
+   "related": [
+    "lalit"
+   ],
+   "wikidata": "Q4901413",
+   "wiki": "Bhatiyar",
+   "facts": true
+  },
+  {
+   "id": "purvi",
+   "rank": 47,
+   "en": "Purvi",
+   "bn": "পূরবী",
+   "hi": "पूरबी",
+   "aliases": [
+    "Poorvi",
+    "Purvi",
+    "Puravi",
+    "Purbi"
+   ],
+   "thaat": "purvi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": ".N r G M P d N 'S",
+   "avaroha": "'S N d P M G m G r S",
+   "related": [
+    "puriya-dhanashri",
+    "shree"
+   ],
+   "wikidata": "Q45479",
+   "wiki": "Purvi",
+   "facts": true
+  },
+  {
+   "id": "paraj",
+   "rank": 48,
+   "en": "Paraj",
+   "bn": "পরজ",
+   "hi": null,
+   "aliases": [
+    "Paraj",
+    "Paraz"
+   ],
+   "thaat": "purvi",
+   "prahar": [
+    8
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": ".N S G M d N 'S",
+   "avaroha": "'S N d P M G M G r S",
+   "related": [
+    "basant"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "gurjari-todi",
+   "rank": 49,
+   "en": "Gurjari Todi",
+   "bn": "গুর্জরী টোড়ি",
+   "hi": "गुर्जरी",
+   "aliases": [
+    "Gujari Todi",
+    "Gujri Todi",
+    "Gurjari Todi"
+   ],
+   "thaat": "todi",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "shadav-shadav",
+   "vadi": "d",
+   "samvadi": "r",
+   "aroha": "S r g M d N 'S",
+   "avaroha": "'S N d M g r S",
+   "related": [
+    "todi"
+   ],
+   "wikidata": "Q5620105",
+   "wiki": "Gurjari (raga)",
+   "facts": true,
+   "bnAlt": "গুর্জরী"
+  },
+  {
+   "id": "bilaskhani-todi",
+   "rank": 50,
+   "en": "Bilaskhani Todi",
+   "bn": "বিলাসখানি টোড়ি",
+   "hi": "बिलासखानी टोड़ी",
+   "aliases": [
+    "Bilaskhani Todi",
+    "Bilaskhani"
+   ],
+   "thaat": "bhairavi",
+   "prahar": [
+    1,
+    2
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S r g P d 'S",
+   "avaroha": "'S r' n d P m g r S",
+   "related": [
+    "bhairavi",
+    "todi"
+   ],
+   "wikidata": "Q4907562",
+   "wiki": "Bilaskhani Todi",
+   "facts": true,
+   "bnAlt": "বিলাসখানী টোড়ী"
+  },
+  {
+   "id": "bhupal-todi",
+   "rank": 51,
+   "en": "Bhupal Todi",
+   "bn": "ভূপাল টোড়ি",
+   "hi": "भूपालटोड़ी",
+   "aliases": [
+    "Bhoopal Todi",
+    "Bhupal Todi"
+   ],
+   "thaat": "bhairavi",
+   "prahar": [
+    1,
+    2
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S r g P d 'S",
+   "avaroha": "'S d P g r S",
+   "related": [
+    "todi",
+    "bilaskhani-todi"
+   ],
+   "wikidata": "Q4902166",
+   "wiki": "Bhupal Todi",
+   "facts": true,
+   "bnAlt": "ভূপালটোড়ী"
+  },
+  {
+   "id": "komal-rishabh-asavari",
+   "rank": 52,
+   "en": "Komal Rishabh Asavari",
+   "bn": "কোমল ঋষভ আশাবরী",
+   "hi": null,
+   "aliases": [
+    "Komal Re Asavari",
+    "Komal Rishabh Asavari",
+    "Asavari Todi"
+   ],
+   "thaat": "bhairavi",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "d",
+   "samvadi": "g",
+   "aroha": "S r m P d 'S",
+   "avaroha": "'S n d P m g r S",
+   "related": [
+    "asavari",
+    "jaunpuri"
+   ],
+   "wikidata": "Q60785767",
+   "wiki": "Komal Rishabh Asavari",
+   "facts": true
+  },
+  {
+   "id": "madhuvanti",
+   "rank": 53,
+   "en": "Madhuvanti",
+   "bn": "মধুবন্তী",
+   "hi": null,
+   "aliases": [
+    "Madhuvanti",
+    "Madhuwanti"
+   ],
+   "thaat": "todi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "P",
+   "samvadi": "S",
+   "aroha": ".N S g M P N 'S",
+   "avaroha": "'S N D P M g R S",
+   "related": [
+    "multani"
+   ],
+   "wikidata": "Q6727571",
+   "wiki": "Madhuvanti",
+   "facts": true
+  },
+  {
+   "id": "patdeep",
+   "rank": 54,
+   "en": "Patdeep",
+   "bn": "পটদীপ",
+   "hi": "पटदीप",
+   "aliases": [
+    "Patdip",
+    "Pattdeep",
+    "Patdeep"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    4
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "P",
+   "samvadi": "S",
+   "aroha": ".N S g m P N 'S",
+   "avaroha": "'S N D P m g R S",
+   "related": [
+    "bhimpalasi"
+   ],
+   "wikidata": "Q12940274",
+   "wiki": "Patdeep",
+   "facts": true
+  },
+  {
+   "id": "pilu",
+   "rank": 55,
+   "en": "Pilu",
+   "bn": "পিলু",
+   "hi": "पिलु",
+   "aliases": [
+    "Peelu",
+    "Piloo",
+    "Pilu"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    3
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "g",
+   "samvadi": "N",
+   "aroha": ".N S g m P N 'S",
+   "avaroha": "'S n D P m g R S .N S",
+   "related": [
+    "kafi",
+    "khamaj"
+   ],
+   "wikidata": "Q9305878",
+   "wiki": "Pilu (raga)",
+   "facts": true
+  },
+  {
+   "id": "abhogi",
+   "rank": 56,
+   "en": "Abhogi",
+   "bn": "আভোগী",
+   "hi": null,
+   "aliases": [
+    "Abhogi Kanada",
+    "Aabhogi"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S R g m D 'S",
+   "avaroha": "'S D m g R S",
+   "related": [
+    "bageshri",
+    "darbari"
+   ],
+   "wikidata": "Q3534589",
+   "wiki": "Abhogi",
+   "facts": true,
+   "bnAlt": "অভোগী"
+  },
+  {
+   "id": "adana",
+   "rank": 57,
+   "en": "Adana",
+   "bn": "আড়ানা",
+   "hi": "आड़ाना",
+   "aliases": [
+    "Adana",
+    "Adana Kanada",
+    "Arana"
+   ],
+   "thaat": "asavari",
+   "prahar": [
+    7
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "S",
+   "samvadi": "P",
+   "aroha": "S R m P d n 'S",
+   "avaroha": "'S d n P m P g m R S",
+   "related": [
+    "darbari"
+   ],
+   "wikidata": "Q2689077",
+   "wiki": "Adana (raga)",
+   "facts": true
+  },
+  {
+   "id": "chhayanat",
+   "rank": 58,
+   "en": "Chhayanat",
+   "bn": "ছায়ানট",
+   "hi": "छायानट",
+   "aliases": [
+    "Chhaya Nat",
+    "Chayanat",
+    "Chhayanat"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5,
+    6
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "P",
+   "samvadi": "R",
+   "aroha": "S R G m P N D 'S",
+   "avaroha": "'S N D P M P D P G m R S",
+   "related": [
+    "kedar",
+    "kamod",
+    "hameer"
+   ],
+   "wikidata": "Q60785208",
+   "wiki": "Chhayanat (raga)",
+   "facts": true
+  },
+  {
+   "id": "kamod",
+   "rank": 59,
+   "en": "Kamod",
+   "bn": "কামোদ",
+   "hi": "कमोद",
+   "aliases": [
+    "Kamod",
+    "Kaamod"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "P",
+   "samvadi": "R",
+   "aroha": "S R P m P G m P D P 'S",
+   "avaroha": "'S N D P M P D P G m R S",
+   "related": [
+    "kedar",
+    "hameer",
+    "chhayanat"
+   ],
+   "wikidata": "Q55224809",
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "shyam-kalyan",
+   "rank": 60,
+   "en": "Shyam Kalyan",
+   "bn": "শ্যাম কল্যাণ",
+   "hi": null,
+   "aliases": [
+    "Shyam Kalyan",
+    "Shyaam Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    5
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": ".N S R M P N 'S",
+   "avaroha": "'S N D P M P G m R S",
+   "related": [
+    "yaman",
+    "kedar"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "maru-bihag",
+   "rank": 61,
+   "en": "Maru Bihag",
+   "bn": "মারু বেহাগ",
+   "hi": null,
+   "aliases": [
+    "Maru Behag",
+    "Maru Bihag"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": ".N S G M P N 'S",
+   "avaroha": "'S N D P M G R S",
+   "related": [
+    "bihag"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "nand",
+   "rank": 62,
+   "en": "Nand",
+   "bn": "নন্দ",
+   "hi": null,
+   "aliases": [
+    "Anandi Kalyan",
+    "Anand",
+    "Nand Kalyan"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S G m D P N 'S",
+   "avaroha": "'S N D P M P G m R S",
+   "related": [
+    "kamod",
+    "bihag"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "hindol",
+   "rank": 63,
+   "en": "Hindol",
+   "bn": "হিন্দোল",
+   "hi": "हिन्दोल",
+   "aliases": [
+    "Hindol",
+    "Hindola"
+   ],
+   "thaat": "kalyan",
+   "prahar": [
+    8,
+    1
+   ],
+   "season": "basant",
+   "jati": "audav-audav",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S G M D N D 'S",
+   "avaroha": "'S N D M G S",
+   "related": [
+    "basant"
+   ],
+   "wikidata": "Q46425",
+   "wiki": "Hindol",
+   "facts": true
+  },
+  {
+   "id": "bilawal",
+   "rank": 64,
+   "en": "Bilawal",
+   "bn": "বিলাবল",
+   "hi": "बिलावल",
+   "aliases": [
+    "Bilaval",
+    "Bilawal",
+    "Shuddh Bilawal"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S R G m P D N 'S",
+   "avaroha": "'S N D P m G R S",
+   "related": [
+    "alhaiya-bilawal",
+    "deshkar"
+   ],
+   "wikidata": "Q4907593",
+   "wiki": "Bilaval",
+   "facts": true
+  },
+  {
+   "id": "alhaiya-bilawal",
+   "rank": 65,
+   "en": "Alhaiya Bilawal",
+   "bn": "আলাহিয়া বিলাবল",
+   "hi": "अल्हैया बिलावल",
+   "aliases": [
+    "Alhaiya Bilaval",
+    "Alhaiya Bilawal",
+    "Alahiya Bilawal"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    1,
+    2
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S R G R G P D N 'S",
+   "avaroha": "'S N D n D P D m G R S",
+   "related": [
+    "bilawal",
+    "deshkar"
+   ],
+   "wikidata": "Q4724406",
+   "wiki": "Alhaiya Bilaval",
+   "facts": true,
+   "bnAlt": "আলাহিয়া-বিলাবল"
+  },
+  {
+   "id": "deshkar",
+   "rank": 66,
+   "en": "Deshkar",
+   "bn": "দেশকার",
+   "hi": "देशकार",
+   "aliases": [
+    "Deshkar",
+    "Deskar"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    2
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "D",
+   "samvadi": "G",
+   "aroha": "S R G P D 'S",
+   "avaroha": "'S D P G R S",
+   "related": [
+    "bhupali",
+    "bilawal"
+   ],
+   "wikidata": "Q12940258",
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "durga",
+   "rank": 67,
+   "en": "Durga",
+   "bn": "দুর্গা",
+   "hi": "दुर्गा",
+   "aliases": [
+    "Durga"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "m",
+   "samvadi": "S",
+   "aroha": "S R m P D 'S",
+   "avaroha": "'S D P m R S",
+   "related": [
+    "bhupali"
+   ],
+   "wikidata": "Q5316371",
+   "wiki": "Durga (raga)",
+   "facts": true
+  },
+  {
+   "id": "shankara",
+   "rank": 68,
+   "en": "Shankara",
+   "bn": "শঙ্করা",
+   "hi": "शङ्करा",
+   "aliases": [
+    "Shankara",
+    "Shankra"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-shadav",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S G P N D 'S",
+   "avaroha": "'S N D P G R S",
+   "related": [
+    "bihag",
+    "hamsadhwani"
+   ],
+   "wikidata": "Q7488713",
+   "wiki": "Shankara (raga)",
+   "facts": true,
+   "bnAlt": "শংকর"
+  },
+  {
+   "id": "hamsadhwani",
+   "rank": 69,
+   "en": "Hamsadhwani",
+   "bn": "হংসধ্বনি",
+   "hi": "हंसध्वनि",
+   "aliases": [
+    "Hansadhwani",
+    "Hamsadhvani",
+    "Hansdhwani"
+   ],
+   "thaat": "bilawal",
+   "prahar": [
+    5,
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "S",
+   "samvadi": "P",
+   "aroha": "S R G P N 'S",
+   "avaroha": "'S N P G R S",
+   "related": [
+    "shankara"
+   ],
+   "wikidata": "Q3523606",
+   "wiki": "Hamsadhvani",
+   "facts": true
+  },
+  {
+   "id": "jog",
+   "rank": 70,
+   "en": "Jog",
+   "bn": "যোগ",
+   "hi": null,
+   "aliases": [
+    "Jog"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S G m P n 'S",
+   "avaroha": "'S n P m G m g S",
+   "related": [
+    "tilang"
+   ],
+   "wikidata": "Q6214668",
+   "wiki": "Jog (raga)",
+   "facts": true,
+   "bnAlt": "জোগ"
+  },
+  {
+   "id": "tilang",
+   "rank": 71,
+   "en": "Tilang",
+   "bn": "তিলং",
+   "hi": "तिलं",
+   "aliases": [
+    "Tilang",
+    "Tilanga"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S G m P N 'S",
+   "avaroha": "'S n P m G S",
+   "related": [
+    "khamaj",
+    "jog"
+   ],
+   "wikidata": "Q7802047",
+   "wiki": "Tilang",
+   "facts": true,
+   "bnAlt": "তিলঙ্গ"
+  },
+  {
+   "id": "tilak-kamod",
+   "rank": 72,
+   "en": "Tilak Kamod",
+   "bn": "তিলক কামোদ",
+   "hi": "तिलककामोद",
+   "aliases": [
+    "Tilak Kamod",
+    "Tilakkamod"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6,
+    7
+   ],
+   "season": null,
+   "jati": "shadav-sampurna",
+   "vadi": "R",
+   "samvadi": "P",
+   "aroha": "S R G S R m P N 'S",
+   "avaroha": "'S P D m G R G S .N",
+   "related": [
+    "desh"
+   ],
+   "wikidata": "Q7282790",
+   "wiki": "Tilak Kamod",
+   "facts": true
+  },
+  {
+   "id": "jhinjhoti",
+   "rank": 73,
+   "en": "Jhinjhoti",
+   "bn": "ঝিঁঝিট",
+   "hi": null,
+   "aliases": [
+    "Jhinjhoti",
+    "Jhinjoti",
+    "Jhinjhauti",
+    "Jhinjhauti"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R m P D 'S",
+   "avaroha": "'S n D P m G R S",
+   "related": [
+    "khamaj"
+   ],
+   "wikidata": "Q27962360",
+   "wiki": "Jhinjhoti",
+   "facts": true
+  },
+  {
+   "id": "rageshri",
+   "rank": 74,
+   "en": "Rageshri",
+   "bn": "রাগেশ্রী",
+   "hi": "रागेश्री",
+   "aliases": [
+    "Rageshree",
+    "Rageshri",
+    "Rageswari",
+    "Rageshwari"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-shadav",
+   "vadi": "G",
+   "samvadi": "N",
+   "aroha": "S G m D N 'S",
+   "avaroha": "'S n D m G R S",
+   "related": [
+    "bageshri"
+   ],
+   "wikidata": "Q7282873",
+   "wiki": "Rageshree",
+   "facts": true
+  },
+  {
+   "id": "kalavati",
+   "rank": 75,
+   "en": "Kalavati",
+   "bn": "কলাবতী",
+   "hi": "कलावती",
+   "aliases": [
+    "Kalavati",
+    "Kalawati"
+   ],
+   "thaat": "khamaj",
+   "prahar": [
+    5,
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S G P D n 'S",
+   "avaroha": "'S n D P G S",
+   "related": [],
+   "wikidata": "Q6351663",
+   "wiki": "Kalavati",
+   "facts": true,
+   "bnAlt": "কালাবতী"
+  },
+  {
+   "id": "sindhu-bhairavi",
+   "rank": 76,
+   "en": "Sindhu Bhairavi",
+   "bn": "সিন্ধু ভৈরবী",
+   "hi": "सिन्धु-भैरवी",
+   "aliases": [
+    "Sindh Bhairavi",
+    "Sindhu Bhairavi",
+    "Sindhi Bhairavi"
+   ],
+   "thaat": "asavari",
+   "prahar": [],
+   "season": null,
+   "jati": null,
+   "vadi": null,
+   "samvadi": null,
+   "aroha": null,
+   "avaroha": null,
+   "related": [
+    "bhairavi"
+   ],
+   "wikidata": "Q7522236",
+   "wiki": "Sindhu Bhairavi (raga)",
+   "facts": true
+  },
+  {
+   "id": "shivranjani",
+   "rank": 77,
+   "en": "Shivranjani",
+   "bn": "শিবরঞ্জনী",
+   "hi": "शिबरञ्जनी",
+   "aliases": [
+    "Shivaranjani",
+    "Shivranjini",
+    "Shivranjani"
+   ],
+   "thaat": "kafi",
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R g P D 'S",
+   "avaroha": "'S D P g R S",
+   "related": [],
+   "wikidata": "Q7499352",
+   "wiki": "Shivaranjani",
+   "facts": true
+  },
+  {
+   "id": "chandrakauns",
+   "rank": 78,
+   "en": "Chandrakauns",
+   "bn": "চন্দ্রকোষ",
+   "hi": null,
+   "aliases": [
+    "Chandrakauns",
+    "Chandrakosh",
+    "Chandrakaus"
+   ],
+   "thaat": null,
+   "prahar": [
+    7
+   ],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S g m d N 'S",
+   "avaroha": "'S N d m g S",
+   "related": [
+    "malkauns"
+   ],
+   "wikidata": "Q60775151",
+   "wiki": "Chandrakauns",
+   "facts": true
+  },
+  {
+   "id": "kirwani",
+   "rank": 79,
+   "en": "Kirwani",
+   "bn": "কীরবাণী",
+   "hi": null,
+   "aliases": [
+    "Kirwani",
+    "Keeravani",
+    "Kirvani"
+   ],
+   "thaat": null,
+   "prahar": [
+    6
+   ],
+   "season": null,
+   "jati": "sampurna-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R g m P d N 'S",
+   "avaroha": "'S N d P m g R S",
+   "related": [],
+   "wikidata": "Q17065702",
+   "wiki": "Kirwani",
+   "facts": true,
+   "bnAlt": "কিরবানী"
+  },
+  {
+   "id": "pahadi",
+   "rank": 80,
+   "en": "Pahadi",
+   "bn": "পাহাড়ি",
+   "hi": null,
+   "aliases": [
+    "Pahari",
+    "Pahadi"
+   ],
+   "thaat": "bilawal",
+   "prahar": [],
+   "season": null,
+   "jati": "audav-audav",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S R G P D 'S",
+   "avaroha": "'S D P G R S .D .P .D S",
+   "related": [],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "mand",
+   "rank": 81,
+   "en": "Mand",
+   "bn": "মান্দ",
+   "hi": null,
+   "aliases": [
+    "Maand",
+    "Mand"
+   ],
+   "thaat": "bilawal",
+   "prahar": [],
+   "season": null,
+   "jati": "audav-sampurna",
+   "vadi": null,
+   "samvadi": null,
+   "aroha": "S G m P D 'S",
+   "avaroha": "'S N D P m G R S",
+   "related": [],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  },
+  {
+   "id": "gara",
+   "rank": 82,
+   "en": "Gara",
+   "bn": "গারা",
+   "hi": null,
+   "aliases": [
+    "Gara",
+    "Garha"
+   ],
+   "thaat": "khamaj",
+   "prahar": [],
+   "season": null,
+   "jati": null,
+   "vadi": null,
+   "samvadi": null,
+   "aroha": null,
+   "avaroha": null,
+   "related": [
+    "khamaj",
+    "pilu"
+   ],
+   "wikidata": null,
+   "wiki": null,
+   "facts": true
+  }
+ ],
+ "extra": [
+  {
+   "id": "malhar",
+   "rank": 83,
+   "en": "Malhar",
+   "enAuto": null,
+   "bn": "মলহার",
+   "hi": "मल्हार राग",
+   "wikidata": "Q6743235",
+   "facts": false
+  },
+  {
+   "id": "gorakh-kalyan",
+   "rank": 84,
+   "en": "Gorakh Kalyan",
+   "enAuto": null,
+   "bn": null,
+   "hi": "गोरख कल्याण",
+   "wikidata": "Q13120461",
+   "facts": false
+  },
+  {
+   "id": "revati",
+   "rank": 85,
+   "en": "Revati",
+   "enAuto": null,
+   "bn": "রেবতী",
+   "hi": "रेबती",
+   "wikidata": "Q7317746",
+   "facts": false
+  },
+  {
+   "id": "barwa",
+   "rank": 86,
+   "en": "Barwa",
+   "enAuto": null,
+   "bn": "বারওয়া",
+   "hi": "बरबा",
+   "wikidata": "Q4865941",
+   "facts": false
+  },
+  {
+   "id": "bhinna-shadja",
+   "rank": 87,
+   "en": "Bhinna Shadja",
+   "enAuto": null,
+   "bn": "ভিন্নষড়জ",
+   "hi": "भिन्नषड़ज",
+   "wikidata": "Q17049774",
+   "facts": false
+  },
+  {
+   "id": "desi",
+   "rank": 88,
+   "en": "Desi",
+   "enAuto": null,
+   "bn": "দেশী",
+   "hi": "देशी",
+   "wikidata": "Q5264190",
+   "facts": false
+  },
+  {
+   "id": "hem-bihag",
+   "rank": 89,
+   "en": "Hem Bihag",
+   "enAuto": null,
+   "bn": "হেম বেহাগ",
+   "hi": null,
+   "wikidata": "Q16920841",
+   "facts": false
+  },
+  {
+   "id": "malgunji",
+   "rank": 90,
+   "en": "Malgunji",
+   "enAuto": null,
+   "bn": "মালগুঞ্জ",
+   "hi": "मालगुञ्ज",
+   "wikidata": "Q6743220",
+   "facts": false
+  },
+  {
+   "id": "khambabati",
+   "rank": 91,
+   "en": "Khambabati",
+   "enAuto": true,
+   "bn": "খাম্বাবতী",
+   "hi": "खाम्बाबती",
+   "wikidata": "Q11035362",
+   "facts": false
+  },
+  {
+   "id": "khat",
+   "rank": 92,
+   "en": "Khat",
+   "enAuto": true,
+   "bn": "খট",
+   "hi": "खट",
+   "wikidata": "Q11038586",
+   "facts": false
+  },
+  {
+   "id": "madhumanti",
+   "rank": 93,
+   "en": "Madhumanti",
+   "enAuto": true,
+   "bn": "মধুমন্তী",
+   "hi": "मधुमन्ती",
+   "wikidata": "Q12449095",
+   "facts": false
+  },
+  {
+   "id": "bhoopeshwari",
+   "rank": 94,
+   "en": "Bhoopeshwari",
+   "enAuto": null,
+   "bn": "ভূপেশ্বরী",
+   "hi": null,
+   "wikidata": "Q7282788",
+   "facts": false
+  },
+  {
+   "id": "zeelaf",
+   "rank": 95,
+   "en": "Zeelaf",
+   "enAuto": null,
+   "bn": "ঝীলফ",
+   "hi": "झिलफ",
+   "wikidata": "Q8068441",
+   "facts": false
+  },
+  {
+   "id": "kukubha",
+   "rank": 96,
+   "en": "Kukubha",
+   "enAuto": true,
+   "bn": "কুকুভা",
+   "hi": "कुकुभा",
+   "wikidata": "Q11158888",
+   "facts": false
+  },
+  {
+   "id": "jait-kalyan",
+   "rank": 97,
+   "en": "Jait Kalyan",
+   "enAuto": true,
+   "bn": "জৈৎ কল্যাণ",
+   "hi": "जैत् कल्याण",
+   "wikidata": "Q12940246",
+   "facts": false
+  },
+  {
+   "id": "narayani",
+   "rank": 98,
+   "en": "Narayani",
+   "enAuto": true,
+   "bn": "নারায়ণী",
+   "hi": "नारायणी",
+   "wikidata": "Q12940269",
+   "facts": false
+  },
+  {
+   "id": "gandhari",
+   "rank": 99,
+   "en": "Gandhari",
+   "enAuto": true,
+   "bn": "গান্ধারী",
+   "hi": "गान्धारी",
+   "wikidata": "Q13120458",
+   "facts": false
+  },
+  {
+   "id": "anjani-todi",
+   "rank": 100,
+   "en": "Anjani Todi",
+   "enAuto": null,
+   "bn": "অঞ্জনী টোড়ী",
+   "hi": "अञ्जनी टोड़ी",
+   "wikidata": "Q12940194",
+   "facts": false
+  },
+  {
+   "id": "madhukali",
+   "rank": 101,
+   "en": "Madhukali",
+   "enAuto": null,
+   "bn": "মধুকলি",
+   "hi": null,
+   "wikidata": "Q6727463",
+   "facts": false
+  },
+  {
+   "id": "madhuranjani",
+   "rank": 102,
+   "en": "Madhuranjani",
+   "enAuto": null,
+   "bn": null,
+   "hi": "मधुरंजनी",
+   "wikidata": "Q131308319",
+   "facts": false
+  },
+  {
+   "id": "amritvarshini",
+   "rank": 103,
+   "en": "Amritvarshini",
+   "enAuto": null,
+   "bn": "অমৃতবর্ষিণী",
+   "hi": null,
+   "wikidata": "Q18393141",
+   "facts": false
+  },
+  {
+   "id": "suhi",
+   "rank": 104,
+   "en": "Suhi",
+   "enAuto": null,
+   "bn": null,
+   "hi": null,
+   "wikidata": "Q21062475",
+   "facts": false
+  },
+  {
+   "id": "gunakeli",
+   "rank": 105,
+   "en": "Gunakeli",
+   "enAuto": true,
+   "bn": "গুণকেলী",
+   "hi": "गुणकेली",
+   "wikidata": "Q12921883",
+   "facts": false
+  },
+  {
+   "id": "gauri",
+   "rank": 106,
+   "en": "Gauri",
+   "enAuto": true,
+   "bn": "গৌরী",
+   "hi": "गौरी",
+   "wikidata": "Q12922404",
+   "facts": false
+  },
+  {
+   "id": "triveni",
+   "rank": 107,
+   "en": "Triveni",
+   "enAuto": true,
+   "bn": "ত্রিবেণী",
+   "hi": "त्रिवेणी",
+   "wikidata": "Q12927629",
+   "facts": false
+  },
+  {
+   "id": "malabi",
+   "rank": 108,
+   "en": "Malabi",
+   "enAuto": true,
+   "bn": "মালবী",
+   "hi": "मालबी",
+   "wikidata": "Q12938380",
+   "facts": false
+  },
+  {
+   "id": "ambika",
+   "rank": 109,
+   "en": "Ambika",
+   "enAuto": true,
+   "bn": "অম্বিকা",
+   "hi": "अम्बिका",
+   "wikidata": "Q12940195",
+   "facts": false
+  },
+  {
+   "id": "arun-mallar",
+   "rank": 110,
+   "en": "Arun Mallar",
+   "enAuto": true,
+   "bn": "অরুণ মল্লার",
+   "hi": "अरुण मल्लार",
+   "wikidata": "Q12940196",
+   "facts": false
+  },
+  {
+   "id": "anand-bhairav",
+   "rank": 111,
+   "en": "Anand Bhairav",
+   "enAuto": true,
+   "bn": "আনন্দ ভৈরব",
+   "hi": "आनन्द भैरव",
+   "wikidata": "Q12940199",
+   "facts": false
+  },
+  {
+   "id": "alahiya",
+   "rank": 112,
+   "en": "Alahiya",
+   "enAuto": true,
+   "bn": "আলাহিয়া",
+   "hi": "आलाहिया",
+   "wikidata": "Q12940202",
+   "facts": false
+  },
+  {
+   "id": "ashatodi",
+   "rank": 113,
+   "en": "Ashatodi",
+   "enAuto": true,
+   "bn": "আশাটোড়ী",
+   "hi": "आशाटोड़ी",
+   "wikidata": "Q12940204",
+   "facts": false
+  },
+  {
+   "id": "ahir-lalit",
+   "rank": 114,
+   "en": "Ahir Lalit",
+   "enAuto": true,
+   "bn": "আহীর ললিত",
+   "hi": "आहीर ललित",
+   "wikidata": "Q12940205",
+   "facts": false
+  },
+  {
+   "id": "ahira-todi",
+   "rank": 115,
+   "en": "Ahira Todi",
+   "enAuto": true,
+   "bn": "আহীরা টোড়ী",
+   "hi": "आहीरा टोड़ी",
+   "wikidata": "Q12940206",
+   "facts": false
+  },
+  {
+   "id": "kalyananat",
+   "rank": 116,
+   "en": "Kalyananat",
+   "enAuto": true,
+   "bn": "কল্যাণ-নট",
+   "hi": "कल्याण-नट",
+   "wikidata": "Q12940209",
+   "facts": false
+  },
+  {
+   "id": "kaphikanada",
+   "rank": 117,
+   "en": "Kaphikanada",
+   "enAuto": true,
+   "bn": "কাফি-কানাড়া",
+   "hi": "काफि-कानाड़ा",
+   "wikidata": "Q12940211",
+   "facts": false
+  },
+  {
+   "id": "kaphitodi",
+   "rank": 118,
+   "en": "Kaphitodi",
+   "enAuto": true,
+   "bn": "কাফি-টোড়ী",
+   "hi": "काफि-टोड़ी",
+   "wikidata": "Q12940213",
+   "facts": false
+  },
+  {
+   "id": "kamod-nat",
+   "rank": 119,
+   "en": "Kamod Nat",
+   "enAuto": true,
+   "bn": "কামোদ নট",
+   "hi": "कामोद नट",
+   "wikidata": "Q12940214",
+   "facts": false
+  },
+  {
+   "id": "kedaranat",
+   "rank": 120,
+   "en": "Kedaranat",
+   "enAuto": true,
+   "bn": "কেদারা-নট",
+   "hi": "केदारा-नट",
+   "wikidata": "Q12940215",
+   "facts": false
+  },
+  {
+   "id": "kukubh-bilaval",
+   "rank": 121,
+   "en": "Kukubh Bilaval",
+   "enAuto": true,
+   "bn": "কুকুভ বিলাবল",
+   "hi": "कुकुभ बिलावल",
+   "wikidata": "Q12940216",
+   "facts": false
+  },
+  {
+   "id": "kumari",
+   "rank": 122,
+   "en": "Kumari",
+   "enAuto": true,
+   "bn": "কুমারী",
+   "hi": "कुमारी",
+   "wikidata": "Q12940217",
+   "facts": false
+  },
+  {
+   "id": "komal-deshi",
+   "rank": 123,
+   "en": "Komal Deshi",
+   "enAuto": true,
+   "bn": "কোমল দেশী",
+   "hi": "कोमल देशी",
+   "wikidata": "Q12940218",
+   "facts": false
+  },
+  {
+   "id": "kaumari",
+   "rank": 124,
+   "en": "Kaumari",
+   "enAuto": true,
+   "bn": "কৌমারী",
+   "hi": "कौमारी",
+   "wikidata": "Q12940219",
+   "facts": false
+  },
+  {
+   "id": "kohal-kanada",
+   "rank": 125,
+   "en": "Kohal Kanada",
+   "enAuto": true,
+   "bn": "কোহল কানাড়া",
+   "hi": "कोहल कानाड़ा",
+   "wikidata": "Q12940220",
+   "facts": false
+  },
+  {
+   "id": "gara-kanada",
+   "rank": 126,
+   "en": "Gara Kanada",
+   "enAuto": true,
+   "bn": "গারা কানাড়া",
+   "hi": "गारा कानाड़ा",
+   "wikidata": "Q12940222",
+   "facts": false
+  },
+  {
+   "id": "khokar",
+   "rank": 127,
+   "en": "Khokar",
+   "enAuto": true,
+   "bn": "খোকর",
+   "hi": "खोकर",
+   "wikidata": "Q12940223",
+   "facts": false
+  },
+  {
+   "id": "gaoti",
+   "rank": 128,
+   "en": "Gaoti",
+   "enAuto": true,
+   "bn": "গাওতি",
+   "hi": "गाओति",
+   "wikidata": "Q12940224",
+   "facts": false
+  },
+  {
+   "id": "gopi-vasant",
+   "rank": 129,
+   "en": "Gopi Vasant",
+   "enAuto": true,
+   "bn": "গোপী বসন্ত",
+   "hi": "गोपी वसन्त",
+   "wikidata": "Q12940229",
+   "facts": false
+  },
+  {
+   "id": "chakradhar",
+   "rank": 130,
+   "en": "Chakradhar",
+   "enAuto": true,
+   "bn": "চক্রধর",
+   "hi": "चक्रधर",
+   "wikidata": "Q12940231",
+   "facts": false
+  },
+  {
+   "id": "gauranjani",
+   "rank": 131,
+   "en": "Gauranjani",
+   "enAuto": true,
+   "bn": "গৌরাঞ্জনী",
+   "hi": "गौराञ्जनी",
+   "wikidata": "Q12940233",
+   "facts": false
+  },
+  {
+   "id": "chandrakalyan",
+   "rank": 132,
+   "en": "Chandrakalyan",
+   "enAuto": true,
+   "bn": "চন্দ্রকল্যাণ",
+   "hi": "चन्द्रकल्याण",
+   "wikidata": "Q12940234",
+   "facts": false
+  },
+  {
+   "id": "chhaya",
+   "rank": 133,
+   "en": "Chhaya",
+   "enAuto": true,
+   "bn": "ছায়া",
+   "hi": "छाया",
+   "wikidata": "Q12940235",
+   "facts": false
+  },
+  {
+   "id": "jay-kans",
+   "rank": 134,
+   "en": "Jay Kans",
+   "enAuto": true,
+   "bn": "জয় কংস",
+   "hi": "जय कंस",
+   "wikidata": "Q12940237",
+   "facts": false
+  },
+  {
+   "id": "jayavanti",
+   "rank": 135,
+   "en": "Jayavanti",
+   "enAuto": true,
+   "bn": "জয়বন্তী",
+   "hi": "जयवन्ती",
+   "wikidata": "Q12940238",
+   "facts": false
+  },
+  {
+   "id": "janla",
+   "rank": 136,
+   "en": "Janla",
+   "enAuto": true,
+   "bn": "জংলা",
+   "hi": "जंला",
+   "wikidata": "Q12940239",
+   "facts": false
+  },
+  {
+   "id": "jayet",
+   "rank": 137,
+   "en": "Jayet",
+   "enAuto": true,
+   "bn": "জয়েৎ",
+   "hi": "जयेत्",
+   "wikidata": "Q12940240",
+   "facts": false
+  },
+  {
+   "id": "jait",
+   "rank": 138,
+   "en": "Jait",
+   "enAuto": true,
+   "bn": "জৈৎ",
+   "hi": "जैत्",
+   "wikidata": "Q12940241",
+   "facts": false
+  },
+  {
+   "id": "jayetkalyan",
+   "rank": 139,
+   "en": "Jayetkalyan",
+   "enAuto": true,
+   "bn": "জয়েৎকল্যাণ",
+   "hi": "जयेत्कल्याण",
+   "wikidata": "Q12940242",
+   "facts": false
+  },
+  {
+   "id": "jayet-mallar",
+   "rank": 140,
+   "en": "Jayet Mallar",
+   "enAuto": true,
+   "bn": "জয়েৎ মল্লার",
+   "hi": "जयेत् मल्लार",
+   "wikidata": "Q12940243",
+   "facts": false
+  },
+  {
+   "id": "jayashri",
+   "rank": 141,
+   "en": "Jayashri",
+   "enAuto": true,
+   "bn": "জয়শ্রী",
+   "hi": "जयश्री",
+   "wikidata": "Q12940244",
+   "facts": false
+  },
+  {
+   "id": "darabari",
+   "rank": 142,
+   "en": "Darabari",
+   "enAuto": true,
+   "bn": "দরবারী",
+   "hi": "दरबारी",
+   "wikidata": "Q12940248",
+   "facts": false
+  },
+  {
+   "id": "durga-kalyan",
+   "rank": 143,
+   "en": "Durga Kalyan",
+   "enAuto": true,
+   "bn": "দুর্গা কল্যাণ",
+   "hi": "दुर्गा कल्याण",
+   "wikidata": "Q12940250",
+   "facts": false
+  },
+  {
+   "id": "devaranjani",
+   "rank": 144,
+   "en": "Devaranjani",
+   "enAuto": true,
+   "bn": "দেবরঞ্জনী",
+   "hi": "देवरञ्जनी",
+   "wikidata": "Q12940251",
+   "facts": false
+  },
+  {
+   "id": "devagiri-bilaval",
+   "rank": 145,
+   "en": "Devagiri Bilaval",
+   "enAuto": true,
+   "bn": "দেবগিরি বিলাবল",
+   "hi": "देवगिरि बिलावल",
+   "wikidata": "Q12940252",
+   "facts": false
+  },
+  {
+   "id": "devagandhar",
+   "rank": 146,
+   "en": "Devagandhar",
+   "enAuto": true,
+   "bn": "দেবগান্ধার",
+   "hi": "देवगान्धार",
+   "wikidata": "Q12940253",
+   "facts": false
+  },
+  {
+   "id": "devagiri",
+   "rank": 147,
+   "en": "Devagiri",
+   "enAuto": true,
+   "bn": "দেবগিরি",
+   "hi": "देवगिरि",
+   "wikidata": "Q12940254",
+   "facts": false
+  },
+  {
+   "id": "desh-gaud",
+   "rank": 148,
+   "en": "Desh Gaud",
+   "enAuto": true,
+   "bn": "দেশ গৌড়",
+   "hi": "देश गौड़",
+   "wikidata": "Q12940255",
+   "facts": false
+  },
+  {
+   "id": "dhavalashri",
+   "rank": 149,
+   "en": "Dhavalashri",
+   "enAuto": true,
+   "bn": "ধবলাশ্রী",
+   "hi": "धवलाश्री",
+   "wikidata": "Q12940256",
+   "facts": false
+  },
+  {
+   "id": "deshakhy",
+   "rank": 150,
+   "en": "Deshakhy",
+   "enAuto": true,
+   "bn": "দেশাখ্য",
+   "hi": "देशाख्य",
+   "wikidata": "Q12940257",
+   "facts": false
+  },
+  {
+   "id": "natabilaval",
+   "rank": 151,
+   "en": "Natabilaval",
+   "enAuto": true,
+   "bn": "নট-বিলাবল",
+   "hi": "नट-बिलावल",
+   "wikidata": "Q12940259",
+   "facts": false
+  },
+  {
+   "id": "natanarayani",
+   "rank": 152,
+   "en": "Natanarayani",
+   "enAuto": true,
+   "bn": "নটনারায়ণী",
+   "hi": "नटनारायणी",
+   "wikidata": "Q12940260",
+   "facts": false
+  },
+  {
+   "id": "natamallar",
+   "rank": 153,
+   "en": "Natamallar",
+   "enAuto": true,
+   "bn": "নটমল্লার",
+   "hi": "नटमल्लार",
+   "wikidata": "Q12940261",
+   "facts": false
+  },
+  {
+   "id": "nagasvaravali",
+   "rank": 154,
+   "en": "Nagasvaravali",
+   "enAuto": true,
+   "bn": "নাগস্বরাবলী",
+   "hi": "नागस्वरावली",
+   "wikidata": "Q12940263",
+   "facts": false
+  },
+  {
+   "id": "nat-vihag",
+   "rank": 155,
+   "en": "Nat Vihag",
+   "enAuto": true,
+   "bn": "নট বিহাগ",
+   "hi": "नट विहाग",
+   "wikidata": "Q12940264",
+   "facts": false
+  },
+  {
+   "id": "nagadhvani-kanada",
+   "rank": 156,
+   "en": "Nagadhvani Kanada",
+   "enAuto": true,
+   "bn": "নাগধ্বনি কানাড়া",
+   "hi": "नागध्वनि कानाड़ा",
+   "wikidata": "Q12940265",
+   "facts": false
+  },
+  {
+   "id": "nat",
+   "rank": 157,
+   "en": "Nat",
+   "enAuto": true,
+   "bn": "নাট",
+   "hi": "नाट",
+   "wikidata": "Q12940266",
+   "facts": false
+  },
+  {
+   "id": "nachadi-todi",
+   "rank": 158,
+   "en": "Nachadi Todi",
+   "enAuto": true,
+   "bn": "নাচাড়ী টোড়ী",
+   "hi": "नाचाड़ी टोड़ी",
+   "wikidata": "Q12940267",
+   "facts": false
+  },
+  {
+   "id": "narayanabilaval",
+   "rank": 159,
+   "en": "Narayanabilaval",
+   "enAuto": true,
+   "bn": "নারায়ণ-বিলাবল",
+   "hi": "नारायण-बिलावल",
+   "wikidata": "Q12940270",
+   "facts": false
+  },
+  {
+   "id": "nat-kuranjika",
+   "rank": 160,
+   "en": "Nat Kuranjika",
+   "enAuto": true,
+   "bn": "নাট কুরঞ্জিকা",
+   "hi": "नाट कुरञ्जिका",
+   "wikidata": "Q12940271",
+   "facts": false
+  },
+  {
+   "id": "nayaki-kanada",
+   "rank": 161,
+   "en": "Nayaki Kanada",
+   "enAuto": true,
+   "bn": "নায়কী কানাড়া",
+   "hi": "नायकी कानाड़ा",
+   "wikidata": "Q12940272",
+   "facts": false
+  },
+  {
+   "id": "nishashakh",
+   "rank": 162,
+   "en": "Nishashakh",
+   "enAuto": true,
+   "bn": "নিশাশাখ",
+   "hi": "निशाशाख",
+   "wikidata": "Q12940273",
+   "facts": false
+  },
+  {
+   "id": "pancham",
+   "rank": 163,
+   "en": "Pancham",
+   "enAuto": true,
+   "bn": "পঞ্চম",
+   "hi": "पञ्चम",
+   "wikidata": "Q12940275",
+   "facts": false
+  },
+  {
+   "id": "patadipaki",
+   "rank": 164,
+   "en": "Patadipaki",
+   "enAuto": true,
+   "bn": "পটদীপকী",
+   "hi": "पटदीपकी",
+   "wikidata": "Q12940276",
+   "facts": false
+  },
+  {
+   "id": "palasi",
+   "rank": 165,
+   "en": "Palasi",
+   "enAuto": true,
+   "bn": "পলাশী",
+   "hi": "पलासी",
+   "wikidata": "Q12940279",
+   "facts": false
+  },
+  {
+   "id": "parajabahar",
+   "rank": 166,
+   "en": "Parajabahar",
+   "enAuto": true,
+   "bn": "পরজবাহার",
+   "hi": "परजबाहार",
+   "wikidata": "Q12940281",
+   "facts": false
+  },
+  {
+   "id": "pushp-ranjani",
+   "rank": 167,
+   "en": "Pushp Ranjani",
+   "enAuto": true,
+   "bn": "পুষ্প রঞ্জনী",
+   "hi": "पुष्प रञ्जनी",
+   "wikidata": "Q12940283",
+   "facts": false
+  },
+  {
+   "id": "purv-kalyan",
+   "rank": 168,
+   "en": "Purv Kalyan",
+   "enAuto": true,
+   "bn": "পূর্ব কল্যাণ",
+   "hi": "पूर्व कल्याण",
+   "wikidata": "Q12940285",
+   "facts": false
+  },
+  {
+   "id": "pratap-barali",
+   "rank": 169,
+   "en": "Pratap Barali",
+   "enAuto": true,
+   "bn": "প্রতাপ বরালী",
+   "hi": "प्रताप बराली",
+   "wikidata": "Q12940287",
+   "facts": false
+  },
+  {
+   "id": "prabhatabhairav",
+   "rank": 170,
+   "en": "Prabhatabhairav",
+   "enAuto": true,
+   "bn": "প্রভাত-ভৈরব",
+   "hi": "प्रभात-भैरव",
+   "wikidata": "Q12940288",
+   "facts": false
+  },
+  {
+   "id": "phirojakhani-todi",
+   "rank": 171,
+   "en": "Phirojakhani Todi",
+   "enAuto": true,
+   "bn": "ফিরোজখানী টোড়ী",
+   "hi": "फिरोजखानी टोड़ी",
+   "wikidata": "Q12940289",
+   "facts": false
+  },
+  {
+   "id": "prabhavati",
+   "rank": 172,
+   "en": "Prabhavati",
+   "enAuto": true,
+   "bn": "প্রভাবতী",
+   "hi": "प्रभावती",
+   "wikidata": "Q12940290",
+   "facts": false
+  },
+  {
+   "id": "badahans",
+   "rank": 173,
+   "en": "Badahans",
+   "enAuto": true,
+   "bn": "বড়হংস",
+   "hi": "बड़हंस",
+   "wikidata": "Q12940291",
+   "facts": false
+  },
+  {
+   "id": "bangalabhairav",
+   "rank": 174,
+   "en": "Bangalabhairav",
+   "enAuto": true,
+   "bn": "বঙ্গাল-ভৈরব",
+   "hi": "बङ्गाल-भैरव",
+   "wikidata": "Q12940292",
+   "facts": false
+  },
+  {
+   "id": "bageshribahar",
+   "rank": 175,
+   "en": "Bageshribahar",
+   "enAuto": true,
+   "bn": "বাগেশ্রীবাহার",
+   "hi": "बागेश्रीबाहार",
+   "wikidata": "Q12940294",
+   "facts": false
+  },
+  {
+   "id": "baronya",
+   "rank": 176,
+   "en": "Baronya",
+   "enAuto": true,
+   "bn": "বারোঁয়া",
+   "hi": "बारोँया",
+   "wikidata": "Q12940295",
+   "facts": false
+  },
+  {
+   "id": "vasant-mukhari",
+   "rank": 177,
+   "en": "Vasant Mukhari",
+   "enAuto": true,
+   "bn": "বসন্ত মুখারী",
+   "hi": "वसन्त मुखारी",
+   "wikidata": "Q12940296",
+   "facts": false
+  },
+  {
+   "id": "brihannat",
+   "rank": 178,
+   "en": "Brihannat",
+   "enAuto": true,
+   "bn": "বৃহন্নট",
+   "hi": "बृहन्नट",
+   "wikidata": "Q12940299",
+   "facts": false
+  },
+  {
+   "id": "baijayanti",
+   "rank": 179,
+   "en": "Baijayanti",
+   "enAuto": true,
+   "bn": "বৈজয়ন্তী",
+   "hi": "बैजयन्ती",
+   "wikidata": "Q12940300",
+   "facts": false
+  },
+  {
+   "id": "bhabashakh",
+   "rank": 180,
+   "en": "Bhabashakh",
+   "enAuto": true,
+   "bn": "ভবশাখ",
+   "hi": "भबशाख",
+   "wikidata": "Q12940301",
+   "facts": false
+  },
+  {
+   "id": "bhankhar",
+   "rank": 181,
+   "en": "Bhankhar",
+   "enAuto": true,
+   "bn": "ভংখার",
+   "hi": "भंखार",
+   "wikidata": "Q12940302",
+   "facts": false
+  },
+  {
+   "id": "bhairavabahar",
+   "rank": 182,
+   "en": "Bhairavabahar",
+   "enAuto": true,
+   "bn": "ভৈরব-বাহার",
+   "hi": "भैरव-बाहार",
+   "wikidata": "Q12940303",
+   "facts": false
+  },
+  {
+   "id": "bhim",
+   "rank": 183,
+   "en": "Bhim",
+   "enAuto": true,
+   "bn": "ভীম",
+   "hi": "भीम",
+   "wikidata": "Q12940305",
+   "facts": false
+  },
+  {
+   "id": "mangal-bhairav",
+   "rank": 184,
+   "en": "Mangal Bhairav",
+   "enAuto": true,
+   "bn": "মঙ্গল ভৈরব",
+   "hi": "मङ्गल भैरव",
+   "wikidata": "Q12940306",
+   "facts": false
+  },
+  {
+   "id": "madhukans",
+   "rank": 185,
+   "en": "Madhukans",
+   "enAuto": true,
+   "bn": "মধুকংস",
+   "hi": "मधुकंस",
+   "wikidata": "Q12940307",
+   "facts": false
+  },
+  {
+   "id": "madhumadhabisaran",
+   "rank": 186,
+   "en": "Madhumadhabisaran",
+   "enAuto": true,
+   "bn": "মধুমাধবীসারং",
+   "hi": "मधुमाधबीसारं",
+   "wikidata": "Q12940308",
+   "facts": false
+  },
+  {
+   "id": "manohar",
+   "rank": 187,
+   "en": "Manohar",
+   "enAuto": true,
+   "bn": "মনোহর",
+   "hi": "मनोहर",
+   "wikidata": "Q12940310",
+   "facts": false
+  },
+  {
+   "id": "mad",
+   "rank": 188,
+   "en": "Mad",
+   "enAuto": true,
+   "bn": "মাড়",
+   "hi": "माड़",
+   "wikidata": "Q12940311",
+   "facts": false
+  },
+  {
+   "id": "miyan-saran",
+   "rank": 189,
+   "en": "Miyan Saran",
+   "enAuto": true,
+   "bn": "মিয়াঁ সারং",
+   "hi": "मियाँ सारं",
+   "wikidata": "Q12940315",
+   "facts": false
+  },
+  {
+   "id": "malin",
+   "rank": 190,
+   "en": "Malin",
+   "enAuto": true,
+   "bn": "মালীন",
+   "hi": "मालीन",
+   "wikidata": "Q12940316",
+   "facts": false
+  },
+  {
+   "id": "maligaura",
+   "rank": 191,
+   "en": "Maligaura",
+   "enAuto": true,
+   "bn": "মালীগৌরা",
+   "hi": "मालीगौरा",
+   "wikidata": "Q12940317",
+   "facts": false
+  },
+  {
+   "id": "miyanmallar",
+   "rank": 192,
+   "en": "Miyanmallar",
+   "enAuto": true,
+   "bn": "মিয়াঁমল্লার",
+   "hi": "मियाँमल्लार",
+   "wikidata": "Q12940318",
+   "facts": false
+  },
+  {
+   "id": "mira-saran",
+   "rank": 193,
+   "en": "Mira Saran",
+   "enAuto": true,
+   "bn": "মীরা সারং",
+   "hi": "मीरा सारं",
+   "wikidata": "Q12940319",
+   "facts": false
+  },
+  {
+   "id": "mudraki-kanada",
+   "rank": 194,
+   "en": "Mudraki Kanada",
+   "enAuto": true,
+   "bn": "মুদ্রাকী কানাড়া",
+   "hi": "मुद्राकी कानाड़ा",
+   "wikidata": "Q12940320",
+   "facts": false
+  },
+  {
+   "id": "yasharanjani",
+   "rank": 195,
+   "en": "Yasharanjani",
+   "enAuto": true,
+   "bn": "যশরঞ্জনী",
+   "hi": "यशरञ्जनी",
+   "wikidata": "Q12940322",
+   "facts": false
+  },
+  {
+   "id": "motaki",
+   "rank": 196,
+   "en": "Motaki",
+   "enAuto": true,
+   "bn": "মোটকী",
+   "hi": "मोटकी",
+   "wikidata": "Q12940323",
+   "facts": false
+  },
+  {
+   "id": "yog-kosh",
+   "rank": 197,
+   "en": "Yog Kosh",
+   "enAuto": true,
+   "bn": "যোগ কোষ",
+   "hi": "योग कोष",
+   "wikidata": "Q12940324",
+   "facts": false
+  },
+  {
+   "id": "yogaashabari",
+   "rank": 198,
+   "en": "Yogaashabari",
+   "enAuto": true,
+   "bn": "যোগ-আশাবরী",
+   "hi": "योग-आशाबरी",
+   "wikidata": "Q12940325",
+   "facts": false
+  },
+  {
+   "id": "rasachandr",
+   "rank": 199,
+   "en": "Rasachandr",
+   "enAuto": true,
+   "bn": "রসচন্দ্র",
+   "hi": "रसचन्द्र",
+   "wikidata": "Q12940327",
+   "facts": false
+  },
+  {
+   "id": "ras-ranjani",
+   "rank": 200,
+   "en": "Ras Ranjani",
+   "enAuto": true,
+   "bn": "রস রঞ্জনী",
+   "hi": "रस रञ्जनी",
+   "wikidata": "Q12940328",
+   "facts": false
+  },
+  {
+   "id": "lachchhashakh",
+   "rank": 201,
+   "en": "Lachchhashakh",
+   "enAuto": true,
+   "bn": "লচ্ছাশাখ",
+   "hi": "लच्छाशाख",
+   "wikidata": "Q12940331",
+   "facts": false
+  },
+  {
+   "id": "lalit-pancham",
+   "rank": 202,
+   "en": "Lalit Pancham",
+   "enAuto": true,
+   "bn": "ললিত পঞ্চম",
+   "hi": "ललित पञ्चम",
+   "wikidata": "Q12940332",
+   "facts": false
+  },
+  {
+   "id": "lacharitodi",
+   "rank": 203,
+   "en": "Lacharitodi",
+   "enAuto": true,
+   "bn": "লাচারীটোড়ী",
+   "hi": "लाचारीटोड़ी",
+   "wikidata": "Q12940333",
+   "facts": false
+  },
+  {
+   "id": "lalita-gauri",
+   "rank": 204,
+   "en": "Lalita Gauri",
+   "enAuto": true,
+   "bn": "ললিতা গৌরী",
+   "hi": "ललिता गौरी",
+   "wikidata": "Q12940334",
+   "facts": false
+  },
+  {
+   "id": "lalitakeli",
+   "rank": 205,
+   "en": "Lalitakeli",
+   "enAuto": true,
+   "bn": "ললিতকেলী",
+   "hi": "ललितकेली",
+   "wikidata": "Q12940335",
+   "facts": false
+  },
+  {
+   "id": "sharat",
+   "rank": 206,
+   "en": "Sharat",
+   "enAuto": true,
+   "bn": "শরৎ",
+   "hi": "शरत्",
+   "wikidata": "Q12940336",
+   "facts": false
+  },
+  {
+   "id": "shibamat-bhairav",
+   "rank": 207,
+   "en": "Shibamat Bhairav",
+   "enAuto": true,
+   "bn": "শিবমত ভৈরব",
+   "hi": "शिबमत भैरव",
+   "wikidata": "Q12940337",
+   "facts": false
+  },
+  {
+   "id": "shibaraj",
+   "rank": 208,
+   "en": "Shibaraj",
+   "enAuto": true,
+   "bn": "শিবরাজ",
+   "hi": "शिबराज",
+   "wikidata": "Q12940338",
+   "facts": false
+  },
+  {
+   "id": "shuklabilaval",
+   "rank": 209,
+   "en": "Shuklabilaval",
+   "enAuto": true,
+   "bn": "শুক্লবিলাবল",
+   "hi": "शुक्लबिलावल",
+   "wikidata": "Q12940339",
+   "facts": false
+  },
+  {
+   "id": "shuddh-mallar",
+   "rank": 210,
+   "en": "Shuddh Mallar",
+   "enAuto": true,
+   "bn": "শুদ্ধ মল্লার",
+   "hi": "शुद्ध मल्लार",
+   "wikidata": "Q12940341",
+   "facts": false
+  },
+  {
+   "id": "sarapharda",
+   "rank": 211,
+   "en": "Sarapharda",
+   "enAuto": true,
+   "bn": "সরফর্দা",
+   "hi": "सरफर्दा",
+   "wikidata": "Q12940343",
+   "facts": false
+  },
+  {
+   "id": "shad",
+   "rank": 212,
+   "en": "Shad",
+   "enAuto": true,
+   "bn": "ষড়",
+   "hi": "षड़",
+   "wikidata": "Q12940344",
+   "facts": false
+  },
+  {
+   "id": "sarapharda-bilaval",
+   "rank": 213,
+   "en": "Sarapharda Bilaval",
+   "enAuto": true,
+   "bn": "সরফর্দা বিলাবল",
+   "hi": "सरफर्दा बिलावल",
+   "wikidata": "Q12940345",
+   "facts": false
+  },
+  {
+   "id": "sarasbatiranjani",
+   "rank": 214,
+   "en": "Sarasbatiranjani",
+   "enAuto": true,
+   "bn": "সরস্বতীরঞ্জনী",
+   "hi": "सरस्बतीरञ्जनी",
+   "wikidata": "Q12940346",
+   "facts": false
+  },
+  {
+   "id": "sarasbati",
+   "rank": 215,
+   "en": "Sarasbati",
+   "enAuto": true,
+   "bn": "সরস্বতী",
+   "hi": "सरस्बती",
+   "wikidata": "Q12940347",
+   "facts": false
+  },
+  {
+   "id": "sanjh-hindol",
+   "rank": 216,
+   "en": "Sanjh Hindol",
+   "enAuto": true,
+   "bn": "সাঁঝ হিন্দোল",
+   "hi": "साँझ हिन्दोल",
+   "wikidata": "Q12940348",
+   "facts": false
+  },
+  {
+   "id": "sajagiri",
+   "rank": 217,
+   "en": "Sajagiri",
+   "enAuto": true,
+   "bn": "সাজগিরি",
+   "hi": "साजगिरि",
+   "wikidata": "Q12940349",
+   "facts": false
+  },
+  {
+   "id": "sajan",
+   "rank": 218,
+   "en": "Sajan",
+   "enAuto": true,
+   "bn": "সাজন",
+   "hi": "साजन",
+   "wikidata": "Q12940350",
+   "facts": false
+  },
+  {
+   "id": "sabani-kalyan",
+   "rank": 219,
+   "en": "Sabani Kalyan",
+   "enAuto": true,
+   "bn": "সাবনী কল্যাণ",
+   "hi": "साबनी कल्याण",
+   "wikidata": "Q12940351",
+   "facts": false
+  },
+  {
+   "id": "samant-saran",
+   "rank": 220,
+   "en": "Samant Saran",
+   "enAuto": true,
+   "bn": "সামন্ত সারং",
+   "hi": "सामन्त सारं",
+   "wikidata": "Q12940353",
+   "facts": false
+  },
+  {
+   "id": "sahana-kanada",
+   "rank": 221,
+   "en": "Sahana Kanada",
+   "enAuto": true,
+   "bn": "সাহানা কানাড়া",
+   "hi": "साहाना कानाड़ा",
+   "wikidata": "Q12940354",
+   "facts": false
+  },
+  {
+   "id": "sindhu",
+   "rank": 222,
+   "en": "Sindhu",
+   "enAuto": true,
+   "bn": "সিন্ধু",
+   "hi": "सिन्धु",
+   "wikidata": "Q12940355",
+   "facts": false
+  },
+  {
+   "id": "sugharai",
+   "rank": 223,
+   "en": "Sugharai",
+   "enAuto": true,
+   "bn": "সুঘরাই",
+   "hi": "सुघराइ",
+   "wikidata": "Q12940357",
+   "facts": false
+  },
+  {
+   "id": "sindhuda",
+   "rank": 224,
+   "en": "Sindhuda",
+   "enAuto": true,
+   "bn": "সিন্ধুড়া",
+   "hi": "सिन्धुड़ा",
+   "wikidata": "Q12940358",
+   "facts": false
+  },
+  {
+   "id": "suradasimallar",
+   "rank": 225,
+   "en": "Suradasimallar",
+   "enAuto": true,
+   "bn": "সুরদাসীমল্লার",
+   "hi": "सुरदासीमल्लार",
+   "wikidata": "Q12940359",
+   "facts": false
+  },
+  {
+   "id": "surat",
+   "rank": 226,
+   "en": "Surat",
+   "enAuto": true,
+   "bn": "সুরট",
+   "hi": "सुरट",
+   "wikidata": "Q12940360",
+   "facts": false
+  },
+  {
+   "id": "sugharai-todi",
+   "rank": 227,
+   "en": "Sugharai Todi",
+   "enAuto": true,
+   "bn": "সুঘরাই টোড়ী",
+   "hi": "सुघराइ टोड़ी",
+   "wikidata": "Q12940361",
+   "facts": false
+  },
+  {
+   "id": "sugharai-kanada",
+   "rank": 228,
+   "en": "Sugharai Kanada",
+   "enAuto": true,
+   "bn": "সুঘরাই কানাড়া",
+   "hi": "सुघराइ कानाड़ा",
+   "wikidata": "Q12940362",
+   "facts": false
+  },
+  {
+   "id": "saurashtr-tank",
+   "rank": 229,
+   "en": "Saurashtr Tank",
+   "enAuto": true,
+   "bn": "সৌরাষ্ট্র টঙ্ক",
+   "hi": "सौराष्ट्र टङ्क",
+   "wikidata": "Q12940363",
+   "facts": false
+  },
+  {
+   "id": "hans-manjari",
+   "rank": 230,
+   "en": "Hans Manjari",
+   "enAuto": true,
+   "bn": "হংস মঞ্জরী",
+   "hi": "हंस मञ्जरी",
+   "wikidata": "Q12940364",
+   "facts": false
+  },
+  {
+   "id": "hijaj",
+   "rank": 231,
+   "en": "Hijaj",
+   "enAuto": true,
+   "bn": "হিজাজ",
+   "hi": "हिजाज",
+   "wikidata": "Q12940366",
+   "facts": false
+  },
+  {
+   "id": "hindol-bahar",
+   "rank": 232,
+   "en": "Hindol Bahar",
+   "enAuto": true,
+   "bn": "হিন্দোল বাহার",
+   "hi": "हिन्दोल बाहार",
+   "wikidata": "Q12940368",
+   "facts": false
+  },
+  {
+   "id": "hemakalyan",
+   "rank": 233,
+   "en": "Hemakalyan",
+   "enAuto": true,
+   "bn": "হেমকল্যাণ",
+   "hi": "हेमकल्याण",
+   "wikidata": "Q12940372",
+   "facts": false
+  },
+  {
+   "id": "hoseni-kanada",
+   "rank": 234,
+   "en": "Hoseni Kanada",
+   "enAuto": true,
+   "bn": "হোসেনী কানাড়া",
+   "hi": "होसेनी कानाड़ा",
+   "wikidata": "Q12940374",
+   "facts": false
+  },
+  {
+   "id": "hindoli",
+   "rank": 235,
+   "en": "Hindoli",
+   "enAuto": true,
+   "bn": "হিন্দোলী",
+   "hi": "हिन्दोली",
+   "wikidata": "Q12940375",
+   "facts": false
+  },
+  {
+   "id": "shyam",
+   "rank": 236,
+   "en": "Shyam",
+   "enAuto": true,
+   "bn": "শ্যাম",
+   "hi": "श्याम",
+   "wikidata": "Q12944117",
+   "facts": false
+  },
+  {
+   "id": "alank-gurjari",
+   "rank": 237,
+   "en": "Alank Gurjari",
+   "enAuto": true,
+   "bn": "অলঙ্ক গুর্জরী",
+   "hi": "अलङ्क गुर्जरी",
+   "wikidata": "Q25554792",
+   "facts": false
+  },
+  {
+   "id": "abhabati",
+   "rank": 238,
+   "en": "Abhabati",
+   "enAuto": true,
+   "bn": "আভাবতী",
+   "hi": "आभाबती",
+   "wikidata": "Q25554795",
+   "facts": false
+  },
+  {
+   "id": "imani-bilaval",
+   "rank": 239,
+   "en": "Imani Bilaval",
+   "enAuto": true,
+   "bn": "ইমনি বিলাবল",
+   "hi": "इमनि बिलावल",
+   "wikidata": "Q25554801",
+   "facts": false
+  },
+  {
+   "id": "uttari-gunakeli",
+   "rank": 240,
+   "en": "Uttari Gunakeli",
+   "enAuto": true,
+   "bn": "উত্তরী গুণকেলী",
+   "hi": "उत्तरी गुणकेली",
+   "wikidata": "Q25554809",
+   "facts": false
+  },
+  {
+   "id": "kanakadhani",
+   "rank": 241,
+   "en": "Kanakadhani",
+   "enAuto": true,
+   "bn": "কনকধানী",
+   "hi": "कनकधानी",
+   "wikidata": "Q25554810",
+   "facts": false
+  },
+  {
+   "id": "kamalanjani",
+   "rank": 242,
+   "en": "Kamalanjani",
+   "enAuto": true,
+   "bn": "কমলঞ্জনী",
+   "hi": "कमलञ्जनी",
+   "wikidata": "Q25554811",
+   "facts": false
+  },
+  {
+   "id": "karnat",
+   "rank": 243,
+   "en": "Karnat",
+   "enAuto": true,
+   "bn": "কর্ণাট",
+   "hi": "कर्णाट",
+   "wikidata": "Q25554816",
+   "facts": false
+  },
+  {
+   "id": "kalashri",
+   "rank": 244,
+   "en": "Kalashri",
+   "enAuto": true,
+   "bn": "কলাশ্রী",
+   "hi": "कलाश्री",
+   "wikidata": "Q25554823",
+   "facts": false
+  },
+  {
+   "id": "komal-ashabari",
+   "rank": 245,
+   "en": "Komal Ashabari",
+   "enAuto": true,
+   "bn": "কোমল আশাবরী",
+   "hi": "कोमल आशाबरी",
+   "wikidata": "Q25554826",
+   "facts": false
+  },
+  {
+   "id": "komal-bageshri",
+   "rank": 246,
+   "en": "Komal Bageshri",
+   "enAuto": true,
+   "bn": "কোমল বাগেশ্রী",
+   "hi": "कोमल बागेश्री",
+   "wikidata": "Q25554828",
+   "facts": false
+  },
+  {
+   "id": "kaushik-dhvani",
+   "rank": 247,
+   "en": "Kaushik Dhvani",
+   "enAuto": true,
+   "bn": "কৌশিক ধ্বনি",
+   "hi": "कौशिक ध्वनि",
+   "wikidata": "Q25554830",
+   "facts": false
+  },
+  {
+   "id": "kaushik-ranjani",
+   "rank": 248,
+   "en": "Kaushik Ranjani",
+   "enAuto": true,
+   "bn": "কৌশিক রঞ্জনী",
+   "hi": "कौशिक रञ्जनी",
+   "wikidata": "Q25554837",
+   "facts": false
+  },
+  {
+   "id": "kaushiki-kanada",
+   "rank": 249,
+   "en": "Kaushiki Kanada",
+   "enAuto": true,
+   "bn": "কৌশিকী কানাড়া",
+   "hi": "कौशिकी कानाड़ा",
+   "wikidata": "Q25554839",
+   "facts": false
+  },
+  {
+   "id": "kaushi-bhairav",
+   "rank": 250,
+   "en": "Kaushi Bhairav",
+   "enAuto": true,
+   "bn": "কৌশী ভৈরব",
+   "hi": "कौशी भैरव",
+   "wikidata": "Q25554842",
+   "facts": false
+  },
+  {
+   "id": "kaushi-bhairavi",
+   "rank": 251,
+   "en": "Kaushi Bhairavi",
+   "enAuto": true,
+   "bn": "কৌশী ভৈরবী",
+   "hi": "कौशी भैरवी",
+   "wikidata": "Q25554847",
+   "facts": false
+  },
+  {
+   "id": "kaushi",
+   "rank": 252,
+   "en": "Kaushi",
+   "enAuto": true,
+   "bn": "কৌশী",
+   "hi": "कौशी",
+   "wikidata": "Q25554848",
+   "facts": false
+  },
+  {
+   "id": "gauri-todi",
+   "rank": 253,
+   "en": "Gauri Todi",
+   "enAuto": true,
+   "bn": "গৌরী টোড়ী",
+   "hi": "गौरी टोड़ी",
+   "wikidata": "Q25554853",
+   "facts": false
+  },
+  {
+   "id": "chandrakant",
+   "rank": 254,
+   "en": "Chandrakant",
+   "enAuto": true,
+   "bn": "চন্দ্রকান্ত",
+   "hi": "चन्द्रकान्त",
+   "wikidata": "Q25554865",
+   "facts": false
+  },
+  {
+   "id": "chandrika",
+   "rank": 255,
+   "en": "Chandrika",
+   "enAuto": true,
+   "bn": "চন্দ্রিকা",
+   "hi": "चन्द्रिका",
+   "wikidata": "Q25554866",
+   "facts": false
+  },
+  {
+   "id": "champak",
+   "rank": 256,
+   "en": "Champak",
+   "enAuto": true,
+   "bn": "চম্পক",
+   "hi": "चम्पक",
+   "wikidata": "Q25554868",
+   "facts": false
+  },
+  {
+   "id": "champakali",
+   "rank": 257,
+   "en": "Champakali",
+   "enAuto": true,
+   "bn": "চম্পাকলি",
+   "hi": "चम्पाकलि",
+   "wikidata": "Q25554869",
+   "facts": false
+  },
+  {
+   "id": "charju-ki-mallar",
+   "rank": 258,
+   "en": "Charju Ki Mallar",
+   "enAuto": true,
+   "bn": "চর্জু কি মল্লার",
+   "hi": "चर्जु कि मल्लार",
+   "wikidata": "Q25554881",
+   "facts": false
+  },
+  {
+   "id": "chhayatodi",
+   "rank": 259,
+   "en": "Chhayatodi",
+   "enAuto": true,
+   "bn": "ছায়াটোড়ী",
+   "hi": "छायाटोड़ी",
+   "wikidata": "Q25554882",
+   "facts": false
+  },
+  {
+   "id": "chitragauri",
+   "rank": 260,
+   "en": "Chitragauri",
+   "enAuto": true,
+   "bn": "চিত্রাগৌরী",
+   "hi": "चित्रागौरी",
+   "wikidata": "Q25554884",
+   "facts": false
+  },
+  {
+   "id": "jayajay-bilaval",
+   "rank": 261,
+   "en": "Jayajay Bilaval",
+   "enAuto": true,
+   "bn": "জয়জয় বিলাবল",
+   "hi": "जयजय बिलावल",
+   "wikidata": "Q25554885",
+   "facts": false
+  },
+  {
+   "id": "jayaraj",
+   "rank": 262,
+   "en": "Jayaraj",
+   "enAuto": true,
+   "bn": "জয়রাজ",
+   "hi": "जयराज",
+   "wikidata": "Q25554887",
+   "facts": false
+  },
+  {
+   "id": "jajamallar",
+   "rank": 263,
+   "en": "Jajamallar",
+   "enAuto": true,
+   "bn": "জাজমল্লার",
+   "hi": "जाजमल्लार",
+   "wikidata": "Q25554897",
+   "facts": false
+  },
+  {
+   "id": "jaladhar-kedara",
+   "rank": 264,
+   "en": "Jaladhar Kedara",
+   "enAuto": true,
+   "bn": "জলধর কেদারা",
+   "hi": "जलधर केदारा",
+   "wikidata": "Q25554898",
+   "facts": false
+  },
+  {
+   "id": "jilha",
+   "rank": 265,
+   "en": "Jilha",
+   "enAuto": true,
+   "bn": "জিল্হা",
+   "hi": "जिल्हा",
+   "wikidata": "Q25554904",
+   "facts": false
+  },
+  {
+   "id": "tankakanada",
+   "rank": 266,
+   "en": "Tankakanada",
+   "enAuto": true,
+   "bn": "টঙ্ক-কানাড়া",
+   "hi": "टङ्क-कानाड़ा",
+   "wikidata": "Q25554912",
+   "facts": false
+  },
+  {
+   "id": "tankashri",
+   "rank": 267,
+   "en": "Tankashri",
+   "enAuto": true,
+   "bn": "টঙ্কশ্রী",
+   "hi": "टङ्कश्री",
+   "wikidata": "Q25554913",
+   "facts": false
+  },
+  {
+   "id": "tanki",
+   "rank": 268,
+   "en": "Tanki",
+   "enAuto": true,
+   "bn": "টঙ্কী",
+   "hi": "टङ्की",
+   "wikidata": "Q25554914",
+   "facts": false
+  },
+  {
+   "id": "darabari-todi",
+   "rank": 269,
+   "en": "Darabari Todi",
+   "enAuto": true,
+   "bn": "দরবারী টোড়ী",
+   "hi": "दरबारी टोड़ी",
+   "wikidata": "Q25554917",
+   "facts": false
+  },
+  {
+   "id": "devashakh",
+   "rank": 270,
+   "en": "Devashakh",
+   "enAuto": true,
+   "bn": "দেবশাখ",
+   "hi": "देवशाख",
+   "wikidata": "Q25554925",
+   "facts": false
+  },
+  {
+   "id": "dhuriya-mallar",
+   "rank": 271,
+   "en": "Dhuriya Mallar",
+   "enAuto": true,
+   "bn": "ধুরিয়া মল্লার",
+   "hi": "धुरिया मल्लार",
+   "wikidata": "Q25554930",
+   "facts": false
+  },
+  {
+   "id": "deshitodi",
+   "rank": 272,
+   "en": "Deshitodi",
+   "enAuto": true,
+   "bn": "দেশীটোড়ী",
+   "hi": "देशीटोड़ी",
+   "wikidata": "Q25554931",
+   "facts": false
+  },
+  {
+   "id": "dhanashri",
+   "rank": 273,
+   "en": "Dhanashri",
+   "enAuto": true,
+   "bn": "ধানশ্রী",
+   "hi": "धानश्री",
+   "wikidata": "Q25554937",
+   "facts": false
+  },
+  {
+   "id": "nilambari",
+   "rank": 274,
+   "en": "Nilambari",
+   "enAuto": true,
+   "bn": "নীলাম্বরী",
+   "hi": "नीलाम्बरी",
+   "wikidata": "Q25554939",
+   "facts": false
+  },
+  {
+   "id": "patavihag",
+   "rank": 275,
+   "en": "Patavihag",
+   "enAuto": true,
+   "bn": "পটবিহাগ",
+   "hi": "पटविहाग",
+   "wikidata": "Q25554943",
+   "facts": false
+  },
+  {
+   "id": "patamanjari",
+   "rank": 276,
+   "en": "Patamanjari",
+   "enAuto": true,
+   "bn": "পটমঞ্জরী",
+   "hi": "पटमञ्जरी",
+   "wikidata": "Q25554945",
+   "facts": false
+  },
+  {
+   "id": "pradipaki",
+   "rank": 277,
+   "en": "Pradipaki",
+   "enAuto": true,
+   "bn": "প্রদীপকী",
+   "hi": "प्रदीपकी",
+   "wikidata": "Q25554950",
+   "facts": false
+  },
+  {
+   "id": "purvi-saran",
+   "rank": 278,
+   "en": "Purvi Saran",
+   "enAuto": true,
+   "bn": "পূর্বী সারং",
+   "hi": "पूर्वी सारं",
+   "wikidata": "Q25554953",
+   "facts": false
+  },
+  {
+   "id": "bangal-bilaval",
+   "rank": 279,
+   "en": "Bangal Bilaval",
+   "enAuto": true,
+   "bn": "বঙ্গাল বিলাবল",
+   "hi": "बङ्गाल बिलावल",
+   "wikidata": "Q25554959",
+   "facts": false
+  },
+  {
+   "id": "bangali",
+   "rank": 280,
+   "en": "Bangali",
+   "enAuto": true,
+   "bn": "বঙ্গালী",
+   "hi": "बङ्गाली",
+   "wikidata": "Q25554963",
+   "facts": false
+  },
+  {
+   "id": "badahans-saran",
+   "rank": 281,
+   "en": "Badahans Saran",
+   "enAuto": true,
+   "bn": "বড়হংস সারং",
+   "hi": "बड़हंस सारं",
+   "wikidata": "Q25554964",
+   "facts": false
+  },
+  {
+   "id": "prabhat",
+   "rank": 282,
+   "en": "Prabhat",
+   "enAuto": true,
+   "bn": "প্রভাত",
+   "hi": "प्रभात",
+   "wikidata": "Q25554967",
+   "facts": false
+  },
+  {
+   "id": "bahaduri-todi",
+   "rank": 283,
+   "en": "Bahaduri Todi",
+   "enAuto": true,
+   "bn": "বাহাদুরী টোড়ী",
+   "hi": "बाहादुरी टोड़ी",
+   "wikidata": "Q25554974",
+   "facts": false
+  },
+  {
+   "id": "barati",
+   "rank": 284,
+   "en": "Barati",
+   "enAuto": true,
+   "bn": "বরাটী",
+   "hi": "बराटी",
+   "wikidata": "Q25554978",
+   "facts": false
+  },
+  {
+   "id": "bichitra",
+   "rank": 285,
+   "en": "Bichitra",
+   "enAuto": true,
+   "bn": "বিচিত্রা",
+   "hi": "बिचित्रा",
+   "wikidata": "Q25554979",
+   "facts": false
+  },
+  {
+   "id": "vasant-bahar",
+   "rank": 286,
+   "en": "Vasant Bahar",
+   "enAuto": true,
+   "bn": "বসন্ত বাহার",
+   "hi": "वसन्त बाहार",
+   "wikidata": "Q25554993",
+   "facts": false
+  },
+  {
+   "id": "bijay",
+   "rank": 287,
+   "en": "Bijay",
+   "enAuto": true,
+   "bn": "বিজয়",
+   "hi": "बिजय",
+   "wikidata": "Q25554996",
+   "facts": false
+  },
+  {
+   "id": "barari",
+   "rank": 288,
+   "en": "Barari",
+   "enAuto": true,
+   "bn": "বরারী",
+   "hi": "बरारी",
+   "wikidata": "Q25554997",
+   "facts": false
+  },
+  {
+   "id": "bihari",
+   "rank": 289,
+   "en": "Bihari",
+   "enAuto": true,
+   "bn": "বিহারী",
+   "hi": "बिहारी",
+   "wikidata": "Q25555005",
+   "facts": false
+  },
+  {
+   "id": "behag-nat",
+   "rank": 290,
+   "en": "Behag Nat",
+   "enAuto": true,
+   "bn": "বেহাগ নট",
+   "hi": "बेहाग नट",
+   "wikidata": "Q25555010",
+   "facts": false
+  },
+  {
+   "id": "bairagi-bhairavi",
+   "rank": 291,
+   "en": "Bairagi Bhairavi",
+   "enAuto": true,
+   "bn": "বৈরাগী ভৈরবী",
+   "hi": "बैरागी भैरवी",
+   "wikidata": "Q25555012",
+   "facts": false
+  },
+  {
+   "id": "bijay-kosh",
+   "rank": 292,
+   "en": "Bijay Kosh",
+   "enAuto": true,
+   "bn": "বিজয় কোষ",
+   "hi": "बिजय कोष",
+   "wikidata": "Q25555021",
+   "facts": false
+  },
+  {
+   "id": "bhabani",
+   "rank": 293,
+   "en": "Bhabani",
+   "enAuto": true,
+   "bn": "ভবানী",
+   "hi": "भबानी",
+   "wikidata": "Q25555023",
+   "facts": false
+  },
+  {
+   "id": "bhaupal",
+   "rank": 294,
+   "en": "Bhaupal",
+   "enAuto": true,
+   "bn": "ভৌপাল",
+   "hi": "भौपाल",
+   "wikidata": "Q25555026",
+   "facts": false
+  },
+  {
+   "id": "mukhari",
+   "rank": 295,
+   "en": "Mukhari",
+   "enAuto": true,
+   "bn": "মুখারী",
+   "hi": "मुखारी",
+   "wikidata": "Q25555031",
+   "facts": false
+  },
+  {
+   "id": "mangal",
+   "rank": 296,
+   "en": "Mangal",
+   "enAuto": true,
+   "bn": "মঙ্গল",
+   "hi": "मङ्गल",
+   "wikidata": "Q25555035",
+   "facts": false
+  },
+  {
+   "id": "mangal-kanada",
+   "rank": 297,
+   "en": "Mangal Kanada",
+   "enAuto": true,
+   "bn": "মঙ্গল কানাড়া",
+   "hi": "मङ्गल कानाड़ा",
+   "wikidata": "Q25555042",
+   "facts": false
+  },
+  {
+   "id": "mudraki-todi",
+   "rank": 298,
+   "en": "Mudraki Todi",
+   "enAuto": true,
+   "bn": "মুদ্রাকী টোড়ী",
+   "hi": "मुद्राकी टोड़ी",
+   "wikidata": "Q25555045",
+   "facts": false
+  },
+  {
+   "id": "manjari",
+   "rank": 299,
+   "en": "Manjari",
+   "enAuto": true,
+   "bn": "মঞ্জরী",
+   "hi": "मञ्जरी",
+   "wikidata": "Q25555046",
+   "facts": false
+  },
+  {
+   "id": "madhukosh",
+   "rank": 300,
+   "en": "Madhukosh",
+   "enAuto": true,
+   "bn": "মধুকোষ",
+   "hi": "मधुकोष",
+   "wikidata": "Q25555047",
+   "facts": false
+  },
+  {
+   "id": "madamat-saran",
+   "rank": 301,
+   "en": "Madamat Saran",
+   "enAuto": true,
+   "bn": "মদমাত সারং",
+   "hi": "मदमात सारं",
+   "wikidata": "Q25555048",
+   "facts": false
+  },
+  {
+   "id": "majh",
+   "rank": 302,
+   "en": "Majh",
+   "enAuto": true,
+   "bn": "মাঝ",
+   "hi": "माझ",
+   "wikidata": "Q25555059",
+   "facts": false
+  },
+  {
+   "id": "maluha",
+   "rank": 303,
+   "en": "Maluha",
+   "enAuto": true,
+   "bn": "মলুহা",
+   "hi": "मलुहा",
+   "wikidata": "Q25555061",
+   "facts": false
+  },
+  {
+   "id": "margahindol",
+   "rank": 304,
+   "en": "Margahindol",
+   "enAuto": true,
+   "bn": "মার্গহিন্দোল",
+   "hi": "मार्गहिन्दोल",
+   "wikidata": "Q25555065",
+   "facts": false
+  },
+  {
+   "id": "maluha-kedar",
+   "rank": 305,
+   "en": "Maluha Kedar",
+   "enAuto": true,
+   "bn": "মালুহা কেদার",
+   "hi": "मालुहा केदार",
+   "wikidata": "Q25555069",
+   "facts": false
+  },
+  {
+   "id": "malarani",
+   "rank": 306,
+   "en": "Malarani",
+   "enAuto": true,
+   "bn": "মালারাণী",
+   "hi": "मालाराणी",
+   "wikidata": "Q25555070",
+   "facts": false
+  },
+  {
+   "id": "miyaki-kanada",
+   "rank": 307,
+   "en": "Miyaki Kanada",
+   "enAuto": true,
+   "bn": "মিয়াকী কানাড়া",
+   "hi": "मियाकी कानाड़ा",
+   "wikidata": "Q25555080",
+   "facts": false
+  },
+  {
+   "id": "mirabai-ki-mallar",
+   "rank": 308,
+   "en": "Mirabai Ki Mallar",
+   "enAuto": true,
+   "bn": "মীরাবাঈ কি মল্লার",
+   "hi": "मीराबाई कि मल्लार",
+   "wikidata": "Q25555084",
+   "facts": false
+  },
+  {
+   "id": "miyanki-saran",
+   "rank": 309,
+   "en": "Miyanki Saran",
+   "enAuto": true,
+   "bn": "মিয়াঁকি সারং",
+   "hi": "मियाँकी सारं",
+   "wikidata": "Q25555087",
+   "facts": false
+  },
+  {
+   "id": "yogabarn",
+   "rank": 310,
+   "en": "Yogabarn",
+   "enAuto": true,
+   "bn": "যোগবর্ণ",
+   "hi": "योगबर्ण",
+   "wikidata": "Q25555094",
+   "facts": false
+  },
+  {
+   "id": "megharanjani",
+   "rank": 311,
+   "en": "Megharanjani",
+   "enAuto": true,
+   "bn": "মেঘরঞ্জনী",
+   "hi": "मेघरञ्जनी",
+   "wikidata": "Q25555100",
+   "facts": false
+  },
+  {
+   "id": "raktahans-saran",
+   "rank": 312,
+   "en": "Raktahans Saran",
+   "enAuto": true,
+   "bn": "রক্তহংস সারং",
+   "hi": "रक्तहंस सारं",
+   "wikidata": "Q25555101",
+   "facts": false
+  },
+  {
+   "id": "raj-bijay",
+   "rank": 313,
+   "en": "Raj Bijay",
+   "enAuto": true,
+   "bn": "রাজ বিজয়",
+   "hi": "राज बिजय",
+   "wikidata": "Q25555102",
+   "facts": false
+  },
+  {
+   "id": "ratnadbip",
+   "rank": 314,
+   "en": "Ratnadbip",
+   "enAuto": true,
+   "bn": "রত্নদ্বীপ",
+   "hi": "रत्नद्बीप",
+   "wikidata": "Q25555108",
+   "facts": false
+  },
+  {
+   "id": "lakshmi-kalyan",
+   "rank": 315,
+   "en": "Lakshmi Kalyan",
+   "enAuto": true,
+   "bn": "লক্ষ্মী কল্যাণ",
+   "hi": "लक्ष्मी कल्याण",
+   "wikidata": "Q25555116",
+   "facts": false
+  },
+  {
+   "id": "ramadasi-mallar",
+   "rank": 316,
+   "en": "Ramadasi Mallar",
+   "enAuto": true,
+   "bn": "রামদাসী মল্লার",
+   "hi": "रामदासी मल्लार",
+   "wikidata": "Q25555117",
+   "facts": false
+  },
+  {
+   "id": "rajakalyan",
+   "rank": 317,
+   "en": "Rajakalyan",
+   "enAuto": true,
+   "bn": "রাজকল্যাণ",
+   "hi": "राजकल्याण",
+   "wikidata": "Q25555118",
+   "facts": false
+  },
+  {
+   "id": "rebati-kanada",
+   "rank": 318,
+   "en": "Rebati Kanada",
+   "enAuto": true,
+   "bn": "রেবতী কানাড়া",
+   "hi": "रेबती कानाड़ा",
+   "wikidata": "Q25555119",
+   "facts": false
+  },
+  {
+   "id": "reba",
+   "rank": 319,
+   "en": "Reba",
+   "enAuto": true,
+   "bn": "রেবা",
+   "hi": "रेबा",
+   "wikidata": "Q25555120",
+   "facts": false
+  },
+  {
+   "id": "lakshmitodi",
+   "rank": 320,
+   "en": "Lakshmitodi",
+   "enAuto": true,
+   "bn": "লক্ষ্মীটোড়ী",
+   "hi": "लक्ष्मीटोड़ी",
+   "wikidata": "Q25555131",
+   "facts": false
+  },
+  {
+   "id": "lalit-mangal",
+   "rank": 321,
+   "en": "Lalit Mangal",
+   "enAuto": true,
+   "bn": "ললিত মঙ্গল",
+   "hi": "ललित मङ्गल",
+   "wikidata": "Q25555133",
+   "facts": false
+  },
+  {
+   "id": "lankadahan-saran",
+   "rank": 322,
+   "en": "Lankadahan Saran",
+   "enAuto": true,
+   "bn": "লঙ্কাদাহন সারং",
+   "hi": "लङ्कादाहन सारं",
+   "wikidata": "Q25555134",
+   "facts": false
+  },
+  {
+   "id": "lachchhasar",
+   "rank": 323,
+   "en": "Lachchhasar",
+   "enAuto": true,
+   "bn": "লচ্ছাসার",
+   "hi": "लच्छासार",
+   "wikidata": "Q25555139",
+   "facts": false
+  },
+  {
+   "id": "lajabanti",
+   "rank": 324,
+   "en": "Lajabanti",
+   "enAuto": true,
+   "bn": "লাজবন্তী",
+   "hi": "लाजबन्ती",
+   "wikidata": "Q25555144",
+   "facts": false
+  },
+  {
+   "id": "shyam-kanada",
+   "rank": 325,
+   "en": "Shyam Kanada",
+   "enAuto": true,
+   "bn": "শ্যাম কানাড়া",
+   "hi": "श्याम कानाड़ा",
+   "wikidata": "Q25555147",
+   "facts": false
+  },
+  {
+   "id": "shyamakedar",
+   "rank": 326,
+   "en": "Shyamakedar",
+   "enAuto": true,
+   "bn": "শ্যামকেদার",
+   "hi": "श्यामकेदार",
+   "wikidata": "Q25555157",
+   "facts": false
+  },
+  {
+   "id": "shankarabharan",
+   "rank": 327,
+   "en": "Shankarabharan",
+   "enAuto": true,
+   "bn": "শঙ্করাভরণ",
+   "hi": "शङ्कराभरण",
+   "wikidata": "Q25555159",
+   "facts": false
+  },
+  {
+   "id": "lum",
+   "rank": 328,
+   "en": "Lum",
+   "enAuto": true,
+   "bn": "লুম",
+   "hi": "लुम",
+   "wikidata": "Q25555162",
+   "facts": false
+  },
+  {
+   "id": "shrikalyan",
+   "rank": 329,
+   "en": "Shrikalyan",
+   "enAuto": true,
+   "bn": "শ্রীকল্যাণ",
+   "hi": "श्रीकल्याण",
+   "wikidata": "Q25555171",
+   "facts": false
+  },
+  {
+   "id": "shribanti",
+   "rank": 330,
+   "en": "Shribanti",
+   "enAuto": true,
+   "bn": "শ্রীবন্তী",
+   "hi": "श्रीबन्ती",
+   "wikidata": "Q25555172",
+   "facts": false
+  },
+  {
+   "id": "shritank",
+   "rank": 331,
+   "en": "Shritank",
+   "enAuto": true,
+   "bn": "শ্রীটঙ্ক",
+   "hi": "श्रीटङ्क",
+   "wikidata": "Q25555176",
+   "facts": false
+  },
+  {
+   "id": "shriranjani",
+   "rank": 332,
+   "en": "Shriranjani",
+   "enAuto": true,
+   "bn": "শ্রীরঞ্জনী",
+   "hi": "श्रीरञ्जनी",
+   "wikidata": "Q25555178",
+   "facts": false
+  },
+  {
+   "id": "shobhabari",
+   "rank": 333,
+   "en": "Shobhabari",
+   "enAuto": true,
+   "bn": "শোভাবরী",
+   "hi": "शोभाबरी",
+   "wikidata": "Q25555185",
+   "facts": false
+  },
+  {
+   "id": "suramallar",
+   "rank": 334,
+   "en": "Suramallar",
+   "enAuto": true,
+   "bn": "সুরমল্লার",
+   "hi": "सुरमल्लार",
+   "wikidata": "Q25555187",
+   "facts": false
+  },
+  {
+   "id": "suha-kanada",
+   "rank": 335,
+   "en": "Suha Kanada",
+   "enAuto": true,
+   "bn": "সুহা কানাড়া",
+   "hi": "सुहा कानाड़ा",
+   "wikidata": "Q25555194",
+   "facts": false
+  },
+  {
+   "id": "suha",
+   "rank": 336,
+   "en": "Suha",
+   "enAuto": true,
+   "bn": "সুহা",
+   "hi": "सुहा",
+   "wikidata": "Q25555197",
+   "facts": false
+  },
+  {
+   "id": "suhatodi",
+   "rank": 337,
+   "en": "Suhatodi",
+   "enAuto": true,
+   "bn": "সুহাটোড়ী",
+   "hi": "सुहाटोड़ी",
+   "wikidata": "Q25555199",
+   "facts": false
+  },
+  {
+   "id": "sahini",
+   "rank": 338,
+   "en": "Sahini",
+   "enAuto": true,
+   "bn": "সাহিনী",
+   "hi": "साहिनी",
+   "wikidata": "Q25555201",
+   "facts": false
+  },
+  {
+   "id": "saberi",
+   "rank": 339,
+   "en": "Saberi",
+   "enAuto": true,
+   "bn": "সাবেরী",
+   "hi": "साबेरी",
+   "wikidata": "Q25555202",
+   "facts": false
+  },
+  {
+   "id": "saurashtr",
+   "rank": 340,
+   "en": "Saurashtr",
+   "enAuto": true,
+   "bn": "সৌরাষ্ট্র",
+   "hi": "सौराष्ट्र",
+   "wikidata": "Q25555205",
+   "facts": false
+  },
+  {
+   "id": "hans-kankali",
+   "rank": 341,
+   "en": "Hans Kankali",
+   "enAuto": true,
+   "bn": "হংস কঙ্কলি",
+   "hi": "हंस कङ्कलि",
+   "wikidata": "Q25555212",
+   "facts": false
+  },
+  {
+   "id": "hansashri",
+   "rank": 342,
+   "en": "Hansashri",
+   "enAuto": true,
+   "bn": "হংসশ্রী",
+   "hi": "हंसश्री",
+   "wikidata": "Q25555216",
+   "facts": false
+  },
+  {
+   "id": "hans-narayan",
+   "rank": 343,
+   "en": "Hans Narayan",
+   "enAuto": true,
+   "bn": "হংস নারায়ণ",
+   "hi": "हंस नारायण",
+   "wikidata": "Q25555218",
+   "facts": false
+  },
+  {
+   "id": "hemant",
+   "rank": 344,
+   "en": "Hemant",
+   "enAuto": true,
+   "bn": "হেমন্ত",
+   "hi": "हेमन्त",
+   "wikidata": "Q25555220",
+   "facts": false
+  },
+  {
+   "id": "him",
+   "rank": 345,
+   "en": "Him",
+   "enAuto": true,
+   "bn": "হিম",
+   "hi": "हिम",
+   "wikidata": "Q25555222",
+   "facts": false
+  },
+  {
+   "id": "araj",
+   "rank": 346,
+   "en": "Araj",
+   "enAuto": null,
+   "bn": "অরজ",
+   "hi": "अरज",
+   "wikidata": "Q12940197",
+   "facts": false
+  },
+  {
+   "id": "sarpada",
+   "rank": 347,
+   "en": "Sarpada",
+   "enAuto": null,
+   "bn": null,
+   "hi": null,
+   "wikidata": "Q7424508",
+   "facts": false
+  },
+  {
+   "id": "chhayanut",
+   "rank": 348,
+   "en": "Chhayanut",
+   "enAuto": null,
+   "bn": null,
+   "hi": "छयानट",
+   "wikidata": "Q55163155",
+   "facts": false
+  }
+ ]
+}

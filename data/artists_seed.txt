@@ -1,0 +1,78 @@
+# Major vocalists, best-known first (English Wikipedia titles; redirects are followed).
+# These are always kept and ranked first; others come from Wikipedia categories, ranked by Wikidata sitelinks.
+# khayal
+Bhimsen Joshi
+Kishori Amonkar
+Kumar Gandharva
+Jasraj
+Mallikarjun Mansur
+Amir Khan (singer)
+Bade Ghulam Ali Khan
+Gangubai Hangal
+Kesarbai Kerkar
+Rashid Khan (musician)
+Ajoy Chakrabarty
+Kaushiki Chakraborty
+Ulhas Kashalkar
+Veena Sahasrabuddhe
+Shruti Sadolikar
+Parveen Sultana
+Abdul Karim Khan
+Faiyaz Khan
+Alladiya Khan
+Omkarnath Thakur
+D. V. Paluskar
+Vasantrao Deshpande
+Prabha Atre
+Jitendra Abhisheki
+Rajan and Sajan Mishra
+Salamat Ali Khan
+Amanat Ali Khan
+Roshan Ara Begum
+Hirabai Barodekar
+Mogubai Kurdikar
+Malini Rajurkar
+Ashwini Bhide-Deshpande
+Mukul Shivputra
+Venkatesh Kumar
+Sanjeev Abhyankar
+Padma Talwalkar
+Nisar Hussain Khan
+Mushtaq Hussain Khan
+Ghulam Mustafa Khan
+Krishnarao Shankar Pandit
+Manas Chakraborty
+Tarapada Chakraborty
+A. Kanan
+Malabika Kanan
+Ramashreya Jha
+Kalapini Komkali
+Bhuvanesh Komkali
+Shubha Mudgal
+Ajay Pohankar
+Rahul Deshpande
+Kaivalya Kumar Gurav
+Arati Ankalikar-Tikekar
+Devaki Pandit
+Sawai Gandharva
+Bhaskarbuwa Bakhale
+Gajananrao Joshi
+# dhrupad
+Nasir Aminuddin Dagar
+Zia Fariduddin Dagar
+Nasir Zahiruddin Dagar
+Rahim Fahimuddin Dagar
+Wasifuddin Dagar
+Gundecha Brothers
+Uday Bhawalkar
+Ram Chatur Mallick
+Siyaram Tiwari
+# thumri, dadra, tappa
+Girija Devi
+Shobha Gurtu
+Siddheshwari Devi
+Begum Akhtar
+Rasoolan Bai
+Chhannulal Mishra
+Naina Devi (singer)
+Manik Varma

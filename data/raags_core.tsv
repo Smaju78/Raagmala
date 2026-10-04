@@ -1,0 +1,88 @@
+# Core raags, best-known first. Hand-curated facts (Bhatkhande system), cross-checked by scripts/build_catalogue.py
+# against English Wikipedia infoboxes; disagreements are reported, never silently overwritten.
+# Notation: S r R g G m M P d D n N  (lower case = komal; m = shuddh Ma, M = tivra Ma); 'S = upper octave, .N = lower.
+# prahar: 1=6-9h 2=9-12h 3=12-15h 4=15-18h 5=18-21h 6=21-24h 7=0-3h 8=3-6h; blank = any time / light raag.
+# season: varsha (monsoon) | basant (spring). Blank fields = not sure; fill only when certain.
+# id|en|bn|aliases|thaat|prahar|season|vadi|samvadi|aroha|avaroha|related|wiki
+yaman|Yaman|ইমন|Yeman;Iman;Eman;Aiman;Kalyan|kalyan|5||G|N|S R G M P D N 'S|'S N D P M G R S|yaman-kalyan;shuddh-kalyan;bhupali|Yaman (raga)
+bhairavi|Bhairavi|ভৈরবী|Bhairvi;Bhairavee;Bhairavi|bhairavi|1||m|S|S r g m P d n 'S|'S n d P m g r S|sindhu-bhairavi;bilaskhani-todi;malkauns|Bhairavi (Hindustani)
+bhairav|Bhairav|ভৈরব|Bhairo;Bhairava|bhairav|1||d|r|S r G m P d N 'S|'S N d P m G r S|ahir-bhairav;nat-bhairav;kalingda;ramkali|Bhairav (raga)
+malkauns|Malkauns|মালকোষ|Malkosh;Malkaush;Malkos;Malkons;Malkauns;Malkaus|bhairavi|7||m|S|S g m d n 'S|'S n d m g S|chandrakauns;bhupali|Malkauns
+darbari|Darbari Kanada|দরবারী কানাড়া|Darbari;Durbari;Darbari Kanhra;Darbari Kanhada;Darbari Kanara|asavari|7||R|P|S R g m P d n 'S|'S d n P m P g m R S|adana;abhogi;bageshri|Darbari Kanada
+bhimpalasi|Bhimpalasi|ভীমপলশ্রী|Bhimpalas;Bheempalasi;Bhimpalashri;Bhimpalasri|kafi|3,4||m|S|.n S g m P n 'S|'S n D P m g R S|patdeep;bageshri|Bhimpalasi
+bageshri|Bageshri|বাগেশ্রী|Bageshree;Bageshwari;Bagesri;Bageshari|kafi|6,7||m|S|S g m D n 'S|'S n D m P D g m g R S|bhimpalasi;rageshri;abhogi|Bageshri
+todi|Todi|টোড়ি|Miyan ki Todi;Miya ki Todi;Mian ki Todi;Todi;Tori;Shuddh Todi|todi|2||d|g|S r g M P d N 'S|'S N d P M g r S|gurjari-todi;multani;bilaskhani-todi;bhupal-todi|Todi (raga)
+yaman-kalyan|Yaman Kalyan|ইমন কল্যাণ|Iman Kalyan;Eman Kalyan|kalyan|5||G|N|S R G M P D N 'S|'S N D P M G m G R S|yaman;shuddh-kalyan|Yaman Kalyan
+bhupali|Bhupali|ভূপালী|Bhoopali;Bhoop;Bhup;Bhupali;Bhoopali Kalyan|kalyan|5||G|D|S R G P D 'S|'S D P G R S|deshkar;shuddh-kalyan;yaman|Bhoopali
+puriya-dhanashri|Puriya Dhanashri|পূরিয়া ধানেশ্রী|Puriya Dhanashree;Puria Dhanashri;Puriya Dhanashri;Purya Dhanashri|purvi|4||P|r|.N r G M P d N 'S|'S N d P M G r S|purvi;shree;marwa|Puriya Dhanashree
+marwa|Marwa|মারোয়া|Marva;Marwa;Maarwa|marwa|4||r|D|.N r G M D N r' 'S|'S N D M G r S|puriya;sohni;puriya-kalyan|Marva (raga)
+puriya|Puriya|পূরিয়া|Puria;Purya|marwa|5||G|N|.N r G M D N r' 'S|'S N D M G r S|marwa;sohni;puriya-kalyan|Puriya
+lalit|Lalit|ললিত|Lalat|marwa|8||m|S|.N r G m M d N 'S|'S r N d M m G r S|bhatiyar;sohni|Lalit (raga)
+multani|Multani|মুলতানী|Multani|todi|4||P|S|.N S g M P N 'S|'S N d P M g r S|todi;madhuvanti|Multani (raga)
+bihag|Bihag|বেহাগ|Behag;Bihag;Biag|bilawal|6||G|N|.N S G m P N 'S|'S N D P M P G m G R S|maru-bihag|Bihag
+kedar|Kedar|কেদার|Kedara;Kedaar|kalyan|6||m|S|S m P M P D P N D 'S|'S N D P M P D P m G m R S|kamod;hameer;chhayanat|Kedar (raga)
+hameer|Hameer|হাম্বীর|Hamir;Hambir;Hamir Kalyan|kalyan|6||D|G|S R S G m D N D 'S|'S N D P M P D P G m R S|kedar;kamod;chhayanat|Hameer
+desh|Desh|দেশ|Des;Desh;Desha|khamaj|6,7|varsha|R|P|S R m P N 'S|'S n D P m G R G .N S|tilak-kamod;jaijaiwanti;miyan-malhar|Desh (raga)
+miyan-malhar|Miyan ki Malhar|মিয়াঁ কি মল্লার|Miyan Malhar;Miya ki Malhar;Miya Malhar;Mian ki Malhar;Miyan Ki Malhar;Mia Malhar;Mian Malhar|kafi|6|varsha|m|S|S R P g m R S m R P n D N 'S|'S n P m P g m R S|megh;gaud-malhar;bahar|
+megh|Megh|মেঘ|Megh Malhar;Megh Malhaar;Megha|kafi||varsha|||S R m P n 'S|'S n P m R S|miyan-malhar;gaud-malhar|Megh (raga)
+gaud-malhar|Gaud Malhar|গৌড় মল্লার|Gaud Malhar;Gour Malhar;Gaur Malhar|khamaj||varsha|||S R G m P D N 'S|'S n D P m G R S|miyan-malhar;megh|Gaud Malhar
+jaijaiwanti|Jaijaiwanti|জয়জয়ন্তী|Jaijaivanti;Jaijaiwanti;Jai Jaiwanti;Jaijawanti;Jaijavanti|khamaj|6,7||R|P|S R G m P N 'S|'S n D P m G R g R S|desh;khamaj|Jaijaivanti
+khamaj|Khamaj|খাম্বাজ|Khamaj;Khambaj;Khamach|khamaj|6||G|N|S G m P D N 'S|'S n D P m G R S|jhinjhoti;tilang;desh|Khamaj
+kafi|Kafi|কাফি|Kafi;Kaafi|kafi|6||P|S|S R g m P D n 'S|'S n D P m g R S|bageshri;bhimpalasi;pilu|Kafi (raga)
+asavari|Asavari|আশাবরী|Asavari;Aasavari;Asawari;Shuddh Rishabh Asavari|asavari|2||d|g|S R m P d 'S|'S n d P m g R S|jaunpuri;komal-rishabh-asavari;darbari|Asavari
+jaunpuri|Jaunpuri|জৌনপুরী|Jaunpuri;Jonpuri;Jounpuri;Jaunpuri Todi|asavari|2||d|g|S R m P d n 'S|'S n d P m g R S|asavari;darbari|Jaunpuri (raga)
+shree|Shree|শ্রী|Shri;Sree;Shree|purvi|4||r|P|S r M P N 'S|'S N d P M G r S|puriya-dhanashri;marwa|Shree (Hindustani raga)
+basant|Basant|বসন্ত|Vasant;Basant;Basanta|purvi|8|basant|S|P|S G M d r' 'S|'S N d P M G M G r S|paraj;bahar;hindol|Basant (raga)
+bahar|Bahar|বাহার|Bahar;Bahaar|kafi|7|basant|m|S|S m P g m n D N 'S|'S n P m P g m R S|basant;miyan-malhar;bageshri|Bahar (raga)
+shuddh-kalyan|Shuddh Kalyan|শুদ্ধ কল্যাণ|Shuddha Kalyan;Shudh Kalyan;Bhoop Kalyan|kalyan|5||G|D|S R G P D 'S|'S N D P M G R S|yaman;bhupali|
+puriya-kalyan|Puriya Kalyan|পূরিয়া কল্যাণ|Puria Kalyan;Purya Kalyan|marwa|5||G|N|.N r G M P D N 'S|'S N D P M G r S|puriya;yaman;marwa|
+gaud-sarang|Gaud Sarang|গৌড় সারং|Gaud Sarang;Gour Sarang;Gaur Sarang|kalyan|3||G|D|S G R m G P M D P 'S|'S D N P D M P G m R S|shuddh-sarang;brindavani-sarang|Gaud Sarang
+brindavani-sarang|Brindavani Sarang|বৃন্দাবনী সারং|Brindabani Sarang;Vrindavani Sarang;Sarang;Brindavani Sarang|kafi|3||R|P|.N S R m P N 'S|'S n P m R S|madhmad-sarang;shuddh-sarang;megh|Brindavani Sarang
+shuddh-sarang|Shuddh Sarang|শুদ্ধ সারং|Shuddha Sarang;Shudh Sarang|kalyan|3||R|P|.N S R M P N 'S|'S N D P M P m R S|brindavani-sarang;gaud-sarang|
+madhmad-sarang|Madhmad Sarang|মধ্যমাদ সারং|Madhyamad Sarang;Madhmad Sarang|kafi|3||R|P|S R m P n 'S|'S n P m R S|brindavani-sarang|
+ahir-bhairav|Ahir Bhairav|আহির ভৈরব|Ahir Bhairav;Aheer Bhairav;Ahir Bhairo|bhairav|1||m|S|S r G m P D n 'S|'S n D P m G r S|bhairav;nat-bhairav|Ahir Bhairav
+nat-bhairav|Nat Bhairav|নট ভৈরব|Nat Bhairav|bhairav|1||||S R G m P d N 'S|'S N d P m G R S|bhairav;ahir-bhairav|Nat Bhairav
+ramkali|Ramkali|রামকেলি|Ramkali;Ramkeli;Raamkali|bhairav|1||||S G m P d N 'S|'S N d P M P d n d P G m r S|bhairav;kalingda|Ramkali
+jogiya|Jogiya|যোগিয়া|Jogia;Jogiya|bhairav|1||m|S|S r m P d 'S|'S N d P m G r S|bhairav;gunakri|Jogiya (raga)
+kalingda|Kalingda|কালেংড়া|Kalingada;Kalingra;Kalangda|bhairav|8||||S r G m P d N 'S|'S N d P m G r S|bhairav|
+gunakri|Gunakri|গুণকেলি|Gunkali;Gunkri;Gunakali;Gunakri|bhairav|1||d|r|S r m P d 'S|'S d P m r S|jogiya;bhairav|Gunakri
+bibhas|Bibhas|বিভাস|Vibhas;Bibhas;Bibhash|bhairav|1||d|G|S r G P d P 'S|'S d P G P d P G r S|bhairav|Bibhas
+bairagi|Bairagi|বৈরাগী|Bairagi Bhairav;Bairagi;Vairagi|bhairav|1||||S r m P n 'S|'S n P m r S|bhairav|Bairagi (raga)
+sohni|Sohni|সোহিনী|Sohini;Sohni;Sohani|marwa|8||D|G|S G M D N 'S|'S r' 'S N D M G r S|marwa;puriya;lalit|Sohni
+bhatiyar|Bhatiyar|ভাটিয়ার|Bhatiyaar;Bhatiar;Bhatiyar|marwa|8||m|S|S D P M P G m D 'S|'S r' N D P M G r S|lalit|Bhatiyar
+purvi|Purvi|পূরবী|Poorvi;Purvi;Puravi;Purbi|purvi|4||G|N|.N r G M P d N 'S|'S N d P M G m G r S|puriya-dhanashri;shree|Purvi
+paraj|Paraj|পরজ|Paraj;Paraz|purvi|8||||.N S G M d N 'S|'S N d P M G M G r S|basant|
+gurjari-todi|Gurjari Todi|গুর্জরী টোড়ি|Gujari Todi;Gujri Todi;Gurjari Todi|todi|2||d|r|S r g M d N 'S|'S N d M g r S|todi|Gurjari (raga)
+bilaskhani-todi|Bilaskhani Todi|বিলাসখানি টোড়ি|Bilaskhani Todi;Bilaskhani|bhairavi|1,2||d|g|S r g P d 'S|'S r' n d P m g r S|bhairavi;todi|Bilaskhani Todi
+bhupal-todi|Bhupal Todi|ভূপাল টোড়ি|Bhoopal Todi;Bhupal Todi|bhairavi|1,2||d|g|S r g P d 'S|'S d P g r S|todi;bilaskhani-todi|Bhupal Todi
+komal-rishabh-asavari|Komal Rishabh Asavari|কোমল ঋষভ আশাবরী|Komal Re Asavari;Komal Rishabh Asavari;Asavari Todi|bhairavi|2||d|g|S r m P d 'S|'S n d P m g r S|asavari;jaunpuri|Komal Rishabh Asavari
+madhuvanti|Madhuvanti|মধুবন্তী|Madhuvanti;Madhuwanti|todi|4||P|S|.N S g M P N 'S|'S N D P M g R S|multani|Madhuvanti
+patdeep|Patdeep|পটদীপ|Patdip;Pattdeep;Patdeep|kafi|4||P|S|.N S g m P N 'S|'S N D P m g R S|bhimpalasi|Patdeep
+pilu|Pilu|পিলু|Peelu;Piloo;Pilu|kafi|3||g|N|.N S g m P N 'S|'S n D P m g R S .N S|kafi;khamaj|Pilu (raga)
+abhogi|Abhogi|আভোগী|Abhogi Kanada;Aabhogi|kafi|6||m|S|S R g m D 'S|'S D m g R S|bageshri;darbari|Abhogi
+adana|Adana|আড়ানা|Adana;Adana Kanada;Arana|asavari|7||S|P|S R m P d n 'S|'S d n P m P g m R S|darbari|Adana (raga)
+chhayanat|Chhayanat|ছায়ানট|Chhaya Nat;Chayanat;Chhayanat|kalyan|5,6||P|R|S R G m P N D 'S|'S N D P M P D P G m R S|kedar;kamod;hameer|Chhayanat (raga)
+kamod|Kamod|কামোদ|Kamod;Kaamod|kalyan|6||P|R|S R P m P G m P D P 'S|'S N D P M P D P G m R S|kedar;hameer;chhayanat|
+shyam-kalyan|Shyam Kalyan|শ্যাম কল্যাণ|Shyam Kalyan;Shyaam Kalyan|kalyan|5||||.N S R M P N 'S|'S N D P M P G m R S|yaman;kedar|
+maru-bihag|Maru Bihag|মারু বেহাগ|Maru Behag;Maru Bihag|kalyan|6||G|N|.N S G M P N 'S|'S N D P M G R S|bihag|
+nand|Nand|নন্দ|Anandi Kalyan;Anand;Nand Kalyan|kalyan|6||||S G m D P N 'S|'S N D P M P G m R S|kamod;bihag|
+hindol|Hindol|হিন্দোল|Hindol;Hindola|kalyan|8,1|basant|D|G|S G M D N D 'S|'S N D M G S|basant|Hindol
+bilawal|Bilawal|বিলাবল|Bilaval;Bilawal;Shuddh Bilawal|bilawal|2||D|G|S R G m P D N 'S|'S N D P m G R S|alhaiya-bilawal;deshkar|Bilaval
+alhaiya-bilawal|Alhaiya Bilawal|আলাহিয়া বিলাবল|Alhaiya Bilaval;Alhaiya Bilawal;Alahiya Bilawal|bilawal|1,2||D|G|S R G R G P D N 'S|'S N D n D P D m G R S|bilawal;deshkar|Alhaiya Bilaval
+deshkar|Deshkar|দেশকার|Deshkar;Deskar|bilawal|2||D|G|S R G P D 'S|'S D P G R S|bhupali;bilawal|
+durga|Durga|দুর্গা|Durga|bilawal|6||m|S|S R m P D 'S|'S D P m R S|bhupali|Durga (raga)
+shankara|Shankara|শঙ্করা|Shankara;Shankra|bilawal|6||G|N|S G P N D 'S|'S N D P G R S|bihag;hamsadhwani|Shankara (raga)
+hamsadhwani|Hamsadhwani|হংসধ্বনি|Hansadhwani;Hamsadhvani;Hansdhwani|bilawal|5,6||S|P|S R G P N 'S|'S N P G R S|shankara|Hamsadhwani
+jog|Jog|যোগ|Jog|khamaj|6||||S G m P n 'S|'S n P m G m g S|tilang|Jog (raga)
+tilang|Tilang|তিলং|Tilang;Tilanga|khamaj|6||G|N|S G m P N 'S|'S n P m G S|khamaj;jog|Tilang
+tilak-kamod|Tilak Kamod|তিলক কামোদ|Tilak Kamod;Tilakkamod|khamaj|6,7||R|P|S R G S R m P N 'S|'S P D m G R G S .N|desh|Tilak Kamod
+jhinjhoti|Jhinjhoti|ঝিঁঝিট|Jhinjhoti;Jhinjoti;Jhinjhauti;Jhinjhauti|khamaj|6||||S R m P D 'S|'S n D P m G R S|khamaj|Jhinjhoti
+rageshri|Rageshri|রাগেশ্রী|Rageshree;Rageshri;Rageswari;Rageshwari|khamaj|6||G|N|S G m D N 'S|'S n D m G R S|bageshri|Rageshree
+kalavati|Kalavati|কলাবতী|Kalavati;Kalawati|khamaj|5,6||||S G P D n 'S|'S n D P G S||Kalavati
+sindhu-bhairavi|Sindhu Bhairavi|সিন্ধু ভৈরবী|Sindh Bhairavi;Sindhu Bhairavi;Sindhi Bhairavi||||||||bhairavi|Sindhu Bhairavi (raga)
+shivranjani|Shivranjani|শিবরঞ্জনী|Shivaranjani;Shivranjini;Shivranjani|kafi|6||||S R g P D 'S|'S D P g R S||Shivaranjani
+chandrakauns|Chandrakauns|চন্দ্রকোষ|Chandrakauns;Chandrakosh;Chandrakaus||7||||S g m d N 'S|'S N d m g S|malkauns|Chandrakauns
+kirwani|Kirwani|কীরবাণী|Kirwani;Keeravani;Kirvani||6||||S R g m P d N 'S|'S N d P m g R S||Kirwani
+pahadi|Pahadi|পাহাড়ি|Pahari;Pahadi|bilawal|||||S R G P D 'S|'S D P G R S .D .P .D S||
+mand|Mand|মান্দ|Maand;Mand|bilawal|||||S G m P D 'S|'S N D P m G R S||
+gara|Gara|গারা|Gara;Garha|khamaj|||||||khamaj;pilu|

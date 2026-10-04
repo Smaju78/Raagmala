@@ -1,0 +1,5223 @@
+{
+ "artists": [
+  {
+   "id": "bhimsen-joshi",
+   "en": "Bhimsen Joshi",
+   "bn": "ভীমসেন জোশী",
+   "hi": "भीमसेन जोशी",
+   "born": "1922",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 28,
+   "wiki": "Bhimsen Joshi",
+   "wikidata": "Q121077",
+   "rank": 1
+  },
+  {
+   "id": "kishori-amonkar",
+   "en": "Kishori Amonkar",
+   "bn": "কিশোরী আমোনকর",
+   "hi": "किशोरी आमोनकर",
+   "born": "1932",
+   "died": "2017",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 20,
+   "wiki": "Kishori Amonkar",
+   "wikidata": "Q2117321",
+   "rank": 2
+  },
+  {
+   "id": "kumar-gandharva",
+   "en": "Kumar Gandharva",
+   "bn": "কুমার গন্ধর্ব",
+   "hi": "कुमार गंधर्व",
+   "born": "1924",
+   "died": "1992",
+   "voice": "male",
+   "gharana": [
+    "Bhendibazaar"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 16,
+   "wiki": "Kumar Gandharva",
+   "wikidata": "Q121122",
+   "rank": 3
+  },
+  {
+   "id": "jasraj",
+   "en": "Jasraj",
+   "bn": "পণ্ডিত যশরাজ",
+   "hi": "जसराज",
+   "born": "1930",
+   "died": "2020",
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 21,
+   "wiki": "Jasraj",
+   "wikidata": "Q2426558",
+   "rank": 4
+  },
+  {
+   "id": "mallikarjun-mansur",
+   "en": "Mallikarjun Mansur",
+   "bn": "মল্লিকার্জুন মনসুর",
+   "hi": "मल्लिकार्जुन बी मंसूर",
+   "born": "1910",
+   "died": "1992",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 19,
+   "wiki": "Mallikarjun Mansur",
+   "wikidata": "Q3181884",
+   "rank": 5
+  },
+  {
+   "id": "amir-khan",
+   "en": "Amir Khan",
+   "bn": "আমির খাঁ",
+   "hi": "उस्ताद अमीर खान",
+   "born": "1912",
+   "died": "1974",
+   "voice": "male",
+   "gharana": [
+    "Bhendibazaar",
+    "Indore"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 15,
+   "wiki": "Amir Khan (singer)",
+   "wikidata": "Q2843494",
+   "rank": 6
+  },
+  {
+   "id": "bade-ghulam-ali-khan",
+   "en": "Bade Ghulam Ali Khan",
+   "bn": "বড়ে গুলাম আলী খান",
+   "hi": "बड़े गुलाम अली खां",
+   "born": "1902",
+   "died": "1968",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 19,
+   "wiki": "Bade Ghulam Ali Khan",
+   "wikidata": "Q2745300",
+   "rank": 7
+  },
+  {
+   "id": "gangubai-hangal",
+   "en": "Gangubai Hangal",
+   "bn": "গাঙ্গুবাঈ হাঙ্গল",
+   "hi": "गंगूबाई हंगल",
+   "born": "1913",
+   "died": "2009",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 26,
+   "wiki": "Gangubai Hangal",
+   "wikidata": "Q731422",
+   "rank": 8
+  },
+  {
+   "id": "kesarbai-kerkar",
+   "en": "Kesarbai Kerkar",
+   "bn": "কেসরভাই কেরকর",
+   "hi": "केसरबाई केरकर",
+   "born": "1892",
+   "died": "1977",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 12,
+   "wiki": "Kesarbai Kerkar",
+   "wikidata": "Q3630917",
+   "rank": 9
+  },
+  {
+   "id": "rashid-khan",
+   "en": "Rashid Khan",
+   "bn": "রশিদ খান",
+   "hi": "राशिद खान",
+   "born": "1968",
+   "died": "2024",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 18,
+   "wiki": "Rashid Khan (musician)",
+   "wikidata": "Q4781922",
+   "rank": 10
+  },
+  {
+   "id": "ajoy-chakrabarty",
+   "en": "Ajoy Chakrabarty",
+   "bn": "অজয় চক্রবর্তী",
+   "hi": "अजॉय चक्रबर्ती",
+   "born": "1953",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 12,
+   "wiki": "Ajoy Chakrabarty",
+   "wikidata": "Q3351775",
+   "rank": 11
+  },
+  {
+   "id": "kaushiki-chakraborty",
+   "en": "Kaushiki Chakraborty",
+   "bn": "কৌশিকী চক্রবর্তী",
+   "hi": "कौशिकी चक्रबर्ती",
+   "born": "1980",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": true,
+   "fame": 19,
+   "wiki": "Kaushiki Chakraborty",
+   "wikidata": "Q2784868",
+   "rank": 12
+  },
+  {
+   "id": "ulhas-kashalkar",
+   "en": "Ulhas Kashalkar",
+   "bn": "উল্লাস কশলকার",
+   "hi": "उल्हास काशलकर",
+   "born": "1955",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Ulhas Kashalkar",
+   "wikidata": "Q7878929",
+   "rank": 13
+  },
+  {
+   "id": "veena-sahasrabuddhe",
+   "en": "Veena Sahasrabuddhe",
+   "bn": "বীণা সহস্রবুদ্ধে",
+   "hi": "वीणा सहस्त्रबुद्धे",
+   "born": "1948",
+   "died": "2016",
+   "voice": "female",
+   "gharana": [
+    "Gwalior",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Veena Sahasrabuddhe",
+   "wikidata": "Q7918077",
+   "rank": 14
+  },
+  {
+   "id": "shruti-sadolikar",
+   "en": "Shruti Sadolikar",
+   "bn": null,
+   "hi": null,
+   "born": "1951",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 9,
+   "wiki": "Shruti Sadolikar",
+   "wikidata": "Q301772",
+   "rank": 15
+  },
+  {
+   "id": "parween-sultana",
+   "en": "Parween Sultana",
+   "bn": "পারভিন সুলতানা",
+   "hi": "परवीन सुल्ताना",
+   "born": "1950",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 18,
+   "wiki": "Parween Sultana",
+   "wikidata": "Q3631779",
+   "rank": 16
+  },
+  {
+   "id": "abdul-karim-khan",
+   "en": "Abdul Karim Khan",
+   "bn": "আবদুল করিম খাঁ",
+   "hi": "उस्ताद अब्दुल करीम खाँ",
+   "born": "1872",
+   "died": "1937",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 14,
+   "wiki": "Abdul Karim Khan",
+   "wikidata": "Q3595270",
+   "rank": 17
+  },
+  {
+   "id": "faiyaz-khan",
+   "en": "Faiyaz Khan",
+   "bn": "ফৈয়াজ খান",
+   "hi": null,
+   "born": "1886",
+   "died": "1950",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 8,
+   "wiki": "Faiyaz Khan",
+   "wikidata": "Q5431325",
+   "rank": 18
+  },
+  {
+   "id": "alladiya-khan",
+   "en": "Alladiya Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1855",
+   "died": "1946",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 7,
+   "wiki": "Alladiya Khan",
+   "wikidata": "Q4730273",
+   "rank": 19
+  },
+  {
+   "id": "omkarnath-thakur",
+   "en": "Omkarnath Thakur",
+   "bn": "পণ্ডিত ওমকারনাথ ঠাকুর",
+   "hi": "ओमकारनाथ ठाकुर",
+   "born": "1897",
+   "died": "1967",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 13,
+   "wiki": "Omkarnath Thakur",
+   "wikidata": "Q3595296",
+   "rank": 20
+  },
+  {
+   "id": "d-v-paluskar",
+   "en": "D. V. Paluskar",
+   "bn": "ডি ভি ভি পলুস্কর",
+   "hi": "डी.वी. पलुस्कर",
+   "born": "1921",
+   "died": "1955",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "D. V. Paluskar",
+   "wikidata": "Q3630021",
+   "rank": 21
+  },
+  {
+   "id": "vasantrao-deshpande",
+   "en": "Vasantrao Deshpande",
+   "bn": "বসন্তরাও দেশপাণ্ডে",
+   "hi": "वसंतराव देशपांडे",
+   "born": "1920",
+   "died": "1983",
+   "voice": "male",
+   "gharana": [
+    "Patiala",
+    "Bhendibazaar"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 8,
+   "wiki": "Vasantrao Deshpande",
+   "wikidata": "Q7916376",
+   "rank": 22
+  },
+  {
+   "id": "prabha-atre",
+   "en": "Prabha Atre",
+   "bn": "প্রভা আত্রে",
+   "hi": "प्रभा अत्रे",
+   "born": "1969",
+   "died": "2024",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 16,
+   "wiki": "Prabha Atre",
+   "wikidata": "Q7237212",
+   "rank": 23
+  },
+  {
+   "id": "jitendra-abhisheki",
+   "en": "Jitendra Abhisheki",
+   "bn": "জিতেন্দ্র অভিষেকি",
+   "hi": "जितेंद्र अभिषेकी",
+   "born": "1929",
+   "died": "1998",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 10,
+   "wiki": "Jitendra Abhisheki",
+   "wikidata": "Q6203251",
+   "rank": 24
+  },
+  {
+   "id": "rajan-and-sajan-mishra",
+   "en": "Rajan and Sajan Mishra",
+   "bn": null,
+   "hi": "राजन एवं साजन मिश्र",
+   "born": null,
+   "died": null,
+   "voice": null,
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 10,
+   "wiki": "Rajan and Sajan Mishra",
+   "wikidata": "Q7285720",
+   "rank": 25
+  },
+  {
+   "id": "salamat-ali-khan",
+   "en": "Salamat Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1934",
+   "died": "2001",
+   "voice": "male",
+   "gharana": [
+    "Sham Chaurasia"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Salamat Ali Khan",
+   "wikidata": "Q20609570",
+   "rank": 26
+  },
+  {
+   "id": "amanat-ali-khan",
+   "en": "Amanat Ali Khan",
+   "bn": "আমানাত আলী খান",
+   "hi": "अमानत अली खान",
+   "born": "1922",
+   "died": "1974",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Amanat Ali Khan",
+   "wikidata": "Q3695020",
+   "rank": 27
+  },
+  {
+   "id": "roshan-ara-begum",
+   "en": "Roshan Ara Begum",
+   "bn": "রোশন আরা বেগম",
+   "hi": "रोशन आरा बेगम",
+   "born": "1917",
+   "died": "1982",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 15,
+   "wiki": "Roshan Ara Begum",
+   "wikidata": "Q7368808",
+   "rank": 28
+  },
+  {
+   "id": "hirabai-barodekar",
+   "en": "Hirabai Barodekar",
+   "bn": "হীরাবাঈ বরোদাকর",
+   "hi": "हीराभाई बादोडेकर",
+   "born": "1905",
+   "died": "1989",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 12,
+   "wiki": "Hirabai Barodekar",
+   "wikidata": "Q3630868",
+   "rank": 29
+  },
+  {
+   "id": "mogubai-kurdikar",
+   "en": "Mogubai Kurdikar",
+   "bn": "মোগুবাঈ কুর্ডীকার",
+   "hi": "मोगुभाई कुर्दीकर",
+   "born": "1904",
+   "died": "2001",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 9,
+   "wiki": "Mogubai Kurdikar",
+   "wikidata": "Q3632664",
+   "rank": 30
+  },
+  {
+   "id": "malini-rajurkar",
+   "en": "Malini Rajurkar",
+   "bn": "মালিনী রাজুরকার",
+   "hi": null,
+   "born": "1941",
+   "died": "2023",
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 8,
+   "wiki": "Malini Rajurkar",
+   "wikidata": "Q6743750",
+   "rank": 31
+  },
+  {
+   "id": "ashwini-bhide-deshpande",
+   "en": "Ashwini Bhide-Deshpande",
+   "bn": "অশ্বিনী ভিড়ে-দেশপাণ্ডে",
+   "hi": "अश्विनी भिड़े-देशपांडे",
+   "born": "1960",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 11,
+   "wiki": "Ashwini Bhide-Deshpande",
+   "wikidata": "Q4806200",
+   "rank": 32
+  },
+  {
+   "id": "mukul-shivputra",
+   "en": "Mukul Shivputra",
+   "bn": "মুকুল শিবপুত্র",
+   "hi": null,
+   "born": "1956",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Mukul Shivputra",
+   "wikidata": "Q6933647",
+   "rank": 33
+  },
+  {
+   "id": "venkatesh-kumar",
+   "en": "Venkatesh Kumar",
+   "bn": "পন্ডিত ভেঙ্কটেশ কুমার",
+   "hi": "m. venkatesh kumar",
+   "born": "1953",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 4,
+   "wiki": "Venkatesh Kumar",
+   "wikidata": "Q7130672",
+   "rank": 34
+  },
+  {
+   "id": "sanjeev-abhyankar",
+   "en": "Sanjeev Abhyankar",
+   "bn": null,
+   "hi": "संजीव अभ्यंकर",
+   "born": "1969",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 10,
+   "wiki": "Sanjeev Abhyankar",
+   "wikidata": "Q7418507",
+   "rank": 35
+  },
+  {
+   "id": "padma-talwalkar",
+   "en": "Padma Talwalkar",
+   "bn": "পদ্ম তালওয়ালকার",
+   "hi": null,
+   "born": "1948",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 4,
+   "wiki": "Padma Talwalkar",
+   "wikidata": "Q7123839",
+   "rank": 36
+  },
+  {
+   "id": "nisar-hussain-khan",
+   "en": "Nisar Hussain Khan",
+   "bn": "নিসার হুসেন খান",
+   "hi": "निसार हुसैन खान",
+   "born": "1909",
+   "died": "1993",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 7,
+   "wiki": "Nisar Hussain Khan",
+   "wikidata": "Q7041093",
+   "rank": 37
+  },
+  {
+   "id": "mushtaq-hussain-khan",
+   "en": "Mushtaq Hussain Khan",
+   "bn": "মুস্তাক হুসেইন খান",
+   "hi": "उस्ताद मुश्ताक हुसैन खान",
+   "born": "1878",
+   "died": "1964",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 11,
+   "wiki": "Mushtaq Hussain Khan",
+   "wikidata": "Q15645359",
+   "rank": 38
+  },
+  {
+   "id": "ghulam-mustafa-khan",
+   "en": "Ghulam Mustafa Khan",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": null,
+   "gharana": [],
+   "forms": [],
+   "seed": true,
+   "fame": 1,
+   "wiki": "Ghulam Mustafa Khan",
+   "wikidata": "Q135225980",
+   "rank": 39
+  },
+  {
+   "id": "krishnarao-shankar-pandit",
+   "en": "Krishnarao Shankar Pandit",
+   "bn": "কৃষ্ণরাও শঙ্কর পণ্ডিত",
+   "hi": "कृष्णाराव शंकर पंडित",
+   "born": "1893",
+   "died": "1989",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Krishnarao Shankar Pandit",
+   "wikidata": "Q12420474",
+   "rank": 40
+  },
+  {
+   "id": "manas-chakraborty",
+   "en": "Manas Chakraborty",
+   "bn": "মানস চক্রবর্তী",
+   "hi": null,
+   "born": "1942",
+   "died": "2012",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Manas Chakraborty",
+   "wikidata": "Q6746972",
+   "rank": 41
+  },
+  {
+   "id": "tarapada-chakraborty",
+   "en": "Tarapada Chakraborty",
+   "bn": "তারাপদ চক্রবর্তী",
+   "hi": null,
+   "born": "1909",
+   "died": "1975",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 2,
+   "wiki": "Tarapada Chakraborty",
+   "wikidata": "Q16007774",
+   "rank": 42
+  },
+  {
+   "id": "arkut-kannabhiran",
+   "en": "Arkut Kannabhiran",
+   "bn": "অরকুট কান্নাভিরাম",
+   "hi": null,
+   "born": "1920",
+   "died": "2004",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Arkut Kannabhiran",
+   "wikidata": "Q18354018",
+   "rank": 43
+  },
+  {
+   "id": "malabika-kanan",
+   "en": "Malabika Kanan",
+   "bn": "মালবিকা কানন",
+   "hi": null,
+   "born": "1930",
+   "died": "2009",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Malabika Kanan",
+   "wikidata": "Q6740774",
+   "rank": 44
+  },
+  {
+   "id": "ramashreya-jha",
+   "en": "Ramashreya Jha",
+   "bn": "রামাশ্রেয় ঝা",
+   "hi": null,
+   "born": "1928",
+   "died": "2009",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Ramashreya Jha",
+   "wikidata": "Q7289084",
+   "rank": 45
+  },
+  {
+   "id": "kalapini-komkali",
+   "en": "Kalapini Komkali",
+   "bn": null,
+   "hi": null,
+   "born": "1966",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Kalapini Komkali",
+   "wikidata": "Q62582315",
+   "rank": 46
+  },
+  {
+   "id": "shubha-mudgal",
+   "en": "Shubha Mudgal",
+   "bn": "শোভা মুদ্গল",
+   "hi": "शुभा मुद्गल",
+   "born": "1959",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": true,
+   "fame": 17,
+   "wiki": "Shubha Mudgal",
+   "wikidata": "Q2724342",
+   "rank": 47
+  },
+  {
+   "id": "ajay-pohankar",
+   "en": "Ajay Pohankar",
+   "bn": "অজয় পোহঙ্কর",
+   "hi": "अजय पोहनकर",
+   "born": "1948",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 4,
+   "wiki": "Ajay Pohankar",
+   "wikidata": "Q1705928",
+   "rank": 48
+  },
+  {
+   "id": "rahul-deshpande",
+   "en": "Rahul Deshpande",
+   "bn": "রাহুল দেশপাণ্ডে",
+   "hi": null,
+   "born": "1979",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Rahul Deshpande",
+   "wikidata": "Q7283586",
+   "rank": 49
+  },
+  {
+   "id": "kaivalya-kumar-gurav",
+   "en": "Kaivalya Kumar Gurav",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Kaivalya Kumar Gurav",
+   "wikidata": "Q27970783",
+   "rank": 50
+  },
+  {
+   "id": "arati-ankalikar-tikekar",
+   "en": "Arati Ankalikar Tikekar",
+   "bn": "আরতি অঙ্কলিকর-টিকেকর",
+   "hi": "आरती अंकलीकर टिकेकर",
+   "born": "1963",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 11,
+   "wiki": "Arati Ankalikar Tikekar",
+   "wikidata": "Q4784427",
+   "rank": 51
+  },
+  {
+   "id": "devaki-pandit",
+   "en": "Devaki Pandit",
+   "bn": "দেবকী পণ্ডিত",
+   "hi": "देवकी पंडित",
+   "born": "1965",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Agra",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": true,
+   "fame": 13,
+   "wiki": "Devaki Pandit",
+   "wikidata": "Q5266447",
+   "rank": 52
+  },
+  {
+   "id": "sawai-gandharva",
+   "en": "Sawai Gandharva",
+   "bn": "সাওয়াই গান্ধারভা",
+   "hi": "सवाई गंधर्व",
+   "born": "1886",
+   "died": "1952",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 14,
+   "wiki": "Sawai Gandharva",
+   "wikidata": "Q3630059",
+   "rank": 53
+  },
+  {
+   "id": "bhaskarbuwa-bakhale",
+   "en": "Bhaskarbuwa Bakhale",
+   "bn": null,
+   "hi": null,
+   "born": "1869",
+   "died": "1922",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Bhaskarbuwa Bakhale",
+   "wikidata": "Q4901370",
+   "rank": 54
+  },
+  {
+   "id": "gajananrao-joshi",
+   "en": "Gajananrao Joshi",
+   "bn": null,
+   "hi": null,
+   "born": "1911",
+   "died": "1987",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Gajananrao Joshi",
+   "wikidata": "Q5517558",
+   "rank": 55
+  },
+  {
+   "id": "nasir-aminuddin-dagar",
+   "en": "Nasir Aminuddin Dagar",
+   "bn": "আমিনউদ্দিন দাগার",
+   "hi": "उस्ताद नसीर अमीनुद्दीन डागर",
+   "born": "1923",
+   "died": "2000",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Nasir Aminuddin Dagar",
+   "wikidata": "Q4746480",
+   "rank": 56
+  },
+  {
+   "id": "zia-fariduddin-dagar",
+   "en": "Zia Fariduddin Dagar",
+   "bn": "জিয়া ফারিউদ্দিন ডাগর",
+   "hi": "ज़िया फ़रीदुद्दीन डागर",
+   "born": "1932",
+   "died": "2013",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Zia Fariduddin Dagar",
+   "wikidata": "Q8071287",
+   "rank": 57
+  },
+  {
+   "id": "rahim-fahimuddin-dagar",
+   "en": "Rahim Fahimuddin Dagar",
+   "bn": null,
+   "hi": "रहीम फहीमुद्दीन डागर",
+   "born": "1927",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 3,
+   "wiki": "Rahim Fahimuddin Dagar",
+   "wikidata": "Q7283409",
+   "rank": 58
+  },
+  {
+   "id": "wasifuddin-dagar",
+   "en": "Wasifuddin Dagar",
+   "bn": "ওয়াসিফুদ্দিন ডাগর",
+   "hi": "वासिफुद्दीन डागर",
+   "born": "1969",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Wasifuddin Dagar",
+   "wikidata": "Q7972651",
+   "rank": 59
+  },
+  {
+   "id": "gundecha-brothers",
+   "en": "Gundecha Brothers",
+   "bn": "গুন্ডেচা ভ্রাতৃদ্বয়",
+   "hi": "गुन्देचा ब्रदर्स",
+   "born": null,
+   "died": null,
+   "voice": null,
+   "gharana": [],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 6,
+   "wiki": "Gundecha Brothers",
+   "wikidata": "Q921937",
+   "rank": 60
+  },
+  {
+   "id": "uday-bhawalkar",
+   "en": "Uday Bhawalkar",
+   "bn": "উদয় ভাওয়ালকার",
+   "hi": null,
+   "born": "1966",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 1,
+   "wiki": "Uday Bhawalkar",
+   "wikidata": "Q7876960",
+   "rank": 61
+  },
+  {
+   "id": "ram-chatur-mallick",
+   "en": "Ram Chatur Mallick",
+   "bn": "রাম চতুর মল্লিক",
+   "hi": null,
+   "born": "1902",
+   "died": "1990",
+   "voice": "male",
+   "gharana": [
+    "Darbhanga (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": true,
+   "fame": 5,
+   "wiki": "Ram Chatur Mallick",
+   "wikidata": "Q20007153",
+   "rank": 62
+  },
+  {
+   "id": "siyaram-tiwari",
+   "en": "Siyaram Tiwari",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": null,
+   "gharana": [],
+   "forms": [],
+   "seed": true,
+   "fame": 1,
+   "wiki": "Siyaram Tiwari",
+   "wikidata": "Q136446327",
+   "rank": 63
+  },
+  {
+   "id": "girija-devi",
+   "en": "Girija Devi",
+   "bn": "গিরিজা দেবী",
+   "hi": "गिरिजा देवी",
+   "born": "1929",
+   "died": "2017",
+   "voice": "female",
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 29,
+   "wiki": "Girija Devi",
+   "wikidata": "Q3107617",
+   "rank": 64
+  },
+  {
+   "id": "shobha-gurtu",
+   "en": "Shobha Gurtu",
+   "bn": "শোভা গুরতু",
+   "hi": "शोभा गुर्टू",
+   "born": "1925",
+   "died": "2004",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 16,
+   "wiki": "Shobha Gurtu",
+   "wikidata": "Q539711",
+   "rank": 65
+  },
+  {
+   "id": "siddheshwari-devi",
+   "en": "Siddheshwari Devi",
+   "bn": "সিদ্ধেশ্বরী দেবী",
+   "hi": "सिद्धेश्वरी देवी",
+   "born": "1908",
+   "died": "1977",
+   "voice": "female",
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 15,
+   "wiki": "Siddheshwari Devi",
+   "wikidata": "Q3595120",
+   "rank": 66
+  },
+  {
+   "id": "begum-akhtar",
+   "en": "Begum Akhtar",
+   "bn": "বেগম আখতার",
+   "hi": "बेगम अख्तर",
+   "born": "1914",
+   "died": "1974",
+   "voice": "female",
+   "gharana": [
+    "Kirana",
+    "Bhendibazaar"
+   ],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": true,
+   "fame": 25,
+   "wiki": "Begum Akhtar",
+   "wikidata": "Q3595116",
+   "rank": 67
+  },
+  {
+   "id": "rasoolan-bai",
+   "en": "Rasoolan Bai",
+   "bn": "রসুলান বাঈ",
+   "hi": "रसूलन बाई",
+   "born": "1902",
+   "died": "1974",
+   "voice": "female",
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": true,
+   "fame": 11,
+   "wiki": "Rasoolan Bai",
+   "wikidata": "Q7295154",
+   "rank": 68
+  },
+  {
+   "id": "chhannulal-mishra",
+   "en": "Chhannulal Mishra",
+   "bn": "ছন্নুলাল মিশ্র",
+   "hi": "पंडित छन्नूलाल मिश्रा",
+   "born": "1936",
+   "died": "2025",
+   "voice": "male",
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 10,
+   "wiki": "Chhannulal Mishra",
+   "wikidata": "Q5094774",
+   "rank": 69
+  },
+  {
+   "id": "naina-devi",
+   "en": "Naina Devi",
+   "bn": "নৈনা দেবী",
+   "hi": "नैना देवी",
+   "born": "1917",
+   "died": "1993",
+   "voice": "female",
+   "gharana": [
+    "Rampur-Sahaswan",
+    "Benaras"
+   ],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": true,
+   "fame": 9,
+   "wiki": "Naina Devi (singer)",
+   "wikidata": "Q16012953",
+   "rank": 70
+  },
+  {
+   "id": "manik-varma",
+   "en": "Manik Varma",
+   "bn": "মানিক ভর্মা",
+   "hi": null,
+   "born": "1926",
+   "died": "1996",
+   "voice": "female",
+   "gharana": [
+    "Agra",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": true,
+   "fame": 9,
+   "wiki": "Manik Varma",
+   "wikidata": "Q6749612",
+   "rank": 71
+  },
+  {
+   "id": "noor-jehan",
+   "en": "Noor Jehan",
+   "bn": "নূর জীহান",
+   "hi": "नूर जहाँ",
+   "born": "1926",
+   "died": "2000",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 32,
+   "wiki": "Noor Jehan",
+   "wikidata": "Q466955",
+   "rank": 72
+  },
+  {
+   "id": "malini-awasthi",
+   "en": "Malini Awasthi",
+   "bn": "মালিনী অবস্থী",
+   "hi": "मालिनी अवस्थी",
+   "born": "1967",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Benaras"
+   ],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 24,
+   "wiki": "Malini Awasthi",
+   "wikidata": "Q16150687",
+   "rank": 73
+  },
+  {
+   "id": "gauhar-jaan",
+   "en": "Gauhar Jaan",
+   "bn": "গওহর জান",
+   "hi": "गौहर जान",
+   "born": "1873",
+   "died": "1930",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 18,
+   "wiki": "Gauhar Jaan",
+   "wikidata": "Q5527642",
+   "rank": 74
+  },
+  {
+   "id": "ghulam-mustafa-khan",
+   "en": "Ghulam Mustafa Khan",
+   "bn": "গুলাম মুস্তফা খান",
+   "hi": "गुलाम मुस्तफ़ा खान",
+   "born": "1931",
+   "died": "2021",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 16,
+   "wiki": "Ghulam Mustafa Khan (singer)",
+   "wikidata": "Q5557645",
+   "rank": 75
+  },
+  {
+   "id": "farida-khanum",
+   "en": "Farida Khanum",
+   "bn": "ফারিদা খানুম",
+   "hi": null,
+   "born": "1929",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 16,
+   "wiki": "Farida Khanum",
+   "wikidata": "Q539567",
+   "rank": 76
+  },
+  {
+   "id": "anjanibai-malpekar",
+   "en": "Anjanibai Malpekar",
+   "bn": "অঞ্জনিবাই মালপেকর",
+   "hi": "अंजनीबाई मालपेकर",
+   "born": "1883",
+   "died": "1974",
+   "voice": "female",
+   "gharana": [
+    "Bhendibazaar"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 15,
+   "wiki": "Anjanibai Malpekar",
+   "wikidata": "Q15884350",
+   "rank": 77
+  },
+  {
+   "id": "vasundhara-komkali",
+   "en": "Vasundhara Komkali",
+   "bn": "বসুন্ধরা কোমকালি",
+   "hi": "वसुंधरा कोमकाली",
+   "born": "1931",
+   "died": "2015",
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 13,
+   "wiki": "Vasundhara Komkali",
+   "wikidata": "Q20918648",
+   "rank": 78
+  },
+  {
+   "id": "abdul-rashid-khan",
+   "en": "Abdul Rashid Khan",
+   "bn": "আব্দুল রশিদ খান",
+   "hi": "अब्दुल रशीद खान",
+   "born": "1908",
+   "died": "2016",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 11,
+   "wiki": "Abdul Rashid Khan",
+   "wikidata": "Q4665670",
+   "rank": 79
+  },
+  {
+   "id": "saraswati-rane",
+   "en": "Saraswati Rane",
+   "bn": "সরস্বতী রেন",
+   "hi": "सरस्वती राणे",
+   "born": "1913",
+   "died": "2006",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 11,
+   "wiki": "Saraswati Rane",
+   "wikidata": "Q7423277",
+   "rank": 80
+  },
+  {
+   "id": "sultan-khan",
+   "en": "Sultan Khan",
+   "bn": "সুলতান খান",
+   "hi": "सुल्तान खान",
+   "born": "1940",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 11,
+   "wiki": "Sultan Khan (musician)",
+   "wikidata": "Q981797",
+   "rank": 81
+  },
+  {
+   "id": "shanno-khurana",
+   "en": "Shanno Khurana",
+   "bn": "শন্নো খুরানা",
+   "hi": "शन्नो खुराना",
+   "born": "1927",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 10,
+   "wiki": "Shanno Khurana",
+   "wikidata": "Q15696296",
+   "rank": 82
+  },
+  {
+   "id": "sumati-mutatkar",
+   "en": "Sumati Mutatkar",
+   "bn": "সুমতি মুটাটকার",
+   "hi": null,
+   "born": "1916",
+   "died": "2007",
+   "voice": "female",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 10,
+   "wiki": "Sumati Mutatkar",
+   "wikidata": "Q7636990",
+   "rank": 83
+  },
+  {
+   "id": "vishnu-digambar-paluskar",
+   "en": "Vishnu Digambar Paluskar",
+   "bn": null,
+   "hi": "विष्णु दिगंबर पलुस्कर",
+   "born": "1872",
+   "died": "1931",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 10,
+   "wiki": "Vishnu Digambar Paluskar",
+   "wikidata": "Q2602601",
+   "rank": 84
+  },
+  {
+   "id": "sunanda-patnaik",
+   "en": "Sunanda Patnaik",
+   "bn": "সুনন্দা পট্টনায়ক",
+   "hi": null,
+   "born": "1934",
+   "died": "2020",
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 10,
+   "wiki": "Sunanda Patnaik",
+   "wikidata": "Q5048299",
+   "rank": 85
+  },
+  {
+   "id": "vidya-rao",
+   "en": "Vidya Rao",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 10,
+   "wiki": "Vidya Rao",
+   "wikidata": "Q16734986",
+   "rank": 86
+  },
+  {
+   "id": "sumitra-guha",
+   "en": "Sumitra Guha",
+   "bn": "সুমিত্রা গুহ",
+   "hi": "सुमित्रा गुहा",
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 9,
+   "wiki": "Sumitra Guha",
+   "wikidata": "Q18686497",
+   "rank": 87
+  },
+  {
+   "id": "pran-nath",
+   "en": "Pran Nath",
+   "bn": "প্রাণ নাথ",
+   "hi": null,
+   "born": "1918",
+   "died": "1996",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 9,
+   "wiki": "Pran Nath (musician)",
+   "wikidata": "Q252291",
+   "rank": 88
+  },
+  {
+   "id": "lalith-j-rao",
+   "en": "Lalith J. Rao",
+   "bn": "লালিথ জে রাও",
+   "hi": "ललिथ जे. राव",
+   "born": "1942",
+   "died": "2026",
+   "voice": "female",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 9,
+   "wiki": "Lalith J. Rao",
+   "wikidata": "Q6480405",
+   "rank": 89
+  },
+  {
+   "id": "lakshmi-shankar",
+   "en": "Lakshmi Shankar",
+   "bn": "লক্ষ্মী শংকর",
+   "hi": null,
+   "born": "1926",
+   "died": "2013",
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 9,
+   "wiki": "Lakshmi Shankar",
+   "wikidata": "Q6479919",
+   "rank": 90
+  },
+  {
+   "id": "mukhtar-begum",
+   "en": "Mukhtar Begum",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": "1982",
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 9,
+   "wiki": "Mukhtar Begum",
+   "wikidata": "Q111809638",
+   "rank": 91
+  },
+  {
+   "id": "abdul-wahid-khan",
+   "en": "Abdul Wahid Khan",
+   "bn": "আবদুল ওয়াহিদ খান",
+   "hi": "अब्दुल वाहिद खान",
+   "born": "1872",
+   "died": "1949",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 8,
+   "wiki": "Abdul Wahid Khan",
+   "wikidata": "Q4665754",
+   "rank": 92
+  },
+  {
+   "id": "basavaraj-rajguru",
+   "en": "Basavaraj Rajguru",
+   "bn": "বাসবরাজ রাজগুরু",
+   "hi": "बसवराज राजगुरु",
+   "born": "1917",
+   "died": "1991",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 8,
+   "wiki": "Basavaraj Rajguru",
+   "wikidata": "Q4866295",
+   "rank": 93
+  },
+  {
+   "id": "bade-fateh-ali-khan",
+   "en": "Bade Fateh Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1935",
+   "died": "2017",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 8,
+   "wiki": "Bade Fateh Ali Khan",
+   "wikidata": "Q3695708",
+   "rank": 94
+  },
+  {
+   "id": "sipra-bose",
+   "en": "Sipra Bose",
+   "bn": "শিপ্রা বসু",
+   "hi": null,
+   "born": "1945",
+   "died": "2008",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Sipra Bose",
+   "wikidata": "Q7525842",
+   "rank": 95
+  },
+  {
+   "id": "nirmala-devi",
+   "en": "Nirmala Devi",
+   "bn": "নির্মলা দেবী",
+   "hi": "निर्मला देवी",
+   "born": "1927",
+   "died": "1996",
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Nirmala Devi",
+   "wikidata": "Q16208347",
+   "rank": 96
+  },
+  {
+   "id": "ruchira-panda",
+   "en": "Ruchira Panda",
+   "bn": "রুচিরা পাণ্ডা",
+   "hi": null,
+   "born": "1975",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Ruchira Panda",
+   "wikidata": "Q97154133",
+   "rank": 97
+  },
+  {
+   "id": "shrikrishna-narayan-ratanjankar",
+   "en": "Shrikrishna Narayan Ratanjankar",
+   "bn": null,
+   "hi": "श्रीकृष्ण एन रतनजानकर",
+   "born": "1900",
+   "died": "1974",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Shrikrishna Narayan Ratanjankar",
+   "wikidata": "Q7503982",
+   "rank": 98
+  },
+  {
+   "id": "zohrabai",
+   "en": "Zohrabai",
+   "bn": "জোহরাবাই",
+   "hi": null,
+   "born": "1868",
+   "died": "1913",
+   "voice": "female",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Zohrabai",
+   "wikidata": "Q8073472",
+   "rank": 99
+  },
+  {
+   "id": "sushila-rani-patel",
+   "en": "Sushila Rani Patel",
+   "bn": null,
+   "hi": null,
+   "born": "1918",
+   "died": "2014",
+   "voice": "female",
+   "gharana": [
+    "Bhendibazaar"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Sushila Rani Patel",
+   "wikidata": "Q42714505",
+   "rank": 100
+  },
+  {
+   "id": "neela-bhagwat",
+   "en": "Neela Bhagwat",
+   "bn": "নীলা ভগবত",
+   "hi": "नीला भागवत",
+   "born": null,
+   "died": "2026",
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 7,
+   "wiki": "Neela Bhagwat",
+   "wikidata": "Q16106029",
+   "rank": 101
+  },
+  {
+   "id": "kamala-bose",
+   "en": "Kamala Bose",
+   "bn": "কমলা বোস",
+   "hi": null,
+   "born": "1947",
+   "died": "2012",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Kamala Bose",
+   "wikidata": "Q16247383",
+   "rank": 102
+  },
+  {
+   "id": "firoz-dastur",
+   "en": "Firoz Dastur",
+   "bn": "ফিরোজ দস্তুর",
+   "hi": null,
+   "born": "1919",
+   "died": "2008",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Firoz Dastur",
+   "wikidata": "Q5452166",
+   "rank": 103
+  },
+  {
+   "id": "puttaraj-gawai",
+   "en": "Puttaraj Gawai",
+   "bn": "পুত্তারাজ গাওয়াই",
+   "hi": "पुट्टराज गावै",
+   "born": "1914",
+   "died": "2010",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Puttaraj Gawai",
+   "wikidata": "Q7262456",
+   "rank": 104
+  },
+  {
+   "id": "dilshad-khan",
+   "en": "Dilshad Khan",
+   "bn": "দিলশাদ খান",
+   "hi": null,
+   "born": "1945",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Dilshad Khan",
+   "wikidata": "Q5277053",
+   "rank": 105
+  },
+  {
+   "id": "sureshbabu-mane",
+   "en": "Sureshbabu Mane",
+   "bn": "সুরেশাবু মেনে",
+   "hi": null,
+   "born": "1902",
+   "died": "1953",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Sureshbabu Mane",
+   "wikidata": "Q13122061",
+   "rank": 106
+  },
+  {
+   "id": "tripti-mukherjee",
+   "en": "Tripti Mukherjee",
+   "bn": "ত্রিপ্তি মুখার্জী",
+   "hi": "तृप्ति मुखर्जी",
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Tripti Mukherjee",
+   "wikidata": "Q7843808",
+   "rank": 107
+  },
+  {
+   "id": "sakuntala-narasimhan",
+   "en": "Sakuntala Narasimhan",
+   "bn": null,
+   "hi": null,
+   "born": "1939",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Sakuntala Narasimhan",
+   "wikidata": "Q94294734",
+   "rank": 108
+  },
+  {
+   "id": "mohammad-hussain-sarahang",
+   "en": "Mohammad Hussain Sarahang",
+   "bn": null,
+   "hi": null,
+   "born": "1924",
+   "died": "1983",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 6,
+   "wiki": "Mohammad Hussain Sarahang",
+   "wikidata": "Q741658",
+   "rank": 109
+  },
+  {
+   "id": "shounak-abhisheki",
+   "en": "Shounak Abhisheki",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Shounak Abhisheki",
+   "wikidata": "Q7502745",
+   "rank": 110
+  },
+  {
+   "id": "shobha-abhyankar",
+   "en": "Shobha Abhyankar",
+   "bn": null,
+   "hi": null,
+   "born": "1946",
+   "died": "2014",
+   "voice": "female",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Shobha Abhyankar",
+   "wikidata": "Q60781416",
+   "rank": 111
+  },
+  {
+   "id": "asgari-bai",
+   "en": "Asgari Bai",
+   "bn": "আসগারি বাই",
+   "hi": "असगरी बाई",
+   "born": "1918",
+   "died": "2006",
+   "voice": "female",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Asgari Bai",
+   "wikidata": "Q4804268",
+   "rank": 112
+  },
+  {
+   "id": "gopeshwar-banerjee",
+   "en": "Gopeshwar Banerjee",
+   "bn": "গোপেশ্বর বন্দ্যোপাধ্যায়",
+   "hi": null,
+   "born": "1880",
+   "died": "1963",
+   "voice": "male",
+   "gharana": [
+    "Bishnupur"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Gopeshwar Banerjee",
+   "wikidata": "Q16002950",
+   "rank": 113
+  },
+  {
+   "id": "sulochana-brahaspati",
+   "en": "Sulochana Brahaspati",
+   "bn": "সুলোচনা বরশপ্রতী",
+   "hi": null,
+   "born": "1937",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Sulochana Brahaspati",
+   "wikidata": "Q7636486",
+   "rank": 114
+  },
+  {
+   "id": "mirashi-buwa",
+   "en": "Mirashi Buwa",
+   "bn": "মিরাশি বুওয়া",
+   "hi": null,
+   "born": "1883",
+   "died": "1966",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Mirashi Buwa",
+   "wikidata": "Q6872908",
+   "rank": 115
+  },
+  {
+   "id": "sheila-dhar",
+   "en": "Sheila Dhar",
+   "bn": "শীলা ধর",
+   "hi": null,
+   "born": "1929",
+   "died": "2001",
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Sheila Dhar",
+   "wikidata": "Q7493033",
+   "rank": 116
+  },
+  {
+   "id": "damodar-hota",
+   "en": "Damodar Hota",
+   "bn": "দামোদর হোতা",
+   "hi": null,
+   "born": "1935",
+   "died": "2022",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Damodar Hota",
+   "wikidata": "Q5212775",
+   "rank": 117
+  },
+  {
+   "id": "mahesh-kale",
+   "en": "Mahesh Kale",
+   "bn": "মহেশ কালে",
+   "hi": "महेश काळा",
+   "born": "1976",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Mahesh Kale",
+   "wikidata": "Q6733858",
+   "rank": 118
+  },
+  {
+   "id": "asha-khadilkar",
+   "en": "Asha Khadilkar",
+   "bn": "আশা খাদিলকার",
+   "hi": null,
+   "born": "1955",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Asha Khadilkar",
+   "wikidata": "Q4804506",
+   "rank": 119
+  },
+  {
+   "id": "ravi-kichlu",
+   "en": "Ravi Kichlu",
+   "bn": "রবি কিচলু",
+   "hi": "रवि किचलू",
+   "born": "1932",
+   "died": "1993",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "dhrupad",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Ravi Kichlu",
+   "wikidata": "Q7296636",
+   "rank": 120
+  },
+  {
+   "id": "vijay-kichlu",
+   "en": "Vijay Kichlu",
+   "bn": "বিজয়কুমার কিচলু",
+   "hi": "विजय किचलू",
+   "born": "1930",
+   "died": "2023",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Vijay Kichlu",
+   "wikidata": "Q7929157",
+   "rank": 121
+  },
+  {
+   "id": "r-c-mehta",
+   "en": "R. C. Mehta",
+   "bn": "আর সি সি মেহতা",
+   "hi": "रमनलाल सी मेहता",
+   "born": "1918",
+   "died": "2014",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "R. C. Mehta",
+   "wikidata": "Q7273521",
+   "rank": 122
+  },
+  {
+   "id": "sniti-mishra",
+   "en": "Sniti Mishra",
+   "bn": "স্নিটি মিশ্র",
+   "hi": null,
+   "born": "1989",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Sniti Mishra",
+   "wikidata": "Q15629697",
+   "rank": 123
+  },
+  {
+   "id": "vinayakrao-patwardhan",
+   "en": "Vinayakrao Patwardhan",
+   "bn": null,
+   "hi": "विनायकराव पटवर्धन",
+   "born": "1898",
+   "died": "1975",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Vinayakrao Patwardhan",
+   "wikidata": "Q13121163",
+   "rank": 124
+  },
+  {
+   "id": "c-r-vyas",
+   "en": "C. R. Vyas",
+   "bn": "সি আর। ব্যাস",
+   "hi": "चिंतामन रघुनाथ व्यास",
+   "born": "1924",
+   "died": "2002",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "C. R. Vyas",
+   "wikidata": "Q5006796",
+   "rank": 125
+  },
+  {
+   "id": "vishwanath-jadhav",
+   "en": "Vishwanath Jadhav",
+   "bn": null,
+   "hi": null,
+   "born": "1885",
+   "died": "1964",
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Vishwanath Jadhav",
+   "wikidata": "Q16003707",
+   "rank": 126
+  },
+  {
+   "id": "naseeruddin-saami",
+   "en": "Naseeruddin Saami",
+   "bn": null,
+   "hi": null,
+   "born": "1946",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Delhi"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 5,
+   "wiki": "Naseeruddin Saami",
+   "wikidata": "Q60648635",
+   "rank": 127
+  },
+  {
+   "id": "rajeshwar-acharya",
+   "en": "Rajeshwar Acharya",
+   "bn": "রাজেশ্বর আচার্য",
+   "hi": "राजेश्वर आचार्य",
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Rajeshwar Acharya",
+   "wikidata": "Q61052311",
+   "rank": 128
+  },
+  {
+   "id": "arun-bhaduri",
+   "en": "Arun Bhaduri",
+   "bn": "অরুণ ভাদুরি",
+   "hi": "अरुण भादुड़ी",
+   "born": "1943",
+   "died": "2018",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Arun Bhaduri",
+   "wikidata": "Q60168232",
+   "rank": 129
+  },
+  {
+   "id": "manik-bhide",
+   "en": "Manik Bhide",
+   "bn": null,
+   "hi": null,
+   "born": "1935",
+   "died": "2023",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Manik Bhide",
+   "wikidata": "Q13119865",
+   "rank": 130
+  },
+  {
+   "id": "vishmadev-chattopadhyay",
+   "en": "Vishmadev Chattopadhyay",
+   "bn": "ভীষ্মদেব চট্টোপাধ্যায়",
+   "hi": null,
+   "born": "1909",
+   "died": "1977",
+   "voice": "male",
+   "gharana": [
+    "Delhi"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Vishmadev Chattopadhyay",
+   "wikidata": "Q58010943",
+   "rank": 131
+  },
+  {
+   "id": "gururao-deshpande",
+   "en": "Gururao Deshpande",
+   "bn": null,
+   "hi": null,
+   "born": "1889",
+   "died": "1982",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Gururao Deshpande",
+   "wikidata": "Q5620548",
+   "rank": 132
+  },
+  {
+   "id": "tushar-dutta",
+   "en": "Tushar Dutta",
+   "bn": "তুষার দত্ত",
+   "hi": null,
+   "born": "1969",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Tushar Dutta",
+   "wikidata": "Q18218119",
+   "rank": 133
+  },
+  {
+   "id": "radhika-prasad-goswamy",
+   "en": "Radhika Prasad Goswamy",
+   "bn": "রাধিকাপ্রসাদ গোস্বামী",
+   "hi": null,
+   "born": "1852",
+   "died": "1925",
+   "voice": "male",
+   "gharana": [
+    "Bishnupur"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Radhika Prasad Goswamy",
+   "wikidata": "Q66107431",
+   "rank": 134
+  },
+  {
+   "id": "subhra-guha",
+   "en": "Subhra Guha",
+   "bn": "শুভ্র গুহ",
+   "hi": null,
+   "born": "1956",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Subhra Guha",
+   "wikidata": "Q22695766",
+   "rank": 135
+  },
+  {
+   "id": "yeshwant-balkrishna-joshi",
+   "en": "Yeshwant Balkrishna Joshi",
+   "bn": "যশবন্ত বালকৃষ্ণ যোশী",
+   "hi": null,
+   "born": "1928",
+   "died": "2012",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Yeshwant Balkrishna Joshi",
+   "wikidata": "Q13120255",
+   "rank": 136
+  },
+  {
+   "id": "ghulam-sadiq-khan",
+   "en": "Ghulam Sadiq Khan",
+   "bn": "গুলাম সাদিক খান",
+   "hi": "गुलाम सादिक खान",
+   "born": "1939",
+   "died": "2016",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Ghulam Sadiq Khan",
+   "wikidata": "Q5557671",
+   "rank": 137
+  },
+  {
+   "id": "inayat-hussain-khan",
+   "en": "Inayat Hussain Khan",
+   "bn": "ইনায়েত হোসেন খান",
+   "hi": null,
+   "born": "1849",
+   "died": "1919",
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Rampur-Sahaswan"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Inayat Hussain Khan",
+   "wikidata": "Q6013856",
+   "rank": 138
+  },
+  {
+   "id": "mashkoor-ali-khan",
+   "en": "Mashkoor Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1957",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Mashkoor Ali Khan",
+   "wikidata": "Q20684354",
+   "rank": 139
+  },
+  {
+   "id": "munawar-ali-khan",
+   "en": "Munawar Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1930",
+   "died": "1989",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Munawar Ali Khan",
+   "wikidata": "Q16012273",
+   "rank": 140
+  },
+  {
+   "id": "vilayat-hussain-khan",
+   "en": "Vilayat Hussain Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1895",
+   "died": "1962",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Vilayat Hussain Khan",
+   "wikidata": "Q7930113",
+   "rank": 141
+  },
+  {
+   "id": "manjusha-kulkarni-patil",
+   "en": "Manjusha Kulkarni-Patil",
+   "bn": null,
+   "hi": null,
+   "born": "1971",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Manjusha Kulkarni-Patil",
+   "wikidata": "Q6750465",
+   "rank": 142
+  },
+  {
+   "id": "chinmoy-lahiri",
+   "en": "Chinmoy Lahiri",
+   "bn": "চিন্ময় লাহিড়ী",
+   "hi": null,
+   "born": "1920",
+   "died": "1984",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Chinmoy Lahiri",
+   "wikidata": "Q62075845",
+   "rank": 143
+  },
+  {
+   "id": "maniram",
+   "en": "Maniram",
+   "bn": null,
+   "hi": null,
+   "born": "1910",
+   "died": "1985",
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Maniram",
+   "wikidata": "Q7130661",
+   "rank": 144
+  },
+  {
+   "id": "manjiri-asanare-kelkar",
+   "en": "Manjiri Asanare–Kelkar",
+   "bn": null,
+   "hi": null,
+   "born": "1971",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Manjiri Asanare–Kelkar",
+   "wikidata": "Q13119601",
+   "rank": 145
+  },
+  {
+   "id": "vinay-chandra-maudgalya",
+   "en": "Vinay Chandra Maudgalya",
+   "bn": "বিনয় চন্দ্র মৌদগাল্য",
+   "hi": "vinay chandra maudgalya",
+   "born": "1918",
+   "died": "1995",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Vinay Chandra Maudgalya",
+   "wikidata": "Q20684742",
+   "rank": 146
+  },
+  {
+   "id": "madhup-mudgal",
+   "en": "Madhup Mudgal",
+   "bn": "মধুপ মুদগল",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Madhup Mudgal",
+   "wikidata": "Q6727495",
+   "rank": 147
+  },
+  {
+   "id": "sanhita-nandi",
+   "en": "Sanhita Nandi",
+   "bn": "সংহিতা নন্দী",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Sanhita Nandi",
+   "wikidata": "Q7418238",
+   "rank": 148
+  },
+  {
+   "id": "amar-nath",
+   "en": "Amar Nath",
+   "bn": "অমর নাথ",
+   "hi": null,
+   "born": "1924",
+   "died": "1996",
+   "voice": "male",
+   "gharana": [
+    "Indore"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Amar Nath",
+   "wikidata": "Q4740027",
+   "rank": 149
+  },
+  {
+   "id": "padmavati-gokhale-shaligram",
+   "en": "Padmavati Gokhale Shaligram",
+   "bn": null,
+   "hi": null,
+   "born": "1918",
+   "died": "2014",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli",
+    "Kirana"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Padmavati Gokhale Shaligram",
+   "wikidata": "Q109383336",
+   "rank": 150
+  },
+  {
+   "id": "samrat-pandit",
+   "en": "Samrat Pandit",
+   "bn": "সম্রাট পণ্ডিত",
+   "hi": null,
+   "born": "1982",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Samrat Pandit",
+   "wikidata": "Q37451606",
+   "rank": 151
+  },
+  {
+   "id": "raghunandan-panshikar",
+   "en": "Raghunandan Panshikar",
+   "bn": null,
+   "hi": null,
+   "born": "1963",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Raghunandan Panshikar",
+   "wikidata": "Q7283007",
+   "rank": 152
+  },
+  {
+   "id": "jagdish-prasad",
+   "en": "Jagdish Prasad",
+   "bn": "জগদীশ প্রসাদ",
+   "hi": "जगदीश प्रसाद",
+   "born": "1937",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Jagdish Prasad",
+   "wikidata": "Q6122331",
+   "rank": 153
+  },
+  {
+   "id": "rahim-ud-in-khan-dagar",
+   "en": "Rahim-ud-in Khan Dagar",
+   "bn": "রহিম-উদ্দিন খান ডাগর",
+   "hi": "रहीम-उद-खान डागर",
+   "born": "1900",
+   "died": "1975",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Rahim-ud-in Khan Dagar",
+   "wikidata": "Q7283399",
+   "rank": 154
+  },
+  {
+   "id": "rattan-mohan-sharma",
+   "en": "Rattan Mohan Sharma",
+   "bn": null,
+   "hi": null,
+   "born": "1971",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Rattan Mohan Sharma",
+   "wikidata": "Q7295949",
+   "rank": 155
+  },
+  {
+   "id": "bharati-vaishampayan",
+   "en": "Bharati Vaishampayan",
+   "bn": "ভারতী বৈশম্পায়ন",
+   "hi": null,
+   "born": "1954",
+   "died": "2020",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Bharati Vaishampayan",
+   "wikidata": "Q16186536",
+   "rank": 156
+  },
+  {
+   "id": "ramkrishnabuwa-vaze",
+   "en": "Ramkrishnabuwa Vaze",
+   "bn": null,
+   "hi": null,
+   "born": "1871",
+   "died": "1945",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Ramkrishnabuwa Vaze",
+   "wikidata": "Q64683672",
+   "rank": 157
+  },
+  {
+   "id": "narayanrao-vyas",
+   "en": "Narayanrao Vyas",
+   "bn": "নারায়ণরাও ব্যাস",
+   "hi": "नारायणराव व्यास",
+   "born": "1902",
+   "died": "1984",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Narayanrao Vyas",
+   "wikidata": "Q6965577",
+   "rank": 158
+  },
+  {
+   "id": "kankana-banerjee",
+   "en": "Kankana Banerjee",
+   "bn": "কঙ্কনা বন্দ্যোপাধ্যায়",
+   "hi": null,
+   "born": "1946",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Kankana Banerjee",
+   "wikidata": "Q55615657",
+   "rank": 159
+  },
+  {
+   "id": "yashpaul",
+   "en": "Yashpaul",
+   "bn": null,
+   "hi": null,
+   "born": "1937",
+   "died": "2023",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Yashpaul",
+   "wikidata": "Q8049764",
+   "rank": 160
+  },
+  {
+   "id": "manzoor-ali-khan",
+   "en": "Manzoor Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1922",
+   "died": "1980",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Manzoor Ali Khan",
+   "wikidata": "Q23991666",
+   "rank": 161
+  },
+  {
+   "id": "anupama-raag",
+   "en": "Anupama Raag",
+   "bn": "অনুপমা রাগ",
+   "hi": "Anupama Raag",
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 4,
+   "wiki": "Anupama Raag",
+   "wikidata": "Q23771946",
+   "rank": 162
+  },
+  {
+   "id": "ganapati-bhat",
+   "en": "Ganapati Bhat",
+   "bn": "গণপতি ভাট",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Patiala"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ganapati Bhat",
+   "wikidata": "Q5520500",
+   "rank": 163
+  },
+  {
+   "id": "kedar-bodas",
+   "en": "Kedar Bodas",
+   "bn": null,
+   "hi": null,
+   "born": "1963",
+   "died": "2023",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Kedar Bodas",
+   "wikidata": "Q60677753",
+   "rank": 164
+  },
+  {
+   "id": "kalyani-bondre",
+   "en": "Kalyani Bondre",
+   "bn": "কল্যাণি বন্ড্রে",
+   "hi": "कल्याणी बोंद्रे",
+   "born": "1981",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Kalyani Bondre",
+   "wikidata": "Q6354961",
+   "rank": 165
+  },
+  {
+   "id": "sanjeev-chimmalgi",
+   "en": "Sanjeev Chimmalgi",
+   "bn": null,
+   "hi": "संजीव चिमलगी",
+   "born": "1972",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Gwalior",
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Sanjeev Chimmalgi",
+   "wikidata": "Q7418501",
+   "rank": 166
+  },
+  {
+   "id": "h-sayeeduddin-dagar",
+   "en": "H. Sayeeduddin Dagar",
+   "bn": null,
+   "hi": null,
+   "born": "1939",
+   "died": "2017",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "H. Sayeeduddin Dagar",
+   "wikidata": "Q29886370",
+   "rank": 167
+  },
+  {
+   "id": "b-r-deodhar",
+   "en": "B. R. Deodhar",
+   "bn": "বি. আর. দেওধর",
+   "hi": null,
+   "born": "1901",
+   "died": "1990",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "B. R. Deodhar",
+   "wikidata": "Q16012406",
+   "rank": 168
+  },
+  {
+   "id": "suman-ghosh",
+   "en": "Suman Ghosh",
+   "bn": "সুমন ঘোষ",
+   "hi": null,
+   "born": "1967",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Suman Ghosh",
+   "wikidata": "Q7636931",
+   "rank": 169
+  },
+  {
+   "id": "shyam-sundar-goswami",
+   "en": "Shyam Sundar Goswami",
+   "bn": "শ্যাম সুন্দর গোস্বামী",
+   "hi": null,
+   "born": "1901",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Shyam Sundar Goswami",
+   "wikidata": "Q23697714",
+   "rank": 170
+  },
+  {
+   "id": "jnanendra-prasad-goswamy",
+   "en": "Jnanendra Prasad Goswamy",
+   "bn": "পণ্ডিত জ্ঞানেন্দ্রপ্রসাদ গোস্বামী",
+   "hi": null,
+   "born": "1902",
+   "died": "1945",
+   "voice": "male",
+   "gharana": [
+    "Bishnupur"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Jnanendra Prasad Goswamy",
+   "wikidata": "Q64876078",
+   "rank": 171
+  },
+  {
+   "id": "madhav-gudi",
+   "en": "Madhav Gudi",
+   "bn": "মাধব গুদি",
+   "hi": null,
+   "born": "1941",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Madhav Gudi",
+   "wikidata": "Q6727283",
+   "rank": 172
+  },
+  {
+   "id": "nagaraja-rao-havaldar",
+   "en": "Nagaraja Rao Havaldar",
+   "bn": null,
+   "hi": "नागराज राव हवलदार",
+   "born": "1959",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Nagaraja Rao Havaldar",
+   "wikidata": "Q3633743",
+   "rank": 173
+  },
+  {
+   "id": "balakrishnabuwa-ichalkaranjikar",
+   "en": "Balakrishnabuwa Ichalkaranjikar",
+   "bn": null,
+   "hi": null,
+   "born": "1849",
+   "died": "1926",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Balakrishnabuwa Ichalkaranjikar",
+   "wikidata": "Q4849891",
+   "rank": 174
+  },
+  {
+   "id": "ali-baksh-jarnail",
+   "en": "Ali Baksh Jarnail",
+   "bn": null,
+   "hi": null,
+   "born": "1850",
+   "died": "1928",
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Jaipur-Atrauli",
+    "Patiala",
+    "Delhi"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ali Baksh Jarnail",
+   "wikidata": "Q4724701",
+   "rank": 175
+  },
+  {
+   "id": "santosh-joshi",
+   "en": "Santosh Joshi",
+   "bn": "সন্তোষ জোশী",
+   "hi": "संतोष जोशी",
+   "born": "1960",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Santosh Joshi",
+   "wikidata": "Q7420654",
+   "rank": 176
+  },
+  {
+   "id": "ghagge-nazir-khan",
+   "en": "Ghagge Nazir Khan",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ghagge Nazir Khan",
+   "wikidata": "Q106618348",
+   "rank": 177
+  },
+  {
+   "id": "khadim-hussain-khan",
+   "en": "Khadim Hussain Khan",
+   "bn": "খাদিম হুসেইন খান",
+   "hi": "खदीम हुसैन खान",
+   "born": "1907",
+   "died": "1993",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Khadim Hussain Khan",
+   "wikidata": "Q6398912",
+   "rank": 178
+  },
+  {
+   "id": "manji-khan",
+   "en": "Manji Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1888",
+   "died": "1937",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Manji Khan",
+   "wikidata": "Q6750385",
+   "rank": 179
+  },
+  {
+   "id": "mazhar-ali-khan",
+   "en": "Mazhar Ali Khan",
+   "bn": "মাজহার আলী খান",
+   "hi": null,
+   "born": "1958",
+   "died": "2021",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Mazhar Ali Khan (singer)",
+   "wikidata": "Q6798492",
+   "rank": 180
+  },
+  {
+   "id": "vijay-koparkar",
+   "en": "Vijay Koparkar",
+   "bn": "বিজয় কোপারকার",
+   "hi": null,
+   "born": "1962",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Vijay Koparkar",
+   "wikidata": "Q7929158",
+   "rank": 181
+  },
+  {
+   "id": "gokulotsavji-maharaj",
+   "en": "Gokulotsavji Maharaj",
+   "bn": "গোকুলোৎসবজি মহারাজ",
+   "hi": "गोकुलोत्सवजी महाराज",
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Gokulotsavji Maharaj",
+   "wikidata": "Q19561336",
+   "rank": 182
+  },
+  {
+   "id": "shashwati-mandal",
+   "en": "Shashwati Mandal",
+   "bn": null,
+   "hi": "शाश्वती मंडल",
+   "born": "1971",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Shashwati Mandal",
+   "wikidata": "Q48698048",
+   "rank": 183
+  },
+  {
+   "id": "rajshekhar-mansur",
+   "en": "Rajshekhar Mansur",
+   "bn": "রাজশেখর মনসুর",
+   "hi": null,
+   "born": "1942",
+   "died": "2022",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Rajshekhar Mansur",
+   "wikidata": "Q1703601",
+   "rank": 184
+  },
+  {
+   "id": "jayateerth-mevundi",
+   "en": "Jayateerth Mevundi",
+   "bn": null,
+   "hi": null,
+   "born": "1972",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Jayateerth Mevundi",
+   "wikidata": "Q6167688",
+   "rank": 185
+  },
+  {
+   "id": "aparna-panshikar",
+   "en": "Aparna Panshikar",
+   "bn": "অপর্ণা পানশিকর",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Aparna Panshikar",
+   "wikidata": "Q16734095",
+   "rank": 186
+  },
+  {
+   "id": "mani-prasad",
+   "en": "Mani Prasad",
+   "bn": "মণি প্রসাদ",
+   "hi": null,
+   "born": "1930",
+   "died": "2023",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Mani Prasad",
+   "wikidata": "Q12066370",
+   "rank": 187
+  },
+  {
+   "id": "jagannathbuwa-purohit",
+   "en": "Jagannathbuwa Purohit",
+   "bn": null,
+   "hi": null,
+   "born": "1904",
+   "died": "1968",
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Jagannathbuwa Purohit",
+   "wikidata": "Q6122184",
+   "rank": 188
+  },
+  {
+   "id": "ritwik-sanyal",
+   "en": "Ritwik Sanyal",
+   "bn": "ঋত্বিক সান্যাল",
+   "hi": null,
+   "born": "1953",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ritwik Sanyal",
+   "wikidata": "Q7336889",
+   "rank": 189
+  },
+  {
+   "id": "vijay-sardeshmukh",
+   "en": "Vijay Sardeshmukh",
+   "bn": "বিজয় সরদেশমুখী",
+   "hi": null,
+   "born": "1952",
+   "died": "2019",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Vijay Sardeshmukh",
+   "wikidata": "Q7929203",
+   "rank": 190
+  },
+  {
+   "id": "ghulam-hassan-shaggan",
+   "en": "Ghulam Hassan Shaggan",
+   "bn": null,
+   "hi": null,
+   "born": "1928",
+   "died": "2015",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ghulam Hassan Shaggan",
+   "wikidata": "Q5557593",
+   "rank": 191
+  },
+  {
+   "id": "ustad-bade-inayat-hussain-khan",
+   "en": "Ustad Bade Inayat Hussain Khan",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Ustad Bade Inayat Hussain Khan",
+   "wikidata": "Q24931946",
+   "rank": 192
+  },
+  {
+   "id": "raja-bhaiya-poonchwale",
+   "en": "Raja Bhaiya Poonchwale",
+   "bn": null,
+   "hi": null,
+   "born": "1882",
+   "died": "1956",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Raja Bhaiya Poonchwale",
+   "wikidata": "Q25752943",
+   "rank": 193
+  },
+  {
+   "id": "akhtar-sadmani",
+   "en": "Akhtar Sadmani",
+   "bn": "আখতার সাদমানী",
+   "hi": null,
+   "born": "1934",
+   "died": "2003",
+   "voice": "male",
+   "gharana": [
+    "Indore"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Akhtar Sadmani",
+   "wikidata": "Q4700815",
+   "rank": 194
+  },
+  {
+   "id": "bhai-lal-mohammad",
+   "en": "Bhai Lal Mohammad",
+   "bn": null,
+   "hi": null,
+   "born": "1887",
+   "died": "1962",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 3,
+   "wiki": "Bhai Lal Mohammad",
+   "wikidata": "Q4900754",
+   "rank": 195
+  },
+  {
+   "id": "ali-razwan",
+   "en": "Ali Razwan",
+   "bn": "আলী এফ.এম. রেজোয়ান",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Ali Razwan",
+   "wikidata": "Q125717630",
+   "rank": 196
+  },
+  {
+   "id": "upendra-bhat",
+   "en": "Upendra Bhat",
+   "bn": "উপেন্দ্র ভাট",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Upendra Bhat",
+   "wikidata": "Q7898241",
+   "rank": 197
+  },
+  {
+   "id": "sandip-bhattacharjee",
+   "en": "Sandip Bhattacharjee",
+   "bn": null,
+   "hi": null,
+   "born": "1980",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Sandip Bhattacharjee",
+   "wikidata": "Q21005071",
+   "rank": 198
+  },
+  {
+   "id": "milind-chittal",
+   "en": "Milind Chittal",
+   "bn": "মিলিন্ড চিত্তাল",
+   "hi": null,
+   "born": "1959",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Milind Chittal",
+   "wikidata": "Q19946975",
+   "rank": 199
+  },
+  {
+   "id": "satyasheel-deshpande",
+   "en": "Satyasheel Deshpande",
+   "bn": null,
+   "hi": null,
+   "born": "1951",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Satyasheel Deshpande",
+   "wikidata": "Q7426938",
+   "rank": 200
+  },
+  {
+   "id": "vamanrao-deshpande",
+   "en": "Vamanrao Deshpande",
+   "bn": "বামনরাও দেশপাণ্ডে",
+   "hi": null,
+   "born": "1907",
+   "died": "1990",
+   "voice": "male",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Vamanrao Deshpande",
+   "wikidata": "Q7912919",
+   "rank": 201
+  },
+  {
+   "id": "rita-dev",
+   "en": "Rita Dev",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Gwalior",
+    "Benaras"
+   ],
+   "forms": [
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Rita Dev",
+   "wikidata": "Q83812519",
+   "rank": 202
+  },
+  {
+   "id": "pandit-puranchandra",
+   "en": "Pandit Puranchandra",
+   "bn": null,
+   "hi": null,
+   "born": "1929",
+   "died": "1991",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Mewati"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Pandit Puranchandra",
+   "wikidata": "Q107657055",
+   "rank": 203
+  },
+  {
+   "id": "sanjukta-ghosh",
+   "en": "Sanjukta Ghosh",
+   "bn": "সংযুক্তা ঘোষ",
+   "hi": null,
+   "born": "1901",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Sanjukta Ghosh",
+   "wikidata": "Q7418597",
+   "rank": 204
+  },
+  {
+   "id": "babanrao-haldankar",
+   "en": "Babanrao Haldankar",
+   "bn": null,
+   "hi": null,
+   "born": "1927",
+   "died": "2016",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Babanrao Haldankar",
+   "wikidata": "Q4837502",
+   "rank": 205
+  },
+  {
+   "id": "shripad-hegde",
+   "en": "Shripad Hegde",
+   "bn": "শ্রীপদ হেগড়ে",
+   "hi": null,
+   "born": "1957",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Shripad Hegde",
+   "wikidata": "Q16189296",
+   "rank": 206
+  },
+  {
+   "id": "shruti-jauhari",
+   "en": "Shruti Jauhari",
+   "bn": null,
+   "hi": null,
+   "born": "1969",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Shruti Jauhari",
+   "wikidata": "Q133596892",
+   "rank": 207
+  },
+  {
+   "id": "anant-manohar-joshi",
+   "en": "Anant Manohar Joshi",
+   "bn": "অনন্ত মনোহর জোশী",
+   "hi": null,
+   "born": "1881",
+   "died": "1967",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Anant Manohar Joshi",
+   "wikidata": "Q15293348",
+   "rank": 208
+  },
+  {
+   "id": "raja-kale",
+   "en": "Raja Kale",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Raja Kale",
+   "wikidata": "Q19665848",
+   "rank": 209
+  },
+  {
+   "id": "arun-kashalkar",
+   "en": "Arun Kashalkar",
+   "bn": "অরুণ কাশালকর",
+   "hi": null,
+   "born": "1943",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Arun Kashalkar",
+   "wikidata": "Q18126634",
+   "rank": 210
+  },
+  {
+   "id": "aman-ali-khan",
+   "en": "Aman Ali Khan",
+   "bn": "আমান আলী খান",
+   "hi": null,
+   "born": "1888",
+   "died": "1953",
+   "voice": "male",
+   "gharana": [
+    "Bhendibazaar"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Aman Ali Khan",
+   "wikidata": "Q4739475",
+   "rank": 211
+  },
+  {
+   "id": "hafeez-ahmed-khan",
+   "en": "Hafeez Ahmed Khan",
+   "bn": "হাফিজ আহমেদ খান",
+   "hi": null,
+   "born": "1926",
+   "died": "2006",
+   "voice": "male",
+   "gharana": [
+    "Rampur-Sahaswan"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Hafeez Ahmed Khan",
+   "wikidata": "Q21151517",
+   "rank": 212
+  },
+  {
+   "id": "jawaad-ali-khan",
+   "en": "Jawaad Ali Khan",
+   "bn": "জাওয়াদ আলী খান",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Jawaad Ali Khan",
+   "wikidata": "Q16730794",
+   "rank": 213
+  },
+  {
+   "id": "bhurji-khan",
+   "en": "Bhurji Khan",
+   "bn": "ভুরজি খান",
+   "hi": null,
+   "born": "1890",
+   "died": "1950",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Bhurji Khan",
+   "wikidata": "Q4902203",
+   "rank": 214
+  },
+  {
+   "id": "qurban-hussain-khan",
+   "en": "Qurban Hussain Khan",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Qurban Hussain Khan",
+   "wikidata": "Q21998581",
+   "rank": 215
+  },
+  {
+   "id": "sombala-kumar",
+   "en": "Sombala Kumar",
+   "bn": "সোম্বালা কুমার",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Sombala Kumar",
+   "wikidata": "Q17081884",
+   "rank": 216
+  },
+  {
+   "id": "banshari-lahiri",
+   "en": "Banshari Lahiri",
+   "bn": "বাঁশরী লাহিড়ী",
+   "hi": null,
+   "born": "1932",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Banshari Lahiri",
+   "wikidata": "Q122801958",
+   "rank": 217
+  },
+  {
+   "id": "pandit-motiram",
+   "en": "Pandit Motiram",
+   "bn": null,
+   "hi": null,
+   "born": "1910",
+   "died": "1934",
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Pandit Motiram",
+   "wikidata": "Q130301367",
+   "rank": 218
+  },
+  {
+   "id": "ratnakar-pai",
+   "en": "Ratnakar Pai",
+   "bn": "রত্নাকার পাই",
+   "hi": null,
+   "born": "1928",
+   "died": "2009",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Ratnakar Pai",
+   "wikidata": "Q7295854",
+   "rank": 219
+  },
+  {
+   "id": "jayashree-patanekar",
+   "en": "Jayashree Patanekar",
+   "bn": null,
+   "hi": null,
+   "born": "1943",
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Jayashree Patanekar",
+   "wikidata": "Q6167664",
+   "rank": 220
+  },
+  {
+   "id": "rajkumar-shyamanand-sinha",
+   "en": "Rajkumar Shyamanand Sinha",
+   "bn": null,
+   "hi": null,
+   "born": "1916",
+   "died": "1994",
+   "voice": "male",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Rajkumar Shyamanand Sinha",
+   "wikidata": "Q7286297",
+   "rank": 221
+  },
+  {
+   "id": "vishwanath-rao-ringe",
+   "en": "Vishwanath Rao Ringe",
+   "bn": null,
+   "hi": "विश्वनाथ राव रिंगे",
+   "born": "1922",
+   "died": "2005",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Vishwanath Rao Ringe",
+   "wikidata": "Q7936056",
+   "rank": 222
+  },
+  {
+   "id": "wamanrao-sadolikar",
+   "en": "Wamanrao Sadolikar",
+   "bn": null,
+   "hi": null,
+   "born": "1907",
+   "died": "1991",
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Wamanrao Sadolikar",
+   "wikidata": "Q7966908",
+   "rank": 223
+  },
+  {
+   "id": "laxmi-ganesh-tewari",
+   "en": "Laxmi Ganesh Tewari",
+   "bn": null,
+   "hi": null,
+   "born": "1938",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Laxmi Ganesh Tewari",
+   "wikidata": "Q15489525",
+   "rank": 224
+  },
+  {
+   "id": "siyaram-tiwari",
+   "en": "Siyaram Tiwari",
+   "bn": "সিয়ারাম তিওয়াড়ি",
+   "hi": null,
+   "born": "1919",
+   "died": "1998",
+   "voice": "male",
+   "gharana": [
+    "Darbhanga (dhrupad)"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Siyaram Tiwari (musician)",
+   "wikidata": "Q7533351",
+   "rank": 225
+  },
+  {
+   "id": "vidyadhar-vyas",
+   "en": "Vidyadhar Vyas",
+   "bn": "বিদ্যাধর ব্যাস",
+   "hi": null,
+   "born": "1944",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Vidyadhar Vyas",
+   "wikidata": "Q7928198",
+   "rank": 226
+  },
+  {
+   "id": "som-dutt-battu",
+   "en": "Som Dutt Battu",
+   "bn": null,
+   "hi": null,
+   "born": "1938",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala",
+    "Sham Chaurasia"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Som Dutt Battu",
+   "wikidata": "Q30613059",
+   "rank": 227
+  },
+  {
+   "id": "vinayak-torvi",
+   "en": "Vinayak Torvi",
+   "bn": "বিনয়াক টরভি",
+   "hi": null,
+   "born": "1948",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Vinayak Torvi",
+   "wikidata": "Q7931405",
+   "rank": 228
+  },
+  {
+   "id": "somesh-mathur",
+   "en": "Somesh Mathur",
+   "bn": "সোমেশ মাথুর",
+   "hi": null,
+   "born": "1964",
+   "died": null,
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Somesh Mathur",
+   "wikidata": "Q24049100",
+   "rank": 229
+  },
+  {
+   "id": "vinayakbuva-utturkar",
+   "en": "Vinayakbuva Utturkar",
+   "bn": null,
+   "hi": null,
+   "born": "1914",
+   "died": "1989",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Vinayakbuva Utturkar",
+   "wikidata": "Q18211688",
+   "rank": 230
+  },
+  {
+   "id": "amjad-ali-khan",
+   "en": "Amjad Ali Khan",
+   "bn": "আমজাদ আলী খান",
+   "hi": null,
+   "born": "1980",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Amjad Ali Khan (Indian vocalist)",
+   "wikidata": "Q28419629",
+   "rank": 231
+  },
+  {
+   "id": "arshad-ali-khan",
+   "en": "Arshad Ali Khan",
+   "bn": "আরশাদ আলী খান",
+   "hi": null,
+   "born": "1984",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Arshad Ali Khan",
+   "wikidata": "Q39611575",
+   "rank": 232
+  },
+  {
+   "id": "jaiwant-singhji-vaghela",
+   "en": "Jaiwant Singhji Vaghela",
+   "bn": null,
+   "hi": null,
+   "born": "1904",
+   "died": "1980",
+   "voice": "male",
+   "gharana": [
+    "Mewati"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Jaiwant Singhji Vaghela",
+   "wikidata": "Q110486831",
+   "rank": 233
+  },
+  {
+   "id": "hussain-baksh-gullo",
+   "en": "Hussain Baksh Gullo",
+   "bn": null,
+   "hi": null,
+   "born": "1948",
+   "died": "2023",
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Hussain Baksh Gullo",
+   "wikidata": "Q134834750",
+   "rank": 234
+  },
+  {
+   "id": "rafaqat-ali-khan",
+   "en": "Rafaqat Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Sham Chaurasia"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 2,
+   "wiki": "Rafaqat Ali Khan",
+   "wikidata": "Q25756402",
+   "rank": 235
+  },
+  {
+   "id": "v-r-athavale",
+   "en": "V. R. Athavale",
+   "bn": null,
+   "hi": null,
+   "born": "1918",
+   "died": "2011",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "V. R. Athavale",
+   "wikidata": "Q63089760",
+   "rank": 236
+  },
+  {
+   "id": "balwantrai-bhatt",
+   "en": "Balwantrai Bhatt",
+   "bn": "বলবন্তরাই ভট্ট",
+   "hi": "बाल्वन्थराइ भत्त्",
+   "born": "1921",
+   "died": "2016",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Balwantrai Bhatt",
+   "wikidata": "Q4853136",
+   "rank": 237
+  },
+  {
+   "id": "narayanrao-bodas",
+   "en": "Narayanrao Bodas",
+   "bn": null,
+   "hi": null,
+   "born": "1932",
+   "died": "2017",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Narayanrao Bodas",
+   "wikidata": "Q43948025",
+   "rank": 238
+  },
+  {
+   "id": "bhaiyya-ganpatrao",
+   "en": "Bhaiyya Ganpatrao",
+   "bn": null,
+   "hi": null,
+   "born": "1852",
+   "died": "1920",
+   "voice": "male",
+   "gharana": [
+    "Gwalior",
+    "Kirana"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Bhaiyya Ganpatrao",
+   "wikidata": "Q65048206",
+   "rank": 239
+  },
+  {
+   "id": "panchakshara-gawai",
+   "en": "Panchakshara Gawai",
+   "bn": null,
+   "hi": null,
+   "born": "1892",
+   "died": "1944",
+   "voice": "male",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Panchakshara Gawai",
+   "wikidata": "Q5520522",
+   "rank": 240
+  },
+  {
+   "id": "sangmeshwar-gurav",
+   "en": "Sangmeshwar Gurav",
+   "bn": null,
+   "hi": null,
+   "born": "1901",
+   "died": "2014",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Sangmeshwar Gurav",
+   "wikidata": "Q27971031",
+   "rank": 241
+  },
+  {
+   "id": "malka-jaan",
+   "en": "Malka Jaan",
+   "bn": null,
+   "hi": null,
+   "born": "1855",
+   "died": "1907",
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "thumri",
+    "dadra"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Malka Jaan",
+   "wikidata": "Q136656620",
+   "rank": 242
+  },
+  {
+   "id": "srivani-jade",
+   "en": "Srivani Jade",
+   "bn": null,
+   "hi": null,
+   "born": "1975",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Srivani Jade",
+   "wikidata": "Q21663024",
+   "rank": 243
+  },
+  {
+   "id": "jayadevi-jangamshetti",
+   "en": "Jayadevi Jangamshetti",
+   "bn": null,
+   "hi": null,
+   "born": "1950",
+   "died": null,
+   "voice": "female",
+   "gharana": [],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Jayadevi Jangamshetti",
+   "wikidata": "Q17004342",
+   "rank": 244
+  },
+  {
+   "id": "shrinivas-joshi",
+   "en": "Shrinivas Joshi",
+   "bn": "শ্রিনিভাস জোশী",
+   "hi": null,
+   "born": "1971",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Shrinivas Joshi",
+   "wikidata": "Q7504120",
+   "rank": 245
+  },
+  {
+   "id": "vikas-kashalkar",
+   "en": "Vikas Kashalkar",
+   "bn": "বিকাস কাশালকর",
+   "hi": null,
+   "born": "1950",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Gwalior"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Vikas Kashalkar",
+   "wikidata": "Q7929393",
+   "rank": 246
+  },
+  {
+   "id": "gulubhai-jasdanwalla",
+   "en": "Gulubhai Jasdanwalla",
+   "bn": null,
+   "hi": null,
+   "born": "1888",
+   "died": "1937",
+   "voice": "male",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Gulubhai Jasdanwalla",
+   "wikidata": "Q5617916",
+   "rank": 247
+  },
+  {
+   "id": "sharafat-hussain-khan",
+   "en": "Sharafat Hussain Khan",
+   "bn": "শরাফত হুসেইন খাঁ",
+   "hi": null,
+   "born": "1930",
+   "died": "1985",
+   "voice": "male",
+   "gharana": [
+    "Agra",
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Sharafat Hussain Khan",
+   "wikidata": "Q17492753",
+   "rank": 248
+  },
+  {
+   "id": "sindhe-khan",
+   "en": "Sindhe Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1885",
+   "died": "1950",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Sindhe Khan",
+   "wikidata": "Q130638248",
+   "rank": 249
+  },
+  {
+   "id": "sukhawat-ali-khan",
+   "en": "Sukhawat Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1950",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Sham Chaurasia"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Sukhawat Ali Khan",
+   "wikidata": "Q15454040",
+   "rank": 250
+  },
+  {
+   "id": "dhondutai-kulkarni",
+   "en": "Dhondutai Kulkarni",
+   "bn": null,
+   "hi": null,
+   "born": "1927",
+   "died": "2014",
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Dhondutai Kulkarni",
+   "wikidata": "Q5269731",
+   "rank": 251
+  },
+  {
+   "id": "mukul-kulkarni",
+   "en": "Mukul Kulkarni",
+   "bn": "মুকুল কুলকর্ণী",
+   "hi": null,
+   "born": "1980",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Mukul Kulkarni",
+   "wikidata": "Q18126992",
+   "rank": 252
+  },
+  {
+   "id": "falguni-mitra",
+   "en": "Falguni Mitra",
+   "bn": null,
+   "hi": null,
+   "born": "1942",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Bettiah (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Falguni Mitra",
+   "wikidata": "Q81878361",
+   "rank": 253
+  },
+  {
+   "id": "nasir-moinuddin-dagar",
+   "en": "Nasir Moinuddin Dagar",
+   "bn": null,
+   "hi": null,
+   "born": "1919",
+   "died": "1966",
+   "voice": "male",
+   "gharana": [
+    "Dagar (dhrupad)"
+   ],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Nasir Moinuddin Dagar",
+   "wikidata": "Q116686281",
+   "rank": 254
+  },
+  {
+   "id": "tansen-pande",
+   "en": "Tansen Pande",
+   "bn": "ট্যানসেন পান্ডে",
+   "hi": null,
+   "born": "1910",
+   "died": "1966",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "dhrupad"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Tansen Pande",
+   "wikidata": "Q7683763",
+   "rank": 255
+  },
+  {
+   "id": "pandit-iman-das",
+   "en": "Pandit Iman Das",
+   "bn": null,
+   "hi": null,
+   "born": "1982",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Patiala"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Pandit Iman Das",
+   "wikidata": "Q135641838",
+   "rank": 256
+  },
+  {
+   "id": "balasaheb-poonchwale",
+   "en": "Balasaheb Poonchwale",
+   "bn": null,
+   "hi": null,
+   "born": "1918",
+   "died": "2005",
+   "voice": "male",
+   "gharana": [
+    "Gwalior"
+   ],
+   "forms": [
+    "khayal",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Balasaheb Poonchwale",
+   "wikidata": "Q107426219",
+   "rank": 257
+  },
+  {
+   "id": "radhavallabh-chaturvedi",
+   "en": "Radhavallabh Chaturvedi",
+   "bn": null,
+   "hi": null,
+   "born": "1917",
+   "died": "1974",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal",
+    "dhrupad",
+    "thumri",
+    "dadra",
+    "tappa"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Radhavallabh Chaturvedi",
+   "wikidata": "Q105697346",
+   "rank": 258
+  },
+  {
+   "id": "c-p-rele",
+   "en": "C. P. Rele",
+   "bn": "সি পি রিল",
+   "hi": null,
+   "born": "1928",
+   "died": "2010",
+   "voice": "male",
+   "gharana": [],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "C. P. Rele",
+   "wikidata": "Q5006749",
+   "rank": 259
+  },
+  {
+   "id": "anand-thakore",
+   "en": "Anand Thakore",
+   "bn": null,
+   "hi": null,
+   "born": "1971",
+   "died": null,
+   "voice": "male",
+   "gharana": [
+    "Agra"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Anand Thakore",
+   "wikidata": "Q23417191",
+   "rank": 260
+  },
+  {
+   "id": "geetika-varde",
+   "en": "Geetika Varde",
+   "bn": "গীতিকা ভার্দে",
+   "hi": null,
+   "born": null,
+   "died": null,
+   "voice": "female",
+   "gharana": [
+    "Jaipur-Atrauli"
+   ],
+   "forms": [],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Geetika Varde",
+   "wikidata": "Q17088438",
+   "rank": 261
+  },
+  {
+   "id": "mubarak-ali-khan",
+   "en": "Mubarak Ali Khan",
+   "bn": null,
+   "hi": null,
+   "born": "1937",
+   "died": "2021",
+   "voice": "male",
+   "gharana": [
+    "Kirana"
+   ],
+   "forms": [
+    "khayal"
+   ],
+   "seed": false,
+   "fame": 1,
+   "wiki": "Mubarak Ali Khan (singer)",
+   "wikidata": "Q131418360",
+   "rank": 262
+  }
+ ]
+}

@@ -1,0 +1,360 @@
+{
+ "moods": {
+  "shanta": {
+   "bn": "শান্ত",
+   "en": "Shanta",
+   "desc": "Peace, stillness, contemplation"
+  },
+  "bhakti": {
+   "bn": "ভক্তি",
+   "en": "Bhakti",
+   "desc": "Devotion, prayer, surrender"
+  },
+  "shringar": {
+   "bn": "শৃঙ্গার",
+   "en": "Shringar",
+   "desc": "Love, romance, beauty"
+  },
+  "karuna": {
+   "bn": "করুণ",
+   "en": "Karuna",
+   "desc": "Pathos, longing, viraha"
+  },
+  "gambhir": {
+   "bn": "গম্ভীর",
+   "en": "Gambhir",
+   "desc": "Gravity, majesty, depth (veer)"
+  },
+  "ullas": {
+   "bn": "উল্লাস",
+   "en": "Ullas",
+   "desc": "Joy, celebration, festive and seasonal brightness"
+  }
+ },
+ "raags": {
+  "yaman": [
+   "shanta",
+   "bhakti"
+  ],
+  "bhairavi": [
+   "bhakti",
+   "karuna"
+  ],
+  "bhairav": [
+   "bhakti",
+   "gambhir"
+  ],
+  "malkauns": [
+   "gambhir",
+   "shanta"
+  ],
+  "darbari": [
+   "gambhir",
+   "karuna"
+  ],
+  "bhimpalasi": [
+   "shringar",
+   "karuna"
+  ],
+  "bageshri": [
+   "shringar",
+   "karuna"
+  ],
+  "todi": [
+   "karuna",
+   "bhakti"
+  ],
+  "yaman-kalyan": [
+   "shanta",
+   "shringar"
+  ],
+  "bhupali": [
+   "shanta",
+   "bhakti"
+  ],
+  "puriya-dhanashri": [
+   "karuna",
+   "bhakti"
+  ],
+  "marwa": [
+   "karuna",
+   "gambhir"
+  ],
+  "puriya": [
+   "gambhir",
+   "shanta"
+  ],
+  "lalit": [
+   "bhakti",
+   "karuna"
+  ],
+  "multani": [
+   "karuna",
+   "gambhir"
+  ],
+  "bihag": [
+   "shringar"
+  ],
+  "kedar": [
+   "shringar",
+   "bhakti"
+  ],
+  "hameer": [
+   "gambhir",
+   "ullas"
+  ],
+  "desh": [
+   "shringar",
+   "ullas"
+  ],
+  "miyan-malhar": [
+   "gambhir",
+   "shringar"
+  ],
+  "megh": [
+   "gambhir",
+   "ullas"
+  ],
+  "gaud-malhar": [
+   "shringar",
+   "ullas"
+  ],
+  "jaijaiwanti": [
+   "shringar",
+   "karuna"
+  ],
+  "khamaj": [
+   "shringar",
+   "ullas"
+  ],
+  "kafi": [
+   "shringar",
+   "ullas"
+  ],
+  "asavari": [
+   "karuna",
+   "bhakti"
+  ],
+  "jaunpuri": [
+   "karuna",
+   "gambhir"
+  ],
+  "shree": [
+   "bhakti",
+   "gambhir"
+  ],
+  "basant": [
+   "ullas",
+   "shringar"
+  ],
+  "bahar": [
+   "ullas",
+   "shringar"
+  ],
+  "shuddh-kalyan": [
+   "shanta",
+   "bhakti"
+  ],
+  "puriya-kalyan": [
+   "shanta",
+   "karuna"
+  ],
+  "gaud-sarang": [
+   "shringar",
+   "ullas"
+  ],
+  "brindavani-sarang": [
+   "ullas",
+   "shanta"
+  ],
+  "shuddh-sarang": [
+   "shanta",
+   "shringar"
+  ],
+  "madhmad-sarang": [
+   "shanta",
+   "ullas"
+  ],
+  "ahir-bhairav": [
+   "bhakti",
+   "shanta"
+  ],
+  "nat-bhairav": [
+   "bhakti",
+   "gambhir"
+  ],
+  "ramkali": [
+   "bhakti",
+   "shanta"
+  ],
+  "jogiya": [
+   "karuna",
+   "bhakti"
+  ],
+  "kalingda": [
+   "bhakti",
+   "karuna"
+  ],
+  "gunakri": [
+   "karuna",
+   "shanta"
+  ],
+  "bibhas": [
+   "bhakti",
+   "shanta"
+  ],
+  "bairagi": [
+   "bhakti",
+   "shanta"
+  ],
+  "sohni": [
+   "shringar",
+   "ullas"
+  ],
+  "bhatiyar": [
+   "bhakti",
+   "karuna"
+  ],
+  "purvi": [
+   "gambhir",
+   "bhakti"
+  ],
+  "paraj": [
+   "shringar",
+   "ullas"
+  ],
+  "gurjari-todi": [
+   "karuna",
+   "bhakti"
+  ],
+  "bilaskhani-todi": [
+   "karuna"
+  ],
+  "bhupal-todi": [
+   "karuna",
+   "bhakti"
+  ],
+  "komal-rishabh-asavari": [
+   "karuna",
+   "bhakti"
+  ],
+  "madhuvanti": [
+   "shringar",
+   "shanta"
+  ],
+  "patdeep": [
+   "shringar",
+   "karuna"
+  ],
+  "pilu": [
+   "karuna",
+   "shringar"
+  ],
+  "abhogi": [
+   "shringar",
+   "bhakti"
+  ],
+  "adana": [
+   "gambhir",
+   "ullas"
+  ],
+  "chhayanat": [
+   "shringar",
+   "ullas"
+  ],
+  "kamod": [
+   "shringar"
+  ],
+  "shyam-kalyan": [
+   "shanta",
+   "shringar"
+  ],
+  "maru-bihag": [
+   "shringar",
+   "karuna"
+  ],
+  "nand": [
+   "shringar",
+   "ullas"
+  ],
+  "hindol": [
+   "ullas",
+   "gambhir"
+  ],
+  "bilawal": [
+   "ullas",
+   "shanta"
+  ],
+  "alhaiya-bilawal": [
+   "ullas",
+   "shanta"
+  ],
+  "deshkar": [
+   "ullas",
+   "shanta"
+  ],
+  "durga": [
+   "ullas",
+   "shanta"
+  ],
+  "shankara": [
+   "gambhir",
+   "ullas"
+  ],
+  "hamsadhwani": [
+   "ullas",
+   "bhakti"
+  ],
+  "jog": [
+   "karuna",
+   "gambhir"
+  ],
+  "tilang": [
+   "shringar",
+   "ullas"
+  ],
+  "tilak-kamod": [
+   "shringar",
+   "ullas"
+  ],
+  "jhinjhoti": [
+   "shringar",
+   "karuna"
+  ],
+  "rageshri": [
+   "shringar",
+   "shanta"
+  ],
+  "kalavati": [
+   "shringar",
+   "ullas"
+  ],
+  "sindhu-bhairavi": [
+   "karuna",
+   "bhakti"
+  ],
+  "shivranjani": [
+   "karuna"
+  ],
+  "chandrakauns": [
+   "gambhir",
+   "karuna"
+  ],
+  "kirwani": [
+   "karuna",
+   "shringar"
+  ],
+  "pahadi": [
+   "shringar",
+   "ullas"
+  ],
+  "mand": [
+   "shringar",
+   "ullas"
+  ],
+  "gara": [
+   "shringar",
+   "karuna"
+  ]
+ }
+}

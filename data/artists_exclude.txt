@@ -1,0 +1,13 @@
+# Wikipedia titles to leave out of the artist list (not classical vocal performers, or no recordings exist).
+# Category rule in build_catalogue.py already drops non-seed playback/ghazal/qawwali/pop singers.
+Vishnu Narayan Bhatkhande
+Nisar Bazmi
+Sajjad Ali
+Shafqat Amanat Ali
+Sadaat Shafqat Amanat
+Rahat Fateh Ali Khan
+Farrukh Fateh Ali Khan
+Abida Parveen
+Purshottam Das Jalota
+Habib Painter
+Munshi Raziuddin
