@@ -79,6 +79,12 @@ const STR = {
     syncedAt: (o) => `Saved to your account at ${o.time}`, deleteData: "Delete my saved data",
     deleteConfirm: "Delete everything saved in your account (likes, settings, resume point) and sign out? This browser keeps its own copy.",
     syncError: (o) => `Couldn't reach your account (${o.msg}). Everything is still saved in this browser.`,
+    navMine: "Mine", mineTitle: "Mine", mineLiked: (o) => `Liked performances (${o.n})`,
+    mineNoLikes: "Nothing liked yet. Press ♥ Like (or ♡ under a video) on performances you love; they collect here.",
+    playOne: "▶ Play", unlike: "♥ Unlike", allowAgain: "Allow again", playAllLikes: "▶ Play all my likes",
+    mineHidden: (o) => `Never play (${o.n})`, mineHiddenHint: "The jukebox skips these.",
+    mineSignIn: "Sign in to keep your likes on all your devices.", mineSynced: "Kept in your account, so they're on all your devices.",
+    f_source: "Name", guessedNote: "taken from the video titles (not yet checked)",
     findArtist: "Type to find an artist (Rashid, রশিদ…)", findRaag: "Type to find a raag (Yaman, ইমন…)",
     resumeTitle: "Welcome back", resumeYes: "Continue", resumeNo: "No, go to the home page",
     resumePlaying: (o) => `Continue where you left off? You were listening to ${o.what}, at ${o.at}.`,
@@ -153,6 +159,12 @@ const STR = {
     syncedAt: (o) => `অ্যাকাউন্টে রাখা হয়েছে ${o.time}-এ`, deleteData: "অ্যাকাউন্টে রাখা তথ্য মুছুন",
     deleteConfirm: "অ্যাকাউন্টে রাখা সব কিছু (পছন্দ, সেটিংস, থামার জায়গা) মুছে সাইন আউট করবেন? এই ব্রাউজারে নিজস্ব কপি থেকে যাবে।",
     syncError: (o) => `অ্যাকাউন্টের সঙ্গে যোগাযোগ করা গেল না (${o.msg})। সব কিছু এই ব্রাউজারে রাখা আছে।`,
+    navMine: "আমার", mineTitle: "আমার পাতা", mineLiked: (o) => `পছন্দের পরিবেশনা (${o.n})`,
+    mineNoLikes: "এখনও কিছু পছন্দ করেননি। ভালো লাগা পরিবেশনায় ♥ পছন্দ (বা ভিডিওর নিচে ♡) চাপুন; সব এখানে জমা হবে।",
+    playOne: "▶ বাজান", unlike: "♥ পছন্দ সরান", allowAgain: "আবার বাজাতে দিন", playAllLikes: "▶ আমার সব পছন্দ বাজান",
+    mineHidden: (o) => `আর বাজাবে না (${o.n})`, mineHiddenHint: "জুকবক্স এগুলো বাদ দেয়।",
+    mineSignIn: "সব যন্ত্রে পছন্দগুলো পেতে সাইন ইন করুন।", mineSynced: "আপনার অ্যাকাউন্টে রাখা, তাই সব যন্ত্রে পাবেন।",
+    f_source: "নাম", guessedNote: "ভিডিওর শিরোনাম থেকে নেওয়া (এখনও যাচাই হয়নি)",
     findArtist: "শিল্পীর নাম লিখে খুঁজুন (রশিদ, Rashid…)", findRaag: "রাগের নাম লিখে খুঁজুন (ইমন, Yaman…)",
     resumeTitle: "আবার স্বাগত", resumeYes: "যেখানে ছিলাম সেখান থেকে", resumeNo: "না, প্রথম পাতায় যাই",
     resumePlaying: (o) => `যেখানে থেমেছিলেন সেখান থেকে শুরু করবেন? আপনি শুনছিলেন ${o.what}, ${o.at}-এ।`,
@@ -249,6 +261,7 @@ function toggle(list, id, on) {
     prefs[other] = prefs[other].filter((x) => x !== id);
   }
   savePrefs();
+  if (location.hash.startsWith("#/mine") && VIDEOS.size) setTimeout(renderMine); // keep the Mine page current
 }
 
 /* ---------------- helpers ---------------- */
@@ -654,6 +667,7 @@ function renderArtist(id) {
     ["f_gharana", (a.gharana || []).length && `<span class="chips">${a.gharana.map((g) => `<a class="chip" href="#/list/gharana/${enc(g)}">${esc(gharanaLabel(g))}</a>`).join("")}</span>`],
     ["f_forms", (a.forms || []).length && a.forms.map(formLabel).map(esc).join(", ")],
     ["f_voice", a.voice && (STR[L].voice[a.voice] || a.voice)],
+    ["f_source", a.guessed && t("guessedNote")],
   ].filter(([, v]) => v);
   const byRaag = new Map();
   for (const v of (a.videos || []).map((x) => VIDEOS.get(x)).filter(Boolean)) for (const r of v.raags || []) byRaag.set(r, (byRaag.get(r) || 0) + 1);
@@ -676,6 +690,49 @@ function renderArtist(id) {
   </article>`;
   $("#play-artist").onclick = () => playFiltered("artist", a.id);
   wirePerfs(view);
+}
+
+/* ---------------- Mine: liked and hidden performances ---------------- */
+function mineRow(id, kind) {
+  const v = VIDEOS.get(id);
+  if (!v) return "";
+  const raags = (v.raags || []).map((r) => RAAG.get(r)).filter(Boolean);
+  const arts = (v.artists || []).map((a) => ARTIST.get(a)).filter(Boolean);
+  const links = [raags.map((r) => `<a href="#/raag/${enc(r.id)}">${esc(t("raag"))} ${esc(rMain(r))}</a>`).join(", "),
+    arts.map((a) => `<a href="#/artist/${enc(a.id)}">${esc(aMain(a))}</a>`).join(", ")].filter(Boolean).join(" · ");
+  return `<li class="mine-row">
+    <button class="mine-thumb" type="button" data-play-id="${esc(id)}" aria-label="${esc(t("playAria", { t: v.t }))}">
+      <img src="https://i.ytimg.com/vi/${esc(id)}/mqdefault.jpg" alt="" loading="lazy"><span>▶</span></button>
+    <div class="mine-text"><span class="perf-links">${links}</span>
+      <span class="mine-title">${esc(v.t)}</span>
+      <small class="hint">${esc(v.ch)} · ${fmtTime(v.sec)}</small></div>
+    <div class="mine-btns">
+      <button class="btn small primary" type="button" data-play-id="${esc(id)}">${t("playOne")}</button>
+      <button class="btn small" type="button" data-un="${kind}" data-id="${esc(id)}">${kind === "likes" ? t("unlike") : t("allowAgain")}</button>
+    </div></li>`;
+}
+function renderMine() {
+  const likes = prefs.likes.filter((id) => VIDEOS.has(id)).slice().reverse(); // newest first
+  const never = prefs.never.filter((id) => VIDEOS.has(id)).slice().reverse();
+  const signInHint = SYNC.signIn && !SYNC.user
+    ? `<p class="hint mine-sync">${t("mineSignIn")} <button class="btn small" type="button" id="mine-in">${t("signIn")}</button></p>`
+    : SYNC.user ? `<p class="hint">${t("mineSynced")}</p>` : `<p class="hint">${t("prefsNote")}</p>`;
+  view.innerHTML = `<div class="list-head"><h1>${t("mineTitle")}</h1></div>
+    ${signInHint}
+    <section class="section">
+      <div class="section-head"><h2>${t("mineLiked", { n: likes.length })}</h2>
+        ${likes.length ? `<button class="btn small primary" type="button" id="mine-play-all">${t("playAllLikes")}</button>` : ""}</div>
+      ${likes.length ? `<ul class="mine-list">${likes.map((id) => mineRow(id, "likes")).join("")}</ul>` : `<p class="novideo">${t("mineNoLikes")}</p>`}
+    </section>
+    ${never.length ? `<section class="section"><div class="section-head"><h2>${t("mineHidden", { n: never.length })}</h2></div>
+      <p class="hint">${t("mineHiddenHint")}</p>
+      <ul class="mine-list">${never.map((id) => mineRow(id, "never")).join("")}</ul></section>` : ""}`;
+  $$("[data-play-id]", view).forEach((b) => b.onclick = () => jb.playId(b.dataset.playId));
+  $$("[data-un]", view).forEach((b) => b.onclick = () => { toggle(b.dataset.un, b.dataset.id, false); jb.prefsChanged(); renderMine(); });
+  const all = $("#mine-play-all");
+  if (all) all.onclick = () => { jb.setFilters({ likedOnly: true }); location.hash = "#/jukebox"; jb.start(true); };
+  const si = $("#mine-in");
+  if (si) si.onclick = () => SYNC.signIn();
 }
 
 function sessionGet(k) { try { return sessionStorage.getItem("raagmala." + k) || ""; } catch { return ""; } }
@@ -1075,7 +1132,7 @@ const jb = (() => {
   }
   function refresh() { renderFilters(); prefsChanged(); buildQueue(); renderQueue(); updateButtons(); }
 
-  return { init, refresh, setPremium, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
+  return { init, refresh, setPremium, playId, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
     pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
@@ -1140,6 +1197,7 @@ function renderAccount() {
 }
 SYNC.userChanged = () => {
   renderAccount();
+  if (location.hash.startsWith("#/mine")) renderMine();
   if (!SYNC.user) { if (prefs.ytFull) jb.setPremium(false, false); return; } // signed out: back to the privacy-enhanced player
   if (SYNC.initDone) askPremium(); // signing in during a visit; at page load the start-up sequence asks
 };
@@ -1226,7 +1284,7 @@ function route() {
   $("#jukebox").setAttribute("aria-hidden", String(!isJb));
   view.hidden = isJb;
   $$("[data-nav]").forEach((a) => a.removeAttribute("aria-current"));
-  const nav = { home: "home", raag: "browse", artist: "browse", browse: "browse", list: "browse", jukebox: "jukebox" }[page];
+  const nav = { home: "home", raag: "browse", artist: "browse", browse: "browse", list: "browse", jukebox: "jukebox", mine: "mine" }[page];
   const navEl = $(`[data-nav="${nav}"]`); if (navEl) navEl.setAttribute("aria-current", "page");
   jb.updateMini();
   lastPage = location.hash || "#/";
@@ -1234,13 +1292,14 @@ function route() {
   if (isJb) { window.scrollTo(0, 0); return; }
   if (page === "raag") renderRaag(parts[1]);
   else if (page === "artist") renderArtist(parts[1]);
+  else if (page === "mine") renderMine();
   else if (page === "browse") renderBrowse(parts[1]);
   else if (page === "list") renderList(parts[1], parts.slice(2).join("/"));
   else renderHome();
   if (page !== "home") { window.scrollTo(0, 0); view.focus({ preventScroll: true }); }
 }
 
-fetch("raagmala.json").then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((d) => {
+fetch("raagmala.json", { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); }).then((d) => {
   META = d.meta; RAAGS = d.raags; EXTRA = d.extra.map((e) => ({ ...e, facts: false })); ARTISTS = d.artists;
   for (const r of RAAGS) { r.facts = true; RAAG.set(r.id, r); indexItem(r, [r.bn, r.en, r.hi, r.bnAlt, ...(r.aliases || [])]); }
   for (const e of EXTRA) { if (!RAAG.has(e.id)) RAAG.set(e.id, e); indexItem(e, [e.bn, e.en, e.hi]); }

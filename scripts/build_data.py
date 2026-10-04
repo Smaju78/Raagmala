@@ -70,11 +70,19 @@ def main():
             "born": a.get("born"), "died": a.get("died"), "voice": a.get("voice"), "gharana": a.get("gharana"),
             "forms": a.get("forms"), "wiki": a.get("wiki"), "videos": vids,
             "searched": a["id"] in yt["searched"]["artists"]}))
-    # singers recognised in videos but not in the Wikipedia-based list (data/vocalists_extra.txt)
+    # singers in videos but not in the Wikipedia-based list: from data/vocalists_extra.txt, or named from the
+    # video title (marked "guessed" so the site can say so)
+    extra_names = {}
+    for l in (DATA / "vocalists_extra.txt").read_text(encoding="utf-8").splitlines():
+        l = l.strip()
+        if l and not l.startswith("#") and "=" not in l:
+            extra_names[re.sub(r"[^a-z0-9]+", "-", l.lower()).strip("-")] = l
+    guessed = yt.get("guessed", {})
     for aid, vs in yt["artists"].items():
         if aid not in known:
-            name = re.sub(r"-", " ", aid).title()
-            out_artists.append({"id": aid, "rank": 9999, "en": name, "videos": [add(v) for v in vs], "extra": True})
+            name = extra_names.get(aid) or guessed.get(aid) or re.sub(r"-", " ", aid).title()
+            out_artists.append(drop_empty({"id": aid, "rank": 9999, "en": name, "videos": [add(v) for v in vs],
+                                           "extra": True, "guessed": aid in guessed and aid not in extra_names}))
 
     meta = {
         "moods": moods["moods"], "thaats": THAAT_BN, "forms": FORMS, "gharanas": GHARANA_BN,

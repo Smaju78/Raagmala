@@ -131,17 +131,27 @@ def _load():
                 names.append((t, r["id"], core))
     names.sort(key=lambda n: -sum(len(x) for x in n[0]))  # longest first
     aj = json.loads((DATA / "artists.json").read_text(encoding="utf-8"))["artists"]
-    # vocalists without an English Wikipedia page, for recognition only (data/vocalists_extra.txt)
+    # data/vocalists_extra.txt: vocalists without an English Wikipedia page ("Name"), and other spellings of
+    # known artists ("Spelling = artist-id", e.g. "Kaivalyakumar = kaivalya-kumar-gurav").
     extra = DATA / "vocalists_extra.txt"
+    aliases = []
     if extra.exists():
         known = {a["en"] for a in aj}
-        aj = aj + [{"id": re.sub(r"[^a-z0-9]+", "-", l.strip().lower()).strip("-"), "en": l.strip(), "extra": True}
-                   for l in extra.read_text(encoding="utf-8").splitlines()
-                   if l.strip() and not l.startswith("#") and l.strip() not in known]
-    honor = {skel(h)[0] for h in HONORIFICS} | {"and", "nd"}
+        for l in extra.read_text(encoding="utf-8").splitlines():
+            l = l.strip()
+            if not l or l.startswith("#"):
+                continue
+            if "=" in l:
+                name, aid = (x.strip() for x in l.split("=", 1))
+                aliases.append({"id": aid, "en": name})
+            elif l not in known:
+                aj.append({"id": re.sub(r"[^a-z0-9]+", "-", l.lower()).strip("-"), "en": l, "extra": True})
+    honor = {skel(h)[0] for h in HONORIFICS}
     artists = []
-    for a in aj:
-        sk = [w for w in skel(a["en"]) if w not in honor]
+    for a in aj + aliases:
+        sk = [w for w in skel(a["en"]) if w not in ("and", "nd")]
+        while len(sk) > 1 and sk[0] in honor:  # a leading title only: "Pt. X"; but Devaki *Pandit* keeps her surname
+            sk = sk[1:]
         if sk:
             artists.append((sk, a["id"], a))
             if len(sk) >= 3:  # "Ashwini Bhide Deshpande" is often just "Ashwini Bhide"
@@ -206,6 +216,88 @@ def find_artists(text):
     return hit
 
 
+# ---------------------------------------------------------------- singer names read from titles
+# Used only when no known singer is recognised. A name-shaped part of the title (or a "- Topic" channel)
+# is accepted only with a strong signal, because bandish lyrics are often written in Title Case too.
+NOT_NAME = re.compile(
+    r"\b(raa?ga?m?|raag|rag|khayal|khyal|kheyal|vocal|vocals|music|musical|india|indian|festival|live|concert|"
+    r"recital|records?|official|topic|foundation|sangeet|sammelan|trust|conference|archives?|audio|video|"
+    r"hindustani|classical|bandish|thumri|dhrupad|dhamar|dadra|tappa|taal|tal|teentaal|tintal|ektaal|ektal|"
+    r"jhaptaal|jhamptaal|rupak|vilambit|drut|madhya|madhyalaya|madhyalay|laya|part|album|series|edition|presents?|"
+    r"channel|tv|radio|studio|club|society|sabha|utsav|mahotsav|baithak|darbar|saptak|episode|chota|chhota|bada|"
+    r"alap|aalap|tarana|gharana|kirana|gwalior|patiala|agra|jaipur|benaras|banaras|mewati|rampur|lane|dover|"
+    r"bazm|khas|events?|academy|guruji|gurukul|productions?|entertainment|network|digital|world|heritage|"
+    r"legends?|rare|evening|morning|night|the|of|in|by|from|with|at|for|new|full|hd|lyrics?|song|songs|"
+    r"bhajan|mix|series|vol|volume|remastered|original|quality|pseudo|forum|memorial|tribute)\b", re.I)
+LYRIC_WORDS = set("""mori more moray mora mero mera mere meri balam piya piyaa sang ke ka ki ab aaye aayo aaj aayi kaise
+ri re na nahi naahi nahin tum tore tori toh jaa ja jao sakhi saiyan saiyaan sajan sajna kanha kanhaiya shyam hari ram
+mohe mose mohan man mann jiya nain naina bin kaun kar karat karu ho se mein main laage lage lagi bole baje bajao
+ghar kal din rain jaago jago pyare ghan garajat barsat badra badariya sawan payal payaliya jhankar jhanakar langar
+langarwa kankariya naiya nayya paar eri aali daiya hamare chalo dekho gori gagri neer bharu nanadiya batiya ye yeh
+kahe kaahe preetam pritam jhuki aayi damini damake dar mohan murat bansuri dhun more hamari raadhe radhe krishna
+jamuna gokul brij hori holi phagun basant ritu bahar kesariya bairi birha sooni suni sun suno""".split())
+HONOR_RE = re.compile(r"^(?:(?:pt|pandit|pundit|ustad|ustaad|vidushi|vid|smt|shrimati|shri|sri|dr|begum|late|"
+                      r"guru|maestro|padma\s*(?:shri|bhushan|vibhushan)|padmashri|padmabhushan)\.?\s+)+", re.I)
+SURNAME_END = re.compile(r"(kar|jee|rjee|wala|wale|dey|sen|das|ghosh|bose|basu|roy|nath|pande|pandey|sharma|"
+                         r"verma|mishra|shukla|tiwari|tripathi|joshi|rao|bhat|bhatt|iyer|kumar|singh|khan|hussain|"
+                         r"ali|devi|bai|begum|kulkarni|deshpande|patil|gurav|sathe|kamat|chakraborty|chakrabarty|"
+                         r"bhattacharya|bhattacharjee|mukherjee|banerjee|chatterjee|ganguly|gupta|mitra|majumdar|"
+                         r"mazumdar|sarkar|dutta|datta|paul|pal|saha|biswas|mondal|pathak|sahu|jha|thakur|"
+                         r"agarwal|desai|mehta|shah|vyas|mallick|dagar|gundecha|mansur|mansoor|rathod|naik|nayak|"
+                         r"hegde|bhide|kale|pawar|more|jadhav|apte|gokhale|phadke|bapat|karve|ranade|pethe|"
+                         r"kashyap|raghavan|prasad|sinha|srivastava|saxena|chaurasia|tagore|bhowmick|kaikini)$", re.I)
+
+
+def _name_shape(seg):
+    """'Pt. Harish Tiwari' -> ('Harish Tiwari', had_title) if it looks like a person's name, else (None, False)."""
+    seg = seg.strip(" .:;-–—\"'“”‘’!")
+    titled = bool(HONOR_RE.match(seg))
+    seg = HONOR_RE.sub("", seg)
+    seg = re.sub(r"\s+(sings?|singing)$", "", seg, flags=re.I)
+    words = [w.capitalize() if w.isupper() and len(w) > 2 else w for w in seg.split()]
+    if not 2 <= len(words) <= 4:
+        return None, False
+    if not all(re.fullmatch(r"[A-Z][a-z]+\.?|[A-Z]\.", w) for w in words):
+        return None, False
+    if sum(len(w.rstrip(".")) > 1 for w in words) < 2:
+        return None, False
+    name = " ".join(words)
+    if NOT_NAME.search(name) or any(w.lower().rstrip(".") in LYRIC_WORDS for w in words) or find_raags(name):
+        return None, False
+    return name, titled
+
+
+def guess_singer(title, channel):
+    topic = re.fullmatch(r"(.+?)\s*-\s*Topic", channel or "")
+    ch_words = {w.lower() for w in re.findall(r"[A-Za-z]{4,}", channel or "")} - {"music", "official", "topic", "records"}
+    parts = []
+    m = re.search(r"\bby\s+((?:[A-Z][\w.]*\s*){2,5})", title)
+    if m:
+        parts.append((m.group(1), True))
+    m = re.match(r"\s*((?:[A-Z][\w.]*\s+){1,5})sings\b", title)
+    if m:
+        parts.append((m.group(1), True))
+    for seg in re.split(r"\s*[|/•~·:,()\[\]]\s*|\s+[-–—]\s+|\s+(?:ll|II|I|&|and)\s+", title):
+        parts.append((seg, False))
+        # "Ustad Fateh Ali Khan Raga Des Khayal": also try the words before the first raag/form word
+        head = re.split(NOT_NAME, seg, maxsplit=1)[0]
+        if head.strip() and head.strip() != seg.strip():
+            parts.append((head, False))
+    if topic:
+        parts.append((topic.group(1), True))
+    names = []
+    for seg, strong in parts:
+        name, titled = _name_shape(seg)
+        if not name:
+            continue
+        last = name.split()[-1].rstrip(".")
+        sure = strong or titled or bool(SURNAME_END.search(last)) or any(w.lower() in ch_words for w in name.split())
+        names.append((name, sure))
+    # singers' names usually come before teachers' and composers' names, so take the first name-like part,
+    # provided at least one candidate has a strong signal
+    return names[0][0] if any(s for _, s in names) else None
+
+
 def classify(v):
     title, channel = v["title"], v.get("channel", "")
     res = {"ok": False, "why": "", "raags": [], "form": None, "artists": []}
@@ -254,6 +346,12 @@ def classify(v):
         res["why"] = "no evidence it is vocal"; return res
     if not res["artists"] and v.get("seconds", 0) < UNKNOWN_MIN_SECONDS:
         res["why"] = "short clip by an unrecognised singer"; return res
+    if not res["artists"]:  # every kept performance must be credited to a singer
+        name = guess_singer(title, channel)
+        if not name:
+            res["why"] = "no singer identified"; return res
+        res["artists"] = [re.sub(r"[^a-z0-9]+", "-", deaccent(name).lower()).strip("-")]
+        res["guessed"] = name
     res["form"] = next((f for f in ("dhrupad", "thumri", "dadra", "tappa") if re.search(FORM_WORDS[f], title, re.I)),
                        "khayal")
     res["ok"] = True

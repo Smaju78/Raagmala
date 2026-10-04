@@ -22,3 +22,6 @@ Pushkar Lele
 Kaushiki Desikan
 Yashasvi Sirpotdar
 Rahul Deshpande
+# other spellings of known artists: "Spelling = artist-id"
+Kaivalyakumar = kaivalya-kumar-gurav
+Fateh Ali Khan = bade-fateh-ali-khan

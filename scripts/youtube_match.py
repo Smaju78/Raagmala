@@ -210,8 +210,17 @@ def write_matches(cached, jobs):
             "searched": {"raags": sorted({f"{j['raag']}:{j['id'].rsplit('-', 1)[-1]}" for j in done
                                           if j["id"].startswith("raag-")}),
                          "artists": sorted({j["artist"] for j in done if j["id"].startswith("artist-")})},
-            "raags": raags, "artists": artists}
+            "raags": raags, "artists": artists,
+            # singers not in the artist list, named from the video title or a "- Topic" channel (see ytfilter)
+            "guessed": {d["artists"][0]: d["guessed"] for d in decisions.values() if d["ok"] and d.get("guessed")}}
     MATCHES.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    # review list for those names: correct mistakes in data/vocalists_extra.txt ("Spelling = artist-id")
+    lines = ["# Singers named from video titles (not yet in the artist list)", "",
+             "Check these; to merge one into a known artist add `Spelling = artist-id` to data/vocalists_extra.txt.", ""]
+    for aid, name in sorted(data["guessed"].items(), key=lambda kv: kv[1]):
+        titles = [videos[k]["title"] for k, d in decisions.items() if d["ok"] and d.get("guessed") == name]
+        lines.append(f"- **{name}** (`{aid}`): " + " · ".join(titles[:3]))
+    (ROOT / "data" / "singers_guessed.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     return raags, artists
 
 
