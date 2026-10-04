@@ -69,7 +69,7 @@ const STR = {
     jbEmpty: "Press Play for a shuffle of performances that match your filters.",
     jbNone: "No performances match these filters yet. Remove a filter or clear them all.",
     clearFilters: "Clear filters", nothingPlaying: "Nothing playing yet.", play: "Play", pause: "Pause", resume: "Resume",
-    likeBtn: "♥ Like", likedBtn: "♥ Liked", likeBtnAria: "Like this performance", never: "Never play", likeTitle: "Liked performances come up 4× as often",
+    openYT: "Open in YouTube (ad-free with Premium)", likeBtn: "♥ Like", likedBtn: "♥ Liked", likeBtnAria: "Like this performance", never: "Never play", likeTitle: "Liked performances come up 4× as often",
     neverTitle: "Never play this performance in the jukebox", prevAria: "Previous performance", nextAria: "Next performance",
     upNext: "Up next:", toPlay: (o) => `${o.n} performance${o.nn === 1 ? "" : "s"} to play`, allPerf: "All performances",
     clearAll: "Clear all", editFilters: "Edit filters", done: "Done", filters: "Filters", playlistHead: "Playlist",
@@ -154,7 +154,7 @@ const STR = {
     jbEmpty: "ফিল্টারের সঙ্গে মেলে এমন পরিবেশনা এলোমেলোভাবে শুনতে ▶ বাজান চাপুন।",
     jbNone: "এই ফিল্টারে এখনও কোনো পরিবেশনা নেই। একটি ফিল্টার সরান বা সব মুছে দিন।",
     clearFilters: "ফিল্টার মুছুন", nothingPlaying: "এখনও কিছু বাজছে না।", play: "বাজান", pause: "থামান", resume: "আবার চালান",
-    likeBtn: "♥ পছন্দ", likedBtn: "♥ পছন্দের", likeBtnAria: "এই পরিবেশনা পছন্দ করুন", never: "আর বাজাবে না", likeTitle: "পছন্দের পরিবেশনা ৪ গুণ বেশি বাজে",
+    openYT: "ইউটিউবে খুলুন (প্রিমিয়ামে বিজ্ঞাপন ছাড়া)", likeBtn: "♥ পছন্দ", likedBtn: "♥ পছন্দের", likeBtnAria: "এই পরিবেশনা পছন্দ করুন", never: "আর বাজাবে না", likeTitle: "পছন্দের পরিবেশনা ৪ গুণ বেশি বাজে",
     neverTitle: "জুকবক্সে এই পরিবেশনা আর বাজাবে না", prevAria: "আগের পরিবেশনা", nextAria: "পরের পরিবেশনা",
     upNext: "এরপর:", toPlay: (o) => `${o.n}টি পরিবেশনা বাজবে`, allPerf: "সব পরিবেশনা",
     clearAll: "সব মুছুন", editFilters: "ফিল্টার বদলান", done: "হয়ে গেছে", filters: "ছাঁকনি", playlistHead: "প্লেলিস্ট",
@@ -202,6 +202,7 @@ function t(key, o = {}) {
 
 /* ---------------- icons ---------------- */
 const I = {
+  yt: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg>',
   play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>',
   pause: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>',
   heart: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>',
@@ -569,7 +570,7 @@ function perfRow(id, { showRaag = true, showArtist = true } = {}) {
   return `<div class="perf-wrap"><div class="perf" data-perf="${esc(id)}">
     <button class="pthumb" type="button" data-vid="${esc(id)}" aria-label="${esc(t("playInline", { t: v.t }))}"><img src="${thumb(id)}" alt="" loading="lazy"><span class="pv"><i>${I.play}</i></span></button>
     <div class="pmeta">${links ? `<b>${links}</b>` : ""}<span>${esc(v.t)}</span><small>${esc(v.ch)} · ${t("views", { v: fmtViews(v.views) })} · ${fmtTime(v.sec)}</small></div>
-    <div class="pbtns">
+    <div class="pbtns">${ytBtn(id)}
       <button class="icon-btn" type="button" data-like="${esc(id)}" aria-pressed="${isLiked(id)}" aria-label="${esc(t("likeBtnAria"))}" title="${esc(t("likeTitle"))}">${isLiked(id) ? I.heartF : I.heart}</button>
     </div></div></div>`;
 }
@@ -589,6 +590,12 @@ function markPlaying() {
   $$(".perf.on").forEach((p) => p.classList.remove("on"));
   if (id) $$(`.perf[data-perf="${CSS.escape(id)}"]`).forEach((p) => p.classList.add("on"));
 }
+
+// "Open in YouTube": the same performance on youtube.com (or the YouTube app on a phone), where YouTube Premium
+// always applies, e.g. in browsers that block YouTube's cookies inside other sites.
+const ytLink = (id, at = 0) => `https://www.youtube.com/watch?v=${encodeURIComponent(id)}${at > 5 ? `&t=${Math.floor(at)}s` : ""}`;
+const ytBtn = (id) => `<a class="icon-btn yt" href="${ytLink(id)}" target="_blank" rel="noopener" data-open-yt aria-label="${esc(t("openYT"))}" title="${esc(t("openYT"))}">${I.yt}</a>`;
+document.addEventListener("click", (e) => { if (e.target.closest("[data-open-yt]")) jb.pause(); });
 
 /* ---------------- views ---------------- */
 const BROWSE = ["raags", "prahar", "thaat", "form", "mood", "season", "artists", "gharana", "az"];
@@ -840,6 +847,7 @@ function mineRow(id, kind) {
     <div class="pbtns">
       <button class="btn xs" type="button" data-play-id="${esc(id)}">${I.play} ${t("playOne")}</button>
       <button class="btn ghost xs" type="button" data-un="${kind}" data-id="${esc(id)}">${kind === "likes" ? t("unlike") : t("allowAgain")}</button>
+      ${ytBtn(id)}
     </div></div>`;
 }
 function renderMine() {
@@ -1270,6 +1278,10 @@ const jb = (() => {
     $("#jb-skip").onclick = next;
     $("#jb-prev").onclick = prev;
     $("#jb-like").onclick = likeCurrent;
+    $("#jb-yt").addEventListener("click", (e) => {
+      if (!current) { e.preventDefault(); return; }
+      e.currentTarget.href = ytLink(current.id, position());
+    });
     $("#jb-never").onclick = () => { if (!current) return; toggle("never", current.id, true); prefsChanged(); toast(t("toastNever")); next(); };
     $("#jb-empty-clear").onclick = clearFilters;
     $("#jb-edit").onclick = () => toggleFilters(!$("#sheet").classList.contains("on"));
