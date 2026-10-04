@@ -117,7 +117,7 @@ html[data-theme=light] .pill .moon{display:none}
 .mini .ctl .big{background:var(--gold);color:var(--gold-ink)}
 .mini .bar{height:2px;background:var(--line)}
 .mini .bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .5s linear}
-.mini .bar.top{position:absolute;left:0;right:0;top:-1px}
+.mini .bar.edge{position:absolute;left:0;right:0;top:-1px}
 .mini .mid{display:flex;flex-direction:column;align-items:center}
 .mini .prog{display:none}
 .mini .hide-s{display:none}
@@ -132,7 +132,7 @@ html[data-theme=light] .pill .moon{display:none}
   .mini .ctl{justify-content:center;gap:12px}
   .mini .hide-s{display:flex}
   .mini .ctl .big{width:48px;height:48px}
-  .mini .bar.top{display:none}
+  .mini .bar.edge{display:none}
   .mini .prog{display:flex;align-items:center;gap:8px;width:min(100%,520px);font-size:.72rem;color:var(--fg3);font-variant-numeric:tabular-nums}
   .mini .prog .bar{flex:1;height:3px}
 }
