@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Terms · রাগমালা Raagmala</title>
+<title>শর্তাবলি · Terms · রাগমালা Raagmala</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500&family=Alegreya+Sans:wght@400;500;700&display=swap">
@@ -13,14 +13,49 @@
   .doc h1 { font-size: var(--s2); margin-bottom: 12px; }
   .doc h2 { font-size: var(--s1); margin: 22px 0 6px; }
   .doc p, .doc li { line-height: 1.65; }
+  :root:lang(bn) [data-l="en"], :root:lang(en) [data-l="bn"] { display: none; }
 </style>
+<script>
+  try { document.documentElement.lang = localStorage.getItem("raagmala.lang") || "bn"; } catch (e) { /* default bn */ }
+</script>
 </head>
 <body>
 <header class="top">
-  <a class="brand" href="./#/"><span class="brand-bn">রাগমালা</span><span class="brand-en">Raagmala · Hindustani vocal</span></a>
-  <nav class="nav" aria-label="Main"><a href="./#/">Back to the site</a></nav>
+  <a class="brand" href="./#/"><span class="brand-bn">রাগমালা</span><span class="brand-en">Raagmala</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="./#/"><span data-l="bn">সাইটে ফিরুন</span><span data-l="en">Back to the site</span></a>
+    <button class="lang" type="button" id="lang-switch"><span data-l="bn" lang="en">English</span><span data-l="en" lang="bn">বাংলা</span></button>
+  </nav>
 </header>
-<main class="doc">
+
+<main class="doc" data-l="bn" lang="bn">
+  <h1>ব্যবহারের শর্তাবলি</h1>
+  <p>রাগমালা একটি বিনামূল্যের, ব্যক্তিগত, অবাণিজ্যিক ওয়েবসাইট, যেখানে রাগ ও শিল্পী অনুযায়ী হিন্দুস্তানি শাস্ত্রীয় কণ্ঠসংগীত খুঁজে শোনা যায়।
+  সাইটটি ব্যবহার করলে আপনি এই শর্তগুলো মেনে নিচ্ছেন।</p>
+
+  <h2>ইউটিউব</h2>
+  <p>এই সাইট YouTube API Services ব্যবহার করে। এখানে ভিডিও বাজালে আপনি
+  <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">ইউটিউবের শর্তাবলি</a> মেনে নিচ্ছেন।
+  ইউটিউবের ব্যবহার <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">গুগলের গোপনীয়তা নীতিরও</a> আওতায়।
+  ভিডিও বাজে শুধু ইউটিউবের নিজস্ব এমবেড করা প্লেয়ারে, এবং সেগুলো তাদের মালিকদেরই সম্পত্তি; এই সাইট কোনো ভিডিও বা অডিও
+  ডাউনলোড, সংরক্ষণ, পরিবর্তন বা বিক্রি করে না।</p>
+
+  <h2>বিষয়বস্তু</h2>
+  <p>রাগের তথ্য সংগীত-পরম্পরার তথ্য, সাইটের নিজের ভাষা ও স্বরলিপিতে লেখা; নাম, সাল ও ঘরানা
+  <a href="https://www.wikidata.org" target="_blank" rel="noopener">উইকিডেটা</a> (CC0) ও
+  <a href="https://en.wikipedia.org" target="_blank" rel="noopener">উইকিপিডিয়া</a> থেকে, যাদের লিংক রাগ ও শিল্পীর পাতায় দেওয়া আছে।
+  রসের (মেজাজের) শ্রেণিবিভাগ সাইটের নিজস্ব ব্যাখ্যা।</p>
+
+  <h2>কোনো নিশ্চয়তা নেই</h2>
+  <p>সাইটটি যেমন আছে তেমনভাবেই দেওয়া, কোনো নিশ্চয়তা ছাড়া। যেকোনো সময় ইউটিউব থেকে পরিবেশনা সরে যেতে পারে, এবং রাগ বা শিল্পীর
+  তথ্যে ভুল থাকতে পারে।</p>
+
+  <h2>গোপনীয়তা ও যোগাযোগ</h2>
+  <p>কী রাখা হয় তা জানতে <a href="privacy.html">গোপনীয়তার পাতা</a> দেখুন। কোনো সমস্যা জানাতে বা কোনো পরিবেশনা সরাতে বলতে
+  <a href="https://github.com/Smaju78/Raagmala/issues" target="_blank" rel="noopener">github.com/Smaju78/Raagmala</a>-এ একটি issue খুলুন।</p>
+</main>
+
+<main class="doc" data-l="en" lang="en">
   <h1>Terms of use</h1>
   <p>Raagmala is a free, personal, non-commercial website that helps people find and listen to Hindustani
   classical vocal music, organised by raag and artist. By using it you agree to these terms.</p>
@@ -47,6 +82,13 @@
   <p>See the <a href="privacy.html">privacy page</a> for what is stored. To report a problem or ask for a performance
   to be removed, open an issue at <a href="https://github.com/Smaju78/Raagmala/issues" target="_blank" rel="noopener">github.com/Smaju78/Raagmala</a>.</p>
 </main>
-<footer class="foot"><p>Personal, non-commercial project.</p></footer>
+<footer class="foot"><p><span data-l="bn">ব্যক্তিগত, অবাণিজ্যিক প্রকল্প।</span><span data-l="en">Personal, non-commercial project.</span></p></footer>
+<script>
+  document.getElementById("lang-switch").onclick = () => {
+    const l = document.documentElement.lang === "bn" ? "en" : "bn";
+    document.documentElement.lang = l;
+    try { localStorage.setItem("raagmala.lang", l); } catch (e) { /* not saved */ }
+  };
+</script>
 </body>
 </html>

@@ -275,3 +275,13 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .artist-line .bn { color: var(--muted); }
 .facts.small { font-size: .95rem; border-top: 1px solid var(--line); padding-top: 10px; }
 .song h1 { font-size: var(--s3); }
+.nav { align-items: center; }
+.lang { font: inherit; font-size: var(--s-1); margin-left: 6px; padding: 4px 12px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--gold); background: var(--gold-soft); color: var(--ink); }
+.lang:lang(bn) { font-family: var(--f-bn); }
+.lang:hover { background: var(--gold); color: var(--on-teal); }
+.en-small { font-family: var(--f-ui); font-size: var(--s-1); color: var(--muted); font-weight: 400; }
+.artist-line .other { color: var(--muted); }
+/* Bengali interface: Bengali UI font for running text */
+:root:lang(bn) body { font-family: "Hind Siliguri", var(--f-ui); }
+:root:lang(bn) .brand-en { letter-spacing: .04em; text-transform: none; }

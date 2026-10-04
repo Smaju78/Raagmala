@@ -3,32 +3,38 @@
   "shanta": {
    "bn": "শান্ত",
    "en": "Shanta",
-   "desc": "Peace, stillness, contemplation"
+   "desc": "Peace, stillness, contemplation",
+   "descBn": "শান্তি, স্থিরতা, ধ্যান"
   },
   "bhakti": {
    "bn": "ভক্তি",
    "en": "Bhakti",
-   "desc": "Devotion, prayer, surrender"
+   "desc": "Devotion, prayer, surrender",
+   "descBn": "ভক্তি, প্রার্থনা, সমর্পণ"
   },
   "shringar": {
    "bn": "শৃঙ্গার",
    "en": "Shringar",
-   "desc": "Love, romance, beauty"
+   "desc": "Love, romance, beauty",
+   "descBn": "প্রেম, অনুরাগ, সৌন্দর্য"
   },
   "karuna": {
    "bn": "করুণ",
    "en": "Karuna",
-   "desc": "Pathos, longing, viraha"
+   "desc": "Pathos, longing, viraha",
+   "descBn": "বেদনা, আকুলতা, বিরহ"
   },
   "gambhir": {
    "bn": "গম্ভীর",
    "en": "Gambhir",
-   "desc": "Gravity, majesty, depth (veer)"
+   "desc": "Gravity, majesty, depth (veer)",
+   "descBn": "গাম্ভীর্য, মহিমা, গভীরতা (বীর)"
   },
   "ullas": {
    "bn": "উল্লাস",
    "en": "Ullas",
-   "desc": "Joy, celebration, festive and seasonal brightness"
+   "desc": "Joy, celebration, festive and seasonal brightness",
+   "descBn": "আনন্দ, উৎসব, ঋতুর উজ্জ্বলতা"
   }
  },
  "raags": {

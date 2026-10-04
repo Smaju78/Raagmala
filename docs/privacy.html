@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Privacy · রাগমালা Raagmala</title>
+<title>গোপনীয়তা · Privacy · রাগমালা Raagmala</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&family=Hind+Siliguri:wght@400;500&family=Alegreya+Sans:wght@400;500;700&display=swap">
@@ -13,21 +13,60 @@
   .doc h1 { font-size: var(--s2); margin-bottom: 12px; }
   .doc h2 { font-size: var(--s1); margin: 22px 0 6px; }
   .doc p, .doc li { line-height: 1.65; }
+  :root:lang(bn) [data-l="en"], :root:lang(en) [data-l="bn"] { display: none; }
 </style>
+<script>
+  try { document.documentElement.lang = localStorage.getItem("raagmala.lang") || "bn"; } catch (e) { /* default bn */ }
+</script>
 </head>
 <body>
 <header class="top">
-  <a class="brand" href="./#/"><span class="brand-bn">রাগমালা</span><span class="brand-en">Raagmala · Hindustani vocal</span></a>
-  <nav class="nav" aria-label="Main"><a href="./#/">Back to the site</a></nav>
+  <a class="brand" href="./#/"><span class="brand-bn">রাগমালা</span><span class="brand-en">Raagmala</span></a>
+  <nav class="nav" aria-label="Main">
+    <a href="./#/"><span data-l="bn">সাইটে ফিরুন</span><span data-l="en">Back to the site</span></a>
+    <button class="lang" type="button" id="lang-switch"><span data-l="bn" lang="en">English</span><span data-l="en" lang="bn">বাংলা</span></button>
+  </nav>
 </header>
-<main class="doc">
+
+<main class="doc" data-l="bn" lang="bn">
+  <h1>গোপনীয়তা</h1>
+  <p>রাগমালা হিন্দুস্তানি শাস্ত্রীয় কণ্ঠসংগীত নিয়ে একটি বিনামূল্যের, ব্যক্তিগত, অবাণিজ্যিক ওয়েবসাইট।
+  এখানে কোনো অ্যাকাউন্ট, বিজ্ঞাপন বা অ্যানালিটিক্স নেই, এবং কোনো ব্যক্তিগত তথ্য সংগ্রহ করা হয় না।</p>
+
+  <h2>কী রাখা হয়, কোথায়</h2>
+  <p>আপনার পছন্দের পরিবেশনা, যেগুলো আর বাজাতে চান না, জুকবক্সের ফিল্টার, ভাষা এবং সম্প্রতি বাজানো পরিবেশনার একটি ছোট তালিকা
+  আপনার নিজের ব্রাউজারেই (local storage) রাখা থাকে। এগুলো আপনার যন্ত্রের বাইরে যায় না; ব্রাউজারের সেটিংসে এই সাইটের ডেটা মুছে
+  দিলেই সব মুছে যায়। কোনো সার্ভারে কিছু রাখা হয় না।</p>
+
+  <h2>তথ্য মুছে ফেলা</h2>
+  <p>সব মুছতে ব্রাউজারের সেটিংসে smaju78.github.io-র সাইট ডেটা মুছে দিন। এই সাইট ইউটিউবের যে তথ্য রাখে (ভিডিওর আইডি, শিরোনাম,
+  চ্যানেলের নাম, কতবার দেখা ও পছন্দ করা হয়েছে) তা অন্তত প্রতি ৩০ দিনে হালনাগাদ বা মুছে ফেলা হয়; ইউটিউব থেকে সরিয়ে নেওয়া ভিডিও পরের
+  হালনাগাদেই বাদ পড়ে।</p>
+
+  <h2>ইউটিউব</h2>
+  <p>পরিবেশনা বাজে ইউটিউবের এমবেড করা প্লেয়ারে, ইউটিউবের গোপনীয়তা-বর্ধিত মোডে (youtube-nocookie.com)। ভিডিও বাজালে ইউটিউব ও
+  গুগল কিছু তথ্য পায়, যেমন <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">গুগলের গোপনীয়তা নীতিতে</a>
+  বলা আছে; প্লেয়ারের ব্যবহার <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">ইউটিউবের শর্তাবলি</a> মেনে।
+  পরিবেশনা খুঁজতে এই সাইট YouTube API Services ব্যবহার করে; সেই খোঁজ আগেই আলাদাভাবে করা হয়, আপনার ব্রাউজারে নয়।</p>
+
+  <h2>অন্যান্য পরিষেবা</h2>
+  <p>ফন্ট আসে Google Fonts থেকে, ভিডিওর ছোট ছবি ইউটিউবের ছবির সার্ভার (i.ytimg.com) থেকে। সাইটটি GitHub Pages-এ রাখা, যারা
+  সাধারণ সার্ভার লগ রাখতে পারে।</p>
+
+  <h2>রাগ ও শিল্পীর তথ্য</h2>
+  <p>রাগ ও শিল্পীর তথ্য (নাম, ঠাট, সময়, স্বর, সাল, ঘরানা) <a href="https://www.wikidata.org" target="_blank" rel="noopener">উইকিডেটা</a> ও
+  <a href="https://en.wikipedia.org" target="_blank" rel="noopener">উইকিপিডিয়া</a> থেকে নিয়ে হাতে মিলিয়ে দেখা। রাখা ভিডিও-তথ্য (শিরোনাম,
+  চ্যানেল, দেখা ও পছন্দের সংখ্যা) অন্তত প্রতি ৩০ দিনে হালনাগাদ হয়।</p>
+</main>
+
+<main class="doc" data-l="en" lang="en">
   <h1>Privacy</h1>
   <p>Raagmala is a free, personal, non-commercial website about Hindustani classical vocal music.
   It has no accounts, no advertising and no analytics, and it does not collect personal information.</p>
 
   <h2>What is stored, and where</h2>
-  <p>Your likes, the performances you chose never to play, your jukebox filters and a short list of recently
-  played performances are saved in your own browser (local storage). They never leave your device, and you can
+  <p>Your likes, the performances you chose never to play, your jukebox filters, your language and a short list of
+  recently played performances are saved in your own browser (local storage). They never leave your device, and you can
   remove them at any time by clearing this site's data in your browser settings. Nothing is stored on a server.</p>
 
   <h2>Deleting your data</h2>
@@ -52,6 +91,13 @@
   <a href="https://en.wikipedia.org" target="_blank" rel="noopener">Wikipedia</a> and checked by hand.
   Stored video details (titles, channels, view and like counts) are refreshed at least every 30 days.</p>
 </main>
-<footer class="foot"><p>Personal, non-commercial project.</p></footer>
+<footer class="foot"><p><span data-l="bn">ব্যক্তিগত, অবাণিজ্যিক প্রকল্প।</span><span data-l="en">Personal, non-commercial project.</span></p></footer>
+<script>
+  document.getElementById("lang-switch").onclick = () => {
+    const l = document.documentElement.lang === "bn" ? "en" : "bn";
+    document.documentElement.lang = l;
+    try { localStorage.setItem("raagmala.lang", l); } catch (e) { /* not saved */ }
+  };
+</script>
 </body>
 </html>
