@@ -3,3 +3,5 @@ cache/
 __pycache__/
 .claude/
 reference/
+docs/mockups/
+docs/next/

@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="bn" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>রাগমালা · C — Chitra</title>
+<meta name="color-scheme" content="dark light">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== C · Chitra — ragamala miniatures: lacquer, gold, indigo ===== */
+:root{
+  --bg:#17121b; --bg2:#1f1824; --bg3:#2a2131; --bg4:#362b3e;
+  --fg:#f3e9d6; --fg2:#cdbfa8; --fg3:#a1957f;
+  --gold:#d9b254; --gold-ink:#2a1d05; --gold-dim:#8f7330; --verm:#d9553a;
+  --line:rgba(217,178,84,.22); --line2:rgba(217,178,84,.4);
+  --shadow:0 14px 40px rgba(0,0,0,.45);
+  --serif:"Noto Serif Bengali","Tiro Bangla",Georgia,serif;
+  --sans:"Hind Siliguri",system-ui,sans-serif;
+  --mini:72px; --tabs:60px; --rail:92px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+html[data-theme=light]{
+  --bg:#f3eadb; --bg2:#faf5ea; --bg3:#eadfc9; --bg4:#dfd2b8;
+  --fg:#2b1d12; --fg2:#5a4733; --fg3:#776755;
+  --gold:#8a600f; --gold-ink:#fff8e6; --gold-dim:#c9a85a; --verm:#a8321a;
+  --line:rgba(120,88,24,.25); --line2:rgba(120,88,24,.45);
+  --shadow:0 14px 40px rgba(90,60,20,.18);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.5;-webkit-text-size-adjust:100%}
+body{overflow-x:hidden;background-image:radial-gradient(60% 40% at 50% -10%,color-mix(in srgb,var(--gold) 12%,transparent),transparent 70%)}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{display:block;max-width:100%}
+u{text-decoration-thickness:1.5px;text-underline-offset:3px}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;letter-spacing:0}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* ---- shell: phone = top bar + tabs; desktop = left icon rail ---- */
+.app{min-height:100dvh}
+main{padding:0 16px calc(var(--mini) + var(--tabs) + 28px);min-width:0;max-width:1240px}
+.screen{display:none;animation:rise .35s var(--ease)}
+.screen.on{display:block}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.top{display:flex;align-items:center;gap:10px;padding:14px 0 8px}
+.brand{font-family:var(--serif);font-size:1.45rem;font-weight:600;display:flex;align-items:center;gap:10px;line-height:1}
+.brand .seal{width:30px;height:30px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-size:.9rem;position:relative}
+.brand .seal::after{content:"";position:absolute;inset:3px;border-radius:50%;border:1px solid var(--line2)}
+.brand small{font-family:var(--sans);font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--fg3);font-weight:600}
+.spacer{flex:1}
+.pill{display:inline-flex;align-items:center;gap:6px;height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--line2);color:var(--fg2);font-weight:600;font-size:.82rem;transition:all .2s}
+.pill:hover{color:var(--gold);border-color:var(--gold)}
+.pill.icon{width:34px;padding:0;justify-content:center}
+.pill svg{width:18px;height:18px}
+.avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#5a2d82,#b8391f);display:grid;place-items:center;color:#fff;font-weight:700;font-size:.9rem;box-shadow:0 0 0 1px var(--gold)}
+.rail{display:none}
+.searchbar{display:none}
+@media (min-width:900px){
+  .app{display:grid;grid-template-columns:var(--rail) 1fr}
+  .rail{display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px 8px;position:sticky;top:0;height:100dvh;border-right:1px solid var(--line);background:var(--bg2)}
+  .rail .seal{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.3rem;margin-bottom:18px;position:relative}
+  .rail .seal::after{content:"";position:absolute;inset:4px;border-radius:50%;border:1px solid var(--line2)}
+  .rail button.nav{width:76px;height:66px;border-radius:12px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--fg2);font-size:.8rem;font-weight:600;position:relative;transition:all .2s}
+  .rail button.nav svg{width:24px;height:24px}
+  .rail button.nav:hover{color:var(--fg)}
+  .rail button.nav.on{color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,transparent)}
+  .rail button.nav.on::before{content:"";position:absolute;left:-8px;top:18px;bottom:18px;width:3px;border-radius:2px;background:var(--gold)}
+  .rail .foot{margin-top:auto;display:flex;flex-direction:column;gap:10px;align-items:center}
+  main{padding:0 40px calc(var(--mini) + 40px)}
+  .top{padding:22px 0 10px;gap:16px}
+  .top .brand{display:none}
+  .searchbar{display:flex;align-items:center;gap:10px;height:40px;width:320px;padding:0 14px;border-radius:999px;border:1px solid var(--line2);color:var(--fg3);font-size:.9rem;background:var(--bg2)}
+  .searchbar svg{width:18px;height:18px}
+  .tabs{display:none!important}
+}
+
+/* bottom tabs */
+.tabs{position:fixed;left:0;right:0;bottom:0;height:calc(var(--tabs) + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);display:flex;background:var(--bg2);border-top:1px solid var(--line);z-index:30}
+.tabs button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--fg2);font-size:.8rem;font-weight:600;transition:color .2s}
+.tabs button svg{width:24px;height:24px}
+.tabs button.on{color:var(--gold)}
+
+/* mini player */
+.mini{position:fixed;left:0;right:0;bottom:calc(var(--tabs) + env(safe-area-inset-bottom));height:var(--mini);display:flex;align-items:center;gap:12px;padding:0 12px;background:var(--bg3);border-top:1px solid var(--line2);z-index:31;cursor:pointer}
+.mini .thumb{width:50px;height:50px;object-fit:cover;background:var(--bg4);flex:0 0 auto;border:1px solid var(--line2);padding:2px}
+.mini .thumb.ph{display:grid;place-items:center;color:var(--gold)}
+.mini .meta{flex:1;min-width:0}
+.mini .meta b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:var(--serif);font-size:1.05rem;line-height:1.25}
+.mini .meta span{display:block;color:var(--fg2);font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini .ctl{display:flex;gap:2px;align-items:center}
+.mini .ctl button{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;transition:background .2s}
+.mini .ctl button:hover{background:var(--bg4)}
+.mini .ctl svg{width:24px;height:24px}
+.mini .ctl .big{background:var(--gold);color:var(--gold-ink)}
+.mini .bar{height:2px;background:var(--line)}
+.mini .bar i{display:block;height:100%;background:var(--gold)}
+.mini .bar.top{position:absolute;left:0;right:0;top:-1px}
+.mini .mid{display:flex;flex-direction:column;align-items:center}
+.mini .prog{display:none}
+.mini .likeb:disabled{opacity:.4;cursor:default}
+.mini .hide-s{display:none}
+body[data-screen=now] .mini{display:none}
+body[data-screen=now] main{padding-bottom:calc(var(--tabs) + 24px)}
+.mini .likeb{width:42px;height:42px;border-radius:50%;place-items:center;color:var(--fg2)}
+.mini .likeb.on{color:var(--verm)}
+@media (min-width:900px){
+  .mini{left:var(--rail);bottom:0;height:80px;padding:0 32px;gap:22px;cursor:default;background:color-mix(in srgb,var(--bg2) 92%,transparent);backdrop-filter:blur(14px)}
+  .mini .thumb{width:56px;height:56px}
+  .mini .meta{flex:0 0 280px}
+  .mini .mid{flex:1;gap:3px}
+  .mini .ctl{justify-content:center;gap:12px}
+  .mini .hide-s{display:flex}.mini .likeb{display:grid}
+  .mini .ctl .big{width:48px;height:48px}
+  .mini .bar.top{display:none}
+  .mini .prog{display:flex;align-items:center;gap:8px;width:min(100%,520px);font-size:.72rem;color:var(--fg3);font-variant-numeric:tabular-nums}
+  .mini .prog .bar{flex:1;height:3px}
+  body[data-screen=now] main{padding-bottom:40px}
+}
+
+/* ---- ornament ---- */
+.orn{display:flex;align-items:center;gap:14px;color:var(--gold);font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold-dim))}
+.orn::after{background:linear-gradient(90deg,var(--gold-dim),transparent)}
+.sec{margin-top:36px}
+.sec-h{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.sec-h h2{font-size:1.4rem;display:flex;align-items:center;gap:10px}
+.sec-h h2::before{content:"✦";color:var(--gold);font-size:.8rem}
+.sec-h h2 small{font-family:var(--sans);color:var(--fg3);font-size:.82rem;font-weight:500}
+.sec-h .more{margin-left:auto;color:var(--gold);font-weight:600;font-size:.85rem}
+.row{display:flex;gap:16px;overflow-x:auto;margin:0 -16px;padding:6px 16px 18px;scroll-snap-type:x proximity;scroll-padding-inline:16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.row::-webkit-scrollbar{display:none}
+.row>*{scroll-snap-align:start;flex:0 0 auto}
+@media (min-width:900px){.row{margin:0 -40px;padding:6px 40px 18px;scroll-padding-inline:40px}}
+
+/* ---- the painting: a framed portrait card with a swara mandala ---- */
+.paint{position:relative;aspect-ratio:3/4;border-radius:6px;overflow:hidden;background:linear-gradient(170deg,var(--p1),var(--p2));color:var(--pink);box-shadow:var(--shadow);padding:10px;display:flex;flex-direction:column}
+.paint::before{content:"";position:absolute;inset:6px;border:1px solid rgba(255,255,255,.35);border-radius:3px;pointer-events:none}
+.paint::after{content:"";position:absolute;inset:9px;border:1px solid rgba(255,255,255,.14);border-radius:2px;pointer-events:none}
+.paint .scrim{position:absolute;left:0;right:0;bottom:0;height:46%;background:linear-gradient(180deg,transparent,rgba(0,0,0,.5))}
+.paint .arch{position:absolute;left:14%;right:14%;top:8%;bottom:34%;border:1px solid rgba(255,255,255,.22);border-radius:50% 50% 0 0/40% 40% 0 0;background:radial-gradient(70% 60% at 50% 40%,rgba(255,255,255,.18),transparent 70%)}
+.paint svg.mand{position:absolute;left:50%;top:38%;width:58%;transform:translate(-50%,-50%);filter:drop-shadow(0 4px 12px rgba(0,0,0,.35))}
+.paint svg.mand.lab{width:84%;top:40%}
+.paint .nm{position:relative;margin-top:auto;font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1.15;text-align:center;text-shadow:0 1px 8px rgba(0,0,0,.3);padding:0 6px 6px}
+.paint .nm.l{font-size:1.2rem}.paint .nm.xl{font-size:1rem}
+.paint .nm small{display:block;font-family:var(--sans);font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-top:4px}
+.paint .rib{position:absolute;left:0;top:14px;background:var(--gold);color:var(--gold-ink);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 10px 3px 12px;border-radius:0 3px 3px 0;z-index:2}
+.card{width:168px;text-align:left;position:relative;border-radius:8px}
+.card>b{display:block;margin-top:10px;font-family:var(--serif);font-weight:600;font-size:1rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card>span{display:block;color:var(--fg3);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card .play{position:absolute;right:12px;bottom:66px;width:42px;height:42px;border-radius:50%;background:var(--gold);color:var(--gold-ink);display:grid;place-items:center;opacity:0;transform:translateY(6px);transition:all .2s;box-shadow:0 6px 16px rgba(0,0,0,.4)}
+.card:hover .play,.card:focus-within .play{opacity:1;transform:none}
+.card .play svg{width:22px;height:22px}
+.card.big{width:min(72vw,250px)}
+.card.big .paint .nm{font-size:1.9rem}.card.big .paint .nm.l{font-size:1.5rem}.card.big .paint .nm.xl{font-size:1.2rem}
+.card.big .play{bottom:auto;top:14px;right:14px;width:48px;height:48px;opacity:1;transform:none}
+@media (min-width:900px){.card.big{width:260px}}
+/* artist portrait: arched frame */
+.card.who{width:150px}
+.card.who .pt{aspect-ratio:3/4;border-radius:999px 999px 8px 8px;overflow:hidden;background:var(--bg3);border:1px solid var(--line2);padding:4px;position:relative}
+.card.who .pt img{width:100%;height:100%;object-fit:cover;border-radius:999px 999px 5px 5px;filter:sepia(.25) contrast(1.05)}
+.card.who .pt .init{position:absolute;inset:4px;display:grid;place-items:center;font-family:var(--serif);font-size:2.6rem;color:var(--gold);border-radius:999px 999px 5px 5px;background:linear-gradient(170deg,var(--bg3),var(--bg4))}
+.card.who .play{bottom:60px}
+/* performance: framed thumbnail */
+.card.wide{width:236px}
+.card.wide .fr{aspect-ratio:16/9;border:1px solid var(--line2);padding:4px;background:var(--bg2)}
+.card.wide .fr img{width:100%;height:100%;object-fit:cover}
+/* mood bands */
+.mood{width:200px;height:112px;border-radius:6px;padding:14px 16px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(160deg,var(--m1),var(--m2));color:#fff8ea;position:relative;overflow:hidden;box-shadow:var(--shadow);transition:transform .2s}
+.mood::before{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.3);border-radius:3px}
+.mood::after{content:"❖";position:absolute;right:12px;top:8px;opacity:.5;font-size:.9rem}
+.mood:hover{transform:translateY(-2px)}
+.mood b{font-family:var(--serif);font-weight:600;font-size:1.5rem;line-height:1}
+.mood small{font-size:.74rem;opacity:.9;line-height:1.3}
+
+/* ---- hero ---- */
+.hero{margin-top:10px}
+.hero .kick{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.hero .kick b{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1}
+.hero .kick span{color:var(--fg2);font-size:.9rem}
+.hero p{color:var(--fg2);margin:0 0 14px;max-width:48ch}
+.btn{display:inline-flex;align-items:center;gap:8px;height:46px;padding:0 20px;border-radius:999px;font-weight:700;background:var(--gold);color:var(--gold-ink);transition:transform .15s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px color-mix(in srgb,var(--gold) 40%,transparent)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line2)}
+.btn.ghost:hover{border-color:var(--gold);box-shadow:none}
+.btn.sm{height:38px;padding:0 14px;font-size:.88rem}
+.btn svg{width:22px;height:22px}
+.acts{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+/* chips */
+.chips{display:flex;gap:8px;overflow-x:auto;margin:0 -16px;padding:4px 16px 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:0 0 auto;height:36px;padding:0 14px;border-radius:999px;border:1px solid var(--line2);font-weight:600;font-size:.85rem;color:var(--fg2);display:inline-flex;align-items:center;gap:6px;transition:all .15s;background:var(--bg2)}
+.chip:hover{color:var(--gold);border-color:var(--gold)}
+.chip.on{background:var(--gold);color:var(--gold-ink);border-color:transparent}
+.chip .n{opacity:.65;font-size:.75rem}
+@media (min-width:900px){.chips{margin:0 -40px;padding:4px 40px 8px}}
+
+/* ---- detail pages ---- */
+.back{display:inline-flex;align-items:center;gap:6px;color:var(--fg2);font-weight:600;margin:12px 0 16px}
+.back svg{width:20px;height:20px}
+.dhead{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:end}
+.dhead .kick{color:var(--gold);font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.16em}
+.dhead h1{font-size:clamp(2rem,8vw,3.4rem);line-height:1.1;margin-top:6px}
+.dhead .alt{color:var(--fg2);font-size:1.05rem;margin-top:4px;font-family:var(--serif)}
+.dhead .alt .hi{margin-left:8px;color:var(--fg3)}
+.dhead .alt .al{display:block;font-family:var(--sans);font-size:.85rem;color:var(--fg3);margin-top:2px}
+@media (max-width:599px){.dhead.raagh{grid-template-columns:1fr;justify-items:center;text-align:center}.dhead.raagh .paint{width:min(100%,250px)}.dhead.raagh .alt .hi{margin-left:6px}}
+@media (min-width:900px){.dhead{grid-template-columns:240px 1fr;gap:36px}.dhead.raagh{grid-template-columns:280px 1fr}}
+.dacts{display:flex;gap:10px;align-items:center;margin:20px 0 6px;flex-wrap:wrap}
+.icon-btn{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--fg2);border:1px solid var(--line2);transition:all .15s}
+.icon-btn:hover{color:var(--gold);border-color:var(--gold)}
+.icon-btn.on{color:var(--verm);border-color:var(--verm)}
+.icon-btn svg{width:22px;height:22px}
+.cat{margin:22px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.cat>div{background:var(--bg2);padding:14px}
+.cat dt{font-size:.7rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.14em}
+.cat dd{margin:4px 0 0;font-weight:500;font-size:1.05rem}
+.cat dd small{display:block;color:var(--fg3);font-weight:500;font-size:.82rem}
+.cat .span{grid-column:1/-1}
+@media (min-width:900px){.cat{grid-template-columns:repeat(4,1fr)}.cat .span{grid-column:span 2}}
+.notation{font-family:var(--serif);font-size:1.35rem;letter-spacing:.04em;line-height:1.8}
+.notation.en{font-family:var(--sans);font-size:1rem;color:var(--fg2);letter-spacing:.1em}
+.ng{display:flex;gap:clamp(5px,1.8vw,12px);overflow-x:auto;scrollbar-width:none;padding:4px 0 2px;line-height:1.3}
+.ng::-webkit-scrollbar{display:none}
+.nc{display:flex;flex-direction:column;align-items:center;flex:0 0 auto;min-width:1.3em}
+.nb{font-family:var(--serif);font-size:clamp(1.05rem,4.4vw,1.35rem);font-weight:500;padding:3px 0}
+.ne{font-family:var(--sans);font-size:clamp(.82rem,3.1vw,.95rem);color:var(--fg2);letter-spacing:.02em;padding:3px 0}
+.ng .sw{margin:0}
+.sw{position:relative;display:inline-block;margin-right:.35em}
+.sw.up::before,.sw.lo::after{content:"";position:absolute;left:50%;width:4px;height:4px;margin-left:-2px;border-radius:50%;background:currentColor}
+.sw.up::before{top:-2px}.sw.lo::after{bottom:-2px}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.formh{display:flex;align-items:center;gap:12px;margin:28px 0 10px;font-family:var(--serif);font-size:1.25rem;font-weight:600}
+.formh small{font-family:var(--sans);color:var(--fg3);font-size:.8rem;font-weight:600}
+.formh::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--gold-dim),transparent)}
+.list{display:flex;flex-direction:column;gap:2px}
+.item{display:grid;grid-template-columns:28px 104px 1fr auto;gap:12px;align-items:center;padding:8px;border-radius:6px;text-align:left;width:100%;transition:background .15s}
+.item:hover{background:var(--bg2)}
+.item.on{background:var(--bg2);box-shadow:inset 0 0 0 1px var(--line2)}
+.item .n{color:var(--fg3);font-size:.8rem;text-align:center;font-variant-numeric:tabular-nums}
+.item.on .n{color:var(--gold)}
+.item img{width:104px;aspect-ratio:16/9;object-fit:cover;background:var(--bg4);border:1px solid var(--line);padding:2px}
+.item b{display:block;font-size:.95rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item span{display:block;color:var(--fg3);font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .dur{color:var(--fg3);font-size:.8rem;font-variant-numeric:tabular-nums}
+@media (max-width:420px){.item{grid-template-columns:22px 84px 1fr auto;gap:8px}.item img{width:84px}}
+
+/* ---- now playing ---- */
+.np{padding-top:6px}
+.np .handle{width:40px;height:4px;border-radius:2px;background:var(--line2);margin:4px auto 12px}
+.np .stage{display:grid;grid-template-columns:1fr;gap:16px}
+.np .video{aspect-ratio:16/9;overflow:hidden;position:relative;background:#000;border:1px solid var(--line2);padding:4px;box-shadow:var(--shadow)}
+.np .video img{width:100%;height:100%;object-fit:cover}
+.np .video .yt{position:absolute;inset:0;display:grid;place-items:center}
+.np .video .yt i{width:68px;height:48px;border-radius:14px;background:#f00;display:grid;place-items:center}
+.np .video .yt svg{width:30px;height:30px;color:#fff}
+.np .video .lbl{position:absolute;left:12px;top:12px;font-size:.68rem;font-weight:700;background:rgba(0,0,0,.6);padding:3px 8px;border-radius:4px;color:#eee}
+.np .side-paint{display:none}
+.np .title{margin-top:18px;display:flex;align-items:flex-start;gap:12px}
+.np .title h1{font-size:clamp(2.2rem,9vw,3rem);line-height:1.1}
+.np .title h1 small{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--fg2);font-weight:400;margin-top:4px}
+.np .title .artist{color:var(--fg2);margin-top:6px}
+.np .title .artist a{color:var(--fg);font-weight:600;border-bottom:1px solid var(--line2)}
+.np .nota{margin-top:16px;display:grid;grid-template-columns:1fr;gap:14px;align-items:center;justify-items:center;padding:14px 16px;border:1px solid var(--line);background:var(--bg2)}
+.np .nota>div{width:100%;min-width:0}
+.np .nota svg.mand{width:min(200px,70vw);height:auto;color:var(--fg)}
+@media (min-width:600px){.np .nota{grid-template-columns:auto 1fr;justify-items:start}.np .nota svg.mand{width:190px}}
+.np .nota .lab{color:var(--gold);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em;display:block}
+.np .seek{display:flex;align-items:center;gap:10px;color:var(--fg3);font-size:.75rem;font-variant-numeric:tabular-nums;margin-top:18px}
+.np .seek .trk{flex:1;height:3px;background:var(--bg4);position:relative}
+.np .seek .trk i{position:absolute;left:0;top:0;height:100%;width:34%;background:var(--gold)}
+.np .seek .trk i::after{content:"";position:absolute;right:-6px;top:-5px;width:12px;height:12px;transform:rotate(45deg);background:var(--gold)}
+.np .ctls{display:flex;align-items:center;justify-content:center;gap:14px;margin:20px 0 6px}
+.np .ctls button{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:var(--fg);transition:all .15s}
+.np .ctls button:hover{background:var(--bg3)}
+.np .ctls button.big{width:76px;height:76px;background:var(--gold);color:var(--gold-ink);box-shadow:0 0 0 6px color-mix(in srgb,var(--gold) 18%,transparent)}
+.np .ctls button.big:hover{transform:scale(1.04)}
+.np .ctls button.side{width:44px;height:44px;color:var(--fg3)}
+.np .ctls button.side.on{color:var(--verm)}
+.np .ctls svg{width:28px;height:28px}
+.np .ctls .big svg{width:36px;height:36px}
+.np .queue{margin-top:28px}
+.np .queue .qh{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+.np .queue .qh h2{font-size:1.3rem}
+.np .queue .qh span{color:var(--fg3);font-size:.8rem;font-weight:600}
+.np .queue .qh .fbtn{margin-left:auto}
+.np .active{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}
+.np .active .chip{height:30px;font-size:.78rem}
+@media (min-width:900px){
+  .np{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(360px,.9fr);gap:44px;padding-top:20px;align-items:start}
+  .np .handle{display:none}
+  .np .stage{grid-template-columns:1fr 150px}
+  .np .side-paint{display:block}
+  .np .queue{margin-top:0;position:sticky;top:20px;max-height:calc(100dvh - 130px);overflow:auto;padding-right:4px}
+}
+
+/* ---- sheet: all filters in one place ---- */
+.sheet-bg{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:40;display:none}
+.sheet-bg.on{display:block}
+.sheet{position:fixed;left:0;right:0;bottom:0;max-height:84dvh;overflow:auto;background:var(--bg2);border-top:1px solid var(--gold);padding:10px 16px 30px;z-index:41;transform:translateY(100%);visibility:hidden;transition:transform .3s var(--ease),visibility 0s .3s}
+.sheet.on{transform:none;visibility:visible;transition:transform .3s var(--ease),visibility 0s}
+.sheet .handle{width:40px;height:4px;border-radius:2px;background:var(--line2);margin:4px auto 16px}
+.sheet h3{font-size:1.3rem;margin-bottom:6px;display:flex;justify-content:space-between;align-items:center}
+.sheet h3 button{font-family:var(--sans);color:var(--gold);font-size:.9rem;font-weight:600}
+.sheet .grp{margin-top:16px}
+.sheet .grp h4{margin:0 0 8px;font-size:.72rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.14em;display:flex;justify-content:space-between}
+.sheet .grp h4 button{color:var(--fg3);font-weight:600;letter-spacing:0;text-transform:none;font-size:.78rem}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+@media (min-width:900px){.sheet{left:auto;right:40px;bottom:100px;width:520px;border:1px solid var(--line2);box-shadow:var(--shadow)}}
+
+/* ---- browse ---- */
+.search{margin:12px 0 6px;display:flex;align-items:center;gap:10px;height:50px;padding:0 16px;border:1px solid var(--line2);background:var(--bg2)}
+.search:focus-within{border-color:var(--gold)}
+.search input{flex:1;background:none;border:0;color:var(--fg);font:inherit;font-size:1rem;outline:none;min-width:0}
+.search svg{width:22px;height:22px;color:var(--fg3)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.grid .card{width:auto}
+.tile-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.tile{height:86px;padding:12px 14px;text-align:left;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;color:#fff8ea;background:linear-gradient(160deg,var(--t1),var(--t2));font-family:var(--serif);font-size:1.15rem;font-weight:600;transition:transform .2s}
+.tile::before{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.3)}
+.tile:hover{transform:translateY(-2px)}
+.tile small{font-family:var(--sans);font-size:.72rem;opacity:.85;font-weight:500}
+@media (min-width:900px){.tile-grid{grid-template-columns:repeat(4,1fr)}}
+
+/* ---- misc ---- */
+.empty{margin:14px 0;padding:36px 20px;border:1px solid var(--line);outline:1px solid var(--line);outline-offset:4px;text-align:center;color:var(--fg2);background:var(--bg2)}
+.empty .ic{font-size:1.8rem;margin-bottom:8px;color:var(--gold)}
+.empty b{display:block;color:var(--fg);font-family:var(--serif);font-size:1.3rem;font-weight:600}
+.empty p{margin:6px auto 0;max-width:34ch}
+.acct{display:flex;align-items:center;gap:14px;padding:16px;background:var(--bg2);border:1px solid var(--line);margin:16px 0 24px}
+.toast{position:fixed;left:50%;bottom:calc(var(--mini) + var(--tabs) + 24px);transform:translateX(-50%) translateY(10px);background:var(--gold);color:var(--gold-ink);padding:10px 16px;border-radius:999px;font-weight:600;font-size:.85rem;opacity:0;transition:all .25s;z-index:50;pointer-events:none;white-space:nowrap}
+.toast.on{opacity:1;transform:translateX(-50%)}
+@media (min-width:900px){.toast{bottom:calc(var(--mini) + 24px)}}
+.loading{padding:60px;text-align:center;color:var(--fg3)}
+.pagehead{margin:18px 0 6px}
+.pagehead h1{font-size:2.3rem}
+.pagehead p{color:var(--fg2);margin:4px 0 0}
+</style>
+</head>
+<body>
+<div class="app">
+  <nav class="rail" aria-label="Main">
+    <div class="seal" aria-hidden="true">রা</div>
+    <button class="nav" data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg><span data-t="listen"></span></button>
+    <button class="nav" data-go="browse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span data-t="browse"></span></button>
+    <button class="nav" data-go="now"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span data-t="juke"></span></button>
+    <button class="nav" data-go="mine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg><span data-t="mine"></span></button>
+    <div class="foot">
+      <button class="pill icon" data-theme-toggle aria-label="Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button class="pill" id="langS" aria-label="Switch language"></button>
+      <button class="avatar" id="acctS" aria-label="Account" title="Google sign-in">S</button>
+    </div>
+  </nav>
+  <main id="main">
+    <div class="top">
+      <a class="brand" href="#home"><span class="seal">রা</span>রাগমালা <small>Raagmala</small></a>
+      <button class="searchbar" data-go="browse" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span data-t="searchPh"></span></button>
+      <div class="spacer"></div>
+      <button class="pill icon" data-theme-toggle aria-label="Theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <button class="pill" id="lang" aria-label="Switch language"></button>
+      <button class="avatar" id="acct" aria-label="Account" title="Google sign-in">S</button>
+    </div>
+    <section class="screen" id="home"></section>
+    <section class="screen" id="browse"></section>
+    <section class="screen" id="now"></section>
+    <section class="screen" id="mine"></section>
+    <section class="screen" id="raag"></section>
+    <section class="screen" id="artist"></section>
+    <div class="loading" id="loading">… loading raagmala.json</div>
+  </main>
+</div>
+
+<div class="mini" id="mini" role="region" aria-label="Now playing"></div>
+
+<nav class="tabs" aria-label="Main">
+  <button data-go="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1z"/></svg><span data-t="listen"></span></button>
+  <button data-go="browse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><span data-t="browse"></span></button>
+  <button data-go="now"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span data-t="juke"></span></button>
+  <button data-go="mine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg><span data-t="mine"></span></button>
+</nav>
+
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ===================== shared core ===================== */
+const $=(s,r=document)=>r.querySelector(s), $$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D=null, L='bn';
+const BD='০১২৩৪৫৬৭৮৯';
+const num=n=>L==='bn'?String(n).replace(/\d/g,d=>BD[d]):String(n);
+const T={
+ bn:{listen:'শুনুন',browse:'খুঁজুন',juke:'জুকবক্স',mine:'আমার',account:'অ্যাকাউন্ট',nowIs:p=>`এখন ${p}`,playNow:'এখনই শুনুন',shuffle:'এলোমেলো',
+  forHour:'এই প্রহরের রাগ',moods:'ভাব',voices:'মহান কণ্ঠ',known:'পরিচিত রাগ',cont:'আবার শুনুন',likes:'পছন্দ',upNext:'এরপর',
+  filters:'ছাঁকনি',time:'সময়',form:'রূপ',mood:'ভাব',thaat:'ঠাট',raag:'রাগ',artist:'শিল্পী',gharana:'ঘরানা',season:'ঋতু',
+  aroha:'আরোহ',avaroha:'অবরোহ',jati:'জাতি',vadi:'বাদী · সম্বাদী',related:'সম্পর্কিত রাগ',perfs:'পরিবেশনা',playRaag:'এই রাগ শুনুন',playArtist:'শুনুন',
+  searchPh:'রাগ, শিল্পী, ঘরানা…',signIn:'Google দিয়ে সাইন ইন',signHint:'পছন্দ ও থামার জায়গা সব যন্ত্রে পেতে',likedList:'পছন্দের পরিবেশনা',
+  emptyMine:'এখনও কিছু পছন্দ করেননি',emptyMineHint:'যেকোনো পরিবেশনায় ♥ চাপলে এখানে জমা হবে।',never:'আর বাজাবে না',like:'পছন্দ',prev:'আগের',next:'পরের',play:'বাজাও',pause:'থামাও',
+  all:'সব',any:'যেকোনো',views:'বার',raagsSung:'এখানে যে রাগ গেয়েছেন',nothing:'কিছু পাওয়া যায়নি',tryOther:'অন্য বানানে খুঁজে দেখুন',browseBy:'যেভাবে দেখবেন',
+  allRaags:'সব রাগ',allArtists:'সব শিল্পী',lang:'English',clear:'মুছুন',done:'হল',nowPlaying:'বাজছে',queueOf:(a,b)=>`${num(a)} / ${num(b)}`,
+  liked:'পছন্দে রাখা হল',unliked:'পছন্দ থেকে সরানো হল',nevered:'এটি আর বাজবে না',min:'মিনিট',seasonNow:s=>`এখন ${s} — ঋতুর রাগ`,
+  born:'জন্ম',died:'মৃত্যু',voice:{male:'পুরুষকণ্ঠ',female:'নারীকণ্ঠ'},perfN:n=>`${num(n)}টি পরিবেশনা`,raagN:n=>`${num(n)}টি রাগ`,
+  jatiN:{audav:'ঔড়ব',shadav:'ষাড়ব',sampurna:'সম্পূর্ণ'},nextUp:'পরে বাজবে',signedIn:'সাইন ইন করা নেই',premium:'ইউটিউব প্রিমিয়াম প্লেয়ার',signOut:'সাইন আউট',
+  heroHint:'এই প্রহরের রাগগুলো একে একে বাজবে',ytLabel:'YouTube প্লেয়ার (এমবেড)',more:'আরও'},
+ en:{listen:'Listen',browse:'Search',juke:'Jukebox',mine:'Mine',account:'Account',nowIs:p=>`Now · ${p}`,playNow:'Play now',shuffle:'Shuffle',
+  forHour:'Raags for this hour',moods:'Moods',voices:'Great voices',known:'Well-known raags',cont:'Continue listening',likes:'Your likes',upNext:'Up next',
+  filters:'Filters',time:'Time of day',form:'Form',mood:'Mood',thaat:'Thaat',raag:'Raag',artist:'Artist',gharana:'Gharana',season:'Season',
+  aroha:'Aroha',avaroha:'Avaroha',jati:'Jati',vadi:'Vadi · Samvadi',related:'Related raags',perfs:'Performances',playRaag:'Play this raag',playArtist:'Play',
+  searchPh:'Raags, artists, gharanas…',signIn:'Sign in with Google',signHint:'Keep likes and resume points on every device',likedList:'Liked performances',
+  emptyMine:'Nothing liked yet',emptyMineHint:'Tap ♥ on any performance and it will collect here.',never:'Never play',like:'Like',prev:'Previous',next:'Next',play:'Play',pause:'Pause',
+  all:'All',any:'Any',views:'views',raagsSung:'Raags sung here',nothing:'Nothing found',tryOther:'Try another spelling',browseBy:'Browse by',
+  allRaags:'All raags',allArtists:'All artists',lang:'বাংলা',clear:'Clear',done:'Done',nowPlaying:'Now playing',queueOf:(a,b)=>`${a} / ${b}`,
+  liked:'Added to likes',unliked:'Removed from likes',nevered:'Will never play again',min:'min',seasonNow:s=>`${s} now — raags of the season`,
+  born:'Born',died:'Died',voice:{male:'Male voice',female:'Female voice'},perfN:n=>`${n} performances`,raagN:n=>`${n} raags`,
+  jatiN:{audav:'Audav',shadav:'Shadav',sampurna:'Sampurna'},nextUp:'Up next',signedIn:'Not signed in',premium:'YouTube Premium player',signOut:'Sign out',
+  heroHint:'Raags of this prahar, one after another',ytLabel:'YouTube player (embed)',more:'More'}
+};
+const t=(k,...a)=>{const v=T[L][k];return typeof v==='function'?v(...a):(v??k)};
+const nm=o=>L==='bn'?(o.bn||o.en):o.en;
+const alt=o=>L==='bn'?o.en:(o.bn||'');
+const PR_COL={1:['#f7b267','#f4845f'],2:['#8ecae6','#219ebc'],3:['#ffd166','#f3a712'],4:['#f4a261','#c86b3c'],5:['#e76f8a','#5e3a8c'],6:['#3f51a5','#1b2447'],7:['#2a2f5e','#0d1030'],8:['#6b4c8a','#b07aa1']};
+const TH_HUE={bilawal:200,kalyan:42,khamaj:26,bhairav:352,purvi:300,marwa:18,kafi:150,asavari:222,bhairavi:330,todi:268};
+const MOOD_COL={shanta:['#2f6f8f','#1c3f55'],bhakti:['#b8862b','#6e4c0f'],shringar:['#c2426b','#6f1e3e'],karuna:['#5a5f9a','#2e3160'],gambhir:['#4e4a3f','#231f1a'],ullas:['#2e9e6b','#176042']};
+function praharNow(){const h=new Date().getHours();return h<3?7:h<6?8:Math.floor((h-6)/3)+1}
+function seasonNow(){const m=new Date().getMonth()+1;return Object.entries(D.meta.seasons).find(([k,s])=>s.months.includes(m))?.[0]}
+const SW_BN={S:'সা',r:'ঋ',R:'রে',g:'জ্ঞ',G:'গা',m:'মা',M:'হ্মা',P:'পা',d:'দ',D:'ধা',n:'ণ',N:'না'};
+function notation(seq,script){return (seq||'').split(/\s+/).map(tok=>{const up=tok.includes("'"),lo=tok.startsWith('.'),s=tok.replace(/['.]/g,'');if(!SW_BN[s])return esc(tok);let x=script==='bn'?SW_BN[s]:s.toUpperCase();if(script!=='bn'&&'rgdn'.includes(s))x=`<u>${x}</u>`;if(script!=='bn'&&s==='M')x+='&#x030D;';return `<span class="sw${up?' up':''}${lo?' lo':''}">${x}</span>`}).join(' ')}
+/* both scripts, swara by swara in aligned columns (no mid-sequence wrap; scrolls as a last resort) */
+const notaBoth=seq=>{const cols=(seq||'').split(/\s+/).filter(Boolean).map(tok=>{const b=`<span class="nb">${notation(tok,'bn')}</span>`,e=`<span class="ne">${notation(tok,'en')}</span>`;return `<span class="nc">${L==='bn'?b+e:e+b}</span>`}).join('');return `<div class="ng" lang="bn">${cols}</div>`};
+const jatiTxt=j=>(j||'').split('-').map(x=>T[L].jatiN[x]||x).join(L==='bn'?'–':'–');
+const thumb=(id,q='mq')=>`https://i.ytimg.com/vi/${id}/${q}default.jpg`;
+const fmtDur=s=>{const m=Math.floor(s/60),ss=String(s%60).padStart(2,'0');return num(`${m}:${ss}`)};
+const fmtViews=n=>{if(L==='bn'){if(n>=1e7)return `${num((n/1e7).toFixed(1))} কোটি`;if(n>=1e5)return `${num(Math.round(n/1e5))} লক্ষ`;if(n>=1e3)return `${num(Math.round(n/1e3))} হাজার`;return num(n)}if(n>=1e6)return `${(n/1e6).toFixed(1)}M`;if(n>=1e3)return `${Math.round(n/1e3)}K`;return String(n)};
+const seg=(typeof Intl!=='undefined'&&Intl.Segmenter)?new Intl.Segmenter('bn',{granularity:'grapheme'}):null;
+const glyph=s=>seg?[...seg.segment(s)][0]?.segment||s[0]:s[0];
+let R={},A={},perfList=[];
+function prep(){D.raags.forEach(r=>R[r.id]=r);D.artists.forEach(a=>A[a.id]=a);perfList=Object.entries(D.videos).map(([id,v])=>({id,...v}));}
+const perf=id=>D.videos[id]&&{id,...D.videos[id]};
+const perfsOf=ids=>(ids||[]).map(perf).filter(Boolean);
+const raagPerfs=r=>Object.values(r.videos||{}).flatMap(perfsOf);
+const artistThumb=a=>a.videos?.[0]?thumb(a.videos[0]):null;
+const perfRaag=p=>R[p.raags?.[0]], perfArtist=p=>A[p.artists?.[0]];
+const perfArtistName=p=>p.artists?.length?p.artists.map(i=>A[i]?nm(A[i]):i).join(', '):p.ch;
+const raagsFor=p=>D.raags.filter(r=>r.prahar?.includes(p)&&raagPerfs(r).length).sort((a,b)=>a.rank-b.rank);
+const artistsWithVideos=()=>D.artists.filter(a=>a.videos?.length).sort((a,b)=>a.rank-b.rank);
+
+/* player state */
+const P={cur:null,queue:[],idx:-1,playing:false,likes:new Set(),never:new Set(),recent:[],flt:{}};
+function setQueue(list,start=0,label=''){P.queue=list.filter(p=>!P.never.has(p.id));P.label=label;playAt(start)}
+function playAt(i){if(!P.queue.length)return;P.idx=(i+P.queue.length)%P.queue.length;P.cur=P.queue[P.idx];P.playing=true;if(!P.recent.find(x=>x.id===P.cur.id))P.recent.unshift(P.cur);renderMini();if(cur==='now')renderNow();}
+function toggle(){if(!P.cur){ensureQueue();playAt(0);return}P.playing=!P.playing;renderMini();if(cur==='now')renderNow();}
+/* a ready playlist for this hour whenever nothing is queued and no filter is set */
+function ensureQueue(){if(P.queue.length||Object.keys(P.flt).length)return;const p=praharNow();P.queue=raagsFor(p).flatMap(raagPerfs).filter(x=>!P.never.has(x.id)).sort(()=>Math.random()-.5);P.label=nm(D.meta.prahars[p]);P.idx=-1}
+const praharLabel=r=>(r.prahar||[]).length?r.prahar.map(p=>nm(D.meta.prahars[p])).join(', '):t('anyTime');
+const praharHours=r=>(r.prahar||[]).map(p=>`${num(D.meta.prahars[p].from)}:00–${num(D.meta.prahars[p].to)}:00`).join(', ');
+function like(id){if(P.likes.has(id)){P.likes.delete(id);toast(t('unliked'))}else{P.likes.add(id);toast(t('liked'))}refresh()}
+function never(id){P.never.add(id);toast(t('nevered'));if(P.cur?.id===id){P.queue=P.queue.filter(p=>p.id!==id);P.idx=Math.min(P.idx,P.queue.length-1);P.cur=P.queue[P.idx]||null}refresh()}
+let toastT;function toast(m){const e=$('#toast');e.textContent=m;e.classList.add('on');clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove('on'),1800)}
+
+/* filters for jukebox */
+const FKEYS=['time','form','mood','thaat','raag','artist','gharana'];
+function matches(p,f){const rs=(p.raags||[]).map(i=>R[i]).filter(Boolean),as=(p.artists||[]).map(i=>A[i]).filter(Boolean);
+ if(f.form&&p.form!==f.form)return false;if(f.time&&!rs.some(r=>r.prahar?.includes(+f.time)))return false;if(f.mood&&!rs.some(r=>r.moods?.includes(f.mood)))return false;
+ if(f.thaat&&!rs.some(r=>r.thaat===f.thaat))return false;if(f.raag&&!(p.raags||[]).includes(f.raag))return false;if(f.artist&&!(p.artists||[]).includes(f.artist))return false;
+ if(f.gharana&&!as.some(a=>a.gharana?.includes(f.gharana)))return false;return true}
+const filtered=f=>perfList.filter(p=>matches(p,f)&&!P.never.has(p.id)).sort((a,b)=>b.views-a.views);
+function fOptions(k){const f={...P.flt};delete f[k];const base=perfList.filter(p=>matches(p,f));const cnt={};const add=(id)=>cnt[id]=(cnt[id]||0)+1;
+ base.forEach(p=>{const rs=(p.raags||[]).map(i=>R[i]).filter(Boolean),as=(p.artists||[]).map(i=>A[i]).filter(Boolean);
+  if(k==='form')add(p.form);if(k==='time')new Set(rs.flatMap(r=>r.prahar||[])).forEach(add);if(k==='mood')new Set(rs.flatMap(r=>r.moods||[])).forEach(add);
+  if(k==='thaat')new Set(rs.map(r=>r.thaat).filter(Boolean)).forEach(add);if(k==='raag')(p.raags||[]).forEach(add);if(k==='artist')(p.artists||[]).forEach(add);if(k==='gharana')new Set(as.flatMap(a=>a.gharana||[])).forEach(add)});
+ const lab=id=>k==='form'?nm({bn:D.meta.forms[id],en:id[0].toUpperCase()+id.slice(1)}):k==='time'?nm(D.meta.prahars[id]):k==='mood'?nm(D.meta.moods[id]):k==='thaat'?nm({bn:D.meta.thaats[id],en:id[0].toUpperCase()+id.slice(1)}):k==='raag'?(R[id]?nm(R[id]):id):k==='artist'?(A[id]?nm(A[id]):id):nm({bn:D.meta.gharanas[id]||id,en:id});
+ return Object.entries(cnt).map(([id,n])=>({id,n,lab:lab(id)})).sort((a,b)=>k==='time'?+a.id-+b.id:b.n-a.n)}
+function fLabel(k){const v=P.flt[k];if(!v)return t(k);return fOptions(k).find(o=>o.id===v)?.lab||v}
+
+/* svg icons */
+const I={play:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>',pause:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>',
+ prev:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>',next:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z"/></svg>',
+ heart:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+ heartF:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l8.8 8.8 8.8-8.8a5.5 5.5 0 0 0 0-7.8z"/></svg>',
+ ban:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg>',
+ back:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>',
+ search:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>',
+ shuffle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>',
+ filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 5h18M6 12h12M10 19h4"/></svg>',
+ yt:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.5 7.5v9l7-4.5z"/></svg>'};
+Object.assign(T.bn,{anyTime:'যেকোনো সময়',readyN:n=>`প্রস্তুত · ${num(n)}টি পরিবেশনা`,noMatch:'এই ছাঁকনিতে কিছু মেলেনি',pickOne:'যেকোনো একটি বেছে নিন'});
+Object.assign(T.en,{anyTime:'Any time',readyN:n=>`Ready · ${n} performances`,noMatch:'Nothing matches these filters',pickOne:'Pick any to start'});
+
+
+/* ===================== concept C: Chitra ===================== */
+Object.assign(T.bn,{nowHour:'এই প্রহরে',gallery:'এই প্রহরের চিত্রমালা',hint:'গান বাছুন — এখানে বাজবে',swaraMap:'স্বরচক্র · বাদী বড় সোনালি বিন্দু, সম্বাদী বৃত্ত',playAll:'সব বাজাও',signedOutHint:'সাইন ইন করলে পছন্দ সব যন্ত্রে থাকবে',chooseFilters:'ছাঁকনি বদলান',theme:'আলো / আঁধার'});
+Object.assign(T.en,{nowHour:'This prahar',gallery:'Paintings of this prahar',hint:'Pick something — it plays here',swaraMap:'Swara wheel · vadi is the large gold dot, samvadi the ring',playAll:'Play all',signedOutHint:'Sign in to keep likes on every device',chooseFilters:'Change filters',theme:'Light / dark'});
+
+/* ragamala palettes per thaat: [deep, light, ink] */
+const PAL={bilawal:['#1d3a5f','#5f93b8','#f4efe4'],kalyan:['#26245e','#7d6fb5','#f6f0e4'],khamaj:['#6f3418','#d0894a','#fff4e3'],bhairav:['#7e1a1a','#d8603a','#fff1e0'],purvi:['#521c48','#b05a84','#fdeef2'],marwa:['#7f430f','#dba34a','#fff6e0'],kafi:['#1c4a39','#6fa37a','#eff8ec'],asavari:['#283569','#6f82bf','#eef1fb'],bhairavi:['#5f1a35','#c2557a','#fdeef3'],todi:['#352659','#8a73b9','#f3eefb'],_:['#3b3024','#9c8458','#f7f1e3']};
+const PRCOL={1:['#8e2a1a','#e2904a'],2:['#1e4f78','#7fb6d6'],3:['#8a6a10','#e6c04b'],4:['#7a3d14','#d98a4e'],5:['#5a1f52','#b85f8d'],6:['#242b68','#6b74b8'],7:['#161a3c','#4a4f84'],8:['#4b2c6b','#9a7bc2']};
+const MOODS={shanta:['#1e4a63','#5e8ea8'],bhakti:['#7a4e0e','#c9933a'],shringar:['#7a1f45','#c0557d'],karuna:['#2f3272','#6b6fb0'],gambhir:['#3a2f26','#6b5a47'],ullas:['#1c5a3d','#5aa273']};
+const NOTES=['S','r','R','g','G','m','M','P','d','D','n','N'];
+const pal=r=>PAL[r.thaat]||PAL._;
+const thaatName=id=>L==='bn'?(D.meta.thaats[id]||id||''):id?id[0].toUpperCase()+id.slice(1):'';
+const formName=id=>L==='bn'?(D.meta.forms[id]||id):id?id[0].toUpperCase()+id.slice(1):'';
+const ghName=id=>L==='bn'?(D.meta.gharanas[id]||id):id;
+let cur='home';
+
+/* swara mandala: 12 note positions, used notes joined, vadi/samvadi marked */
+function mandala(r,cls='mand',labels=false){const used=new Set([...(r.aroha||'').split(/\s+/),...(r.avaroha||'').split(/\s+/)].map(x=>x.replace(/['.]/g,'')).filter(x=>NOTES.includes(x)));
+ const c=50,R=37,pos=(i,rad=R)=>{const a=-Math.PI/2+i*Math.PI/6;return [c+rad*Math.cos(a),c+rad*Math.sin(a)]};
+ const pts=NOTES.map((n,i)=>used.has(n)?pos(i):null).filter(Boolean);
+ const dots=NOTES.map((n,i)=>{const [x,y]=pos(i).map(v=>v.toFixed(1));if(r.vadi===n)return `<circle cx="${x}" cy="${y}" r="5.5" fill="#e8c260" stroke="rgba(0,0,0,.25)" stroke-width=".6"/>`;if(r.samvadi===n)return `<circle cx="${x}" cy="${y}" r="4.2" fill="none" stroke="#e8c260" stroke-width="1.6"/>`;return used.has(n)?`<circle cx="${x}" cy="${y}" r="2.6" fill="currentColor"/>`:`<circle cx="${x}" cy="${y}" r="1" fill="currentColor" opacity=".35"/>`}).join('');
+ /* labels: the raag's own notes, just outside the wheel, in the UI language; vadi/samvadi in gold */
+ const lab=labels?NOTES.map((n,i)=>{if(!used.has(n))return '';const [x,y]=pos(i,51).map(v=>v.toFixed(1));const gold=r.vadi===n||r.samvadi===n;const txt=L==='bn'?esc(SW_BN[n]):('rgdn'.includes(n)?`<tspan text-decoration="underline">${n.toUpperCase()}</tspan>`:n==='M'?'M&#x030D;':n);
+  return `<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central" font-size="${L==='bn'?9.5:8.5}" font-family="${L==='bn'?'Noto Serif Bengali,serif':'Hind Siliguri,sans-serif'}" font-weight="${gold?700:600}" fill="${gold?'#e8c260':'currentColor'}">${txt}</text>`}).join(''):'';
+ return `<svg class="${cls}${labels?' lab':''}" viewBox="${labels?'-14 -14 128 128':'0 0 100 100'}" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" stroke-opacity=".3" stroke-width=".6"/><circle cx="50" cy="50" r="37" fill="none" stroke="currentColor" stroke-opacity=".18" stroke-width=".6" stroke-dasharray="1 3"/>${pts.length>2?`<polygon points="${pts.map(p=>p.map(v=>v.toFixed(1)).join(',')).join(' ')}" fill="currentColor" fill-opacity=".08" stroke="currentColor" stroke-opacity=".55" stroke-width=".7" stroke-linejoin="round"/>`:''}${dots}${lab}<text x="50" y="56" text-anchor="middle" font-size="17" font-family="Noto Serif Bengali,serif" font-weight="600" fill="currentColor">${esc(glyph(r.bn||r.en))}</text></svg>`}
+function paint(r,opts={}){const [p1,p2,ink]=pal(r),n=L==='bn'?(r.bn||r.en):r.en,len=[...n].length,cls=len>9?'xl':len>5?'l':'';const pr=D.meta.prahars[r.prahar?.[0]];
+ return `<div class="paint" style="--p1:${p1};--p2:${p2};--pink:${ink}">${opts.ribbon?`<span class="rib">${esc(opts.ribbon)}</span>`:''}<div class="arch"></div><div class="scrim"></div>${mandala(r,'mand',!!opts.labels)}<div class="nm ${cls}">${esc(n)}<small>${esc(thaatName(r.thaat))}${pr?` · ${esc(nm(pr))}`:''}</small></div></div>`}
+
+/* ---- building blocks ---- */
+function raagCard(r,big=false,ribbon=''){return `<button class="card${big?' big':''}" data-go="raag/${r.id}" aria-label="${esc(nm(r))}">${paint(r,{ribbon,labels:big})}<b>${esc(nm(r))}</b><span>${esc(alt(r))}${r.hi?' · '+esc(r.hi):''}</span><span class="play" data-play-raag="${r.id}" role="button" aria-label="${t('playRaag')}">${I.play}</span></button>`}
+function artistCard(a){const th=artistThumb(a);return `<button class="card who" data-go="artist/${a.id}"><div class="pt">${th?`<img src="${th.replace('mq','hq')}" alt="" loading="lazy">`:`<div class="init">${esc(glyph(nm(a)))}</div>`}</div><b>${esc(nm(a))}</b><span>${esc(a.gharana?.map(ghName).join(', ')||alt(a))}</span><span class="play" data-play-artist="${a.id}" role="button" aria-label="${t('playArtist')}">${I.play}</span></button>`}
+function perfCard(p){const r=perfRaag(p);return `<button class="card wide" data-play="${p.id}"><div class="fr"><img src="${thumb(p.id)}" alt="" loading="lazy"></div><b>${esc(r?nm(r):p.t)}</b><span>${esc(perfArtistName(p))} · ${fmtDur(p.sec)}</span></button>`}
+function moodCard(id){const m=D.meta.moods[id],[c1,c2]=MOODS[id];return `<button class="mood" style="--m1:${c1};--m2:${c2}" data-mood="${id}"><b>${esc(nm(m))}</b><small>${esc(L==='bn'?m.descBn:m.desc)}</small></button>`}
+const row=(title,items,more='',sub='')=>`<div class="sec"><div class="sec-h"><h2>${title}${sub?`<small>${sub}</small>`:''}</h2>${more?`<button class="more" data-go="${more}">${t('more')} →</button>`:''}</div><div class="row">${items.join('')}</div></div>`;
+function perfItem(q,i,ctx,primary){const qr=perfRaag(q),on=P.cur?.id===q.id;return `<button class="item${on?' on':''}" data-play="${q.id}"${ctx?` data-ctx="${ctx}"`:''}><span class="n">${on?'▶':num(i+1)}</span><img src="${thumb(q.id)}" alt="" loading="lazy"><div style="min-width:0"><b>${esc(primary==='artist'?perfArtistName(q):(qr?nm(qr):q.t))}</b><span>${esc(primary==='artist'?q.t:perfArtistName(q))}</span></div><span class="dur">${fmtDur(q.sec)}</span></button>`}
+
+/* ---- screens ---- */
+function renderHome(){const p=praharNow(),pr=D.meta.prahars[p],rs=raagsFor(p);const sn=seasonNow();
+ const likes=[...P.likes].map(perf).filter(Boolean),cont=[...P.recent,...likes].filter((x,i,a)=>a.findIndex(y=>y.id===x.id)===i).slice(0,10);
+ $('#home').innerHTML=`
+ <div class="hero">
+  <div class="orn">${t('nowHour')} · ${num(pr.from)}:00–${num(pr.to)}:00</div>
+  <div class="kick" style="margin-top:14px"><b>${esc(nm(pr))}</b><span>${esc(alt(pr))} · ${t('raagN',rs.length)}</span></div>
+  <p>${t('heroHint')}</p>
+  <div class="acts"><button class="btn" id="heroPlay">${I.play} ${t('playNow')}</button><button class="btn ghost" id="heroShuf">${I.shuffle} ${t('shuffle')}</button></div>
+  <div class="row" style="margin-top:18px">${rs.map(r=>raagCard(r,true,P.cur&&perfRaag(P.cur)?.id===r.id?t('nowPlaying'):'')).join('')}</div>
+ </div>
+ ${sn?row(t('seasonNow',nm(D.meta.seasons[sn])),D.raags.filter(r=>r.season===sn&&raagPerfs(r).length).map(r=>raagCard(r))):''}
+ ${row(t('moods'),Object.keys(D.meta.moods).map(moodCard))}
+ ${row(t('voices'),artistsWithVideos().slice(0,16).map(artistCard),'browse')}
+ ${row(t('known'),D.raags.filter(r=>raagPerfs(r).length).sort((a,b)=>a.rank-b.rank).slice(0,16).map(r=>raagCard(r)),'browse')}
+ ${cont.length?row(t('cont'),cont.map(perfCard),'mine'):`<div class="sec"><div class="sec-h"><h2>${t('cont')}</h2></div><div class="empty"><div class="ic">❖</div><b>${t('emptyMine')}</b><p>${t('emptyMineHint')}</p></div></div>`}`;
+ $('#heroPlay').onclick=()=>{setQueue(rs.flatMap(r=>raagPerfs(r).slice(0,2)),0,nm(pr));go('now')};
+ $('#heroShuf').onclick=()=>{setQueue(rs.flatMap(raagPerfs).sort(()=>Math.random()-.5),0,nm(pr));go('now')};
+}
+function renderBrowse(q=''){const el=$('#browse');q=q.trim();const norm=s=>s.toLowerCase();let body='';
+ if(q){const ql=norm(q);const rs=D.raags.filter(r=>[r.en,r.bn,r.hi,r.bnAlt,...(r.aliases||[])].filter(Boolean).some(x=>norm(x).includes(ql)));const as=D.artists.filter(a=>[a.en,a.bn,a.hi].filter(Boolean).some(x=>norm(x).includes(ql))&&a.videos?.length);
+  body=(rs.length?`<div class="sec"><div class="sec-h"><h2>${t('raag')}<small>${num(rs.length)}</small></h2></div><div class="grid">${rs.map(r=>raagCard(r)).join('')}</div></div>`:'')+(as.length?`<div class="sec"><div class="sec-h"><h2>${t('artist')}<small>${num(as.length)}</small></h2></div><div class="grid">${as.map(artistCard).join('')}</div></div>`:'');
+  if(!rs.length&&!as.length)body=`<div class="empty"><div class="ic">⌕</div><b>${t('nothing')}</b><p>${t('tryOther')}</p></div>`}
+ else{const tiles=Object.entries(D.meta.prahars).map(([k,v])=>`<button class="tile" style="--t1:${PRCOL[k][0]};--t2:${PRCOL[k][1]}" data-flt="time:${k}">${esc(nm(v))}<small>${num(v.from)}:00–${num(v.to)}:00</small></button>`).join('');
+  const chips=(obj,key,lab)=>Object.keys(obj).map(k=>`<button class="chip" data-flt="${key}:${k}">${esc(lab(k))}</button>`).join('');
+  body=`<div class="sec"><div class="sec-h"><h2>${t('time')}</h2></div><div class="tile-grid">${tiles}</div></div>
+  <div class="sec"><div class="sec-h"><h2>${t('thaat')}</h2></div><div class="chips">${chips(D.meta.thaats,'thaat',thaatName)}</div></div>
+  <div class="sec"><div class="sec-h"><h2>${t('form')}</h2></div><div class="chips">${chips(D.meta.forms,'form',formName)}</div></div>
+  <div class="sec"><div class="sec-h"><h2>${t('gharana')}</h2></div><div class="chips">${Object.keys(D.meta.gharanas).slice(0,12).map(k=>`<button class="chip" data-flt="gharana:${k}">${esc(ghName(k))}</button>`).join('')}</div></div>
+  ${row(t('allRaags'),D.raags.filter(r=>raagPerfs(r).length).sort((a,b)=>a.rank-b.rank).map(r=>raagCard(r)))}
+  ${row(t('allArtists'),artistsWithVideos().map(artistCard))}`}
+ el.innerHTML=`<label class="search">${I.search}<input id="q" type="search" placeholder="${t('searchPh')}" value="${esc(q)}" aria-label="${t('browse')}"></label>${body}`;
+ const inp=$('#q');inp.oninput=()=>{const pos=inp.selectionStart;renderBrowse(inp.value);const n=$('#q');n.focus();n.setSelectionRange(pos,pos)};}
+function renderNow(){const el=$('#now');ensureQueue();const p=P.cur;const r=p&&perfRaag(p);const a=p&&perfArtist(p);
+ const active=FKEYS.filter(k=>P.flt[k]).map(k=>`<button class="chip on" data-set="${k}:" aria-label="${t('clear')} ${t(k)}">${esc(fLabel(k))} ✕</button>`).join('');
+ el.innerHTML=`<div class="np"><div><div class="handle"></div>
+  <div class="stage"><div class="video">${p?`<img src="${thumb(p.id,'hq')}" alt="">`:''}<div class="yt"><i>${I.yt}</i></div><span class="lbl">${t('ytLabel')} · 16:9</span></div>${r?`<div class="side-paint">${paint(r)}</div>`:''}</div>
+  ${p?`<div class="title"><div style="flex:1;min-width:0"><h1>${esc(r?nm(r):p.t)}<small>${esc(r?alt(r):'')}${r?.hi?` · ${esc(r.hi)}`:''}</small></h1>
+   <div class="artist">${a?`<a href="#artist/${a.id}">${esc(nm(a))}</a>`:esc(p.ch)} · ${esc(formName(p.form))} · ${fmtViews(p.views)} ${t('views')}</div></div>
+   <button class="icon-btn${P.likes.has(p.id)?' on':''}" data-like="${p.id}" aria-label="${t('like')}">${P.likes.has(p.id)?I.heartF:I.heart}</button></div>
+  <div class="seek"><span>${fmtDur(Math.round(p.sec*.34))}</span><div class="trk"><i></i></div><span>${fmtDur(p.sec)}</span></div>
+  <div class="ctls"><button class="side${P.likes.has(p.id)?' on':''}" data-like="${p.id}" aria-label="${t('like')}">${P.likes.has(p.id)?I.heartF:I.heart}</button><button data-prev aria-label="${t('prev')}">${I.prev}</button><button class="big" data-toggle aria-label="${P.playing?t('pause'):t('play')}">${P.playing?I.pause:I.play}</button><button data-next aria-label="${t('next')}">${I.next}</button><button class="side" data-never="${p.id}" aria-label="${t('never')}" title="${t('never')}">${I.ban}</button></div>
+  ${r?`<div class="nota">${mandala(r,'mand',true)}<div><span class="lab">${t('aroha')}</span>${notaBoth(r.aroha)}<span class="lab" style="margin-top:8px">${t('avaroha')}</span>${notaBoth(r.avaroha)}</div></div>`:''}`
+  :`<div class="empty" style="margin:20px 0"><div class="ic">▶</div><b>${t('nowIs',nm(D.meta.prahars[praharNow()]))}</b><p>${P.queue.length?t('readyN',P.queue.length)+' · '+t('pickOne'):t('heroHint')}</p><button class="btn" style="margin-top:14px" data-toggle>${I.play} ${t('playNow')}</button></div>`}
+  </div>
+  <div class="queue"><div class="qh"><h2>${t('upNext')}</h2><span>${P.label?esc(P.label)+' · ':''}${P.queue.length?(P.cur?t('queueOf',P.idx+1,P.queue.length):num(P.queue.length)):''}</span><button class="btn ghost sm fbtn" data-sheet="all">${I.filter} ${t('filters')}</button></div>
+   ${active?`<div class="active">${active}<button class="chip" data-clear>${t('clear')}</button></div>`:''}
+   <div class="list">${P.queue.length?P.queue.map((q,i)=>{const qr=perfRaag(q);return `<button class="item${i===P.idx?' on':''}" data-qi="${i}"><span class="n">${i===P.idx?'▶':num(i+1)}</span><img src="${thumb(q.id)}" alt="" loading="lazy"><div style="min-width:0"><b>${esc(qr?nm(qr):q.t)}</b><span>${esc(perfArtistName(q))}</span></div><span class="dur">${fmtDur(q.sec)}</span></button>`}).join(''):`<div class="empty" style="margin:10px 0"><b>${t('noMatch')}</b><p>${t('chooseFilters')}</p></div>`}</div>
+  </div></div>`;}
+function renderMine(){const likes=[...P.likes].map(perf).filter(Boolean);
+ $('#mine').innerHTML=`<div class="pagehead"><div class="orn">${t('mine')}</div><h1 style="margin-top:12px">${t('likedList')}</h1><p>${num(likes.length)}</p></div>
+  <div class="acct"><span class="avatar" style="width:46px;height:46px">S</span><div style="flex:1;min-width:0"><b>${t('signedIn')}</b><small style="display:block;color:var(--fg2)">${t('signedOutHint')}</small></div><button class="btn sm">${t('signIn')}</button></div>
+  ${likes.length?`<div class="list">${likes.map((q,i)=>perfItem(q,i,'')).join('')}</div><div class="dacts"><button class="btn" data-play-likes>${I.play} ${t('playNow')}</button></div>`
+  :`<div class="empty"><div class="ic">♥</div><b>${t('emptyMine')}</b><p>${t('emptyMineHint')}</p></div>`}`;}
+function renderRaag(id){const r=R[id];if(!r)return go('home');const ps=raagPerfs(r);const byForm={};Object.entries(r.videos||{}).forEach(([f,ids])=>byForm[f]=perfsOf(ids));
+ $('#raag').innerHTML=`<button class="back" data-back>${I.back} ${t('listen')}</button>
+  <div class="dhead raagh">${paint(r,{labels:true})}<div><div class="kick">${t('raag')}${r.thaat?` · ${esc(thaatName(r.thaat))} ${t('thaat')}`:''}</div><h1>${esc(nm(r))}</h1><div class="alt">${esc(alt(r))}${r.hi?`<span class="hi">${esc(r.hi)}</span>`:''}${r.aliases?.length?`<span class="al">${esc(r.aliases.slice(0,4).join(' · '))}</span>`:''}</div></div></div>
+  <div class="dacts"><button class="btn" data-play-raag="${id}">${I.play} ${t('playRaag')}</button><span style="color:var(--fg2);font-size:.9rem">${t('perfN',ps.length)}</span></div>
+  <dl class="cat">
+   ${r.thaat?`<div><dt>${t('thaat')}</dt><dd>${esc(thaatName(r.thaat))}</dd></div>`:''}
+   <div><dt>${t('time')}</dt><dd>${esc(praharLabel(r))}<small>${praharHours(r)}</small></dd></div>
+   ${r.jati?`<div><dt>${t('jati')}</dt><dd>${esc(jatiTxt(r.jati))}</dd></div>`:''}
+   ${r.vadi?`<div><dt>${t('vadi')}</dt><dd>${notation(r.vadi,L)} · ${notation(r.samvadi,L)}<small>${notation(r.vadi,L==='bn'?'en':'bn')} · ${notation(r.samvadi,L==='bn'?'en':'bn')}</small></dd></div>`:''}
+   <div class="span"><dt>${t('aroha')}</dt><dd>${notaBoth(r.aroha)}</dd></div>
+   <div class="span"><dt>${t('avaroha')}</dt><dd>${notaBoth(r.avaroha)}</dd></div>
+   <div class="span"><dt>${t('moods')}</dt><dd><div class="tags">${(r.moods||[]).map(m=>`<button class="chip" data-mood="${m}">${esc(nm(D.meta.moods[m]))}</button>`).join('')||'—'}</div></dd></div>
+   <div class="span"><dt>${t('related')}</dt><dd><div class="tags">${(r.related||[]).map(x=>R[x]?`<button class="chip" data-go="raag/${x}">${esc(nm(R[x]))}</button>`:'').join('')||'—'}</div></dd></div>
+   ${r.season?`<div><dt>${t('season')}</dt><dd>${esc(nm(D.meta.seasons[r.season]))}</dd></div>`:''}
+  </dl>
+  <p style="color:var(--fg3);font-size:.78rem;margin:8px 0 0">${t('swaraMap')}</p>
+  ${Object.entries(byForm).map(([f,list])=>`<div class="formh">${esc(formName(f))}<small>${num(list.length)}</small></div><div class="list">${list.map((q,i)=>perfItem(q,i,`raag:${id}`,'artist')).join('')}</div>`).join('')}`;}
+function renderArtist(id){const a=A[id];if(!a)return go('home');const ps=perfsOf(a.videos);const raags=[...new Set(ps.flatMap(p=>p.raags||[]))].map(x=>R[x]).filter(Boolean);const th=artistThumb(a);
+ $('#artist').innerHTML=`<button class="back" data-back>${I.back} ${t('listen')}</button>
+  <div class="dhead"><div class="card who" style="width:auto"><div class="pt">${th?`<img src="${th.replace('mq','hq')}" alt="">`:`<div class="init">${esc(glyph(nm(a)))}</div>`}</div></div><div><div class="kick">${t('artist')}${a.voice?` · ${T[L].voice[a.voice]||''}`:''}</div><h1>${esc(nm(a))}</h1><div class="alt">${esc(alt(a))}${a.hi?`<span class="hi">${esc(a.hi)}</span>`:''}</div></div></div>
+  <div class="dacts"><button class="btn" data-play-artist="${id}">${I.play} ${t('playArtist')}</button><span style="color:var(--fg2);font-size:.9rem">${t('perfN',ps.length)}</span></div>
+  <dl class="cat">
+   <div><dt>${t('born')} – ${t('died')}</dt><dd>${num(a.born||'?')}${a.died?` – ${num(a.died)}`:''}</dd></div>
+   <div><dt>${t('gharana')}</dt><dd>${(a.gharana||[]).map(g=>esc(ghName(g))).join(', ')||'—'}</dd></div>
+   <div class="span"><dt>${t('form')}</dt><dd>${(a.forms||[]).map(f=>esc(formName(f))).join(', ')||'—'}</dd></div>
+  </dl>
+  ${row(t('raagsSung'),raags.map(r=>raagCard(r)))}
+  <div class="formh">${t('perfs')}<small>${num(ps.length)}</small></div><div class="list">${ps.map((q,i)=>perfItem(q,i,`artist:${id}`)).join('')}</div>`;}
+function renderMini(){ensureQueue();const p=P.cur,r=p&&perfRaag(p),pr=D.meta.prahars[praharNow()],pct=p?34:0;
+ $('#mini').innerHTML=`<div class="bar top"><i style="width:${pct}%"></i></div>${p?`<img class="thumb" src="${thumb(p.id)}" alt="">`:`<div class="thumb ph">❖</div>`}<div class="meta"><b>${esc(p?(r?nm(r):p.t):t('nowIs',nm(pr)))}</b><span>${esc(p?perfArtistName(p):(P.queue.length?t('readyN',P.queue.length):t('hint')))}</span></div>
+  <div class="mid"><div class="ctl"><button class="hide-s" data-prev aria-label="${t('prev')}">${I.prev}</button><button class="big" data-toggle aria-label="${p&&P.playing?t('pause'):t('play')}">${p&&P.playing?I.pause:I.play}</button><button data-next aria-label="${t('next')}">${I.next}</button></div><div class="prog hide-s"><span>${p?fmtDur(Math.round(p.sec*.34)):num('0:00')}</span><div class="bar"><i style="width:${pct}%"></i></div><span>${p?fmtDur(p.sec):'–:––'}</span></div></div>
+  <button class="hide-s likeb${p&&P.likes.has(p.id)?' on':''}" ${p?`data-like="${p.id}"`:'disabled'} aria-label="${t('like')}">${p&&P.likes.has(p.id)?I.heartF:I.heart}</button>`}
+
+/* ---- sheet: every filter group at once ---- */
+function openSheet(){const groups=FKEYS.map(k=>{const opts=fOptions(k).slice(0,k==='time'?8:12);return `<div class="grp"><h4>${t(k)}${P.flt[k]?`<button data-set="${k}:">${t('clear')}</button>`:''}</h4><div class="opts"><button class="chip${P.flt[k]?'':' on'}" data-set="${k}:">${t('any')}</button>${opts.map(o=>`<button class="chip${P.flt[k]===o.id?' on':''}" data-set="${k}:${o.id}">${esc(o.lab)} <span class="n">${num(o.n)}</span></button>`).join('')}</div></div>`}).join('');
+ $('#sheet').innerHTML=`<div class="handle"></div><h3>${t('filters')} <button data-close>${t('done')}</button></h3><div style="color:var(--fg3);font-size:.82rem">${t('queueOf',filtered(P.flt).length,perfList.length)} · ${t('perfs')}</div>${groups}`;$('#sheet').classList.add('on');$('#sheetBg').classList.add('on')}
+function closeSheet(){$('#sheet').classList.remove('on');$('#sheetBg').classList.remove('on')}
+function applyFilters(){const list=filtered(P.flt);const keep=list.findIndex(p=>p.id===P.cur?.id);P.queue=list;P.idx=keep>=0?keep:0;P.cur=list[P.idx]||null;P.label=t('filters');renderMini();renderNow()}
+
+/* ---- routing ---- */
+function go(h){location.hash=h}
+function route(){const h=location.hash.replace(/^#/,'')||'home';const [s,id]=h.split('/');const scr=['home','browse','now','mine','raag','artist'].includes(s)?s:'home';cur=scr;document.body.dataset.screen=scr;
+ $$('.screen').forEach(e=>e.classList.toggle('on',e.id===scr));$$('[data-go]').forEach(b=>b.classList.toggle('on',b.dataset.go===scr||(scr==='raag'||scr==='artist')&&b.dataset.go==='home'));
+ ({home:renderHome,browse:()=>renderBrowse($('#q')?.value||''),now:renderNow,mine:renderMine,raag:()=>renderRaag(id),artist:()=>renderArtist(id)})[scr]();
+ window.scrollTo(0,0)}
+function refresh(){renderMini();route()}
+function setLang(l){L=l;document.documentElement.lang=l;$$('[data-t]').forEach(e=>e.textContent=t(e.dataset.t));$('#lang').textContent=t('lang');$('#langS').textContent=t('lang');refresh()}
+
+/* ---- events ---- */
+document.addEventListener('click',e=>{const b=e.target.closest('button,[role=button]');if(!b)return;
+ if(b.dataset.playRaag!==undefined){e.stopPropagation();const r=R[b.dataset.playRaag];setQueue(raagPerfs(r),0,nm(r));go('now');return}
+ if(b.dataset.playArtist){e.stopPropagation();setQueue(perfsOf(A[b.dataset.playArtist].videos),0,nm(A[b.dataset.playArtist]));go('now');return}
+ if(b.dataset.playLikes!==undefined){setQueue([...P.likes].map(perf).filter(Boolean),0,t('likes'));go('now');return}
+ if(b.dataset.play){const ctx=b.dataset.ctx;let list=[perf(b.dataset.play)];if(ctx){const [k,id]=ctx.split(':');list=k==='raag'?raagPerfs(R[id]):perfsOf(A[id].videos)}else if(cur==='mine')list=[...P.likes].map(perf).filter(Boolean);const i=Math.max(0,list.findIndex(p=>p.id===b.dataset.play));setQueue(list,i,ctx?nm(ctx.startsWith('raag')?R[ctx.split(':')[1]]:A[ctx.split(':')[1]]):'');if(cur!=='now'&&!ctx)go('now');else refresh();return}
+ if(b.dataset.go){go(b.dataset.go);return}
+ if(b.dataset.back!==undefined){history.length>1?history.back():go('home');return}
+ if(b.dataset.toggle!==undefined){toggle();return}
+ if(b.dataset.prev!==undefined){playAt(P.idx-1);return}
+ if(b.dataset.next!==undefined){playAt(P.idx+1);return}
+ if(b.dataset.like){like(b.dataset.like);return}
+ if(b.dataset.never){never(b.dataset.never);return}
+ if(b.dataset.qi){playAt(+b.dataset.qi);return}
+ if(b.dataset.mood){P.flt={mood:b.dataset.mood};applyFilters();go('now');return}
+ if(b.dataset.flt){const [k,v]=b.dataset.flt.split(':');P.flt={[k]:v};applyFilters();go('now');return}
+ if(b.dataset.sheet){openSheet();return}
+ if(b.dataset.set!==undefined){const [k,v]=b.dataset.set.split(':');if(v)P.flt[k]=v;else delete P.flt[k];applyFilters();if($('#sheet').classList.contains('on'))openSheet();return}
+ if(b.dataset.clear!==undefined){P.flt={};applyFilters();return}
+ if(b.dataset.close!==undefined){closeSheet();return}
+ if(b.dataset.themeToggle!==undefined){const h=document.documentElement;h.dataset.theme=h.dataset.theme==='dark'?'light':'dark';return}
+ if(b.id==='lang'||b.id==='langS'){setLang(L==='bn'?'en':'bn');return}
+ if(b.id==='acct'||b.id==='acctS'){toast(t('signIn')+' · '+t('premium'));return}
+});
+$('#sheetBg').onclick=closeSheet;
+$('#mini').addEventListener('click',e=>{if(!e.target.closest('button')&&window.innerWidth<900)go('now')});
+window.addEventListener('hashchange',route);
+fetch('../../docs/raagmala.json').then(r=>r.json()).then(d=>{D=d;prep();$('#loading').remove();
+ const seed=['YeOcx1ox5gQ','-lzurpNhpIQ'].filter(id=>D.videos[id]);seed.forEach(id=>P.likes.add(id));
+ setLang('bn')}).catch(e=>{$('#loading').textContent='Could not load ../raagmala.json — serve docs/ over http (e.g. http://localhost:8790/mockups/c.html). '+e});
+// a "#home"-style address also names a section id, so the browser jumps to it on load: start at the top instead
+addEventListener("load", () => setTimeout(() => window.scrollTo(0, 0), 0));
+</script>
+</body>
+</html>

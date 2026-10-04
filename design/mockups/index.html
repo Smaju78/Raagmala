@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>রাগমালা · design concepts</title>
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ee;--card:#fff;--ink:#1f1a17;--ink2:#5d554e;--ink3:#8a817a;--line:rgba(31,26,23,.12);--acc:#7a2d69}
+@media (prefers-color-scheme:dark){:root{--bg:#141216;--card:#1e1a21;--ink:#f3ede4;--ink2:#b9b0a4;--ink3:#857c72;--line:rgba(243,237,228,.12);--acc:#d9b254}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Siliguri",system-ui,sans-serif;font-size:16px;line-height:1.55;padding:32px 16px 60px}
+.wrap{max-width:980px;margin:0 auto}
+h1{font-family:"Noto Serif Bengali",serif;font-weight:600;font-size:2.2rem;margin:0;line-height:1.15}
+h1 small{display:block;font-family:"Hind Siliguri",sans-serif;font-weight:500;font-size:1rem;color:var(--ink3);margin-top:4px;letter-spacing:.02em}
+.lead{color:var(--ink2);max-width:62ch;margin:14px 0 28px}
+.grid{display:grid;gap:18px}
+@media (min-width:760px){.grid{grid-template-columns:repeat(3,1fr)}}
+a.card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,.14)}
+a.card:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.swatch{height:150px;position:relative;display:flex;align-items:flex-end;padding:14px 16px;color:#fff;font-family:"Noto Serif Bengali",serif;font-weight:600;font-size:1.6rem;line-height:1}
+.swatch small{display:block;font-family:"Hind Siliguri",sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.85;margin-bottom:6px}
+.a{background:#0b0b0e}
+.a::before{content:"";position:absolute;right:16px;top:16px;width:70px;height:70px;border-radius:10px;background:linear-gradient(135deg,#f6b84a,#ff7a59)}
+.a::after{content:"";position:absolute;right:98px;top:16px;width:70px;height:70px;border-radius:10px;background:#1a1a1f}
+.b{background:linear-gradient(160deg,#fde7cb 0%,#f9d4d8 45%,#8f62a2 100%);color:#2b1230}
+.b::before{content:"";position:absolute;right:22px;top:20px;width:40px;height:40px;border-radius:50%;background:#fff8e0;box-shadow:0 0 0 8px rgba(255,255,255,.3)}
+.c{background:linear-gradient(170deg,#26245e,#7d6fb5);color:#f6f0e4}
+.c::before{content:"";position:absolute;inset:8px;border:1px solid rgba(255,255,255,.4);border-radius:6px}
+.c::after{content:"";position:absolute;right:22px;top:18px;width:56px;height:56px;border-radius:50%;border:1px dashed rgba(255,255,255,.6)}
+.body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h2{margin:0;font-size:1.15rem;font-weight:700}
+.body h2 span{color:var(--ink3);font-weight:500;font-size:.9rem;margin-left:6px}
+.body p{margin:0;color:var(--ink2);font-size:.95rem}
+.body .go{margin-top:auto;padding-top:10px;color:var(--acc);font-weight:700;font-size:.9rem}
+.note{margin-top:30px;padding:16px 18px;border:1px dashed var(--line);border-radius:14px;color:var(--ink2);font-size:.9rem}
+.note b{color:var(--ink)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:.85em;background:var(--card);border:1px solid var(--line);padding:1px 6px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>রাগমালা · design concepts<small>Three music-app directions for the same content — pick one, or mix.</small></h1>
+  <p class="lead">Each mockup is one self-contained page with real data from <code>../raagmala.json</code>. Screens: Home (শুনুন) with a “Now” hero for the current prahar, expanded Now Playing / jukebox with filters, raag page, artist page, search, and a Mine stub — plus a persistent mini-player on every screen. Resize the window or open on a phone: every concept has a phone layout (bottom tab bar) and a desktop layout. Nothing actually plays; the YouTube area is a placeholder.</p>
+
+  <div class="grid">
+    <a class="card" href="a.html">
+      <div class="swatch a"><div><small>Concept A</small>Nocturne</div></div>
+      <div class="body">
+        <h2>A · Nocturne <span>dark, dense, Spotify-like</span></h2>
+        <p>A neutral near-black interface with an amber accent and Hind Siliguri throughout. Home is a stack of tight horizontal rows of square tiles; raag tiles are typographic (the full name in bold type with a thaat-coloured band, a prahar glyph and a faint initial as watermark); on desktop the hero carries a collage of the hour's performance thumbnails. Desktop uses a left sidebar with text navigation and a full-width bottom player; phone uses a floating mini-player above the tab bar. Jukebox filters are per-key chips that open a bottom sheet. The most familiar, information-dense option.</p>
+        <div class="go">Open A →</div>
+      </div>
+    </a>
+    <a class="card" href="b.html">
+      <div class="swatch b"><div><small>Concept B</small>প্রহর · Prahar</div></div>
+      <div class="body">
+        <h2>B · Prahar <span>light, warm, the palette follows the hour</span></h2>
+        <p>Warm paper with Tiro Bangla serif display type. The whole page is themed by the current prahar: the hero is that hour's sky (sun or moon on a dotted arc), and the accent colour, page tint and the mini-player ribbon shift with it (a row of prahar chips under the hero lets you preview any hour; raag pages take on their own raag's hour). Raag tiles are little skies: the sun or moon where the hour puts it, a thaat-coloured haze on the horizon and a row of twelve dots showing which swaras the raag uses. Desktop uses a top bar with text tabs and a search field; facts are set as a ledger. Supports dark mode via the system preference.</p>
+        <div class="go">Open B →</div>
+      </div>
+    </a>
+    <a class="card" href="c.html">
+      <div class="swatch c"><div><small>Concept C</small>চিত্র · Chitra</div></div>
+      <div class="body">
+        <h2>C · Chitra <span>artwork-led, ragamala miniatures</span></h2>
+        <p>A deep lacquer base (or parchment, via the ☾ toggle) with gold rules and ornament, Noto Serif Bengali display type. Every raag gets a generated “painting”: a 3:4 framed card in its thaat's ragamala palette with a swara mandala — the twelve notes on a wheel, the raag's notes joined into a constellation, vadi as a gold dot and samvadi as a ring — so each raag is visually unique. Artists sit in arched frames. The hour's raags are a gallery of large cards on Home; desktop uses a narrow icon rail; the jukebox has a single sheet with all seven filter groups at once. The most distinctive identity.</p>
+        <div class="go">Open C →</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="note"><b>Notes for the final build.</b> All three share the same data helpers, notation renderer (romanised with komal underlined and tivra Ma marked; Bengali akarmatrik with octave dots), filter logic and player state, so the chosen look can be combined with any other concept's layout ideas. Google sign-in, YouTube embed and persistence are stubs. Elements that must survive in the real site: the visible YouTube embed in Now Playing (≥200×200, never under the mini-player), Bengali digits in Bengali mode, keyboard focus rings, and reduced-motion support.</div>
+</div>
+</body>
+</html>
