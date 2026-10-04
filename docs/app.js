@@ -64,7 +64,7 @@ const STR = {
     moreOnWiki: (o) => `More on ${o.link}.`,
     views: (o) => `${o.v} views`, like: "♡ Like", liked: "♥ Liked",
     jati: { sampurna: "sampurna", shadav: "shadav", audav: "audav" }, voice: { male: "Male", female: "Female" },
-    raag: "Raag", artist: "Artist", playAria: (o) => `Play ${o.t}`, playInline: (o) => `Play ${o.t} here`,
+    raag: "Raag", artist: "Artist", playAria: (o) => `Play ${o.t}`, playInline: (o) => `Play ${o.t}`,
     // jukebox
     jbEmpty: "Press Play for a shuffle of performances that match your filters.",
     jbNone: "No performances match these filters yet. Remove a filter or clear them all.",
@@ -150,7 +150,7 @@ const STR = {
     moreOnWiki: (o) => `${o.link}য় আরও পড়ুন।`,
     views: (o) => `${o.v} বার দেখা`, like: "♡ পছন্দ", liked: "♥ পছন্দের",
     jati: { sampurna: "সম্পূর্ণ", shadav: "ষাড়ব", audav: "ঔড়ব" }, voice: { male: "পুরুষ", female: "নারী" },
-    raag: "রাগ", artist: "শিল্পী", playAria: (o) => `বাজান: ${o.t}`, playInline: (o) => `এখানেই বাজান: ${o.t}`,
+    raag: "রাগ", artist: "শিল্পী", playAria: (o) => `বাজান: ${o.t}`, playInline: (o) => `বাজান: ${o.t}`,
     jbEmpty: "ফিল্টারের সঙ্গে মেলে এমন পরিবেশনা এলোমেলোভাবে শুনতে ▶ বাজান চাপুন।",
     jbNone: "এই ফিল্টারে এখনও কোনো পরিবেশনা নেই। একটি ফিল্টার সরান বা সব মুছে দিন।",
     clearFilters: "ফিল্টার মুছুন", nothingPlaying: "এখনও কিছু বাজছে না।", play: "বাজান", pause: "থামান", resume: "আবার চালান",
@@ -554,7 +554,8 @@ function wirePlays(root) {
   $$("[data-play-id]", root).forEach((b) => b.onclick = () => { jb.playId(b.dataset.playId); location.hash = "#/jukebox"; });
 }
 
-// One performance on a raag or artist page: plays inline (YouTube embed) and can be liked.
+// One performance on a raag or artist page: ▶ plays it in the one site player (so the player bar always shows
+// what is playing; the page stays), and it can be liked. The row that is playing is highlighted.
 function perfRow(id, { showRaag = true, showArtist = true } = {}) {
   const v = VIDEOS.get(id);
   if (!v) return "";
@@ -573,22 +574,20 @@ function perfRow(id, { showRaag = true, showArtist = true } = {}) {
     </div></div></div>`;
 }
 function wirePerfs(root) {
-  $$("[data-vid]", root).forEach((b) => b.onclick = () => {
-    jb.pause();
-    $$(".inline-frame", root).forEach((f) => f.remove());
-    $$(".perf.on", root).forEach((p) => p.classList.remove("on"));
-    const wrap = b.closest(".perf-wrap"), f = document.createElement("iframe");
-    f.src = `${ytHost()}/embed/${b.dataset.vid}?autoplay=1&rel=0&hl=${L}`;
-    f.allow = "autoplay; encrypted-media; picture-in-picture"; f.allowFullscreen = true; f.title = "YouTube video";
-    const box = document.createElement("div"); box.className = "inline-frame"; box.append(f);
-    wrap.append(box); $(".perf", wrap).classList.add("on");
-  });
+  $$("[data-vid]", root).forEach((b) => b.onclick = () => jb.playId(b.dataset.vid));
+  markPlaying();
   $$("[data-like]", root).forEach((b) => b.onclick = () => {
     const id = b.dataset.like, on = !isLiked(id);
     toggle("likes", id, on); jb.prefsChanged();
     b.setAttribute("aria-pressed", String(on)); b.innerHTML = on ? I.heartF : I.heart;
     toast(on ? t("toastLiked") : t("toastUnliked"));
   });
+}
+
+function markPlaying() {
+  const id = jb.currentId();
+  $$(".perf.on").forEach((p) => p.classList.remove("on"));
+  if (id) $$(`.perf[data-perf="${CSS.escape(id)}"]`).forEach((p) => p.classList.add("on"));
 }
 
 /* ---------------- views ---------------- */
@@ -954,7 +953,7 @@ const jb = (() => {
     current = v;
     pendingStart = Math.floor(startAt);
     if (!startAt) { prefs.recent.push(v.id); prefs.recent = prefs.recent.slice(-300); savePrefs(); }
-    showNow(); renderQueue(); saveSession(); setProgress(pendingStart, v.sec);
+    showNow(); renderQueue(); saveSession(); setProgress(pendingStart, v.sec); markPlaying();
     await loadApi();
     $("#jb-empty").hidden = true;
     const start = Math.floor(startAt);
@@ -1310,7 +1309,7 @@ const jb = (() => {
   // Prefs changed from outside (account sync): redraw filters, lists and the playlist.
   function refresh() { renderFilters(); buildQueue(); renderQueue(); updateButtons(); }
 
-  return { init, refresh, setPremium, hostChanged, playId, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
+  return { init, refresh, setPremium, hostChanged, currentId: () => current && current.id, playId, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
     current: () => current, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
