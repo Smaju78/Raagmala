@@ -15,6 +15,11 @@
     if (th !== "light" && th !== "dark") th = (window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches) ? "light" : "dark";
     h.dataset.theme = th;
     if (lg === "en" || lg === "bn") h.lang = lg;
+    // The time-of-day tint, also before the first paint (same colours as SKY in app.js; prahar 1 = 6–9h … 8 = 3–6h).
+    var sky = { 1: ["#f3a373", "#b8431a"], 2: ["#8ac3e5", "#1b6b9c"], 3: ["#f7c640", "#8f5e00"], 4: ["#ec9553", "#ad4312"],
+      5: ["#c0557d", "#5e3a8c"], 6: ["#5d6ab0", "#2c3675"], 7: ["#3f4576", "#15183a"], 8: ["#7a62a6", "#4a3570"] };
+    var hr = new Date().getHours(), p = hr >= 6 ? Math.floor((hr - 6) / 3) + 1 : Math.floor(hr / 3) + 7;
+    h.style.setProperty("--sky1", sky[p][0]); h.style.setProperty("--sky2", sky[p][1]);
   })();
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">

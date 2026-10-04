@@ -373,7 +373,7 @@ const PAL = { bilawal: ["#1d3a5f", "#5f93b8", "#f4efe4"], kalyan: ["#26245e", "#
   todi: ["#352659", "#8a73b9", "#f3eefb"], _: ["#3b3024", "#9c8458", "#f7f1e3"] };
 const PRCOL = { 1: ["#8e2a1a", "#e2904a"], 2: ["#1e4f78", "#7fb6d6"], 3: ["#8a6a10", "#e6c04b"], 4: ["#7a3d14", "#d98a4e"],
   5: ["#5a1f52", "#b85f8d"], 6: ["#242b68", "#6b74b8"], 7: ["#161a3c", "#4a4f84"], 8: ["#4b2c6b", "#9a7bc2"] };
-// The home hero's tint follows the clock: warm at dawn, bright at midday, dusk rose, deep indigo at night.
+// The page's tint follows the clock: warm at dawn, bright at midday, dusk rose, deep indigo at night.
 const SKY = { 1: ["#f3a373", "#b8431a"], 2: ["#8ac3e5", "#1b6b9c"], 3: ["#f7c640", "#8f5e00"], 4: ["#ec9553", "#ad4312"],
   5: ["#c0557d", "#5e3a8c"], 6: ["#5d6ab0", "#2c3675"], 7: ["#3f4576", "#15183a"], 8: ["#7a62a6", "#4a3570"] };
 const MOODCOL = { shanta: ["#1e4a63", "#5e8ea8"], bhakti: ["#7a4e0e", "#c9933a"], shringar: ["#7a1f45", "#c0557d"], karuna: ["#2f3272", "#6b6fb0"],
@@ -1496,6 +1496,15 @@ function load() {
       VIDEOS.set(id, v);
     }
     applySky(currentPrahar());
+    // Follow the clock while the site stays open: new tint (and a fresh home hero) when the prahar changes.
+    let shownPrahar = currentPrahar();
+    setInterval(() => {
+      const p = currentPrahar();
+      if (p === shownPrahar) return;
+      shownPrahar = p;
+      applySky(p);
+      if ((location.hash || "#/") === "#/") route();
+    }, 60000);
     jb.init();
     const startHash = location.hash;
     window.addEventListener("hashchange", route);
