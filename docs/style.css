@@ -310,3 +310,16 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .resume h2 { font-size: var(--s1); margin-bottom: 8px; }
 .resume p { margin: 0 0 18px; line-height: 1.6; }
 .resume-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+/* account */
+.account { position: relative; margin-left: 4px; }
+.acct-btn { font: inherit; font-size: var(--s-1); padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--ink); cursor: pointer; list-style: none; display: inline-flex; align-items: center; }
+.acct-btn::-webkit-details-marker { display: none; }
+.acct-menu > summary.acct-btn { padding: 2px; border-radius: 50%; }
+.acct-btn img, .acct-initial { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; }
+.acct-initial { background: var(--teal); color: var(--on-teal); font-weight: 700; }
+.acct-pop { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; width: min(300px, calc(100vw - 32px));
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px;
+  box-shadow: 0 12px 32px rgba(0,0,0,.18); display: grid; gap: 8px; }
+.acct-pop p { margin: 0; }
+.btn.danger { color: var(--danger); border-color: var(--danger); }

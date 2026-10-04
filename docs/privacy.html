@@ -31,7 +31,7 @@
 <main class="doc" data-l="bn" lang="bn">
   <h1>গোপনীয়তা</h1>
   <p>রাগমালা হিন্দুস্তানি শাস্ত্রীয় কণ্ঠসংগীত নিয়ে একটি বিনামূল্যের, ব্যক্তিগত, অবাণিজ্যিক ওয়েবসাইট।
-  এখানে কোনো অ্যাকাউন্ট, বিজ্ঞাপন বা অ্যানালিটিক্স নেই, এবং কোনো ব্যক্তিগত তথ্য সংগ্রহ করা হয় না।</p>
+  এখানে কোনো বিজ্ঞাপন বা অ্যানালিটিক্স নেই, অ্যাকাউন্ট ইচ্ছামতো, এবং সাইন ইন না করলে কোনো ব্যক্তিগত তথ্য সংগ্রহ করা হয় না।</p>
 
   <h2>কী রাখা হয়, কোথায়</h2>
   <p>আপনার পছন্দের পরিবেশনা, যেগুলো আর বাজাতে চান না, জুকবক্সের ফিল্টার, ভাষা এবং সম্প্রতি বাজানো পরিবেশনার একটি ছোট তালিকা
@@ -42,6 +42,14 @@
   <p>সব মুছতে ব্রাউজারের সেটিংসে smaju78.github.io-র সাইট ডেটা মুছে দিন। এই সাইট ইউটিউবের যে তথ্য রাখে (ভিডিওর আইডি, শিরোনাম,
   চ্যানেলের নাম, কতবার দেখা ও পছন্দ করা হয়েছে) তা অন্তত প্রতি ৩০ দিনে হালনাগাদ বা মুছে ফেলা হয়; ইউটিউব থেকে সরিয়ে নেওয়া ভিডিও পরের
   হালনাগাদেই বাদ পড়ে।</p>
+
+  <h2>গুগল দিয়ে সাইন ইন (ইচ্ছামতো)</h2>
+  <p>সাইন ইন না করেও পুরো সাইট ব্যবহার করা যায়। “Google দিয়ে সাইন ইন” করলে আপনার পছন্দ, আর বাজাবেন না এমন তালিকা, জুকবক্সের ফিল্টার,
+  ভাষা, প্রিমিয়াম সেটিং আর যেখানে থেমেছিলেন (পাতা, পরিবেশনা, সময়, প্লেলিস্ট) গুগলের Firebase পরিষেবায় (Cloud Firestore) আপনার
+  অ্যাকাউন্টের একটি নথিতে রাখা হয়, যাতে অন্য যন্ত্রেও পান। সাইন-ইনের জন্য Firebase Authentication আপনার গুগল অ্যাকাউন্টের নাম,
+  ইমেল ও ছবি জানে; এর বাইরে কিছু নেওয়া হয় না, কোনো বিজ্ঞাপন বা বিশ্লেষণে ব্যবহার হয় না, কারও সঙ্গে ভাগ করা হয় না।
+  নিরাপত্তা-নিয়ম অনুযায়ী আপনার নথি শুধু আপনিই পড়তে বা বদলাতে পারেন। অ্যাকাউন্ট মেনুর “অ্যাকাউন্টে রাখা তথ্য মুছুন” দিয়ে যেকোনো সময়
+  সব মুছে দিতে পারেন; সাইন-ইনের রেকর্ড মুছতে চাইলে issue খুলে জানান।</p>
 
   <h2>ইউটিউব</h2>
   <p>পরিবেশনা বাজে ইউটিউবের এমবেড করা প্লেয়ারে, ইউটিউবের গোপনীয়তা-বর্ধিত মোডে (youtube-nocookie.com)। ভিডিও বাজালে ইউটিউব ও
@@ -65,7 +73,7 @@
 <main class="doc" data-l="en" lang="en">
   <h1>Privacy</h1>
   <p>Raagmala is a free, personal, non-commercial website about Hindustani classical vocal music.
-  It has no accounts, no advertising and no analytics, and it does not collect personal information.</p>
+  It has no advertising and no analytics, accounts are optional, and unless you choose to sign in it does not collect personal information.</p>
 
   <h2>What is stored, and where</h2>
   <p>Your likes, the performances you chose never to play, your jukebox filters, your language and a short list of
@@ -76,6 +84,14 @@
   <p>To delete everything, use the browser setting that clears site data for smaju78.github.io. The YouTube data this
   site keeps (video IDs, titles, channel names and view and like counts) is refreshed or deleted at least every 30 days;
   videos that are removed from YouTube are dropped at the next refresh.</p>
+
+  <h2>Sign in with Google (optional)</h2>
+  <p>The whole site works without signing in. If you choose “Sign in with Google”, your likes, never-play list, jukebox
+  filters, language, Premium setting and where you left off (page, performance, position, playlist) are kept in one document
+  for your account in Google's Firebase service (Cloud Firestore), so they follow you to other devices. For sign-in, Firebase
+  Authentication knows your Google account's name, email and photo; nothing else is collected, nothing is used for advertising
+  or analytics, and nothing is shared. The security rules let only you read or change your document. Use “Delete my saved data”
+  in the account menu to remove it at any time; to have the sign-in record removed too, open an issue.</p>
 
   <h2>YouTube</h2>
   <p>Performances are played with the embedded YouTube player, using YouTube's privacy-enhanced mode

@@ -74,6 +74,11 @@ const STR = {
     prefsSum: (o) => `Your liked performances (${o.a}) and hidden ones (${o.b})`, prefsLiked: "Liked: these come up 4× as often",
     prefsNone: "None yet. Press ♥ Like while a performance plays.", prefsNever: "Never play", none: "None",
     prefsNote: "Saved in this browser only.", remove: "Remove", miniPause: "Pause", miniPlay: "Play", miniLike: "Like",
+    signIn: "Sign in with Google", signOut: "Sign out", account: "Your account",
+    syncNote: "Your likes, settings and where you left off are kept in your account, so they follow you to your other devices.",
+    syncedAt: (o) => `Saved to your account at ${o.time}`, deleteData: "Delete my saved data",
+    deleteConfirm: "Delete everything saved in your account (likes, settings, resume point) and sign out? This browser keeps its own copy.",
+    syncError: (o) => `Couldn't reach your account (${o.msg}). Everything is still saved in this browser.`,
     resumeTitle: "Welcome back", resumeYes: "Continue", resumeNo: "No, go to the home page",
     resumePlaying: (o) => `Continue where you left off? You were listening to ${o.what}, at ${o.at}.`,
     resumePage: (o) => `Continue where you left off? You were on ${o.what}.`,
@@ -138,6 +143,11 @@ const STR = {
     prefsSum: (o) => `আপনার পছন্দের (${o.a}) ও লুকোনো (${o.b}) পরিবেশনা`, prefsLiked: "পছন্দের: এগুলো ৪ গুণ বেশি বাজে",
     prefsNone: "এখনও নেই। কিছু বাজার সময় ♥ পছন্দ চাপুন।", prefsNever: "আর বাজাবে না", none: "নেই",
     prefsNote: "শুধু এই ব্রাউজারে রাখা থাকে।", remove: "সরান", miniPause: "থামান", miniPlay: "বাজান", miniLike: "পছন্দ",
+    signIn: "Google দিয়ে সাইন ইন", signOut: "সাইন আউট", account: "আপনার অ্যাকাউন্ট",
+    syncNote: "আপনার পছন্দ, সেটিংস আর যেখানে থেমেছিলেন সব আপনার অ্যাকাউন্টে থাকে, তাই অন্য যন্ত্রেও পাবেন।",
+    syncedAt: (o) => `অ্যাকাউন্টে রাখা হয়েছে ${o.time}-এ`, deleteData: "অ্যাকাউন্টে রাখা তথ্য মুছুন",
+    deleteConfirm: "অ্যাকাউন্টে রাখা সব কিছু (পছন্দ, সেটিংস, থামার জায়গা) মুছে সাইন আউট করবেন? এই ব্রাউজারে নিজস্ব কপি থেকে যাবে।",
+    syncError: (o) => `অ্যাকাউন্টের সঙ্গে যোগাযোগ করা গেল না (${o.msg})। সব কিছু এই ব্রাউজারে রাখা আছে।`,
     resumeTitle: "আবার স্বাগত", resumeYes: "যেখানে ছিলাম সেখান থেকে", resumeNo: "না, প্রথম পাতায় যাই",
     resumePlaying: (o) => `যেখানে থেমেছিলেন সেখান থেকে শুরু করবেন? আপনি শুনছিলেন ${o.what}, ${o.at}-এ।`,
     resumePage: (o) => `যেখানে ছিলেন সেখান থেকে শুরু করবেন? আপনি ছিলেন ${o.what} পাতায়।`,
@@ -161,6 +171,7 @@ function t(key, o = {}) {
 const PREF_KEY = "raagmala.prefs.v1";
 const SESSION_KEY = "raagmala.session.v1"; // resume point: page, performance, position, playlist
 let lastPage = "#/";
+let holdSession = true; // the saved resume point is kept untouched until the visitor has answered the resume prompt
 const EMPTY_FILTERS = { now: false, prahars: [], thaats: [], forms: [], moods: [], seasons: [], raag: "", artist: "", gharana: "", likedOnly: false };
 const ARR = { prahars: "prahars", thaats: "thaats", forms: "forms", moods: "moods", seasons: "seasons" };
 const freshFilters = () => ({ ...EMPTY_FILTERS, prahars: [], thaats: [], forms: [], moods: [], seasons: [] });
@@ -172,7 +183,51 @@ function loadPrefs() {
     return p ? { ...empty, ...p, filters: { ...freshFilters(), ...(p.filters || {}) } } : empty;
   } catch { return empty; }
 }
-function savePrefs() { try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* storage unavailable */ } }
+function savePrefs() {
+  prefs.updatedAt = Date.now();
+  try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* storage unavailable */ }
+  SYNC.changed("prefs");
+}
+
+/* ---------------- account sync hooks (optional Google sign-in, see sync.js) ----------------
+   sync.js (an ES module) fills these in when docs/firebase-config.js has a Firebase config; without it they
+   stay no-ops and everything is kept in this browser only. */
+const SYNC = window.raagmalaSync = {
+  changed: () => {},       // called after every local change; sync.js uploads (debounced)
+  signIn: null,            // set by sync.js: the account button appears only then
+  user: null,
+};
+// Resolves when the sign-in state is known (so the resume prompt can use the account's latest resume point).
+SYNC.ready = new Promise((res) => { SYNC.resolveReady = res; setTimeout(res, 4000); });
+const readSession = () => { try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "null"); } catch { return null; } };
+SYNC.snapshot = () => ({
+  prefs: { likes: prefs.likes, never: prefs.never, filters: prefs.filters, ytFull: !!prefs.ytFull, recent: prefs.recent.slice(-150) },
+  prefsAt: prefs.updatedAt || 0, lang: L, session: readSession(),
+});
+// Merge what the account holds into this browser. The first time a browser is linked to an account, likes and
+// never-play lists from both are kept; after that the newer side wins. The newer resume point always wins.
+SYNC.apply = (r, firstLink) => {
+  if (!r) return;
+  const rp = r.prefs || {};
+  if (firstLink) {
+    prefs.likes = [...new Set([...(rp.likes || []), ...prefs.likes])];
+    prefs.never = [...new Set([...(rp.never || []), ...prefs.never])].filter((id) => !prefs.likes.includes(id));
+  }
+  if ((r.prefsAt || 0) > (prefs.updatedAt || 0)) {
+    if (!firstLink) { prefs.likes = rp.likes || []; prefs.never = rp.never || []; }
+    Object.assign(prefs.filters, freshFilters(), rp.filters || {});
+    prefs.ytFull = !!rp.ytFull;
+    if (rp.recent) prefs.recent = rp.recent;
+    prefs.updatedAt = r.prefsAt;
+    if (r.lang && r.lang !== L) setLang(r.lang, false);
+  }
+  try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* storage unavailable */ }
+  const ls = readSession();
+  if (r.session && (!ls || (r.session.at || 0) > (ls.at || 0))) {
+    try { localStorage.setItem(SESSION_KEY, JSON.stringify(r.session)); } catch { /* storage unavailable */ }
+  }
+  if (VIDEOS.size) jb.refresh();
+};
 const isLiked = (id) => prefs.likes.includes(id);
 const isNever = (id) => prefs.never.includes(id);
 function toggle(list, id, on) {
@@ -705,10 +760,11 @@ const jb = (() => {
   /* Resume point (this browser only): what was playing, where, the playlist and the page. */
   const position = () => { try { return player && player.getCurrentTime ? player.getCurrentTime() : 0; } catch { return 0; } };
   function saveSession() {
-    if (!VIDEOS.size) return;
+    if (!VIDEOS.size || holdSession) return;
     const s = { at: Date.now(), route: lastPage, vid: current ? current.id : "", t: current ? Math.floor(position()) : 0,
       queue: queue.slice(0, 200).map((v) => v.id), history: history.slice(-30).map((v) => v.id) };
     try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch { /* storage unavailable */ }
+    SYNC.changed("session");
   }
   // Continue a saved session: playlist and history come back, the performance starts where it stopped.
   function resume(s) {
@@ -952,7 +1008,10 @@ const jb = (() => {
     document.addEventListener("visibilitychange", () => { if (document.hidden) saveSession(); });
   }
 
-  return { init, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
+  // Prefs changed from outside (account sync): redraw filters, lists and the playlist.
+  function refresh() { renderFilters(); prefsChanged(); buildQueue(); renderQueue(); updateButtons(); }
+
+  return { init, refresh, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
     pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
@@ -977,13 +1036,47 @@ function applyStaticText() {
   sw.setAttribute("aria-label", t("switchLabel"));
   sw.lang = L === "bn" ? "en" : "bn";
 }
-$("#lang-switch").onclick = () => {
-  L = L === "bn" ? "en" : "bn";
+function setLang(l, save = true) {
+  L = l;
   try { localStorage.setItem(LANG_KEY, L); } catch { /* storage unavailable */ }
   applyStaticText();
-  if (VIDEOS.size) { jb.relabel(); route(); }
-};
+  if (VIDEOS.size) { jb.relabel(); route(); renderAccount(); }
+  if (save) savePrefs(); // so the account (if signed in) keeps the language too
+}
+$("#lang-switch").onclick = () => setLang(L === "bn" ? "en" : "bn");
 applyStaticText();
+
+/* ---------------- account (Google sign-in via sync.js) ---------------- */
+function renderAccount() {
+  const el = $("#account");
+  if (!el) return;
+  if (!SYNC.signIn) { el.hidden = true; return; }
+  el.hidden = false;
+  const u = SYNC.user;
+  if (!u) {
+    el.innerHTML = `<button class="acct-btn" type="button" id="acct-in">${t("signIn")}</button>`;
+    $("#acct-in").onclick = () => SYNC.signIn();
+    return;
+  }
+  const initial = (u.name || u.email || "?").trim()[0].toUpperCase();
+  el.innerHTML = `<details class="acct-menu"><summary class="acct-btn" aria-label="${esc(t("account"))}">
+      ${u.photo ? `<img src="${esc(u.photo)}" alt="" referrerpolicy="no-referrer">` : `<span class="acct-initial">${esc(initial)}</span>`}</summary>
+    <div class="acct-pop">
+      <p><strong>${esc(u.name || "")}</strong><br><small>${esc(u.email || "")}</small></p>
+      <p class="hint">${t("syncNote")}</p>
+      ${SYNC.lastSync ? `<p class="hint">${t("syncedAt", { time: num(new Date(SYNC.lastSync).toLocaleTimeString(L === "bn" ? "bn-IN" : "en-GB", { hour: "2-digit", minute: "2-digit", hour12: false })) })}</p>` : ""}
+      <button class="btn small" type="button" id="acct-out">${t("signOut")}</button>
+      <button class="btn small danger" type="button" id="acct-del">${t("deleteData")}</button>
+    </div></details>`;
+  $("#acct-out").onclick = () => SYNC.signOut();
+  $("#acct-del").onclick = () => { if (confirm(t("deleteConfirm"))) SYNC.deleteData(); };
+}
+SYNC.userChanged = renderAccount;
+SYNC.onError = (e) => {
+  console.warn("Raagmala sync:", e);
+  if (e && /popup-closed|cancelled-popup/.test(e.code || "")) return;
+  alert(t("syncError", { msg: (e && (e.code || e.message)) || "" }));
+};
 
 /* ---------------- resume where you left off ---------------- */
 function loadSession() {
@@ -1004,7 +1097,7 @@ function pageName(hash) {
 }
 function askResume(s) {
   const dlg = $("#resume"), v = s.vid && VIDEOS.get(s.vid);
-  if (!dlg || typeof dlg.showModal !== "function") return;
+  if (!dlg || typeof dlg.showModal !== "function" || dlg.open) { holdSession = false; return; }
   if (v) jb.preload(); // so playback can start straight from the click on "Continue"
   $("#resume-title").textContent = t("resumeTitle");
   $("#resume-text").innerHTML = v
@@ -1014,12 +1107,15 @@ function askResume(s) {
   $("#resume-no").textContent = t("resumeNo");
   $("#resume-yes").onclick = () => {
     dlg.close();
+    holdSession = false;
     if (s.route && s.route !== location.hash) location.hash = s.route;
     jb.resume(s);
   };
   $("#resume-no").onclick = () => {
     dlg.close();
+    holdSession = false;
     try { localStorage.removeItem(SESSION_KEY); } catch { /* ignore */ }
+    jb.saveSession();
     if (location.hash !== "#/") location.hash = "#/";
   };
   dlg.addEventListener("cancel", () => $("#resume-no").onclick(), { once: true }); // Esc = No
@@ -1065,11 +1161,17 @@ fetch("raagmala.json").then((r) => { if (!r.ok) throw new Error(r.status); retur
     VIDEOS.set(id, v);
   }
   jb.init();
-  const startHash = location.hash, session = loadSession();
+  const startHash = location.hash;
   window.addEventListener("hashchange", route);
   route();
-  // Coming back to the home page: offer to continue where the last visit stopped. A shared link opens directly.
-  if ((!startHash || startHash === "#/" || startHash === "#") && session) askResume(session);
+  renderAccount();
+  // Coming back to the home page: offer to continue where the last visit stopped (on any device, when signed in).
+  // A shared link opens directly.
+  SYNC.ready.then(() => {
+    const session = !startHash || startHash === "#/" || startHash === "#" ? loadSession() : null;
+    if (session && (location.hash || "#/") === (startHash || "#/")) askResume(session);
+    else holdSession = false;
+  });
 }).catch((e) => {
   view.innerHTML = `<p>${t("loadError", { e: esc(e.message) })}</p>`;
   console.error(e);
