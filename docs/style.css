@@ -514,3 +514,15 @@ html[data-theme=light] .pill .moon{display:none}
 
 /* the page area gets focus after navigation (for screen readers); no visible ring around the whole page */
 #view:focus,#view:focus-visible{outline:none}
+
+/* Header on phones: never let the buttons run into the name. The Latin "Raagmala" hides on narrow screens,
+   the sign-in button shrinks to "Sign in" (icon only on very small screens), the name can shorten. */
+.top>*{flex:0 0 auto}
+.top .brand{flex:0 1 auto;overflow:hidden}
+.brand>span:not(.seal),.brand{white-space:nowrap}
+.pill.signin svg{width:16px;height:16px}
+.pill.signin .lbl-long{display:none}
+@media (max-width:440px){.brand small{display:none}}
+@media (max-width:360px){.pill.signin{width:34px;padding:0;justify-content:center}.pill.signin .lbl-short{display:none}.top{gap:6px}.brand{font-size:1.25rem}}
+@media (min-width:600px){.pill.signin .lbl-short{display:none}.pill.signin .lbl-long{display:inline}}
+.sec-h .play-all{margin-left:auto}

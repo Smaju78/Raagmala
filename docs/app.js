@@ -13,7 +13,7 @@ const RAAG = new Map(), ARTIST = new Map();
 
 /* ---------------- language ---------------- */
 const LANG_KEY = "raagmala.lang";
-let L = (() => { try { const l = localStorage.getItem(LANG_KEY); return l === "en" ? "en" : "bn"; } catch { return "bn"; } })();
+let L = (() => { try { const l = localStorage.getItem(LANG_KEY); return l === "bn" ? "bn" : "en"; } catch { return "en"; } })();
 const BN_DIGITS = "০১২৩৪৫৬৭৮৯";
 const num = (n) => L === "bn" ? String(n).replace(/\d/g, (d) => BN_DIGITS[d]) : String(n);
 
@@ -86,7 +86,7 @@ const STR = {
     syncError: (o) => `Couldn't reach your account (${o.msg}). Everything is still saved in this browser.`,
     mineTitle: "Mine", mineLiked: (o) => `Liked performances (${o.n})`,
     mineNoLikes: "Nothing liked yet. Press ♥ Like (or ♡ next to a performance) on performances you love; they collect here.",
-    playOne: "Play", unlike: "Unlike", allowAgain: "Allow again", playAllLikes: "Play all my likes",
+    signInShort: "Sign in", playOne: "Play", unlike: "Unlike", allowAgain: "Allow again", playAllLikes: "Play all my likes",
     mineHidden: (o) => `Never play (${o.n})`, mineHiddenHint: "The jukebox skips these.",
     mineSignIn: "Sign in to keep your likes on all your devices.", mineSynced: "Kept in your account, so they're on all your devices.",
     f_source: "Name", guessedNote: "taken from the video titles (not yet checked)",
@@ -171,7 +171,7 @@ const STR = {
     syncError: (o) => `অ্যাকাউন্টের সঙ্গে যোগাযোগ করা গেল না (${o.msg})। সব কিছু এই ব্রাউজারে রাখা আছে।`,
     mineTitle: "আমার পাতা", mineLiked: (o) => `পছন্দের পরিবেশনা (${o.n})`,
     mineNoLikes: "এখনও কিছু পছন্দ করেননি। ভালো লাগা পরিবেশনায় ♥ পছন্দ (বা পরিবেশনার পাশে ♡) চাপুন; সব এখানে জমা হবে।",
-    playOne: "বাজান", unlike: "পছন্দ সরান", allowAgain: "আবার বাজাতে দিন", playAllLikes: "আমার সব পছন্দ বাজান",
+    signInShort: "সাইন ইন", playOne: "বাজান", unlike: "পছন্দ সরান", allowAgain: "আবার বাজাতে দিন", playAllLikes: "আমার সব পছন্দ বাজান",
     mineHidden: (o) => `আর বাজাবে না (${o.n})`, mineHiddenHint: "জুকবক্স এগুলো বাদ দেয়।",
     mineSignIn: "সব যন্ত্রে পছন্দগুলো পেতে সাইন ইন করুন।", mineSynced: "আপনার অ্যাকাউন্টে রাখা, তাই সব যন্ত্রে পাবেন।",
     f_source: "নাম", guessedNote: "ভিডিওর শিরোনাম থেকে নেওয়া (এখনও যাচাই হয়নি)",
@@ -851,7 +851,7 @@ function renderMine() {
     ${acct}
     <section class="sec" style="margin-top:10px" aria-labelledby="h-likes">
       <div class="sec-h"><h2 id="h-likes">${t("mineLiked", { n: likes.length })}</h2>
-        ${likes.length ? `<button class="btn sm more" type="button" id="mine-play-all">${I.play} ${t("playAllLikes")}</button>` : ""}</div>
+        ${likes.length ? `<button class="btn sm play-all" type="button" id="mine-play-all">${I.play} ${t("playAllLikes")}</button>` : ""}</div>
       ${likes.length ? `<div class="list">${likes.map((id) => mineRow(id, "likes")).join("")}</div>` : `<div class="empty"><div class="ic">♥</div><p>${t("mineNoLikes")}</p></div>`}
     </section>
     ${never.length ? `<section class="sec" aria-labelledby="h-never"><div class="sec-h"><h2 id="h-never">${t("mineHidden", { n: never.length })}</h2><span class="hint">${t("mineHiddenHint")}</span></div>
@@ -1340,7 +1340,7 @@ function renderAccount() {
   el.hidden = false;
   const u = SYNC.user;
   if (!u) {
-    el.innerHTML = `<button class="pill" type="button" id="acct-in">${t("signIn")}</button>`;
+    el.innerHTML = `<button class="pill signin" type="button" id="acct-in" aria-label="${esc(t("signIn"))}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span class="lbl-short">${t("signInShort")}</span><span class="lbl-long">${t("signIn")}</span></button>`;
     $("#acct-in").onclick = () => SYNC.signIn();
     return;
   }
