@@ -285,3 +285,21 @@ a.chip:hover { outline: 1px solid var(--gold); }
 /* Bengali interface: Bengali UI font for running text */
 :root:lang(bn) body { font-family: "Hind Siliguri", var(--f-ui); }
 :root:lang(bn) .brand-en { letter-spacing: .04em; text-transform: none; }
+/* jukebox playlist */
+.jb-queue:empty { display: none; }
+.q-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 6px; }
+.q-head h3 { font-size: var(--s0); }
+.q-list { list-style: none; margin: 0; padding: 0; max-height: 22rem; overflow: auto; border: 1px solid var(--line);
+  border-radius: var(--r); background: var(--surface); }
+.q-list li + li { border-top: 1px solid var(--line); }
+.q-list button { all: unset; box-sizing: border-box; width: 100%; cursor: pointer; padding: 7px 10px;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 0 10px; }
+.q-list button:hover { background: var(--teal-soft); }
+.q-list button:focus-visible { outline: 2px solid var(--gold); outline-offset: -2px; }
+.q-main { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.q-dur { color: var(--muted); font-size: var(--s-1); font-variant-numeric: tabular-nums; align-self: center; }
+.q-sub { grid-column: 1 / -1; color: var(--muted); font-size: var(--s-1); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.q-list li.cur button { background: var(--gold-soft); }
+.q-list li.cur .q-main { color: var(--ink); }
+.q-list li.liked .q-main::after { content: " ♥"; color: var(--gold); }
+.premium { margin: 4px 0; }

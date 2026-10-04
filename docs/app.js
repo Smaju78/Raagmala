@@ -74,6 +74,10 @@ const STR = {
     prefsSum: (o) => `Your liked performances (${o.a}) and hidden ones (${o.b})`, prefsLiked: "Liked: these come up 4× as often",
     prefsNone: "None yet. Press ♥ Like while a performance plays.", prefsNever: "Never play", none: "None",
     prefsNote: "Saved in this browser only.", remove: "Remove", miniPause: "Pause", miniPlay: "Play", miniLike: "Like",
+    playlist: (o) => `Playlist (${o.n})`, reshuffle: "Reshuffle",
+    premiumHead: "YouTube Premium",
+    premiumLabel: "I have YouTube Premium and I'm signed in to YouTube in this browser: use the standard YouTube player (no ads for Premium members)",
+    premiumNote: "Off by default: the privacy-enhanced player can't see your YouTube sign-in. With this on, YouTube can set its cookies when you play. If ads still appear, your browser is blocking YouTube's cookies inside other sites.",
     loadError: (o) => `Couldn't load raagmala.json (${o.e}). Serve this folder over HTTP, e.g. <code>python3 -m http.server</code> inside <code>docs/</code>.`,
   },
   bn: {
@@ -131,6 +135,10 @@ const STR = {
     prefsSum: (o) => `আপনার পছন্দের (${o.a}) ও লুকোনো (${o.b}) পরিবেশনা`, prefsLiked: "পছন্দের: এগুলো ৪ গুণ বেশি বাজে",
     prefsNone: "এখনও নেই। কিছু বাজার সময় ♥ পছন্দ চাপুন।", prefsNever: "আর বাজাবে না", none: "নেই",
     prefsNote: "শুধু এই ব্রাউজারে রাখা থাকে।", remove: "সরান", miniPause: "থামান", miniPlay: "বাজান", miniLike: "পছন্দ",
+    playlist: (o) => `প্লেলিস্ট (${o.n})`, reshuffle: "আবার এলোমেলো করুন",
+    premiumHead: "ইউটিউব প্রিমিয়াম",
+    premiumLabel: "আমার ইউটিউব প্রিমিয়াম আছে এবং এই ব্রাউজারে ইউটিউবে সাইন ইন করা আছে: সাধারণ ইউটিউব প্লেয়ার ব্যবহার করুন (প্রিমিয়াম সদস্যদের বিজ্ঞাপন দেখাবে না)",
+    premiumNote: "সাধারণত বন্ধ থাকে: গোপনীয়তা-বর্ধিত প্লেয়ার আপনার ইউটিউব সাইন-ইন দেখতে পায় না। এটি চালু করলে বাজানোর সময় ইউটিউব তাদের কুকি রাখতে পারে। তবুও বিজ্ঞাপন দেখালে বুঝবেন আপনার ব্রাউজার অন্য সাইটের ভেতরে ইউটিউবের কুকি আটকাচ্ছে।",
     loadError: (o) => `raagmala.json আনা গেল না (${o.e})। ফোল্ডারটি HTTP দিয়ে চালান, যেমন <code>docs/</code>-এর ভেতরে <code>python3 -m http.server</code>।`,
   },
 };
@@ -170,6 +178,9 @@ function toggle(list, id, on) {
 }
 
 /* ---------------- helpers ---------------- */
+// Privacy-enhanced player by default; the standard player (which knows your YouTube sign-in, so Premium
+// members get no ads) only when the visitor turns that on in the jukebox settings.
+const ytHost = () => prefs.ytFull ? "https://www.youtube.com" : "https://www.youtube-nocookie.com";
 function fmtViews(n) {
   if (L === "bn") {
     const f = (x) => num(x >= 10 ? Math.round(x) : Math.round(x * 10) / 10);
@@ -338,7 +349,7 @@ function wirePerfs(root) {
   $$("[data-vid]", root).forEach((b) => b.onclick = () => {
     jb.pause();
     const f = document.createElement("iframe");
-    f.src = `https://www.youtube-nocookie.com/embed/${b.dataset.vid}?autoplay=1&rel=0&hl=${L}`;
+    f.src = `${ytHost()}/embed/${b.dataset.vid}?autoplay=1&rel=0&hl=${L}`;
     f.allow = "autoplay; encrypted-media; picture-in-picture"; f.allowFullscreen = true; f.title = "YouTube video";
     b.parentElement.replaceChildren(f);
   });
@@ -495,7 +506,7 @@ function renderList(kind, value) {
     ${kind === "mood" ? `<span class="hint">${esc(moodDesc(value))}</span>` : ""}
     ${n ? `<button class="btn small primary" type="button" id="play-list">${t("playJb", { n })}</button>` : ""}</div>`;
   view.append(raagList(list));
-  if (n) $("#play-list").onclick = () => { jb.setFilters(filt); location.hash = "#/jukebox"; jb.start(); };
+  if (n) $("#play-list").onclick = () => { jb.setFilters(filt); location.hash = "#/jukebox"; jb.start(true); };
 }
 
 function renderRaag(id) {
@@ -585,7 +596,7 @@ function sessionSet(k, v) { try { sessionStorage.setItem("raagmala." + k, v); } 
 /* ---------------- jukebox (plays performances) ---------------- */
 const jb = (() => {
   const F = prefs.filters;
-  let player = null, apiLoading = null, current = null, upNext = null, errors = 0;
+  let player = null, apiLoading = null, current = null, errors = 0, queue = [], qShown = 60;
   const history = [];
 
   function matches(v, f) {
@@ -603,28 +614,48 @@ const jb = (() => {
   }
   const pool = (f = F) => [...VIDEOS.values()].filter((v) => matches(v, f));
 
-  // Liked performances are 4x as likely; recently played ones sit out; the same raag twice in a row is avoided.
-  function pick(exclude = []) {
-    const p = pool();
-    if (!p.length) return null;
-    const avoid = new Set(prefs.recent.slice(-Math.min(60, Math.floor(p.length / 2))).concat(exclude));
-    const lastRaags = new Set(current ? current.raags || [] : []);
-    let list = p.filter((v) => !avoid.has(v.id) && !(v.raags || []).some((r) => lastRaags.has(r)));
-    if (!list.length) list = p.filter((v) => !avoid.has(v.id));
-    if (!list.length) list = p.filter((v) => !exclude.includes(v.id));
-    if (!list.length) list = p;
-    const w = list.map((v) => (isLiked(v.id) ? 4 : 1));
-    let r = Math.random() * w.reduce((a, b) => a + b, 0);
-    for (let i = 0; i < list.length; i++) if ((r -= w[i]) <= 0) return list[i];
-    return list[list.length - 1];
+  /* The playlist: a weighted shuffle of every performance that matches the filters.
+     Liked ones tend to come early (4x weight), recently played ones go to the end,
+     and the same raag twice in a row is avoided where possible. */
+  function buildQueue() {
+    const recent = new Set(prefs.recent.slice(-150));
+    const p = pool().filter((v) => !current || v.id !== current.id);
+    const q = p.map((v) => [Math.pow(Math.random(), 1 / (isLiked(v.id) ? 4 : 1)) - (recent.has(v.id) ? 1 : 0), v])
+      .sort((a, b) => b[0] - a[0]).map(([, v]) => v);
+    const share = (a, b) => !!a && !!b && (a.raags || []).some((r) => (b.raags || []).includes(r));
+    for (let i = 0; i < q.length; i++) {
+      if (!share(i ? q[i - 1] : current, q[i])) continue;
+      const j = q.findIndex((v, k) => k > i && !share(i ? q[i - 1] : current, v));
+      if (j > 0) [q[i], q[j]] = [q[j], q[i]];
+    }
+    queue = q;
+    qShown = 60;
   }
   const label = (v) => {
     const r = RAAG.get((v.raags || [])[0]), a = ARTIST.get((v.artists || [])[0]);
     return `${r ? `${t("raag")} ${rMain(r)}` : v.t}${a ? ` · ${aMain(a)}` : ""}`;
   };
-  function planNext() {
-    upNext = pick(current ? [current.id] : []);
-    $("#jb-next").innerHTML = upNext && current ? `${t("upNext")} ${esc(label(upNext))}` : "";
+  function qRow(v, cur) {
+    return `<li class="${cur ? "cur" : ""}${isLiked(v.id) ? " liked" : ""}">
+      <button type="button" data-qid="${esc(v.id)}"${cur ? ' aria-current="true"' : ""}>
+        <span class="q-main">${cur ? "♪ " : ""}${esc(label(v))}</span>
+        <span class="q-dur">${fmtTime(v.sec)}</span>
+        <span class="q-sub">${esc(v.t)}</span>
+      </button></li>`;
+  }
+  function renderQueue() {
+    queue = queue.filter((v) => matches(v, F));
+    $("#jb-next").innerHTML = queue.length && current ? `${t("upNext")} ${esc(label(queue[0]))}` : "";
+    const el = $("#jb-queue");
+    if (!current && !queue.length) { el.innerHTML = ""; return; }
+    const more = queue.length - qShown;
+    el.innerHTML = `<div class="q-head"><h3>${t("playlist", { n: queue.length + (current ? 1 : 0) })}</h3>
+        <button class="btn small" type="button" id="q-shuffle">${t("reshuffle")}</button></div>
+      <ol class="q-list">${current ? qRow(current, true) : ""}${queue.slice(0, qShown).map((v) => qRow(v, false)).join("")}</ol>
+      ${more > 0 ? `<p class="more"><button class="btn small" type="button" id="q-more">${t("showMore", { a: Math.min(100, more), b: more })}</button></p>` : ""}`;
+    $$("[data-qid]", el).forEach((b) => b.onclick = () => playId(b.dataset.qid));
+    $("#q-shuffle").onclick = () => { buildQueue(); renderQueue(); };
+    const m = $("#q-more"); if (m) m.onclick = () => { qShown += 100; renderQueue(); };
   }
 
   function loadApi() {
@@ -642,12 +673,12 @@ const jb = (() => {
   async function playItem(v) {
     current = v;
     prefs.recent.push(v.id); prefs.recent = prefs.recent.slice(-300); savePrefs();
-    showNow(); planNext();
+    showNow(); renderQueue();
     await loadApi();
     $("#jb-empty").hidden = true;
     if (!player) {
       player = new YT.Player("yt-player", {
-        videoId: v.id, host: "https://www.youtube-nocookie.com",
+        videoId: v.id, host: ytHost(),
         playerVars: { autoplay: 1, rel: 0, playsinline: 1, hl: L },
         events: {
           onStateChange: (e) => {
@@ -663,8 +694,9 @@ const jb = (() => {
   }
 
   function next() {
-    if (upNext && !matches(upNext, F)) upNext = null;
-    const v = upNext || pick();
+    queue = queue.filter((v) => matches(v, F));
+    if (!queue.length) buildQueue();
+    const v = queue.shift();
     if (!v) { showEmpty(); return; }
     if (current) history.push(current);
     playItem(v);
@@ -672,13 +704,31 @@ const jb = (() => {
   function prev() {
     const v = history.pop();
     if (!v) return;
-    const back = current;
+    if (current) queue.unshift(current); // the one we leave comes up next again
     current = null;
     playItem(v);
-    if (back) { upNext = back; $("#jb-next").innerHTML = `${t("upNext")} ${esc(label(back))}`; }
   }
-  function start() {
-    if (current && player) { player.playVideo(); return; }
+  // Play a chosen item from the playlist; the list then continues after it.
+  function playId(id) {
+    const v = VIDEOS.get(id);
+    if (!v || (current && current.id === id)) { if (player) player.playVideo(); return; }
+    const i = queue.findIndex((x) => x.id === id);
+    if (i >= 0) queue = queue.slice(i + 1).concat(queue.slice(0, i));
+    if (current) history.push(current);
+    playItem(v);
+  }
+  // Switch between the privacy-enhanced player and the standard one (YouTube Premium) without losing the place.
+  function resetPlayer() {
+    if (!player) return;
+    const t0 = player.getCurrentTime ? player.getCurrentTime() : 0;
+    try { player.destroy(); } catch { /* already gone */ }
+    player = null;
+    if (!$("#yt-player")) { const d = document.createElement("div"); d.id = "yt-player"; $(".jb-player").prepend(d); }
+    if (current) playItem(current).then(() => { try { player.seekTo && setTimeout(() => player.seekTo(t0, true), 1500); } catch { /* ignore */ } });
+  }
+  // start(): resume what is playing; start(true): jump to the first item of the (new) playlist.
+  function start(fresh = false) {
+    if (!fresh && current && player) { player.playVideo(); return; }
     next();
   }
 
@@ -754,6 +804,7 @@ const jb = (() => {
       </fieldset>`;
     $("#jb-filters").onchange = (e) => {
       const el = e.target;
+      if (el.id === "jb-premium") return;
       if (ARR[el.name]) F[el.name] = $$(`input[name="${el.name}"]:checked`, $("#jb-filters")).map((x) => el.name === "prahars" ? +x.value : x.value);
       else if (el.id === "jb-raag") F.raag = el.value;
       else if (el.id === "jb-artist") F.artist = el.value;
@@ -813,7 +864,7 @@ const jb = (() => {
     const c = $("#jb-clear"); if (c) c.onclick = clearFilters;
   }
   function filtersChanged() {
-    savePrefs(); updateCounts(); planNext();
+    savePrefs(); updateCounts(); buildQueue(); renderQueue();
     if (!current) showEmpty(); else updateButtons();
   }
   function clearFilters() { setFilters({}); }
@@ -832,9 +883,13 @@ const jb = (() => {
     $("#jb-prefs").innerHTML = `<summary>${t("prefsSum", { a: prefs.likes.length, b: prefs.never.length })}</summary>
       <h3 class="hint">${t("prefsLiked")}</h3><ul>${prefs.likes.map((id) => row(id, "likes")).join("") || `<li class="hint">${t("prefsNone")}</li>`}</ul>
       <h3 class="hint">${t("prefsNever")}</h3><ul>${prefs.never.map((id) => row(id, "never")).join("") || `<li class="hint">${t("none")}</li>`}</ul>
-      <p class="hint">${t("prefsNote")}</p>`;
+      <p class="hint">${t("prefsNote")}</p>
+      <h3 class="hint">${t("premiumHead")}</h3>
+      <label class="toggle premium"><input type="checkbox" id="jb-premium"${prefs.ytFull ? " checked" : ""}> ${t("premiumLabel")}</label>
+      <p class="hint">${t("premiumNote")}</p>`;
     $$("#jb-prefs [data-un]").forEach((b) => b.onclick = () => { toggle(b.dataset.un, b.dataset.id, false); prefsChanged(); });
-    if (VIDEOS.size) { updateCounts(); updateButtons(); }
+    $("#jb-premium").onchange = (e) => { prefs.ytFull = e.target.checked; savePrefs(); resetPlayer(); };
+    if (VIDEOS.size) { updateCounts(); updateButtons(); renderQueue(); }
   }
 
   function togglePlay() { if (!current || !player) return next(); playing() ? player.pauseVideo() : player.playVideo(); }
@@ -849,11 +904,11 @@ const jb = (() => {
   function relabel() {
     renderFilters(); prefsChanged(); showNow(); showEmpty();
     toggleFilters(!$("#jb-filters").hidden);
-    if (upNext && current) $("#jb-next").innerHTML = `${t("upNext")} ${esc(label(upNext))}`;
+    renderQueue();
   }
 
   function init() {
-    renderFilters(); prefsChanged(); showEmpty();
+    renderFilters(); prefsChanged(); showEmpty(); buildQueue(); renderQueue();
     $("#jb-play").onclick = togglePlay;
     $("#jb-skip").onclick = next;
     $("#jb-prev").onclick = prev;
@@ -876,7 +931,7 @@ function playFiltered(kind, value) {
     : kind === "raag" ? { raag: value } : kind === "artist" ? { artist: value } : kind === "gharana" ? { gharana: value } : {};
   jb.setFilters(f);
   location.hash = "#/jukebox";
-  jb.start();
+  jb.start(true);
 }
 
 /* ---------------- static page text + language switch ---------------- */
