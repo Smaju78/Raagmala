@@ -1443,6 +1443,7 @@ function askResume(s) {
 
 /* ---------------- router ---------------- */
 function route() {
+  $$(".acct-menu[open]").forEach((d) => { d.open = false; }); // a menu left open must not cover the next page
   const parts = location.hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
   const page = parts[0] || "home";
   const isJb = page === "jukebox";
