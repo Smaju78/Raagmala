@@ -99,7 +99,7 @@ const STR = {
     premiumAskTitle: "Watch without ads?",
     premiumAskText: "If you have a YouTube Premium account, you can watch without ads: Raagmala then uses the standard YouTube player, which recognises your Premium membership. You need to be signed in to youtube.com in the same browser. You can change this any time in the account menu.",
     premiumAskYes: "Yes, I have YouTube Premium", premiumAskNo: "No",
-    premiumNote: "Off by default: the privacy-enhanced player can't see your YouTube sign-in. With this on, YouTube can set its cookies when you play. If ads still appear, your browser is blocking YouTube's cookies inside other sites.",
+    premiumNote: "On automatically while you're signed in: the standard YouTube player recognises your YouTube sign-in, so with YouTube Premium there are no ads (without Premium nothing changes). YouTube can set its cookies when you play. If ads still appear, your browser is blocking YouTube's cookies inside other sites.",
     loadError: (o) => `The raag data couldn't be loaded (${o.e}). Check your connection and try again.`, retry: "Try again",
     themeToggle: "Switch between the dark and the light look",
     toastLiked: "Added to your likes", toastUnliked: "Removed from your likes", toastNever: "This performance won't play again",
@@ -184,7 +184,7 @@ const STR = {
     premiumAskTitle: "বিজ্ঞাপন ছাড়া দেখবেন?",
     premiumAskText: "আপনার ইউটিউব প্রিমিয়াম অ্যাকাউন্ট থাকলে বিজ্ঞাপন ছাড়া দেখতে পারেন: রাগমালা তখন সাধারণ ইউটিউব প্লেয়ার ব্যবহার করে, যা আপনার প্রিমিয়াম সদস্যপদ চেনে। এর জন্য একই ব্রাউজারে youtube.com-এ সাইন ইন থাকতে হবে। পরে অ্যাকাউন্ট মেনু থেকে যখন খুশি বদলাতে পারবেন।",
     premiumAskYes: "হ্যাঁ, ইউটিউব প্রিমিয়াম আছে", premiumAskNo: "না",
-    premiumNote: "সাধারণত বন্ধ থাকে: গোপনীয়তা-বর্ধিত প্লেয়ার আপনার ইউটিউব সাইন-ইন দেখতে পায় না। এটি চালু করলে বাজানোর সময় ইউটিউব তাদের কুকি রাখতে পারে। তবুও বিজ্ঞাপন দেখালে বুঝবেন আপনার ব্রাউজার অন্য সাইটের ভেতরে ইউটিউবের কুকি আটকাচ্ছে।",
+    premiumNote: "সাইন ইন থাকলে নিজে থেকেই চালু: সাধারণ ইউটিউব প্লেয়ার আপনার ইউটিউব সাইন-ইন চেনে, তাই ইউটিউব প্রিমিয়াম থাকলে বিজ্ঞাপন দেখাবে না (প্রিমিয়াম না থাকলে কিছু বদলায় না)। বাজানোর সময় ইউটিউব তাদের কুকি রাখতে পারে। তবুও বিজ্ঞাপন দেখালে বুঝবেন আপনার ব্রাউজার অন্য সাইটের ভেতরে ইউটিউবের কুকি আটকাচ্ছে।",
     loadError: (o) => `রাগের তথ্য আনা গেল না (${o.e})। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।`, retry: "আবার চেষ্টা করুন",
     themeToggle: "গাঢ় ও হালকা রূপের মধ্যে বদলান",
     toastLiked: "পছন্দে রাখা হল", toastUnliked: "পছন্দ থেকে সরানো হল", toastNever: "এই পরিবেশনা আর বাজবে না",
@@ -248,7 +248,7 @@ const SYNC = window.raagmalaSync = {
 SYNC.ready = new Promise((res) => { SYNC.resolveReady = res; setTimeout(res, 4000); });
 const readSession = () => { try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "null"); } catch { return null; } };
 SYNC.snapshot = () => ({
-  prefs: { likes: prefs.likes, never: prefs.never, filters: prefs.filters, ytFull: !!prefs.ytFull, premiumAsked: !!prefs.premiumAsked, recent: prefs.recent.slice(-150) },
+  prefs: { likes: prefs.likes, never: prefs.never, filters: prefs.filters, adsOptOut: !!prefs.adsOptOut, recent: prefs.recent.slice(-150) },
   prefsAt: prefs.updatedAt || 0, lang: L, session: readSession(),
 });
 // Merge what the account holds into this browser. The first time a browser is linked to an account, likes and
@@ -260,11 +260,10 @@ SYNC.apply = (r, firstLink) => {
     prefs.likes = [...new Set([...(rp.likes || []), ...prefs.likes])];
     prefs.never = [...new Set([...(rp.never || []), ...prefs.never])].filter((id) => !prefs.likes.includes(id));
   }
-  if (rp.premiumAsked) prefs.premiumAsked = true; // asked once per account, on any device
   if ((r.prefsAt || 0) > (prefs.updatedAt || 0)) {
     if (!firstLink) { prefs.likes = rp.likes || []; prefs.never = rp.never || []; }
     Object.assign(prefs.filters, freshFilters(), rp.filters || {});
-    prefs.ytFull = !!rp.ytFull;
+    prefs.adsOptOut = !!rp.adsOptOut;
     if (rp.recent) prefs.recent = rp.recent;
     prefs.updatedAt = r.prefsAt;
     if (r.lang && r.lang !== L) setLang(r.lang, false);
@@ -308,7 +307,12 @@ function toast(msg) {
 /* ---------------- helpers ---------------- */
 // Privacy-enhanced player by default; the standard player (which knows your YouTube sign-in, so Premium
 // members get no ads) only when the visitor turns that on in the account menu.
-const ytHost = () => prefs.ytFull ? "https://www.youtube.com" : "https://www.youtube-nocookie.com";
+// "Watch without ads": YouTube offers no way for a site to check for Premium, so when someone is signed in with
+// Google the standard player (which knows their YouTube sign-in, so Premium members get no ads) is used
+// automatically; prefs.adsOptOut is set only if they switch it off in the account menu. Signed out: the
+// privacy-enhanced player.
+const noAds = () => !!SYNC.user && !prefs.adsOptOut;
+const ytHost = () => noAds() ? "https://www.youtube.com" : "https://www.youtube-nocookie.com";
 const thumb = (id, q = "mq") => `https://i.ytimg.com/vi/${esc(id)}/${q}default.jpg`;
 function fmtViews(n) {
   if (L === "bn") {
@@ -1291,16 +1295,22 @@ const jb = (() => {
   }
 
   // YouTube Premium: the standard player (sees the YouTube sign-in) instead of the privacy-enhanced one.
-  function setPremium(on, save = true) {
-    if (!!prefs.ytFull === on) return;
-    prefs.ytFull = on;
-    if (save) savePrefs(); else { try { localStorage.setItem(PREF_KEY, JSON.stringify(prefs)); } catch { /* ignore */ } }
+  function setPremium(on) {
+    prefs.adsOptOut = !on;
+    savePrefs();
     resetPlayer();
+  }
+  // Signing in or out can change which player is used: rebuild it (keeping the place) only if it changed.
+  let lastHost = null;
+  function hostChanged() {
+    const h = ytHost();
+    if (lastHost && h !== lastHost && player) resetPlayer();
+    lastHost = h;
   }
   // Prefs changed from outside (account sync): redraw filters, lists and the playlist.
   function refresh() { renderFilters(); buildQueue(); renderQueue(); updateButtons(); }
 
-  return { init, refresh, setPremium, playId, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
+  return { init, refresh, setPremium, hostChanged, playId, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
     current: () => current, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
@@ -1350,7 +1360,7 @@ function renderAccount() {
     <div class="acct-pop">
       <p><strong>${esc(u.name || "")}</strong><br><small class="hint">${esc(u.email || "")}</small></p>
       <p class="hint">${t("syncNote")}</p>
-      <label class="toggle"><input type="checkbox" id="acct-premium"${prefs.ytFull ? " checked" : ""}> ${t("premiumMenu")}</label>
+      <label class="toggle"><input type="checkbox" id="acct-premium"${noAds() ? " checked" : ""}> ${t("premiumMenu")}</label>
       <p class="hint">${t("premiumNote")}</p>
       ${SYNC.lastSync ? `<p class="hint">${t("syncedAt", { time: num(new Date(SYNC.lastSync).toLocaleTimeString(L === "bn" ? "bn-IN" : "en-GB", { hour: "2-digit", minute: "2-digit", hour12: false })) })}</p>` : ""}
       <button class="btn ghost sm" type="button" id="acct-out">${t("signOut")}</button>
@@ -1366,33 +1376,9 @@ function renderAccount() {
 SYNC.userChanged = () => {
   renderAccount();
   if (location.hash.startsWith("#/mine")) renderMine();
-  if (!SYNC.user) { if (prefs.ytFull) jb.setPremium(false, false); return; } // signed out: back to the privacy-enhanced player
-  if (SYNC.initDone) askPremium(); // signing in during a visit; at page load the start-up sequence asks
+  jb.hostChanged(); // signed in: standard player (no ads with Premium); signed out: privacy-enhanced player
 };
 
-// Asked once per account, right after the first Google sign-in (the answer can be changed in the account menu).
-function askPremium() {
-  if (!SYNC.user || prefs.premiumAsked) return Promise.resolve();
-  const dlg = $("#ask");
-  if (!dlg || typeof dlg.showModal !== "function" || dlg.open) return Promise.resolve();
-  return new Promise((done) => {
-    $("#ask-title").textContent = t("premiumAskTitle");
-    $("#ask-text").textContent = t("premiumAskText");
-    $("#ask-yes").textContent = t("premiumAskYes");
-    $("#ask-no").textContent = t("premiumAskNo");
-    const answer = (on) => {
-      dlg.close();
-      prefs.premiumAsked = true;
-      if (on) jb.setPremium(true); else savePrefs();
-      renderAccount();
-      done();
-    };
-    $("#ask-yes").onclick = () => answer(true);
-    $("#ask-no").onclick = () => answer(false);
-    dlg.addEventListener("cancel", (e) => { e.preventDefault(); answer(false); }, { once: true });
-    dlg.showModal();
-  });
-}
 SYNC.onError = (e) => {
   console.warn("Raagmala sync:", e);
   if (e && /popup-closed|cancelled-popup/.test(e.code || "")) return;
@@ -1512,7 +1498,7 @@ function load() {
     renderAccount();
     // Coming back to the home page: offer to continue where the last visit stopped (on any device, when signed in).
     // A shared link opens directly.
-    SYNC.ready.then(askPremium).then(() => {
+    SYNC.ready.then(() => {
       SYNC.initDone = true;
       const nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
       const reload = !!nav && nav.type === "reload";

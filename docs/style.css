@@ -526,3 +526,6 @@ html[data-theme=light] .pill .moon{display:none}
 @media (max-width:360px){.pill.signin{width:34px;padding:0;justify-content:center}.pill.signin .lbl-short{display:none}.top{gap:6px}.brand{font-size:1.25rem}}
 @media (min-width:600px){.pill.signin .lbl-short{display:none}.pill.signin .lbl-long{display:inline}}
 .sec-h .play-all{margin-left:auto}
+
+/* Account menu on phones: pinned inside the screen (it opened partly off the left edge) */
+@media (max-width:899px){.acct-pop{position:fixed;left:16px;right:16px;top:64px;width:auto;max-height:calc(100dvh - 160px);overflow:auto}}
