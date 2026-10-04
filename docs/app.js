@@ -742,8 +742,10 @@ const jb = (() => {
     return apiLoading;
   }
 
-  async function playItem(v, startAt = 0) {
+  // play = false only cues the performance at startAt (after a page refresh browsers block sound until a click).
+  async function playItem(v, startAt = 0, play = true) {
     current = v;
+    pendingStart = Math.floor(startAt);
     if (!startAt) { prefs.recent.push(v.id); prefs.recent = prefs.recent.slice(-300); savePrefs(); }
     showNow(); renderQueue(); saveSession();
     await loadApi();
@@ -752,7 +754,7 @@ const jb = (() => {
     if (!player) {
       player = new YT.Player("yt-player", {
         videoId: v.id, host: ytHost(),
-        playerVars: { autoplay: 1, rel: 0, playsinline: 1, hl: L, start },
+        playerVars: { autoplay: play ? 1 : 0, rel: 0, playsinline: 1, hl: L, start },
         events: {
           onStateChange: (e) => {
             if (e.data === YT.PlayerState.ENDED) next();
@@ -762,12 +764,21 @@ const jb = (() => {
           onError: () => { if (++errors < 5) next(); }, // unembeddable or removed video: move on
         },
       });
-    } else player.loadVideoById({ videoId: v.id, startSeconds: start });
+    } else if (play) player.loadVideoById({ videoId: v.id, startSeconds: start });
+    else player.cueVideoById({ videoId: v.id, startSeconds: start });
     updateButtons();
   }
 
   /* Resume point (this browser only): what was playing, where, the playlist and the page. */
-  const position = () => { try { return player && player.getCurrentTime ? player.getCurrentTime() : 0; } catch { return 0; } };
+  // Until a cued performance has really started, its position is where it was cued.
+  let pendingStart = 0;
+  const position = () => {
+    try {
+      const st = player && player.getPlayerState ? player.getPlayerState() : -1;
+      if (st === -1 || st === 5) return pendingStart; // unstarted / cued
+      return player.getCurrentTime();
+    } catch { return pendingStart; }
+  };
   function saveSession() {
     if (!VIDEOS.size || holdSession) return;
     const s = { at: Date.now(), route: lastPage, vid: current ? current.id : "", t: current ? Math.floor(position()) : 0,
@@ -776,12 +787,12 @@ const jb = (() => {
     SYNC.changed("session");
   }
   // Continue a saved session: playlist and history come back, the performance starts where it stopped.
-  function resume(s) {
+  function resume(s, play = true) {
     const get = (ids) => (ids || []).map((id) => VIDEOS.get(id)).filter(Boolean);
     queue = get(s.queue).filter((v) => matches(v, F));
     history.splice(0, history.length, ...get(s.history));
     const v = s.vid && VIDEOS.get(s.vid);
-    if (v) playItem(v, Math.max(0, (s.t || 0) - 3)); else renderQueue();
+    if (v) playItem(v, play ? Math.max(0, (s.t || 0) - 3) : s.t || 0, play); else renderQueue();
   }
 
   function next() {
@@ -1212,8 +1223,15 @@ fetch("raagmala.json").then((r) => { if (!r.ok) throw new Error(r.status); retur
   // A shared link opens directly.
   SYNC.ready.then(askPremium).then(() => {
     SYNC.initDone = true;
-    const session = !startHash || startHash === "#/" || startHash === "#" ? loadSession() : null;
-    if (session && (location.hash || "#/") === (startHash || "#/")) askResume(session);
+    const nav = performance.getEntriesByType && performance.getEntriesByType("navigation")[0];
+    const reload = !!nav && nav.type === "reload";
+    const home = !startHash || startHash === "#/" || startHash === "#";
+    const session = loadSession();
+    if (reload && session && session.vid) {
+      // Page refresh: quietly restore the playlist and cue the performance where it was (same page via the URL).
+      holdSession = false;
+      jb.resume(session, false);
+    } else if (!reload && home && session && (location.hash || "#/") === (startHash || "#/")) askResume(session);
     else holdSession = false;
   });
 }).catch((e) => {
