@@ -74,6 +74,9 @@ const STR = {
     prefsSum: (o) => `Your liked performances (${o.a}) and hidden ones (${o.b})`, prefsLiked: "Liked: these come up 4× as often",
     prefsNone: "None yet. Press ♥ Like while a performance plays.", prefsNever: "Never play", none: "None",
     prefsNote: "Saved in this browser only.", remove: "Remove", miniPause: "Pause", miniPlay: "Play", miniLike: "Like",
+    resumeTitle: "Welcome back", resumeYes: "Continue", resumeNo: "No, go to the home page",
+    resumePlaying: (o) => `Continue where you left off? You were listening to ${o.what}, at ${o.at}.`,
+    resumePage: (o) => `Continue where you left off? You were on ${o.what}.`,
     playlist: (o) => `Playlist (${o.n})`, reshuffle: "Reshuffle",
     premiumHead: "YouTube Premium",
     premiumLabel: "I have YouTube Premium and I'm signed in to YouTube in this browser: use the standard YouTube player (no ads for Premium members)",
@@ -135,6 +138,9 @@ const STR = {
     prefsSum: (o) => `আপনার পছন্দের (${o.a}) ও লুকোনো (${o.b}) পরিবেশনা`, prefsLiked: "পছন্দের: এগুলো ৪ গুণ বেশি বাজে",
     prefsNone: "এখনও নেই। কিছু বাজার সময় ♥ পছন্দ চাপুন।", prefsNever: "আর বাজাবে না", none: "নেই",
     prefsNote: "শুধু এই ব্রাউজারে রাখা থাকে।", remove: "সরান", miniPause: "থামান", miniPlay: "বাজান", miniLike: "পছন্দ",
+    resumeTitle: "আবার স্বাগত", resumeYes: "যেখানে ছিলাম সেখান থেকে", resumeNo: "না, প্রথম পাতায় যাই",
+    resumePlaying: (o) => `যেখানে থেমেছিলেন সেখান থেকে শুরু করবেন? আপনি শুনছিলেন ${o.what}, ${o.at}-এ।`,
+    resumePage: (o) => `যেখানে ছিলেন সেখান থেকে শুরু করবেন? আপনি ছিলেন ${o.what} পাতায়।`,
     playlist: (o) => `প্লেলিস্ট (${o.n})`, reshuffle: "আবার এলোমেলো করুন",
     premiumHead: "ইউটিউব প্রিমিয়াম",
     premiumLabel: "আমার ইউটিউব প্রিমিয়াম আছে এবং এই ব্রাউজারে ইউটিউবে সাইন ইন করা আছে: সাধারণ ইউটিউব প্লেয়ার ব্যবহার করুন (প্রিমিয়াম সদস্যদের বিজ্ঞাপন দেখাবে না)",
@@ -153,6 +159,8 @@ function t(key, o = {}) {
 
 /* ---------------- preferences (localStorage, this browser only) ---------------- */
 const PREF_KEY = "raagmala.prefs.v1";
+const SESSION_KEY = "raagmala.session.v1"; // resume point: page, performance, position, playlist
+let lastPage = "#/";
 const EMPTY_FILTERS = { now: false, prahars: [], thaats: [], forms: [], moods: [], seasons: [], raag: "", artist: "", gharana: "", likedOnly: false };
 const ARR = { prahars: "prahars", thaats: "thaats", forms: "forms", moods: "moods", seasons: "seasons" };
 const freshFilters = () => ({ ...EMPTY_FILTERS, prahars: [], thaats: [], forms: [], moods: [], seasons: [] });
@@ -670,27 +678,45 @@ const jb = (() => {
     return apiLoading;
   }
 
-  async function playItem(v) {
+  async function playItem(v, startAt = 0) {
     current = v;
-    prefs.recent.push(v.id); prefs.recent = prefs.recent.slice(-300); savePrefs();
-    showNow(); renderQueue();
+    if (!startAt) { prefs.recent.push(v.id); prefs.recent = prefs.recent.slice(-300); savePrefs(); }
+    showNow(); renderQueue(); saveSession();
     await loadApi();
     $("#jb-empty").hidden = true;
+    const start = Math.floor(startAt);
     if (!player) {
       player = new YT.Player("yt-player", {
         videoId: v.id, host: ytHost(),
-        playerVars: { autoplay: 1, rel: 0, playsinline: 1, hl: L },
+        playerVars: { autoplay: 1, rel: 0, playsinline: 1, hl: L, start },
         events: {
           onStateChange: (e) => {
             if (e.data === YT.PlayerState.ENDED) next();
             if (e.data === YT.PlayerState.PLAYING) errors = 0;
-            updateButtons();
+            updateButtons(); saveSession();
           },
           onError: () => { if (++errors < 5) next(); }, // unembeddable or removed video: move on
         },
       });
-    } else player.loadVideoById(v.id);
+    } else player.loadVideoById({ videoId: v.id, startSeconds: start });
     updateButtons();
+  }
+
+  /* Resume point (this browser only): what was playing, where, the playlist and the page. */
+  const position = () => { try { return player && player.getCurrentTime ? player.getCurrentTime() : 0; } catch { return 0; } };
+  function saveSession() {
+    if (!VIDEOS.size) return;
+    const s = { at: Date.now(), route: lastPage, vid: current ? current.id : "", t: current ? Math.floor(position()) : 0,
+      queue: queue.slice(0, 200).map((v) => v.id), history: history.slice(-30).map((v) => v.id) };
+    try { localStorage.setItem(SESSION_KEY, JSON.stringify(s)); } catch { /* storage unavailable */ }
+  }
+  // Continue a saved session: playlist and history come back, the performance starts where it stopped.
+  function resume(s) {
+    const get = (ids) => (ids || []).map((id) => VIDEOS.get(id)).filter(Boolean);
+    queue = get(s.queue).filter((v) => matches(v, F));
+    history.splice(0, history.length, ...get(s.history));
+    const v = s.vid && VIDEOS.get(s.vid);
+    if (v) playItem(v, Math.max(0, (s.t || 0) - 3)); else renderQueue();
   }
 
   function next() {
@@ -724,7 +750,7 @@ const jb = (() => {
     try { player.destroy(); } catch { /* already gone */ }
     player = null;
     if (!$("#yt-player")) { const d = document.createElement("div"); d.id = "yt-player"; $(".jb-player").prepend(d); }
-    if (current) playItem(current).then(() => { try { player.seekTo && setTimeout(() => player.seekTo(t0, true), 1500); } catch { /* ignore */ } });
+    if (current) playItem(current, t0);
   }
   // start(): resume what is playing; start(true): jump to the first item of the (new) playlist.
   function start(fresh = false) {
@@ -921,9 +947,13 @@ const jb = (() => {
     $("#mini-like").onclick = likeCurrent;
     // "follow the clock": refresh the label and counts when the prahar changes
     setInterval(() => { if (F.now) updateCounts(); }, 5 * 60 * 1000);
+    setInterval(() => { if (current) saveSession(); }, 15000);
+    window.addEventListener("pagehide", saveSession);
+    document.addEventListener("visibilitychange", () => { if (document.hidden) saveSession(); });
   }
 
-  return { init, start, setFilters, countFor, prefsChanged, updateMini, relabel, pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
+  return { init, start, setFilters, countFor, prefsChanged, updateMini, relabel, saveSession, resume, preload: loadApi, label,
+    pause: () => { try { player && player.pauseVideo(); } catch { /* not ready */ } } };
 })();
 
 function playFiltered(kind, value) {
@@ -955,6 +985,47 @@ $("#lang-switch").onclick = () => {
 };
 applyStaticText();
 
+/* ---------------- resume where you left off ---------------- */
+function loadSession() {
+  try {
+    const s = JSON.parse(localStorage.getItem(SESSION_KEY) || "null");
+    if (!s || Date.now() - s.at > 30 * 864e5) return null; // older than 30 days: start fresh
+    const page = s.route && s.route !== "#/" && s.route !== "#" ? s.route : "";
+    return (s.vid && VIDEOS.has(s.vid)) || page ? s : null;
+  } catch { return null; }
+}
+function pageName(hash) {
+  const [kind, id] = hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
+  if (kind === "raag" && RAAG.get(id)) return `${t("raag")} ${rMain(RAAG.get(id))}`;
+  if (kind === "artist" && ARTIST.get(id)) return aMain(ARTIST.get(id));
+  if (kind === "jukebox") return t("navJukebox");
+  if (kind === "browse" || kind === "list") return t("navBrowse");
+  return "";
+}
+function askResume(s) {
+  const dlg = $("#resume"), v = s.vid && VIDEOS.get(s.vid);
+  if (!dlg || typeof dlg.showModal !== "function") return;
+  if (v) jb.preload(); // so playback can start straight from the click on "Continue"
+  $("#resume-title").textContent = t("resumeTitle");
+  $("#resume-text").innerHTML = v
+    ? t("resumePlaying", { what: `<strong>${esc(jb.label(v))}</strong>`, at: fmtTime(s.t || 0) })
+    : t("resumePage", { what: `<strong>${esc(pageName(s.route) || s.route)}</strong>` });
+  $("#resume-yes").textContent = t("resumeYes");
+  $("#resume-no").textContent = t("resumeNo");
+  $("#resume-yes").onclick = () => {
+    dlg.close();
+    if (s.route && s.route !== location.hash) location.hash = s.route;
+    jb.resume(s);
+  };
+  $("#resume-no").onclick = () => {
+    dlg.close();
+    try { localStorage.removeItem(SESSION_KEY); } catch { /* ignore */ }
+    if (location.hash !== "#/") location.hash = "#/";
+  };
+  dlg.addEventListener("cancel", () => $("#resume-no").onclick(), { once: true }); // Esc = No
+  dlg.showModal();
+}
+
 /* ---------------- router ---------------- */
 function route() {
   const parts = location.hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
@@ -967,6 +1038,8 @@ function route() {
   const nav = { home: "home", raag: "browse", artist: "browse", browse: "browse", list: "browse", jukebox: "jukebox" }[page];
   const navEl = $(`[data-nav="${nav}"]`); if (navEl) navEl.setAttribute("aria-current", "page");
   jb.updateMini();
+  lastPage = location.hash || "#/";
+  jb.saveSession();
   if (isJb) { window.scrollTo(0, 0); return; }
   if (page === "raag") renderRaag(parts[1]);
   else if (page === "artist") renderArtist(parts[1]);
@@ -992,8 +1065,11 @@ fetch("raagmala.json").then((r) => { if (!r.ok) throw new Error(r.status); retur
     VIDEOS.set(id, v);
   }
   jb.init();
+  const startHash = location.hash, session = loadSession();
   window.addEventListener("hashchange", route);
   route();
+  // Coming back to the home page: offer to continue where the last visit stopped. A shared link opens directly.
+  if ((!startHash || startHash === "#/" || startHash === "#") && session) askResume(session);
 }).catch((e) => {
   view.innerHTML = `<p>${t("loadError", { e: esc(e.message) })}</p>`;
   console.error(e);

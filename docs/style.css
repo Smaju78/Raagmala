@@ -303,3 +303,10 @@ a.chip:hover { outline: 1px solid var(--gold); }
 .q-list li.cur .q-main { color: var(--ink); }
 .q-list li.liked .q-main::after { content: " ♥"; color: var(--gold); }
 .premium { margin: 4px 0; }
+/* "continue where you left off" */
+.resume { border: 1px solid var(--line); border-radius: 14px; background: var(--surface); color: var(--ink);
+  padding: 22px 24px; max-width: min(460px, calc(100vw - 32px)); box-shadow: 0 18px 48px rgba(0,0,0,.25); }
+.resume::backdrop { background: rgba(20, 16, 30, .45); }
+.resume h2 { font-size: var(--s1); margin-bottom: 8px; }
+.resume p { margin: 0 0 18px; line-height: 1.6; }
+.resume-btns { display: flex; flex-wrap: wrap; gap: 8px; }
