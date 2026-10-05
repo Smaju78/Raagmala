@@ -1,10 +1,15 @@
 rules_version = '2';
 
-// Raagmala: each signed-in person can read, write and delete only their own document, users/{their uid}.
-// Nothing else in the database is readable or writable from the site.
+// Raagmala and Anandadhara: each signed-in person can read, write and delete only their own document.
+// Nothing else in the database is readable or writable from either site.
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /users/{uid} {
+    match /users/{uid} {                       // Raagmala
+      allow read, delete: if request.auth != null && request.auth.uid == uid;
+      allow create, update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['prefs', 'prefsAt', 'lang', 'session', 'updated']);
+    }
+    match /anandadhara_users/{uid} {           // Anandadhara
       allow read, delete: if request.auth != null && request.auth.uid == uid;
       allow create, update: if request.auth != null && request.auth.uid == uid
         && request.resource.data.keys().hasOnly(['prefs', 'prefsAt', 'lang', 'session', 'updated']);
