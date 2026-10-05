@@ -20,7 +20,7 @@ const num = (n) => L === "bn" ? String(n).replace(/\d/g, (d) => BN_DIGITS[d]) : 
 // UI strings. A function receives named values; numbers are already localised.
 const STR = {
   en: {
-    brandSub: "Raagmala · Hindustani vocal", navListen: "Listen", navBrowse: "Search", navJukebox: "Jukebox", navMine: "Mine",
+    brandSub: "Raagmala · Hindustani vocal", navListen: "Listen", navBrowse: "Search", navJukebox: "Jukebox", navMine: "Mine", navLearn: "Learn",
     loading: "Loading raags…", switchTo: "বাংলা", switchLabel: "বাংলায় দেখুন",
     footer1: 'Raag and artist facts from <a href="https://www.wikidata.org" target="_blank" rel="noopener">Wikidata</a> and <a href="https://en.wikipedia.org/wiki/List_of_ragas_in_Hindustani_classical_music" target="_blank" rel="noopener">Wikipedia</a>, checked by hand. Performances play from YouTube. Personal, non-commercial project.',
     footer2: 'This site uses YouTube API Services: <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>',
@@ -106,7 +106,7 @@ const STR = {
     toastAllow: "This performance can play again",
   },
   bn: {
-    brandSub: "Raagmala · হিন্দুস্তানি কণ্ঠসংগীত", navListen: "শুনুন", navBrowse: "খুঁজুন", navJukebox: "জুকবক্স", navMine: "আমার",
+    brandSub: "Raagmala · হিন্দুস্তানি কণ্ঠসংগীত", navListen: "শুনুন", navBrowse: "খুঁজুন", navJukebox: "জুকবক্স", navMine: "আমার", navLearn: "শিক্ষা",
     loading: "রাগ আসছে…", switchTo: "English", switchLabel: "View in English",
     footer1: 'রাগ ও শিল্পীর তথ্য <a href="https://www.wikidata.org" target="_blank" rel="noopener">উইকিডেটা</a> ও <a href="https://en.wikipedia.org/wiki/List_of_ragas_in_Hindustani_classical_music" target="_blank" rel="noopener">উইকিপিডিয়া</a> থেকে, হাতে মিলিয়ে দেখা। পরিবেশনা বাজে ইউটিউব থেকে। ব্যক্তিগত, অবাণিজ্যিক প্রকল্প।',
     footer2: 'এই সাইট YouTube API Services ব্যবহার করে: <a href="https://www.youtube.com/t/terms" target="_blank" rel="noopener">ইউটিউবের শর্তাবলি</a> · <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">গুগলের গোপনীয়তা নীতি</a> · <a href="privacy.html">গোপনীয়তা</a> · <a href="terms.html">শর্তাবলি</a>',
@@ -249,7 +249,7 @@ const SYNC = window.raagmalaSync = {
 SYNC.ready = new Promise((res) => { SYNC.resolveReady = res; setTimeout(res, 4000); });
 const readSession = () => { try { return JSON.parse(localStorage.getItem(SESSION_KEY) || "null"); } catch { return null; } };
 SYNC.snapshot = () => ({
-  prefs: { likes: prefs.likes, never: prefs.never, filters: prefs.filters, adsOptOut: !!prefs.adsOptOut, recent: prefs.recent.slice(-150) },
+  prefs: { likes: prefs.likes, never: prefs.never, filters: prefs.filters, adsOptOut: !!prefs.adsOptOut, recent: prefs.recent.slice(-150), learn: prefs.learn || null },
   prefsAt: prefs.updatedAt || 0, lang: L, session: readSession(),
 });
 // Merge what the account holds into this browser. The first time a browser is linked to an account, likes and
@@ -260,12 +260,18 @@ SYNC.apply = (r, firstLink) => {
   if (firstLink) {
     prefs.likes = [...new Set([...(rp.likes || []), ...prefs.likes])];
     prefs.never = [...new Set([...(rp.never || []), ...prefs.never])].filter((id) => !prefs.likes.includes(id));
+    if (rp.learn && prefs.learn) { // practice logs from both: the larger count for each day
+      const log = { ...rp.learn.log };
+      for (const [d, s] of Object.entries(prefs.learn.log || {})) log[d] = Math.max(log[d] || 0, s);
+      prefs.learn = { ...rp.learn, ...prefs.learn, log };
+    } else if (rp.learn) prefs.learn = rp.learn;
   }
   if ((r.prefsAt || 0) > (prefs.updatedAt || 0)) {
     if (!firstLink) { prefs.likes = rp.likes || []; prefs.never = rp.never || []; }
     Object.assign(prefs.filters, freshFilters(), rp.filters || {});
     prefs.adsOptOut = !!rp.adsOptOut;
     if (rp.recent) prefs.recent = rp.recent;
+    if (rp.learn && !firstLink) prefs.learn = rp.learn;
     prefs.updatedAt = r.prefsAt;
     if (r.lang && r.lang !== L) setLang(r.lang, false);
   }
@@ -1387,6 +1393,7 @@ function renderAccount() {
 SYNC.userChanged = () => {
   renderAccount();
   if (location.hash.startsWith("#/mine")) renderMine();
+  if (location.hash.startsWith("#/learn")) renderLearn(); // the synced Sa and practice log
   jb.hostChanged(); // signed in: standard player (no ads with Premium); signed out: privacy-enhanced player
 };
 
@@ -1411,6 +1418,7 @@ function pageName(hash) {
   if (kind === "artist" && ARTIST.get(id)) return aMain(ARTIST.get(id));
   if (kind === "jukebox") return t("navJukebox");
   if (kind === "mine") return t("navMine");
+  if (kind === "learn") return t("navLearn");
   if (kind === "browse" || kind === "list") return t("navBrowse");
   return "";
 }
@@ -1447,13 +1455,14 @@ function route() {
   const parts = location.hash.replace(/^#\/?/, "").split("/").map(decodeURIComponent);
   const page = parts[0] || "home";
   const isJb = page === "jukebox";
-  const screen = { home: "home", raag: "raag", artist: "artist", browse: "browse", list: "browse", jukebox: "jukebox", mine: "mine" }[page] || "home";
+  if (page !== "learn" && typeof learn !== "undefined") learn.leave(); // the tanpura and the microphone stop outside Learn
+  const screen = { home: "home", raag: "raag", artist: "artist", browse: "browse", list: "browse", jukebox: "jukebox", mine: "mine", learn: "learn" }[page] || "home";
   document.body.dataset.screen = screen;
   $("#jb-screen").classList.toggle("offstage", !isJb);
   $("#jb-screen").setAttribute("aria-hidden", String(!isJb));
   view.hidden = isJb;
   $$("[data-nav]").forEach((a) => a.removeAttribute("aria-current"));
-  const nav = { home: "home", raag: "browse", artist: "browse", browse: "browse", list: "browse", jukebox: "jukebox", mine: "mine" }[page];
+  const nav = { home: "home", raag: "browse", artist: "browse", browse: "browse", list: "browse", jukebox: "jukebox", mine: "mine", learn: "learn" }[page];
   $$(`[data-nav="${nav}"]`).forEach((a) => a.setAttribute("aria-current", "page"));
   jb.updateMini();
   lastPage = location.hash || "#/";
@@ -1463,6 +1472,7 @@ function route() {
   if (page === "raag") renderRaag(parts[1]);
   else if (page === "artist") renderArtist(parts[1]);
   else if (page === "mine") renderMine();
+  else if (page === "learn") renderLearn();
   else if (page === "browse") renderBrowse(parts[1]);
   else if (page === "list") renderList(parts[1], parts.slice(2).join("/"));
   else renderHome();
