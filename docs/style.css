@@ -465,15 +465,6 @@ html[data-theme=light] .pill .moon{display:none}
 .loading .seal{width:44px;height:44px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold);font-family:var(--serif);font-size:1.3rem;margin:0 auto 14px;animation:breathe 1.6s ease-in-out infinite}
 @keyframes breathe{50%{box-shadow:0 0 0 8px color-mix(in srgb,var(--gold) 15%,transparent)}}
 .stats{color:var(--fg3);font-size:.82rem;margin-top:16px}
-.dayline{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-@media (min-width:600px){.dayline{grid-template-columns:repeat(4,1fr)}}
-@media (min-width:900px){.dayline{grid-template-columns:repeat(8,1fr)}}
-.day{display:grid;padding:10px 12px;border:1px solid var(--line);border-radius:4px;background:var(--bg2);position:relative;transition:border-color .15s}
-.day b{font-family:var(--serif);font-weight:600}
-.day small{color:var(--fg3);font-variant-numeric:tabular-nums;font-size:.78rem}
-.day.cur{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--bg2))}
-.day:hover{border-color:var(--gold)}
-.day i{position:absolute;right:10px;top:10px;width:12px;height:12px;border-radius:50%;background:linear-gradient(160deg,var(--t1),var(--t2))}
 .season-tile{margin-top:28px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:18px 20px;border-radius:6px;position:relative;overflow:hidden;color:#fff8ea;background:linear-gradient(180deg,transparent 20%,rgba(0,0,0,.35)),linear-gradient(160deg,var(--t1),var(--t2));box-shadow:var(--shadow)}
 .season-tile::before{content:"";position:absolute;inset:5px;border:1px solid rgba(255,255,255,.3);pointer-events:none}
 .season-tile>div{flex:1 1 240px;min-width:0;position:relative}
@@ -606,3 +597,23 @@ a.icon-btn.yt svg{width:20px;height:20px}
 .ldays .lday i{display:block;background:var(--gold);min-height:2px;border-radius:2px 2px 0 0;opacity:.85}
 .ldays .lday small{text-align:center;font-size:.68rem;color:var(--fg3);line-height:1}
 .ldays .lday.now small{color:var(--gold);font-weight:700}
+
+/* ---- the eight prahars (home): four of the day, four of the night ---- */
+.prahars{display:grid;gap:18px}
+@media (min-width:900px){.prahars{grid-template-columns:1fr 1fr}}
+.phalf h3{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.plist{display:grid;gap:8px}
+@media (min-width:600px) and (max-width:899px){.plist{grid-template-columns:1fr 1fr}}
+.pcard{border:1px solid var(--line);border-radius:4px;background:var(--bg2);padding:10px 12px 12px;min-width:0}
+.pcard.cur{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--bg2))}
+.pcard .ph{display:grid;position:relative;padding-right:22px}
+.pcard .ph:hover b{color:var(--gold)}
+.pcard .ph i{position:absolute;right:0;top:4px;width:14px;height:14px;border-radius:50%;background:linear-gradient(160deg,var(--t1),var(--t2))}
+.pcard .ph small{color:var(--fg3);font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.pcard.cur .ph small{color:var(--gold)}
+.pcard .ph b{font-family:var(--serif);font-size:1.15rem;font-weight:600;line-height:1.3}
+.pcard .ph span{color:var(--fg3);font-size:.8rem;font-variant-numeric:tabular-nums}
+.pcard p{margin:8px 0 0;color:var(--fg2);font-size:.88rem;line-height:1.7}
+.pcard p a{color:var(--fg);border-bottom:1px solid var(--line2)}
+.pcard p a:hover{color:var(--gold);border-color:var(--gold)}
+.gh{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:22px 0 -4px}

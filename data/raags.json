@@ -330,7 +330,8 @@
    ],
    "thaat": "purvi",
    "prahar": [
-    4
+    4,
+    5
    ],
    "season": null,
    "jati": "sampurna-sampurna",
@@ -361,7 +362,8 @@
    ],
    "thaat": "marwa",
    "prahar": [
-    4
+    4,
+    5
    ],
    "season": null,
    "jati": "shadav-shadav",
@@ -502,6 +504,7 @@
    ],
    "thaat": "kalyan",
    "prahar": [
+    5,
     6
    ],
    "season": null,
@@ -532,6 +535,7 @@
    ],
    "thaat": "kalyan",
    "prahar": [
+    5,
     6
    ],
    "season": null,
@@ -598,7 +602,8 @@
    ],
    "thaat": "kafi",
    "prahar": [
-    6
+    6,
+    7
    ],
    "season": "varsha",
    "jati": "sampurna-shadav",
@@ -836,7 +841,8 @@
    ],
    "thaat": "purvi",
    "prahar": [
-    4
+    4,
+    5
    ],
    "season": null,
    "jati": "audav-sampurna",
@@ -1385,7 +1391,8 @@
    ],
    "thaat": "purvi",
    "prahar": [
-    4
+    4,
+    5
    ],
    "season": null,
    "jati": "sampurna-sampurna",
@@ -1469,7 +1476,6 @@
    ],
    "thaat": "bhairavi",
    "prahar": [
-    1,
     2
    ],
    "season": null,
@@ -1730,6 +1736,7 @@
    ],
    "thaat": "kalyan",
    "prahar": [
+    5,
     6
    ],
    "season": null,
@@ -1901,8 +1908,7 @@
    ],
    "thaat": "bilawal",
    "prahar": [
-    1,
-    2
+    1
    ],
    "season": null,
    "jati": "shadav-sampurna",

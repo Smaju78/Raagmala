@@ -8,7 +8,7 @@ kalyan 14 · kafi 12 · khamaj 11 · bhairav 9 · bilawal 9 · marwa 6 · bhaira
 
 ## Raags by prahar
 
-1 (6–9h) 13 · 2 (9–12h) 10 · 3 (12–15h) 6 · 4 (15–18h) 8 · 5 (18–21h) 10 · 6 (21–24h) 25 · 7 (0–3h) 9 · 8 (3–6h) 7 · any time 6
+1 (6–9h) 12 · 2 (9–12h) 9 · 3 (12–15h) 6 · 4 (15–18h) 8 · 5 (18–21h) 17 · 6 (21–24h) 25 · 7 (0–3h) 10 · 8 (3–6h) 7 · any time 6
 
 ## Artists by gharana
 
@@ -24,8 +24,9 @@ khayal 161 · thumri 99 · (unknown) 65 · dhrupad 49 · tappa 30 · dadra 24
 - **gaud-malhar** thaat: mine `khamaj` vs Wikipedia `bilawal`
 - **kafi** samvadi: mine `S` vs Wikipedia `Re`
 - **bibhas** samvadi: mine `G` vs Wikipedia `r`
+- **bilaskhani-todi** time: mine `2` vs Wikipedia `Morning, 6–9`
 - **hindol** time: mine `8,1` vs Wikipedia `After midnight / Early morning (12 Night – 3 AM)`
-- **alhaiya-bilawal** time: mine `1,2` vs Wikipedia `Early Morning (Din ka Pratham Prahar-4 a.m-8 a.m`
+- **alhaiya-bilawal** time: mine `1` vs Wikipedia `Early Morning (Din ka Pratham Prahar-4 a.m-8 a.m`
 - **hamsadhwani** vadi: mine `S` vs Wikipedia `R`
 - **sindhu-bhairavi** thaat (filled from Wikipedia): mine `` vs Wikipedia `asavari`
 

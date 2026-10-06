@@ -36,7 +36,9 @@ const STR = {
     playNow: (o) => `Play raags of this hour${o.n ? ` (${o.n})` : ""}`, allOfHour: "All raags of this hour",
     seasonText: (o) => `It's ${o.s} — season raags:`, playSeason: (o) => `Play ${o.s} raags`,
     nPerf: (o) => `${o.n} performance${o.nn === 1 ? "" : "s"}`, soon: "coming soon",
-    throughDay: "Raags through the day", all: "All", allN: (o) => `All ${o.n}`, more: "More",
+    throughDay: "Raags through the day", eightPrahars: "The eight prahars",
+    praharHint: "The 24 hours are divided into eight prahars: four of the day and four of the night. Each raag belongs to its own prahar. Raags sung at the meeting of day and night (sandhi-prakash) appear in both.",
+    dayHalf: "Day · 6 am to 6 pm", nightHalf: "Night · 6 pm to 6 am", praharNo: (o) => `${["1st", "2nd", "3rd", "4th"][o.in]} prahar`, nowShort: "now", all: "All", allN: (o) => `All ${o.n}`, more: "More",
     wellKnown: "Well-known raags", greatVoices: "Great voices", allArtists: "All artists", explore: "Explore", moods: "Moods",
     continueRow: "Continue listening", continueHint: "What you played recently and what you liked.",
     b_raags: "Well-known raags", b_prahar: "Time of day", b_thaat: "Thaat", b_form: "Form", b_mood: "Mood",
@@ -122,7 +124,9 @@ const STR = {
     playNow: (o) => `এই প্রহরের রাগ শুনুন${o.n ? ` (${o.n})` : ""}`, allOfHour: "এই প্রহরের সব রাগ",
     seasonText: (o) => `এখন ${o.s} — ঋতুর রাগ:`, playSeason: (o) => `${o.s}র রাগ শুনুন`,
     nPerf: (o) => `${o.n}টি পরিবেশনা`, soon: "শীঘ্রই আসছে",
-    throughDay: "সারাদিনের রাগ", all: "সব", allN: (o) => `সব ${o.n}টি`, more: "আরও",
+    throughDay: "সারাদিনের রাগ", eightPrahars: "আট প্রহর",
+    praharHint: "২৪ ঘণ্টা আট প্রহরে ভাগ: দিনে চার প্রহর, রাতে চার প্রহর। প্রত্যেক রাগের নিজের প্রহর আছে। দিন ও রাতের সন্ধিক্ষণের (সন্ধিপ্রকাশ) রাগ দুই প্রহরেই আছে।",
+    dayHalf: "দিন · সকাল ৬টা থেকে সন্ধ্যা ৬টা", nightHalf: "রাত · সন্ধ্যা ৬টা থেকে সকাল ৬টা", praharNo: (o) => `${["প্রথম", "দ্বিতীয়", "তৃতীয়", "চতুর্থ"][o.in]} প্রহর`, nowShort: "এখন", all: "সব", allN: (o) => `সব ${o.n}টি`, more: "আরও",
     wellKnown: "পরিচিত রাগ", greatVoices: "মহান কণ্ঠ", allArtists: "সব শিল্পী", explore: "আরও দেখুন", moods: "রস",
     continueRow: "আবার শুনুন", continueHint: "সম্প্রতি যা বাজিয়েছেন আর যা পছন্দ করেছেন।",
     b_raags: "পরিচিত রাগ", b_prahar: "সময় (প্রহর)", b_thaat: "ঠাট", b_form: "গায়নশৈলী", b_mood: "রস",
@@ -626,10 +630,14 @@ function renderHome() {
   const curRaag = cur ? (cur.raags || [])[0] : "";
   const recent = [...prefs.recent].reverse().concat([...prefs.likes].reverse()).filter((id, i, a) => VIDEOS.has(id) && a.indexOf(id) === i).slice(0, 12);
   const raagLinks = (rs) => rs.map((r) => `<a href="#/raag/${enc(r.id)}">${esc(rMain(r))}</a>`).join(" · ");
-  const dayline = Object.entries(META.prahars).sort((a, b) => ((a[1].from + 18) % 24) - ((b[1].from + 18) % 24)).map(([k, x]) => {
-    const n = GROUP_RAAGS.prahar(k).filter(hasRec).length;
-    return `<a class="day${+k === p ? " cur" : ""}" href="#/list/prahar/${k}" style="--t1:${PRCOL[k][0]};--t2:${PRCOL[k][1]}"><i aria-hidden="true"></i><b>${esc(L === "bn" ? x.bn : x.en)}</b><small>${hours(x)} · ${t("nRaags", { n })}</small></a>`;
-  }).join("");
+  // The eight prahars: four of the day (from 6 am), four of the night (from 6 pm), each with its raags.
+  const prCard = (k, i) => {
+    const x = META.prahars[k], rs = GROUP_RAAGS.prahar(k).filter(hasRec), cur = +k === p;
+    return `<div class="pcard${cur ? " cur" : ""}" style="--t1:${PRCOL[k][0]};--t2:${PRCOL[k][1]}">
+      <a class="ph" href="#/list/prahar/${k}"${cur ? ' aria-current="time"' : ""}><i aria-hidden="true"></i><small>${t("praharNo", { i })}${cur ? ` · ${t("nowShort")}` : ""}</small><b>${esc(L === "bn" ? x.bn : x.en)}</b><span>${hours(x)} · ${t("nRaags", { n: rs.length })}</span></a>
+      <p>${rs.length ? raagLinks(rs) : t("nothingHere")}</p></div>`;
+  };
+  const half = (key, ks) => `<div class="phalf"><h3>${t(key)}</h3><div class="plist">${ks.map((k, i) => prCard(k, i)).join("")}</div></div>`;
   view.innerHTML = `
     <section class="hero" aria-labelledby="h-now">
       <div class="orb" aria-hidden="true"></div>
@@ -647,8 +655,8 @@ function renderHome() {
     </section>` : ""}
     ${row(t("moods"), Object.keys(META.moods).map(moodCard), { more: "#/browse/mood", id: "h-moods" })}
     <section class="sec" aria-labelledby="h-day">
-      <div class="sec-h"><h2 id="h-day">${t("throughDay")}</h2><a class="more" href="#/browse/prahar">${t("all")} →</a></div>
-      <div class="dayline">${dayline}</div>
+      <div class="sec-h"><h2 id="h-day">${t("eightPrahars")}</h2><a class="more" href="#/browse/prahar">${t("all")} →</a><p class="hint">${t("praharHint")}</p></div>
+      <div class="prahars">${half("dayHalf", ["1", "2", "3", "4"])}${half("nightHalf", ["5", "6", "7", "8"])}</div>
     </section>
     ${row(t("wellKnown"), topRaags.map((r) => raagCard(r)), { more: "#/browse/raags", sub: t("allN", { n: RAAGS.length }), id: "h-pop" })}
     ${row(t("greatVoices"), topArtists.map(artistCard), { more: "#/browse/artists", id: "h-art" })}
@@ -728,10 +736,16 @@ function renderKind(body, kind) {
       tile(`#/list/gharana/${enc(g)}`, gharanaShort(g), L === "bn" ? g : META.gharanas[g] || "", null, t("nArtists", { n }))).join("")}</div>`);
   } else {
     const p = currentPrahar();
-    body.insertAdjacentHTML("beforeend", `<div class="tile-grid" style="margin-top:14px">${groups(kind).map(([v, label, sub, col]) => {
+    const tiles = (gs) => `<div class="tile-grid" style="margin-top:14px">${gs.map(([v, label, sub, col]) => {
       const rs = GROUP_RAAGS[kind](v), rec = rs.filter(hasRec).length;
       return tile(`#/list/${kind}/${enc(v)}`, label, sub, col, `${t("nRaags", { n: rs.length })}${rec ? ` · ▶ ${num(rec)}` : ""}`, kind === "prahar" && +v === p);
-    }).join("")}</div>`);
+    }).join("")}</div>`;
+    const gs = groups(kind);
+    if (kind === "prahar") body.insertAdjacentHTML("beforeend", `<p class="hint" style="margin:8px 0 0">${t("praharHint")}</p>
+      <h3 class="gh">${t("dayHalf")}</h3>${tiles(gs.filter(([v]) => "1234".includes(v)))}
+      <h3 class="gh">${t("nightHalf")}</h3>${tiles(gs.filter(([v]) => "5678".includes(v)))}
+      <h3 class="gh">${t("anyTimeLight")}</h3>${tiles(gs.filter(([v]) => v === "any"))}`);
+    else body.insertAdjacentHTML("beforeend", tiles(gs));
   }
   wirePlays(body);
 }
