@@ -1,7 +1,7 @@
 @echo off
 rem Daily YouTube run (scheduled task "Raagmala YouTube daily"):
 rem   1. monthly stats refresh when due, resumable matching, rebuild site data (in WSL)
-rem   2. commit and push the site data so GitHub Pages shows the new recordings (once the repo exists)
+rem   2. commit and push the site data (so GitHub Pages shows the new recordings) and the matching records
 rem Output is appended to cache\youtube_daily.log
 cd /d "%~dp0.."
 if not exist cache mkdir cache
@@ -15,7 +15,8 @@ if not exist .git (
   echo No git repository yet; data updated locally only. >> cache\youtube_daily.log
   exit /b 0
 )
-git add docs >> cache\youtube_daily.log 2>&1
+rem the site data, plus the matcher's records (accepted and rejected videos, singers named from titles)
+git add docs data/yt_matches.json data/singers_guessed.md >> cache\youtube_daily.log 2>&1
 git diff --cached --quiet
 if errorlevel 1 git commit -q -m "Daily recordings update" >> cache\youtube_daily.log 2>&1
 rem push also retries any commit left unpushed by an earlier failed run

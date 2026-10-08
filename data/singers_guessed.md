@@ -2,25 +2,52 @@
 
 Check these; to merge one into a known artist add `Spelling = artist-id` to data/vocalists_extra.txt.
 
+- **Abhay Narayan Mallick** (`abhay-narayan-mallick`): Abhay Narayan Mallick - Dhrupad - Raga Jaijaivanti
 - **Aditya Modak** (`aditya-modak`): Raag Jaunpuri - Aditya Modak | Soulful Hindustani Classical Vocal Performance |
 - **Ankita Joshi** (`ankita-joshi`): Raag Megh | Ankita Joshi | Classical Vocal | Lonavala Khandala Sangeet Sammelan 2025
+- **Antubuwa Joshi** (`antubuwa-joshi`): Pandit Antubuwa Joshi sings Raga Jayjaywanti
+- **Ayush Dwivedi** (`ayush-dwivedi`): Raag Bhimpalasi Dhrupad by Ayush Dwivedi · Raag Bhupali Dhrupad Alap by Ayush Dwivedi at Akashwani (AIR Lucknow) Meditative Music
+- **Bishnu Acharya** (`bishnu-acharya`): Raag Lalit | Dhrupad | Chautaal | Part 1 | Pt Bishnu Acharya | Milesh Tandukar | Darbhanga Gharana
+- **Channulal Mishra** (`channulal-mishra`): Channulal Mishra | Raag: Maru Behag-Khayal "More Balma" | Live at Saptak Festival
+- **Chintan Upadhyay** (`chintan-upadhyay`): Raag Malkauns Dhrupad Alap, Chintan Upadhyay · Raag Bhimpalas, Dhrupad @ Nehru Centre, London, Chintan Upadhyay - Vocal , Jasdeep Singh - Jori · Raag Marwa -Dhrupad Alap - Chintan Upadhyay
 - **Debabrato Banerjee** (`debabrato-banerjee`): Debabrato Banerjee (Classical Vocal) Raga : Puriya Dhaneshree (Teentaal) Live In Concert.
 - **Dinkar Kaikini** (`dinkar-kaikini`): Raga Paraj - Khyal in Madhyalay Teentaal
 - **Durgabai Shirodkar** (`durgabai-shirodkar`): Durgabai Shirodkar sings Raag " Gara" - From Audio Archives of Lutfullah Khan
+- **Gajananbuwa Joshi** (`gajananbuwa-joshi`): Pandit Gajananbuwa Joshi sings Raga Basant.
+- **Geetha Heblikar** (`geetha-heblikar`): Hindustani Classical Music I Raag maru bihag I Geetha Heblikar I Hindustani Vocalist from Bangalore
 - **Harish Tiwari** (`harish-tiwari`): Bandish in Raag Jhinjhoti | Rupak & Teentaal | Pt  Harish Tiwari | Bazm e khas
 - **Heerabai Badodekar** (`heerabai-badodekar`): Heerabai Badodekar sings Thumari in Raga Tilak Kamod.
+- **Hussain Sayeeduddin Dagar** (`hussain-sayeeduddin-dagar`): Ustad Hussain Sayeeduddin Dagar | Raga Jaijaiwanti | Dhrupad | Dagarvani | 
 - **Indrani Mukherjee** (`indrani-mukherjee`): Raag Malkauns | Indrani Mukherjee | Khayal Vocal | Music of India · Stunning Raag Todi | Indrani Mukherjee | Kirana-Rampur Khayal vocal | Music of India
 - **Kumkum Sanyal** (`kumkum-sanyal`): Raga Puriya Kalyan - Khayal and Tarana
 - **Legendary Duet** (`legendary-duet`): Raag Bhoopali (Khayal & Tarana) -by Legendary Duet of Nazakat~Salamat
 - **Madhuri Mattoo** (`madhuri-mattoo`): Rare - Moray Balam Naahi Aaye | Thumri In Raag Pilu | Vidushi Madhuri Mattoo |
+- **Manjiri Asnare Kelkar** (`manjiri-asnare-kelkar`): Tappa in Raag Kafi | Manjiri Asnare Kelkar | Music of India
 - **Manzoor Hussain Khan** (`manzoor-hussain-khan`): Ustad Manzoor Hussain Khan | Vocal Recital | Thumri | Raag Tilang
 - **Moumita Mitra** (`moumita-mitra`): Raga Bhairavi | Vilambit | Bada Khayal | Ektal | Moumita Mitra · Raga Tilang Khayal in Tintal by Moumita Mitra
+- **Ms. Sanjukta Das** (`ms-sanjukta-das`): Ms. Sanjukta Das | Vocal | Raag Miyan ki Todi | Music Conference 2019
 - **Nagesh Adgaonkar** (`nagesh-adgaonkar`): राग मधूवंती  | Nagesh Adgaonkar  |Raga Madhuvanti | Khayal Vocal  |Music of India |Hindustani Music
+- **Niloy Ahsan** (`niloy-ahsan`): #Dhrupad I Raag #Darbari in Mysore I Niloy Ahsan I Roman Das
+- **Niloy Ahsan Zulkernaeen** (`niloy-ahsan-zulkernaeen`): Raag Bhairav I #dhrupad by Niloy Ahsan Zulkernaeen
+- **Niranjana Mahalingam** (`niranjana-mahalingam`): "Promising talents in Dhrupad" | Dr. Niranjana Mahalingam — Raga Lalit
+- **Nirmalya Dey** (`nirmalya-dey`): SUPRABHAT | Episode 39 | Classical Vocal Dhrupad Gayan by Pandit Nirmalya Dey | Raag: Lalit · Pt. Nirmalya Dey | Rag Jaunpuri (dhrupad vocal) | Morning Raga series · Pt Nirmalya Dey | Raga - Basant | Alap - Dhamar and Dhrupad
 - **Nishad Bakre** (`nishad-bakre`): Raag Kalingada Bandish | Nishad Bakre | Pt. Dinkar Kaikini | Suranjan | Khayal Ep 3
+- **Nishant Mallick** (`nishant-mallick`): Dhrupad Vocal by Prashant & Nishant Mallick (Mallick Brothers) Raag Jaijaiwanti
+- **Pelva Naik** (`pelva-naik`): Pelva Naik | Raga Puriya Dhanashree | Dhrupad Alāp
+- **Prem Kumar Mallick** (`prem-kumar-mallick`): Raga Basant - Dhamar by Pt. Ram Kumar Mallick & Pt.  Prem Kumar Mallick.
+- **R. Fahimuddin Dagar** (`r-fahimuddin-dagar`): R. Fahimuddin Dagar, Raga Lalat, Dhrupad. Live in Switzerland, 1989.
+- **Roman Das** (`roman-das`): Raag Malkauns I #dhrupad by Niloy Ahsan I Roman Das I (Hall audio) · Raag Des I #Dhrupad by Niloy Ahsan I Roman Das
 - **Roshanara Begum** (`roshanara-begum`): Roshanara Begum (vocal) - Raga Kedar
+- **Salma Ghosh** (`salma-ghosh`): Dhrupad Surtaal & Dhammar (Raag Todi) Salma Ghosh
+- **Samit Mallick** (`samit-mallick`): Dhrupad(Char Taal) in Raga Lalit by Dr Samit Mallick.
 - **Satender Verma** (`satender-verma`): Raag Chandrakauns | Vocals | Satender Verma and Ishaan Nigam
+- **Shamsuddin Faridi Desai** (`shamsuddin-faridi-desai`): Shamsuddin Faridi Desai - Dhrupad - Raga Darbari Kanada
 - **Shruti Bujarbaruah** (`shruti-bujarbaruah`): RAAG BAGESHREE I SHRUTI BUJARBARUAH I Vocal I Hindustani Classical I Khyal · RAAG CHANDRAKAUNS I Shruti Bujarbaruah I Dover Lane Music Conference I Vocal I Hindustani Classical · RAAG MARUBIHAG I Shruti Bujarbaruah I Khayal I Hindustani Vocal I Indian Classical I Vocalist
 - **Shubham Modi** (`shubham-modi`): Raga Puriya Dhanashri | Dr. Shubham Modi | Bada Khayal and Chhota Khayal
+- **Sohan Singh** (`sohan-singh`): Sohan Singh sings Raag Miyan Ki Malhar - From Audio Archives of Lutfullah Khan
+- **Sunita Avani Amin** (`sunita-avani-amin`): Sunita Avani Amin II Raga Shree II Dhrupad II North Indian Classical Music
 - **Tanmaya Kshirsagar** (`tanmaya-kshirsagar`): Raga Shuddha Sarang | Ab Mori Baat | Tanmaya Kshirsagar | Chota Khyal
 - **Tejaswini Vernekar** (`tejaswini-vernekar`): Raag Shree–Bada Khayal(Vilambit) | Tejaswini Vernekar | Vocal | Music of India | Purvi Festival 2023
 - **Vani Rao** (`vani-rao`): Raag Puriya Kalyan vocal -  part 1 : Bada khayal - Vani Rao
+- **Vinod Kumar** (`vinod-kumar`): Raag Puriya Dhrupad by Pt. Vinod Kumar dwivedi
+- **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar - Dhrupad - Raga Yaman · Zia Mohiuddin Dagar  - Dhrupad - Raga Darbari Kanada - Live
