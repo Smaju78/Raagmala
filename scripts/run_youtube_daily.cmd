@@ -15,6 +15,10 @@ if not exist .git (
   echo No git repository yet; data updated locally only. >> cache\youtube_daily.log
   exit /b 0
 )
+rem No sign-in windows: two GitHub accounts are saved on this PC, and the remote URL already names Smaju78,
+rem so Git Credential Manager picks that account silently (or the push fails and is logged, never waits).
+set GCM_INTERACTIVE=never
+set GIT_TERMINAL_PROMPT=0
 rem the site data, plus the matcher's records (accepted and rejected videos, singers named from titles)
 git add docs data/yt_matches.json data/singers_guessed.md >> cache\youtube_daily.log 2>&1
 git diff --cached --quiet
