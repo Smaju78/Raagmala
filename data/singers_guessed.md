@@ -58,6 +58,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Tejaswini Vernekar** (`tejaswini-vernekar`): Raag Shree–Bada Khayal(Vilambit) | Tejaswini Vernekar | Vocal | Music of India | Purvi Festival 2023
 - **Trina Chatterjee** (`trina-chatterjee`): Babul Mora - Raga Bhairavi | Thumri by Trina Chatterjee
 - **Vani Rao** (`vani-rao`): Raag Puriya Kalyan vocal -  part 1 : Bada khayal - Vani Rao
+- **Veenaji Sahasrabuddhe** (`veenaji-sahasrabuddhe`): Vidushi Veenaji Sahasrabuddhe sings Raga Bilaskhani Todi
 - **Vinod Kumar** (`vinod-kumar`): Raag Puriya Dhrupad by Pt. Vinod Kumar dwivedi
 - **Vrinda Mundkur** (`vrinda-mundkur`): Smt. Vrinda Mundkur: Raga Nayaki Kanada | Raga Desh Dadra
 - **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Zia Mohiuddin Dagar - Dhrupad - Raga Chandrakauns · Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar  - Dhrupad - Raga Darbari Kanada - Live
