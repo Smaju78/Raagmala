@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T08:32:15+00:00",
+ "updated": "2026-10-12T08:32:35+00:00",
  "searched": {
   "raags": [
    "abhogi:khayal",
@@ -571,8 +571,8 @@
      "id": "OX6Da7jmYP8",
      "title": "Raga Bhairavi- Rashid khan (Album : Tansen) | Classical | Music Today",
      "channel": "Music Today",
-     "views": 1039265,
-     "likes": 13456,
+     "views": 1042986,
+     "likes": 13490,
      "seconds": 431,
      "published": "2015-12-28",
      "artists": [
@@ -734,8 +734,8 @@
      "id": "yWWQJ5SCrWM",
      "title": "Kesarbai Kerkar  Thumri Bhairavi",
      "channel": "Harini Calamur",
-     "views": 90280,
-     "likes": 1346,
+     "views": 90330,
+     "likes": 1347,
      "seconds": 1218,
      "published": "2014-01-19",
      "artists": [
@@ -1313,6 +1313,22 @@
   "puriya": {
    "khayal": [
     {
+     "id": "B_sCkyPfkmY",
+     "title": "Raga Puriya I Ustad Rashid Khan I Live at  BCMF 2017",
+     "channel": "Bengal Foundation",
+     "views": 70558,
+     "likes": 1218,
+     "seconds": 3040,
+     "published": "2024-01-11",
+     "artists": [
+      "rashid-khan"
+     ],
+     "raags": [
+      "puriya"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "VYVzqMyeiDg",
      "title": "Pandit Venkatesh Kumar | Raag Puriya | Shadaj | 2021",
      "channel": "Shadaj Baithak",
@@ -1322,22 +1338,6 @@
      "published": "2021-12-23",
      "artists": [
       "venkatesh-kumar"
-     ],
-     "raags": [
-      "puriya"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "B_sCkyPfkmY",
-     "title": "Raga Puriya I Ustad Rashid Khan I Live at  BCMF 2017",
-     "channel": "Bengal Foundation",
-     "views": 70074,
-     "likes": 1216,
-     "seconds": 3040,
-     "published": "2024-01-11",
-     "artists": [
-      "rashid-khan"
      ],
      "raags": [
       "puriya"
@@ -1530,7 +1530,7 @@
      "id": "IKNN8CIF_as",
      "title": "Raga Darbari Kanhada-Ajoy Chakraborty ( Album:Tansen )",
      "channel": "Music Today",
-     "views": 235389,
+     "views": 235494,
      "likes": 3881,
      "seconds": 597,
      "published": "2015-12-28",
@@ -1648,8 +1648,8 @@
      "id": "SRcBb2pxAiE",
      "title": "Kaushiki Chakraborty | Raag Abhogi | Music of India",
      "channel": "darbarfestival",
-     "views": 155496,
-     "likes": 2598,
+     "views": 156512,
+     "likes": 2605,
      "seconds": 504,
      "published": "2024-03-02",
      "artists": [
@@ -1664,8 +1664,8 @@
      "id": "N7lVbB2-P0E",
      "title": "Ustaad Rashid Khan- Raag Abhogi",
      "channel": "SangeetVidya",
-     "views": 95788,
-     "likes": 1094,
+     "views": 95943,
+     "likes": 1096,
      "seconds": 1053,
      "published": "2011-11-24",
      "artists": [
@@ -1712,8 +1712,8 @@
      "id": "RHVriTQ7lvM",
      "title": "Kaushiki Chakraborty | Raag Abhogi | Shadaj | 2021",
      "channel": "Shadaj Baithak",
-     "views": 58557,
-     "likes": 1099,
+     "views": 58753,
+     "likes": 1100,
      "seconds": 1990,
      "published": "2021-12-28",
      "artists": [
@@ -1937,8 +1937,8 @@
      "id": "IVLlBVmyiiE",
      "title": "Padma Bhushan Ustaad Rashid Khan - \"Raag Marwa\"",
      "channel": "S Chaudhary",
-     "views": 355639,
-     "likes": 5011,
+     "views": 356114,
+     "likes": 5013,
      "seconds": 3134,
      "published": "2020-04-06",
      "artists": [
@@ -2105,8 +2105,8 @@
      "id": "W8R--A38sxk",
      "title": "Raga Lalit- Rashid Khan ( Album: Tansen ) | Rashid Khan | Music Today",
      "channel": "Music Today",
-     "views": 397057,
-     "likes": 4757,
+     "views": 398334,
+     "likes": 4770,
      "seconds": 431,
      "published": "2015-12-28",
      "artists": [
@@ -2121,8 +2121,8 @@
      "id": "QPkFff4DqKA",
      "title": "Ustad Rashid Khan singing Raga Lalit 1988",
      "channel": "cactus1762",
-     "views": 102513,
-     "likes": 983,
+     "views": 102606,
+     "likes": 984,
      "seconds": 1364,
      "published": "2012-03-31",
      "artists": [
@@ -2182,15 +2182,15 @@
      "form": "khayal"
     },
     {
-     "id": "K8WOW8zTtOA",
-     "title": "Pandit Ajoy Chakraborty || Raag Lalit ||",
-     "channel": "Tasaouf Tazim",
-     "views": 44737,
-     "likes": 879,
-     "seconds": 1807,
-     "published": "2019-06-10",
+     "id": "I2kEL_Sgz_M",
+     "title": "Raga Lalit - Begum Parveen Sultana",
+     "channel": "SurTaal",
+     "views": 54179,
+     "likes": 635,
+     "seconds": 3000,
+     "published": "2015-05-10",
      "artists": [
-      "ajoy-chakrabarty"
+      "parween-sultana"
      ],
      "raags": [
       "lalit"
@@ -2319,8 +2319,8 @@
      "id": "UYGdDg3i5IA",
      "title": "Raag - Bilaskhani Todi ।। Ustad Rashid Khan।।",
      "channel": "Narsee Sangeet ",
-     "views": 60377,
-     "likes": 989,
+     "views": 60864,
+     "likes": 995,
      "seconds": 1251,
      "published": "2022-10-18",
      "artists": [
@@ -2364,15 +2364,15 @@
      "form": "khayal"
     },
     {
-     "id": "ElfURyrWYII",
-     "title": "Ustad Amir Khan Raga Bilashkani Todi",
+     "id": "IHo1AzWHeV4",
+     "title": "Ajoy Chakraborty  Raga Bilaskhani todi",
      "channel": "rliesky56",
-     "views": 41031,
-     "likes": 745,
-     "seconds": 1355,
-     "published": "2013-10-13",
+     "views": 41169,
+     "likes": 775,
+     "seconds": 1591,
+     "published": "2015-10-23",
      "artists": [
-      "amir-khan"
+      "ajoy-chakrabarty"
      ],
      "raags": [
       "bilaskhani-todi"
@@ -2381,6 +2381,22 @@
     }
    ],
    "dhrupad": [
+    {
+     "id": "mYPzmzY8ATg",
+     "title": "Ustad Faiyaz Khan   -   Raga Bilaskhani Todi Dhamar",
+     "channel": "Subrata Chowdhury",
+     "views": 1035,
+     "likes": 28,
+     "seconds": 958,
+     "published": "2015-02-02",
+     "artists": [
+      "faiyaz-khan"
+     ],
+     "raags": [
+      "bilaskhani-todi"
+     ],
+     "form": "dhrupad"
+    },
     {
      "id": "A94fCl0MF_E",
      "title": "ritwik sanyal dhrupad | raag bilaskhani todi vocal | indian classical music | music of india",
@@ -2517,7 +2533,7 @@
      "id": "UXiYq9LY9po",
      "title": "Ajoy Chakraborty  Raga Malkauns",
      "channel": "rliesky56",
-     "views": 212037,
+     "views": 212034,
      "likes": 2030,
      "seconds": 3182,
      "published": "2012-10-02",
@@ -2610,6 +2626,40 @@
       "malkauns"
      ],
      "form": "dhrupad"
+    },
+    {
+     "id": "x5N32DotFZs",
+     "title": "राग मालकौंस | Raag Malkauns | Padmashree Ustad Faiyaz Wasifuddin Dagar | Dhrupad",
+     "channel": "Raaggiri",
+     "views": 742,
+     "likes": 20,
+     "seconds": 898,
+     "published": "2019-10-01",
+     "artists": [
+      "wasifuddin-dagar"
+     ],
+     "raags": [
+      "malkauns"
+     ],
+     "form": "dhrupad"
+    }
+   ],
+   "thumri": [
+    {
+     "id": "hHtE5aPD8vM",
+     "title": "Raga Malkauns & Thumri ~ Begum Parveen Sultana ~ 1985 | VIDEO",
+     "channel": "Aahir Ray",
+     "views": 2027,
+     "likes": 57,
+     "seconds": 1821,
+     "published": "2021-07-10",
+     "artists": [
+      "parween-sultana"
+     ],
+     "raags": [
+      "malkauns"
+     ],
+     "form": "thumri"
     }
    ]
   },
@@ -2717,8 +2767,8 @@
      "id": "q5trNs7M3MU",
      "title": "Zia Mohiuddin Dagar - Dhrupad - Raga Yaman",
      "channel": "rliesky56",
-     "views": 3578333,
-     "likes": 50038,
+     "views": 3580766,
+     "likes": 50055,
      "seconds": 4212,
      "published": "2014-08-31",
      "artists": [
@@ -2898,8 +2948,8 @@
      "id": "StR7c5yTZkw",
      "title": "Kaushiki Chakraborty || Raag Bhupali ||",
      "channel": "Tasaouf Tazim",
-     "views": 171634,
-     "likes": 2612,
+     "views": 173094,
+     "likes": 2622,
      "seconds": 2708,
      "published": "2023-01-26",
      "artists": [
@@ -3860,7 +3910,7 @@
      "id": "lUQ2oi4t-sQ",
      "title": "Raag Rageshree - Pt. Ajoy Chakraborty",
      "channel": "TheSingingTabla",
-     "views": 55346,
+     "views": 55465,
      "likes": 787,
      "seconds": 325,
      "published": "2011-08-23",
@@ -3925,6 +3975,22 @@
      "form": "khayal"
     },
     {
+     "id": "tzwzFu6KmTs",
+     "title": "Shruti Sadolikar - Raga Shree",
+     "channel": "PistaCherryfield",
+     "views": 27277,
+     "likes": 315,
+     "seconds": 925,
+     "published": "2013-05-19",
+     "artists": [
+      "shruti-sadolikar"
+     ],
+     "raags": [
+      "shree"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "1EcRrZvc52o",
      "title": "Raga Shree | Shruti Sadolikar (Album: Evening Ragas)",
      "channel": "Music Today",
@@ -3950,22 +4016,6 @@
      "published": "2017-04-16",
      "artists": [
       "jayashree-patanekar"
-     ],
-     "raags": [
-      "shree"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "Xg0kQFV18cI",
-     "title": "Pandit D V Paluskar  | Raag Shree | Hari ke charana kamala",
-     "channel": "Pandit Kansen",
-     "views": 12064,
-     "likes": 323,
-     "seconds": 1094,
-     "published": "2023-09-30",
-     "artists": [
-      "d-v-paluskar"
      ],
      "raags": [
       "shree"
@@ -4764,8 +4814,8 @@
      "id": "FzdLzV0CHhA",
      "title": "Bairagi Bhairav - Ustad Rashid Khan || बैरागी भैरव - उस्ताद राशिद खान ||",
      "channel": "Narsee Sangeet ",
-     "views": 57944,
-     "likes": 1018,
+     "views": 58390,
+     "likes": 1023,
      "seconds": 2641,
      "published": "2021-04-27",
      "artists": [
@@ -5883,8 +5933,8 @@
      "id": "i4Jsy8_gCvQ",
      "title": "Raga Hamsadhwani  | Rashid Khan (Album: Sangeet Sartaj)",
      "channel": "Music Today",
-     "views": 374162,
-     "likes": 4882,
+     "views": 374962,
+     "likes": 4888,
      "seconds": 1193,
      "published": "2016-03-09",
      "artists": [
@@ -6132,8 +6182,8 @@
      "id": "WlKw2Z7aANA",
      "title": "Raga Bihag - Vilambit Khayal - Kaise Sukh Sowe - Ektaal",
      "channel": "Veena Sahasrabuddhe - Topic",
-     "views": 74350,
-     "likes": 1750,
+     "views": 74757,
+     "likes": 1754,
      "seconds": 1800,
      "published": "2016-12-24",
      "artists": [
@@ -6666,6 +6716,22 @@
      "form": "khayal"
     },
     {
+     "id": "-0vRmzdELII",
+     "title": "Abdul Karim Khan ~ Soch Samajh Nadan (Raga Piloo)",
+     "channel": "DroneSoma",
+     "views": 5295,
+     "likes": 67,
+     "seconds": 269,
+     "published": "2012-10-14",
+     "artists": [
+      "abdul-karim-khan"
+     ],
+     "raags": [
+      "pilu"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "I0vYydC-GQw",
      "title": "Farida Khanum sings Raag Pilu (16) – From Audio Archives of Lutfullah Khan",
      "channel": "Khursheed Abdullah",
@@ -6698,31 +6764,15 @@
      "form": "khayal"
     },
     {
-     "id": "GFrM9cwf6Us",
-     "title": "Raag Pilu - Pandit Mukul Shivputra",
-     "channel": "Ameya Joshi",
-     "views": 1142,
-     "likes": 33,
-     "seconds": 718,
-     "published": "2023-06-11",
+     "id": "lSyjrIWSFlw",
+     "title": "Begum Parveen Sultana   Raag Pilu",
+     "channel": "Sgirishc Sg",
+     "views": 1224,
+     "likes": 16,
+     "seconds": 460,
+     "published": "2013-08-13",
      "artists": [
-      "mukul-shivputra"
-     ],
-     "raags": [
-      "pilu"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "ZOcXlOi09KM",
-     "title": "Smt. Girija Devi: Raga Pilu",
-     "channel": "Raga Mela",
-     "views": 267,
-     "likes": 13,
-     "seconds": 1118,
-     "published": "2020-05-14",
-     "artists": [
-      "girija-devi"
+      "parween-sultana"
      ],
      "raags": [
       "pilu"
@@ -7172,8 +7222,8 @@
      "id": "UZAkJo8A2Xk",
      "title": "Ustad Rashid Khan || Raag Miyan ki Todi ||",
      "channel": "Tasaouf Tazim",
-     "views": 104906,
-     "likes": 1541,
+     "views": 105608,
+     "likes": 1547,
      "seconds": 2526,
      "published": "2022-08-08",
      "artists": [
@@ -7212,6 +7262,22 @@
      "published": "2019-10-01",
      "artists": [
       "wasifuddin-dagar"
+     ],
+     "raags": [
+      "todi"
+     ],
+     "form": "dhrupad"
+    },
+    {
+     "id": "r9u4HlUziVc",
+     "title": "Ustad Faiyaz Khan | Raga Miyan Ki Todi | Dhrupad | Chautaal | Nauharvani |",
+     "channel": "Satwik Bhattacharya",
+     "views": 242,
+     "likes": 0,
+     "seconds": 1520,
+     "published": "2025-01-15",
+     "artists": [
+      "faiyaz-khan"
      ],
      "raags": [
       "todi"
@@ -7974,8 +8040,8 @@
      "id": "uiFTx-omFKE",
      "title": "Joy in the Morning - Pt Ulhas Kashalkar Sings Alhaiya Bilawal",
      "channel": "havanurmic",
-     "views": 156421,
-     "likes": 1777,
+     "views": 156751,
+     "likes": 1780,
      "seconds": 1971,
      "published": "2012-11-22",
      "artists": [
@@ -7990,8 +8056,8 @@
      "id": "mGobQ9ztOnY",
      "title": "Ustaad Rashid Khan- Raag Alhaiya Bilawal.wmv",
      "channel": "SangeetVidya",
-     "views": 129270,
-     "likes": 1551,
+     "views": 129620,
+     "likes": 1554,
      "seconds": 717,
      "published": "2011-11-24",
      "artists": [
@@ -8326,8 +8392,8 @@
      "id": "g-fB7ABnBq0",
      "title": "Raga Ahir Bhairav - Ustad Rashid Khan",
      "channel": "SurTaal",
-     "views": 189090,
-     "likes": 1789,
+     "views": 189292,
+     "likes": 1790,
      "seconds": 2742,
      "published": "2015-03-12",
      "artists": [
@@ -8374,8 +8440,8 @@
      "id": "NTUFdMGAHzQ",
      "title": "Ahir Bhairav Bandish - Ustad Rashid Khan",
      "channel": "Ghosh-Sarkar",
-     "views": 115692,
-     "likes": 2344,
+     "views": 116716,
+     "likes": 2352,
      "seconds": 691,
      "published": "2019-06-30",
      "artists": [
@@ -9980,7 +10046,7 @@
      "id": "pDr-4IGcFEU",
      "title": "Live concert Recording - Raag Bahar - Pt. Ulhas Kashalkar",
      "channel": "Ulhas Kashalkar",
-     "views": 19354,
+     "views": 19379,
      "likes": 342,
      "seconds": 1572,
      "published": "2020-04-01",
@@ -10017,8 +10083,8 @@
      "id": "U0qloeBNQIw",
      "title": "GREAT RENDERINGS 2-RAAG CHAYANAT-vidushi veena sahasrabuddhe-chayanat",
      "channel": "thuryina",
-     "views": 124427,
-     "likes": 1334,
+     "views": 124891,
+     "likes": 1340,
      "seconds": 627,
      "published": "2010-02-06",
      "artists": [
@@ -10548,6 +10614,22 @@
      "form": "khayal"
     },
     {
+     "id": "Jh92E7X1C7M",
+     "title": "Ustad Abdul Karim Khan. Rag...  Raag Shankara.",
+     "channel": "IMIRZA777",
+     "views": 30102,
+     "likes": 362,
+     "seconds": 250,
+     "published": "2011-01-21",
+     "artists": [
+      "abdul-karim-khan"
+     ],
+     "raags": [
+      "shankara"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "fUVFpaCD7dM",
      "title": "Uday Bhawalkar: Raag Shankara",
      "channel": "First Edition Arts Channel",
@@ -10589,22 +10671,6 @@
      "published": "2022-03-12",
      "artists": [
       "bharati-vaishampayan"
-     ],
-     "raags": [
-      "shankara"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "lNHeaRrES_c",
-     "title": "Raga Shankara: Vilambit Khayal in Ektaal \"Shiv Shankar Mahadev\"",
-     "channel": "Pt Jasraj - Topic",
-     "views": 12652,
-     "likes": 270,
-     "seconds": 914,
-     "published": "2016-12-24",
-     "artists": [
-      "jasraj"
      ],
      "raags": [
       "shankara"
@@ -10714,15 +10780,15 @@
      "form": "khayal"
     },
     {
-     "id": "GsTJTo1vH58",
-     "title": "Sanjeev Abhyankar | Raag Ramkali Part-1 | Hindustani Classical Vocal | HQ Audio",
-     "channel": "Alurkar Music House",
-     "views": 1787,
-     "likes": 43,
-     "seconds": 1412,
-     "published": "2025-07-25",
+     "id": "ptUuvD7AFiY",
+     "title": "Raag Ramkali ~ VIdushi Shruti Sadolikar Katkar",
+     "channel": "Abhishek Samal",
+     "views": 3227,
+     "likes": 64,
+     "seconds": 1607,
+     "published": "2018-03-01",
      "artists": [
-      "sanjeev-abhyankar"
+      "shruti-sadolikar"
      ],
      "raags": [
       "ramkali"
@@ -10771,8 +10837,8 @@
      "id": "XEOo5F0THbA",
      "title": "Ustaad Rashid Khan-Raag Bhatiyar (Morning Mantra).wmv",
      "channel": "SangeetVidya",
-     "views": 204228,
-     "likes": 1914,
+     "views": 204729,
+     "likes": 1921,
      "seconds": 1842,
      "published": "2011-11-25",
      "artists": [
@@ -10969,6 +11035,22 @@
      "form": "khayal"
     },
     {
+     "id": "tp-VWXOBcgc",
+     "title": "Ustad Faiyaz Khan - Raga Hindol",
+     "channel": "Subrata Chowdhury",
+     "views": 3547,
+     "likes": 63,
+     "seconds": 883,
+     "published": "2015-02-01",
+     "artists": [
+      "faiyaz-khan"
+     ],
+     "raags": [
+      "hindol"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "3ZQYvi3EaKo",
      "title": "Raag Hindol -Pt Ulhas Kashalkar Live Pune",
      "channel": "Amrut Maktedar",
@@ -10978,22 +11060,6 @@
      "published": "2017-08-06",
      "artists": [
       "ulhas-kashalkar"
-     ],
-     "raags": [
-      "hindol"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "SlKlCgx6EWQ",
-     "title": "His Holiness Acharya Goswami Gokulotsavji Maharaj, Raag Hindol",
-     "channel": "Raju Asokan",
-     "views": 2596,
-     "likes": 57,
-     "seconds": 1775,
-     "published": "2017-05-18",
-     "artists": [
-      "gokulotsavji-maharaj"
      ],
      "raags": [
       "hindol"
@@ -11108,8 +11174,8 @@
      "id": "P4UwqxAnWZs",
      "title": "Ustad Rashid Khan l Hindustani Classical Vocal | Raag Patdeep | Mesmerising Performance |",
      "channel": "Versatile Indian",
-     "views": 183890,
-     "likes": 3144,
+     "views": 184450,
+     "likes": 3145,
      "seconds": 1129,
      "published": "2020-04-08",
      "artists": [
@@ -11169,6 +11235,22 @@
      "form": "khayal"
     },
     {
+     "id": "QoAqLpdoqAo",
+     "title": "Raga Patdeep | Shruti Sadolikar | ( Album: Afternoon Ragas Volume 3 )",
+     "channel": "Music Today",
+     "views": 14498,
+     "likes": 258,
+     "seconds": 895,
+     "published": "2016-03-02",
+     "artists": [
+      "shruti-sadolikar"
+     ],
+     "raags": [
+      "patdeep"
+     ],
+     "form": "khayal"
+    },
+    {
      "id": "3wcdU1XGy_A",
      "title": "Ustad Rashid Khan (vocal)  - Raga Patdeep",
      "channel": "Tushar Dabral",
@@ -11178,22 +11260,6 @@
      "published": "2023-07-01",
      "artists": [
       "rashid-khan"
-     ],
-     "raags": [
-      "patdeep"
-     ],
-     "form": "khayal"
-    },
-    {
-     "id": "ov1FQt-FAVk",
-     "title": "Ustad Abdul Karim Khan (vocal) - Raga Patdeep",
-     "channel": "Tushar Dabral",
-     "views": 5149,
-     "likes": 166,
-     "seconds": 247,
-     "published": "2022-10-30",
-     "artists": [
-      "abdul-karim-khan"
      ],
      "raags": [
       "patdeep"
@@ -11391,8 +11457,8 @@
      "id": "fqavnmxgAxw",
      "title": "Ustad Rashid khan | Raag Nat bhairav | khayal |",
      "channel": "Sunill Lohala",
-     "views": 66341,
-     "likes": 956,
+     "views": 66450,
+     "likes": 957,
      "seconds": 3060,
      "published": "2017-12-22",
      "artists": [
@@ -11423,8 +11489,8 @@
      "id": "M77-d0UISmw",
      "title": "Nat Bhairav Raga",
      "channel": "Rashid Khan - Topic",
-     "views": 33502,
-     "likes": 745,
+     "views": 33746,
+     "likes": 748,
      "seconds": 1401,
      "published": "2022-10-19",
      "artists": [
@@ -12468,7 +12534,7 @@
      "id": "tUHqzfE11Io",
      "title": "Ustad Rashid Khan || Raag Bhupal Todi ||",
      "channel": "Tasaouf Tazim",
-     "views": 747,
+     "views": 776,
      "likes": 25,
      "seconds": 1518,
      "published": "2026-07-05",
@@ -12590,6 +12656,22 @@
     "form": "khayal"
    },
    {
+    "id": "Jh92E7X1C7M",
+    "title": "Ustad Abdul Karim Khan. Rag...  Raag Shankara.",
+    "channel": "IMIRZA777",
+    "views": 30102,
+    "likes": 362,
+    "seconds": 250,
+    "published": "2011-01-21",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "shankara"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "1aoMeRvGasw",
     "title": "Abdul Karim Khan - Raag Shuddh Kalyan - 'moundar bajo re' (1935)",
     "channel": "Archisman Mozumder",
@@ -12622,6 +12704,54 @@
     "form": "khayal"
    },
    {
+    "id": "Esf2XppIJgc",
+    "title": "Jamuna Ke Teer - Thumri - Bhairavi",
+    "channel": "Khansahib Abdul Karim Khan - Topic",
+    "views": 18564,
+    "likes": 304,
+    "seconds": 258,
+    "published": "2019-07-22",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "thumri"
+   },
+   {
+    "id": "kBSwZ-JDfBg",
+    "title": "Piran Jani Dekhi - Malkauns",
+    "channel": "Khansahib Abdul Karim Khan - Topic",
+    "views": 15148,
+    "likes": 245,
+    "seconds": 273,
+    "published": "2019-07-18",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "pTBPicuY_54",
+    "title": "Abdul Karim Khan ~ Piran Jani Dekhi (Raga Malkauns)",
+    "channel": "DroneSoma",
+    "views": 14840,
+    "likes": 194,
+    "seconds": 268,
+    "published": "2012-10-14",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "qQQU_34uSTk",
     "title": "khan saheb abdul karim khan..jamuna ke tir..raag bhairvi",
     "channel": "samjhave",
@@ -12634,6 +12764,22 @@
     ],
     "raags": [
      "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Rw7xoTMvmdU",
+    "title": "Ustad Abdul Karim Khan Raga Malkauns Peer na jani",
+    "channel": "somishah",
+    "views": 12174,
+    "likes": 37,
+    "seconds": 283,
+    "published": "2009-10-14",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "malkauns"
     ],
     "form": "khayal"
    },
@@ -12686,6 +12832,22 @@
     "form": "khayal"
    },
    {
+    "id": "-0vRmzdELII",
+    "title": "Abdul Karim Khan ~ Soch Samajh Nadan (Raga Piloo)",
+    "channel": "DroneSoma",
+    "views": 5295,
+    "likes": 67,
+    "seconds": 269,
+    "published": "2012-10-14",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "pilu"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ov1FQt-FAVk",
     "title": "Ustad Abdul Karim Khan (vocal) - Raga Patdeep",
     "channel": "Tushar Dabral",
@@ -12730,6 +12892,22 @@
     ],
     "raags": [
      "jogiya"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "h8QSbunNbHw",
+    "title": "khan saheb abdul karim khan..jamuna ke tir..raag bhairvi.mp4",
+    "channel": "Mushtaque  Munshi",
+    "views": 2278,
+    "likes": 22,
+    "seconds": 260,
+    "published": "2010-06-27",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
     ],
     "form": "khayal"
    },
@@ -12782,6 +12960,22 @@
     "form": "khayal"
    },
    {
+    "id": "2M00PaK6c5U",
+    "title": "Raag Bhairav | Introduction By Usatd Karim Niyazi | राग भैरव परिचय",
+    "channel": "Ustad Abdul Kareem Khan Sangeet Vidyalaya",
+    "views": 1405,
+    "likes": 90,
+    "seconds": 294,
+    "published": "2018-09-15",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "jY_7XoSqYFQ",
     "title": "Ustad Abdul Karim Khan (vocal) - Raga Marwa",
     "channel": "Tushar Dabral",
@@ -12798,6 +12992,38 @@
     "form": "khayal"
    },
    {
+    "id": "qlZoJ__UGEY",
+    "title": "Raag Yaman Performed by Zuber NIyazi",
+    "channel": "Ustad Abdul Kareem Khan Sangeet Vidyalaya",
+    "views": 1254,
+    "likes": 73,
+    "seconds": 1504,
+    "published": "2018-02-10",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "5gKP5yEpvbc",
+    "title": "Abdul Karim Khan ~ Jamunake Teer (Bhairavi Thumri)",
+    "channel": "DroneSoma",
+    "views": 1238,
+    "likes": 19,
+    "seconds": 253,
+    "published": "2012-10-14",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "thumri"
+   },
+   {
     "id": "rc7yZf2VhMs",
     "title": "Ustad Abdul Karim Khan (vocal) - Raga Gurjari Todi",
     "channel": "Tushar Dabral",
@@ -12810,6 +13036,38 @@
     ],
     "raags": [
      "gurjari-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "f_r66LANIzY",
+    "title": "Abdul Karim Khan   Raga Marwa",
+    "channel": "Harini Calamur",
+    "views": 926,
+    "likes": 19,
+    "seconds": 253,
+    "published": "2016-01-25",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "dDM2-H5H-lY",
+    "title": "Raag Bageshri -Playing by | Ustad Karim Niyazi |",
+    "channel": "Ustad Abdul Kareem Khan Sangeet Vidyalaya",
+    "views": 847,
+    "likes": 43,
+    "seconds": 402,
+    "published": "2018-07-08",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bageshri"
     ],
     "form": "khayal"
    },
@@ -12846,6 +13104,38 @@
     "form": "khayal"
    },
    {
+    "id": "a3BlCVL_364",
+    "title": "Sangeet Ratna Khan Sahib Abdul Karim Khan sings Raag Bhairavi (9)  Archives of Lutfullah Khan",
+    "channel": "Khursheed Abdullah",
+    "views": 694,
+    "likes": 26,
+    "seconds": 258,
+    "published": "2021-08-26",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "yprwcxAtlPw",
+    "title": "Raga Shuddha Kalyan",
+    "channel": "Abdul Karim Khan - Topic",
+    "views": 570,
+    "likes": 16,
+    "seconds": 265,
+    "published": "2019-08-01",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "shuddh-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "3zoelN18DqY",
     "title": "Ustad Abdul Karim Khan (vocal) - Raga Bhairavi (thumri)",
     "channel": "Tushar Dabral",
@@ -12860,6 +13150,134 @@
      "bhairavi"
     ],
     "form": "thumri"
+   },
+   {
+    "id": "Y3KvhXIG5-A",
+    "title": "Raag lalat presenting by Dr Avinash kumar in ustaad abdul karim khan sahab sangeet samaaroh Miraj",
+    "channel": "m k naseer",
+    "views": 502,
+    "likes": 26,
+    "seconds": 2217,
+    "published": "2023-02-22",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vjCCLtclCP0",
+    "title": "Abdul Karim Khan | Bhairavi | 12\" Shellac 78 RPM |1934 | जमुना के तीर | jamunaa ke tiir kaaNhaa",
+    "channel": "Sundeep Dougal",
+    "views": 427,
+    "likes": 14,
+    "seconds": 503,
+    "published": "2023-05-01",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "rrwLvS9GjHI",
+    "title": "Abdul Karim Khan | Bhimpalasi | प्रेम सेवा शरण | prem sevaa sharan | 1935",
+    "channel": "Sundeep Dougal",
+    "views": 426,
+    "likes": 10,
+    "seconds": 267,
+    "published": "2023-09-10",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "b3mbNnIyF7Q",
+    "title": "Ustad Abdul Karim Khan (vocal) - Raga Basant (khayal)",
+    "channel": "Tushar Dabral",
+    "views": 190,
+    "likes": 10,
+    "seconds": 244,
+    "published": "2023-02-12",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "basant"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "c4cOPYS0qfI",
+    "title": "Khan Saheb Abdul Karim Khan - Raag Bhimpalasi - Prem Seva Sharan",
+    "channel": "Baish",
+    "views": 178,
+    "likes": 7,
+    "seconds": 261,
+    "published": "2024-06-15",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "427bDfAfpzM",
+    "title": "Ustad Abdul Karim Khan (vocal) - Raga Malkauns",
+    "channel": "Tushar Dabral",
+    "views": 177,
+    "likes": 12,
+    "seconds": 260,
+    "published": "2023-02-12",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "UGA_s954kuk",
+    "title": "Tarrana Gujri Todi",
+    "channel": "Ustad Abdul Karim Khan - Topic",
+    "views": 157,
+    "likes": 7,
+    "seconds": 263,
+    "published": "2022-04-30",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "gurjari-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vbAzJPRffcQ",
+    "title": "Ustad Abdul Karim Khan Sahib | Raag Bhairavi",
+    "channel": "Pandit Kansen",
+    "views": 83,
+    "likes": 5,
+    "seconds": 280,
+    "published": "2023-06-01",
+    "artists": [
+     "abdul-karim-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
    }
   ],
   "rashid-khan": [
@@ -12899,8 +13317,8 @@
     "id": "OX6Da7jmYP8",
     "title": "Raga Bhairavi- Rashid khan (Album : Tansen) | Classical | Music Today",
     "channel": "Music Today",
-    "views": 1039265,
-    "likes": 13456,
+    "views": 1042986,
+    "likes": 13490,
     "seconds": 431,
     "published": "2015-12-28",
     "artists": [
@@ -12996,8 +13414,8 @@
     "id": "W8R--A38sxk",
     "title": "Raga Lalit- Rashid Khan ( Album: Tansen ) | Rashid Khan | Music Today",
     "channel": "Music Today",
-    "views": 397057,
-    "likes": 4757,
+    "views": 398334,
+    "likes": 4770,
     "seconds": 431,
     "published": "2015-12-28",
     "artists": [
@@ -13012,8 +13430,8 @@
     "id": "i4Jsy8_gCvQ",
     "title": "Raga Hamsadhwani  | Rashid Khan (Album: Sangeet Sartaj)",
     "channel": "Music Today",
-    "views": 374162,
-    "likes": 4882,
+    "views": 374962,
+    "likes": 4888,
     "seconds": 1193,
     "published": "2016-03-09",
     "artists": [
@@ -13028,8 +13446,8 @@
     "id": "IVLlBVmyiiE",
     "title": "Padma Bhushan Ustaad Rashid Khan - \"Raag Marwa\"",
     "channel": "S Chaudhary",
-    "views": 355639,
-    "likes": 5011,
+    "views": 356114,
+    "likes": 5013,
     "seconds": 3134,
     "published": "2020-04-06",
     "artists": [
@@ -13172,8 +13590,8 @@
     "id": "XEOo5F0THbA",
     "title": "Ustaad Rashid Khan-Raag Bhatiyar (Morning Mantra).wmv",
     "channel": "SangeetVidya",
-    "views": 204228,
-    "likes": 1914,
+    "views": 204729,
+    "likes": 1921,
     "seconds": 1842,
     "published": "2011-11-25",
     "artists": [
@@ -13204,8 +13622,8 @@
     "id": "0suZMP8FE9Y",
     "title": "Ustad Rashid Khan singing Raga Yaman 1988",
     "channel": "cactus1762",
-    "views": 199843,
-    "likes": 2221,
+    "views": 200002,
+    "likes": 2224,
     "seconds": 1275,
     "published": "2012-03-31",
     "artists": [
@@ -13220,8 +13638,8 @@
     "id": "g-fB7ABnBq0",
     "title": "Raga Ahir Bhairav - Ustad Rashid Khan",
     "channel": "SurTaal",
-    "views": 189090,
-    "likes": 1789,
+    "views": 189292,
+    "likes": 1790,
     "seconds": 2742,
     "published": "2015-03-12",
     "artists": [
@@ -13236,8 +13654,8 @@
     "id": "P4UwqxAnWZs",
     "title": "Ustad Rashid Khan l Hindustani Classical Vocal | Raag Patdeep | Mesmerising Performance |",
     "channel": "Versatile Indian",
-    "views": 183890,
-    "likes": 3144,
+    "views": 184450,
+    "likes": 3145,
     "seconds": 1129,
     "published": "2020-04-08",
     "artists": [
@@ -13332,8 +13750,8 @@
     "id": "mGobQ9ztOnY",
     "title": "Ustaad Rashid Khan- Raag Alhaiya Bilawal.wmv",
     "channel": "SangeetVidya",
-    "views": 129270,
-    "likes": 1551,
+    "views": 129620,
+    "likes": 1554,
     "seconds": 717,
     "published": "2011-11-24",
     "artists": [
@@ -13412,8 +13830,8 @@
     "id": "NTUFdMGAHzQ",
     "title": "Ahir Bhairav Bandish - Ustad Rashid Khan",
     "channel": "Ghosh-Sarkar",
-    "views": 115692,
-    "likes": 2344,
+    "views": 116716,
+    "likes": 2352,
     "seconds": 691,
     "published": "2019-06-30",
     "artists": [
@@ -13444,8 +13862,8 @@
     "id": "UZAkJo8A2Xk",
     "title": "Ustad Rashid Khan || Raag Miyan ki Todi ||",
     "channel": "Tasaouf Tazim",
-    "views": 104906,
-    "likes": 1541,
+    "views": 105608,
+    "likes": 1547,
     "seconds": 2526,
     "published": "2022-08-08",
     "artists": [
@@ -13460,8 +13878,8 @@
     "id": "QPkFff4DqKA",
     "title": "Ustad Rashid Khan singing Raga Lalit 1988",
     "channel": "cactus1762",
-    "views": 102513,
-    "likes": 983,
+    "views": 102606,
+    "likes": 984,
     "seconds": 1364,
     "published": "2012-03-31",
     "artists": [
@@ -13508,8 +13926,8 @@
     "id": "N7lVbB2-P0E",
     "title": "Ustaad Rashid Khan- Raag Abhogi",
     "channel": "SangeetVidya",
-    "views": 95788,
-    "likes": 1094,
+    "views": 95943,
+    "likes": 1096,
     "seconds": 1053,
     "published": "2011-11-24",
     "artists": [
@@ -13604,8 +14022,8 @@
     "id": "UTBugPjPbTI",
     "title": "Raga Todi ~ Ustad Rashid Khan ~ Langara Kankariya ~ Ab Mori Naiya | VIDEO",
     "channel": "Aahir Ray",
-    "views": 80575,
-    "likes": 1323,
+    "views": 81304,
+    "likes": 1332,
     "seconds": 892,
     "published": "2021-06-30",
     "artists": [
@@ -13613,6 +14031,22 @@
     ],
     "raags": [
      "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "B_sCkyPfkmY",
+    "title": "Raga Puriya I Ustad Rashid Khan I Live at  BCMF 2017",
+    "channel": "Bengal Foundation",
+    "views": 70558,
+    "likes": 1218,
+    "seconds": 3040,
+    "published": "2024-01-11",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "puriya"
     ],
     "form": "khayal"
    },
@@ -13630,22 +14064,6 @@
     ],
     "raags": [
      "desh"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "B_sCkyPfkmY",
-    "title": "Raga Puriya I Ustad Rashid Khan I Live at  BCMF 2017",
-    "channel": "Bengal Foundation",
-    "views": 70074,
-    "likes": 1216,
-    "seconds": 3040,
-    "published": "2024-01-11",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "puriya"
     ],
     "form": "khayal"
    },
@@ -13685,8 +14103,8 @@
     "id": "fqavnmxgAxw",
     "title": "Ustad Rashid khan | Raag Nat bhairav | khayal |",
     "channel": "Sunill Lohala",
-    "views": 66341,
-    "likes": 956,
+    "views": 66450,
+    "likes": 957,
     "seconds": 3060,
     "published": "2017-12-22",
     "artists": [
@@ -13748,6 +14166,22 @@
     "form": "khayal"
    },
    {
+    "id": "UYGdDg3i5IA",
+    "title": "Raag - Bilaskhani Todi ।। Ustad Rashid Khan।।",
+    "channel": "Narsee Sangeet ",
+    "views": 60864,
+    "likes": 995,
+    "seconds": 1251,
+    "published": "2022-10-18",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "bilaskhani-todi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "3BMVGYz9dDw",
     "title": "Raag - Ragesri",
     "channel": "Rashid Khan - Topic",
@@ -13760,22 +14194,6 @@
     ],
     "raags": [
      "rageshri"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "UYGdDg3i5IA",
-    "title": "Raag - Bilaskhani Todi ।। Ustad Rashid Khan।।",
-    "channel": "Narsee Sangeet ",
-    "views": 60377,
-    "likes": 989,
-    "seconds": 1251,
-    "published": "2022-10-18",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "bilaskhani-todi"
     ],
     "form": "khayal"
    },
@@ -13799,8 +14217,8 @@
     "id": "FzdLzV0CHhA",
     "title": "Bairagi Bhairav - Ustad Rashid Khan || बैरागी भैरव - उस्ताद राशिद खान ||",
     "channel": "Narsee Sangeet ",
-    "views": 57944,
-    "likes": 1018,
+    "views": 58390,
+    "likes": 1023,
     "seconds": 2641,
     "published": "2021-04-27",
     "artists": [
@@ -13864,8 +14282,8 @@
     "id": "tlNq9_0MCIc",
     "title": "Ustad Rashid Khan || Raag Puriya Dhanashree ||",
     "channel": "Tasaouf Tazim",
-    "views": 51905,
-    "likes": 834,
+    "views": 52031,
+    "likes": 835,
     "seconds": 3132,
     "published": "2024-04-19",
     "artists": [
@@ -13909,6 +14327,22 @@
     "form": "khayal"
    },
    {
+    "id": "8ns012U9XYY",
+    "title": "Ustad Rashid Khan  Vocal Recital  Raag Bhairav  Classical",
+    "channel": "Das Piya Music",
+    "views": 47983,
+    "likes": 753,
+    "seconds": 1694,
+    "published": "2024-02-02",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "mLqO8cgM_gc",
     "title": "Raga Puriya Kalyan  I  Ustad Rashid Khan at Bengal Classical Music Festival 2012",
     "channel": "Bengal Foundation",
@@ -13937,22 +14371,6 @@
     ],
     "raags": [
      "bhairavi"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "8ns012U9XYY",
-    "title": "Ustad Rashid Khan  Vocal Recital  Raag Bhairav  Classical",
-    "channel": "Das Piya Music",
-    "views": 46474,
-    "likes": 734,
-    "seconds": 1694,
-    "published": "2024-02-02",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "bhairav"
     ],
     "form": "khayal"
    },
@@ -14088,8 +14506,8 @@
     "id": "M77-d0UISmw",
     "title": "Nat Bhairav Raga",
     "channel": "Rashid Khan - Topic",
-    "views": 33502,
-    "likes": 745,
+    "views": 33746,
+    "likes": 748,
     "seconds": 1401,
     "published": "2022-10-19",
     "artists": [
@@ -14104,7 +14522,7 @@
     "id": "sxd7aa6Aw9U",
     "title": "Rashid Khan | Ghor Langar Manat Nahi - Raag Malkauns | Live at Saptak Festival",
     "channel": "Sur Sagar Music",
-    "views": 31927,
+    "views": 32123,
     "likes": 766,
     "seconds": 351,
     "published": "2018-02-15",
@@ -14129,6 +14547,22 @@
     ],
     "raags": [
      "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "MRt-trsOAec",
+    "title": "Raga Yaman",
+    "channel": "Rashid Khan - Topic",
+    "views": 29199,
+    "likes": 413,
+    "seconds": 601,
+    "published": "2015-02-21",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "yaman"
     ],
     "form": "khayal"
    },
@@ -14280,7 +14714,7 @@
     "id": "l9qzU6tnVrw",
     "title": "Vilambit Khayal And Drut Khayal - Darbari Kanada",
     "channel": "Rashid Khan - Topic",
-    "views": 22095,
+    "views": 22246,
     "likes": 446,
     "seconds": 1680,
     "published": "2019-07-18",
@@ -14344,7 +14778,7 @@
     "id": "B-8ANKxrVfs",
     "title": "Raga Lalit - Vilambit in Ektaal, Drut in Teentaal | Ustad Rashid Khan| Official Audio",
     "channel": "SonyMusicIndiaVEVO",
-    "views": 20575,
+    "views": 20668,
     "likes": 438,
     "seconds": 1403,
     "published": "2017-08-28",
@@ -14536,7 +14970,7 @@
     "id": "2IDbp5UnW00",
     "title": "Raga Lalit: Vilambit in Ektaal - \"Rain Ka Sapna\", Drut in Teentaal - \"Bhavanda Yarda Jobana\"",
     "channel": "Rashid Khan - Topic",
-    "views": 11316,
+    "views": 11390,
     "likes": 283,
     "seconds": 1401,
     "published": "2016-06-16",
@@ -14584,8 +15018,8 @@
     "id": "fMw20OQldYU",
     "title": "Ustad Rashid Khan (vocal) - Raga Ahir Bhairav",
     "channel": "Tushar Dabral",
-    "views": 10117,
-    "likes": 158,
+    "views": 10550,
+    "likes": 161,
     "seconds": 1657,
     "published": "2024-01-28",
     "artists": [
@@ -14792,8 +15226,8 @@
     "id": "JpYkyikzSSw",
     "title": "Ustad Rashid Khan || Raag Puriya Kalyan ||",
     "channel": "Tasaouf Tazim",
-    "views": 5080,
-    "likes": 120,
+    "views": 5349,
+    "likes": 121,
     "seconds": 2485,
     "published": "2025-11-14",
     "artists": [
@@ -14935,6 +15369,22 @@
     "form": "khayal"
    },
    {
+    "id": "yL-B4F8ER9M",
+    "title": "Rashid Khan - Raag Bhairav (1998)",
+    "channel": "Archisman Mozumder",
+    "views": 3042,
+    "likes": 91,
+    "seconds": 3266,
+    "published": "2024-01-15",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "dbOvITvmSbY",
     "title": "The Genius of Ustad Rashid Khan - Raag Todi | Ustad Rashid Khan | Hindustani Classical Vocal",
     "channel": "Perennial Records",
@@ -14947,22 +15397,6 @@
     ],
     "raags": [
      "todi"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "yL-B4F8ER9M",
-    "title": "Rashid Khan - Raag Bhairav (1998)",
-    "channel": "Archisman Mozumder",
-    "views": 2969,
-    "likes": 91,
-    "seconds": 3266,
-    "published": "2024-01-15",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "bhairav"
     ],
     "form": "khayal"
    },
@@ -14999,6 +15433,22 @@
     "form": "khayal"
    },
    {
+    "id": "NxFYb1eZh5U",
+    "title": "Ustad Rashid Khan -  Raga Shyam Kalyan",
+    "channel": "Anuradha Krishnan",
+    "views": 2316,
+    "likes": 54,
+    "seconds": 1687,
+    "published": "2025-07-06",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "shyam-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "nXSCnau4qAE",
     "title": "Padamshri Ustad Rashid Khan - Raag Marwa 2021 | Ojas Adhiya | Ajay Joglekar | Music Of India |",
     "channel": "Shreeguru Music Foundation",
@@ -15011,22 +15461,6 @@
     ],
     "raags": [
      "marwa"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "NxFYb1eZh5U",
-    "title": "Ustad Rashid Khan -  Raga Shyam Kalyan",
-    "channel": "Anuradha Krishnan",
-    "views": 2215,
-    "likes": 54,
-    "seconds": 1687,
-    "published": "2025-07-06",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "shyam-kalyan"
     ],
     "form": "khayal"
    },
@@ -15224,6 +15658,22 @@
     "form": "khayal"
    },
    {
+    "id": "tUHqzfE11Io",
+    "title": "Ustad Rashid Khan || Raag Bhupal Todi ||",
+    "channel": "Tasaouf Tazim",
+    "views": 776,
+    "likes": 25,
+    "seconds": 1518,
+    "published": "2026-07-05",
+    "artists": [
+     "rashid-khan"
+    ],
+    "raags": [
+     "bhupal-todi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "YillKq22d-8",
     "title": "Raag Lalit Bandish in Teental and Tarana",
     "channel": "Rashid Khan - Topic",
@@ -15236,22 +15686,6 @@
     ],
     "raags": [
      "lalit"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "tUHqzfE11Io",
-    "title": "Ustad Rashid Khan || Raag Bhupal Todi ||",
-    "channel": "Tasaouf Tazim",
-    "views": 747,
-    "likes": 25,
-    "seconds": 1518,
-    "published": "2026-07-05",
-    "artists": [
-     "rashid-khan"
-    ],
-    "raags": [
-     "bhupal-todi"
     ],
     "form": "khayal"
    },
@@ -15594,6 +16028,22 @@
      "bhairavi"
     ],
     "form": "thumri"
+   },
+   {
+    "id": "yGhO4SLCmYg",
+    "title": "Raga Marwa",
+    "channel": "Pt. Ajay Pohankar - Topic",
+    "views": 303,
+    "likes": 4,
+    "seconds": 1793,
+    "published": "2015-02-21",
+    "artists": [
+     "ajay-pohankar"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
    }
   ],
   "ajoy-chakrabarty": [
@@ -15665,7 +16115,7 @@
     "id": "IKNN8CIF_as",
     "title": "Raga Darbari Kanhada-Ajoy Chakraborty ( Album:Tansen )",
     "channel": "Music Today",
-    "views": 235389,
+    "views": 235494,
     "likes": 3881,
     "seconds": 597,
     "published": "2015-12-28",
@@ -15697,7 +16147,7 @@
     "id": "UXiYq9LY9po",
     "title": "Ajoy Chakraborty  Raga Malkauns",
     "channel": "rliesky56",
-    "views": 212037,
+    "views": 212034,
     "likes": 2030,
     "seconds": 3182,
     "published": "2012-10-02",
@@ -15777,8 +16227,8 @@
     "id": "UYdOQdYP99w",
     "title": "Raga Malkauns-Ajoy Chakraborty ( Album: Tansen )",
     "channel": "Music Today",
-    "views": 142546,
-    "likes": 2721,
+    "views": 143239,
+    "likes": 2728,
     "seconds": 525,
     "published": "2015-12-28",
     "artists": [
@@ -15873,8 +16323,8 @@
     "id": "Wx-9A-mgif8",
     "title": "Raga: Ahir Bhairav (Bandish in Teental)",
     "channel": "Ajoy Chakraborty - Topic",
-    "views": 87822,
-    "likes": 1818,
+    "views": 88175,
+    "likes": 1826,
     "seconds": 958,
     "published": "2014-03-02",
     "artists": [
@@ -16035,7 +16485,7 @@
     "id": "lUQ2oi4t-sQ",
     "title": "Raag Rageshree - Pt. Ajoy Chakraborty",
     "channel": "TheSingingTabla",
-    "views": 55346,
+    "views": 55465,
     "likes": 787,
     "seconds": 325,
     "published": "2011-08-23",
@@ -16147,8 +16597,8 @@
     "id": "IHo1AzWHeV4",
     "title": "Ajoy Chakraborty  Raga Bilaskhani todi",
     "channel": "rliesky56",
-    "views": 41005,
-    "likes": 776,
+    "views": 41169,
+    "likes": 775,
     "seconds": 1591,
     "published": "2015-10-23",
     "artists": [
@@ -16275,7 +16725,7 @@
     "id": "zsUqsU_f2rI",
     "title": "Raga Malkauns I Pt. Ajoy Chakrabarty at Bengal Classical Music Festival 2013",
     "channel": "Bengal Foundation",
-    "views": 29893,
+    "views": 29892,
     "likes": 693,
     "seconds": 2546,
     "published": "2020-04-30",
@@ -16996,6 +17446,23 @@
     "form": "khayal"
    },
    {
+    "id": "Wcg57y7wZ4k",
+    "title": "Raag Bhairav by Pt Ajoy chakrabarty and Vidushi Kaushiki Chakroborty | Guru hamare antaryami.",
+    "channel": "Sa Pa Sa",
+    "views": 973,
+    "likes": 29,
+    "seconds": 565,
+    "published": "2023-02-11",
+    "artists": [
+     "ajoy-chakrabarty",
+     "kaushiki-chakraborty"
+    ],
+    "raags": [
+     "bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "FJFwPC9mcgM",
     "title": "Darbari Kanada | Pandit Ajoy Chakraborty |@Saregamamusicstudio",
     "channel": "Saregama music studio",
@@ -17451,6 +17918,22 @@
     "form": "khayal"
    },
    {
+    "id": "EApb_95ntTQ",
+    "title": "USTAD FATEH ALI KHAN - RAG BHOOP KALYAN - RAGA BHOPALI - by roothmens",
+    "channel": "Roothmens TV",
+    "views": 7141,
+    "likes": 118,
+    "seconds": 363,
+    "published": "2013-04-30",
+    "artists": [
+     "bade-fateh-ali-khan"
+    ],
+    "raags": [
+     "shuddh-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "-TtXymGCqAY",
     "title": "Ustad Fateh Ali Khan Thumri raag jhinjhoti",
     "channel": "The Mic Baithak With Amjad Shah",
@@ -17568,6 +18051,22 @@
     "form": "thumri"
    },
    {
+    "id": "PQpjVwqChd4",
+    "title": "HERITAGE FILES-khayal patiala tradition-Ustad Fateh Ali Khan-raag adana",
+    "channel": "thuryina",
+    "views": 2675,
+    "likes": 47,
+    "seconds": 480,
+    "published": "2012-06-11",
+    "artists": [
+     "bade-fateh-ali-khan"
+    ],
+    "raags": [
+     "adana"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "5jMV7nMqXEk",
     "title": "Raag ADANA: Ust. Fateh Ali Khan ; Patiala Gharana- Very Rare.",
     "channel": "Jaswant Bassan",
@@ -17633,6 +18132,23 @@
      "bhairavi"
     ],
     "form": "thumri"
+   },
+   {
+    "id": "5kfkMzLZDFQ",
+    "title": "Amanat Ali Khan & Fateh Ali Khan :Raag Puriya (Part 5a) - Audio Archives of Lutfullah Khan",
+    "channel": "Khursheed Abdullah",
+    "views": 1129,
+    "likes": 26,
+    "seconds": 1742,
+    "published": "2021-02-01",
+    "artists": [
+     "amanat-ali-khan",
+     "bade-fateh-ali-khan"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
    },
    {
     "id": "zxYbNeswIEQ",
@@ -18022,6 +18538,23 @@
      "bhairavi"
     ],
     "form": "thumri"
+   },
+   {
+    "id": "5kfkMzLZDFQ",
+    "title": "Amanat Ali Khan & Fateh Ali Khan :Raag Puriya (Part 5a) - Audio Archives of Lutfullah Khan",
+    "channel": "Khursheed Abdullah",
+    "views": 1129,
+    "likes": 26,
+    "seconds": 1742,
+    "published": "2021-02-01",
+    "artists": [
+     "amanat-ali-khan",
+     "bade-fateh-ali-khan"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
    },
    {
     "id": "zxYbNeswIEQ",
@@ -21940,7 +22473,7 @@
     "id": "k7wEa1NnJ7s",
     "title": "Raga Marwa | Vidushi Dr. Ashwini Bhide Deshpande",
     "channel": "Swaralankar",
-    "views": 70078,
+    "views": 70117,
     "likes": 1154,
     "seconds": 3199,
     "published": "2021-12-08",
@@ -22778,8 +23311,8 @@
     "id": "rO8oS7Y173M",
     "title": "Pandit D.V. Paluskar | Raag : Puriya Dhanashri",
     "channel": "AIR Raagam",
-    "views": 12066,
-    "likes": 316,
+    "views": 12150,
+    "likes": 319,
     "seconds": 1795,
     "published": "2020-09-21",
     "artists": [
@@ -31017,6 +31550,23 @@
     "form": "khayal"
    },
    {
+    "id": "9FrkvQAiFQg",
+    "title": "Ustad Dilshad Khan Begum Parween Sultana Raga Marwa Duet",
+    "channel": "udk records",
+    "views": 13034,
+    "likes": 280,
+    "seconds": 1100,
+    "published": "2017-01-28",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "cAAL_Tf91Zc",
     "title": "Raga Malkauns Ustad Dilshad Khan",
     "channel": "udk records",
@@ -31050,6 +31600,23 @@
     "form": "khayal"
    },
    {
+    "id": "6X-p1u9qK6w",
+    "title": "Raga Puriya Dhanashri - Drut Teentaal Payaliya Jhankar",
+    "channel": "Parveen Sultana, Ustad Mohd. Dilshad Khan - Topic",
+    "views": 1208,
+    "likes": 53,
+    "seconds": 296,
+    "published": "2019-02-16",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "hagwKvgBEe8",
     "title": "Gurjari Todi.... Ustad Dilshad Khan",
     "channel": "PAFM Music Channel",
@@ -31062,6 +31629,23 @@
     ],
     "raags": [
      "gurjari-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "motP2wtBe0Q",
+    "title": "Raga Multani - Drut Ektaal Aeri Aali Shubh Din Aaye",
+    "channel": "Parveen Sultana, Ustad Mohd. Dilshad Khan - Topic",
+    "views": 551,
+    "likes": 13,
+    "seconds": 314,
+    "published": "2019-02-16",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "multani"
     ],
     "form": "khayal"
    }
@@ -31164,6 +31748,22 @@
     "form": "khayal"
    },
    {
+    "id": "XD9TSbEQpwU",
+    "title": "Begum Parween Sultana~Bhavani Dayani ~Raag~ Bhairavi~Tabla~Pt Abhijit Banerjee",
+    "channel": "Badal Mondal",
+    "views": 152282,
+    "likes": 3007,
+    "seconds": 568,
+    "published": "2019-02-08",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ZsnS-4lCffI",
     "title": "Begum Parveen Sultana- Darbari Kanada-  Ghar Jaane De  Mori Baiyan",
     "channel": "Raju Asokan",
@@ -31212,6 +31812,22 @@
     "form": "khayal"
    },
    {
+    "id": "uSN64yN_sIE",
+    "title": "Parween Sultana. Raga Puriya Dhanashree. Moscow 2013. Part II",
+    "channel": "Arctide Descendants",
+    "views": 98364,
+    "likes": 1273,
+    "seconds": 590,
+    "published": "2013-09-04",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "aqRs2NACLW8",
     "title": "Begum Parveen Sultana’s Divine Raag Basant | Raag Ras | DMF Concerts",
     "channel": "Dedhia Music Foundation (DMF)",
@@ -31224,6 +31840,22 @@
     ],
     "raags": [
      "basant"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "I2kEL_Sgz_M",
+    "title": "Raga Lalit - Begum Parveen Sultana",
+    "channel": "SurTaal",
+    "views": 54179,
+    "likes": 635,
+    "seconds": 3000,
+    "published": "2015-05-10",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "lalit"
     ],
     "form": "khayal"
    },
@@ -31260,6 +31892,22 @@
     "form": "khayal"
    },
    {
+    "id": "OS7Zt5nzjTw",
+    "title": "Indian Classical Music: Begum Parveen Sultana's Soul-Stirring Raga Malkauns!",
+    "channel": "Throga - Vocal Gym",
+    "views": 29234,
+    "likes": 944,
+    "seconds": 2314,
+    "published": "2026-04-18",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "SSXZwypvU_I",
     "title": "Raga Jaunpuri (Complete) - Begum Parveen Sultana",
     "channel": "SurTaal",
@@ -31272,6 +31920,22 @@
     ],
     "raags": [
      "jaunpuri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "GZ3ihpi690I",
+    "title": "Raga Madhuvanti - Ghoonghat Mat Khol Shyam by Begum Parveen Sultana",
+    "channel": "Tanmay Pandya",
+    "views": 25791,
+    "likes": 508,
+    "seconds": 1479,
+    "published": "2017-08-10",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "madhuvanti"
     ],
     "form": "khayal"
    },
@@ -31308,6 +31972,88 @@
     "form": "khayal"
    },
    {
+    "id": "r4w51k-Qudc",
+    "title": "Raga Hamsadhwani | Tarana | Parveen Sultana | Music Today",
+    "channel": "Music Today",
+    "views": 20023,
+    "likes": 483,
+    "seconds": 697,
+    "published": "2020-05-29",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "hamsadhwani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "9FrkvQAiFQg",
+    "title": "Ustad Dilshad Khan Begum Parween Sultana Raga Marwa Duet",
+    "channel": "udk records",
+    "views": 13034,
+    "likes": 280,
+    "seconds": 1100,
+    "published": "2017-01-28",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "RwOzONzAfaY",
+    "title": "Parveen Sultana- Raga Bhimpalasi@Madras, Music Academy, 1970s",
+    "channel": "Raju Asokan",
+    "views": 11621,
+    "likes": 78,
+    "seconds": 2578,
+    "published": "2015-07-25",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "6rA4MNJbJA8",
+    "title": "Begum Parveen Sultana  Raag, Yaman Kalyan  Live in Bombay , 1975",
+    "channel": "Raju Asokan",
+    "views": 10550,
+    "likes": 154,
+    "seconds": 3369,
+    "published": "2017-04-20",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "D7lLIIuwAnU",
+    "title": "Raga Megh - Parveen Sultana - Tabla Ustad Faiyaz Khan",
+    "channel": "RaagRang",
+    "views": 6412,
+    "likes": 161,
+    "seconds": 276,
+    "published": "2020-12-10",
+    "artists": [
+     "parween-sultana",
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "megh"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "3Z54XFcrAno",
     "title": "Raga Maru Bihag - Vilambit Ektala",
     "channel": "Parveen Sultana - Topic",
@@ -31336,6 +32082,22 @@
     ],
     "raags": [
      "gurjari-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "6VivaoeJPw4",
+    "title": "Begum Parveen Sultana Raag Malkauns-AIR",
+    "channel": "Raju Asokan",
+    "views": 4892,
+    "likes": 49,
+    "seconds": 330,
+    "published": "2015-12-09",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "malkauns"
     ],
     "form": "khayal"
    },
@@ -31372,6 +32134,54 @@
     "form": "khayal"
    },
    {
+    "id": "vVFUZXCNfA4",
+    "title": "PARVEEN SULTANA    Bhimpalasi       YouTube",
+    "channel": "Kalyan Bhattacharya's Collection",
+    "views": 2497,
+    "likes": 67,
+    "seconds": 326,
+    "published": "2020-06-22",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "AkLSQJSs2zg",
+    "title": "Begum Parveen Sultana  Bageshree",
+    "channel": "Raju Asokan",
+    "views": 2485,
+    "likes": 50,
+    "seconds": 294,
+    "published": "2021-03-28",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "GxMIAmVdI5M",
+    "title": "Begum Parween Sultana~Raaga~Maru Behag~Tabla~Pt Abhijit Banerjee",
+    "channel": "Badal Mondal",
+    "views": 2483,
+    "likes": 77,
+    "seconds": 1984,
+    "published": "2019-02-09",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "maru-bihag"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "U6ku3r_2E54",
     "title": "Parveen Sultana- Dilshad Khan-Raga Jogiya",
     "channel": "Vasanthi Rajasekharan",
@@ -31385,6 +32195,86 @@
     ],
     "raags": [
      "jogiya"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "qPzz-5rz9_4",
+    "title": "Jagi Ri Sari Jamini (Raga Todi (Durt Bandish) Teen Taal)",
+    "channel": "Parveen Sultana - Topic",
+    "views": 2139,
+    "likes": 57,
+    "seconds": 525,
+    "published": "2017-04-12",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "SbMeuIfxLvo",
+    "title": "Begum Parveen Sultana - Kabir Mera Mujh Meh Kich Nahi (Raag Yaman)",
+    "channel": "Kirtan Sewa (Malaysia)",
+    "views": 2103,
+    "likes": 71,
+    "seconds": 1052,
+    "published": "2020-02-04",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "hHtE5aPD8vM",
+    "title": "Raga Malkauns & Thumri ~ Begum Parveen Sultana ~ 1985 | VIDEO",
+    "channel": "Aahir Ray",
+    "views": 2027,
+    "likes": 57,
+    "seconds": 1821,
+    "published": "2021-07-10",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "thumri"
+   },
+   {
+    "id": "UXal-gkr_OQ",
+    "title": "Parveen Sultana - Raag Bageshree",
+    "channel": "Milan Brata Basu",
+    "views": 2012,
+    "likes": 52,
+    "seconds": 2319,
+    "published": "2025-01-17",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "dhLCPVBiTF0",
+    "title": "Begum Parveen Sultana~ Raag Maru Bihag",
+    "channel": "Raju Asokan",
+    "views": 1880,
+    "likes": 52,
+    "seconds": 3190,
+    "published": "2023-03-26",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "maru-bihag"
     ],
     "form": "khayal"
    },
@@ -31405,6 +32295,54 @@
     "form": "khayal"
    },
    {
+    "id": "lkTendK-r8w",
+    "title": "Parveen Sultana sings Ahir Bhairav",
+    "channel": "Sudheer Tambe",
+    "views": 1645,
+    "likes": 29,
+    "seconds": 939,
+    "published": "2021-07-16",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "q6Ic6FYAB8Y",
+    "title": "Begum Parveen Sultana Raag Puriya Dhanshri",
+    "channel": "Raju Asokan",
+    "views": 1565,
+    "likes": 30,
+    "seconds": 2369,
+    "published": "2015-12-25",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "OHsza5ka9VU",
+    "title": "1988 -Akashvani Sangeet Sammelan II Parveen Sultana II Vocal II Raga - Lalit",
+    "channel": "AIR Raagam",
+    "views": 1489,
+    "likes": 45,
+    "seconds": 1594,
+    "published": "2022-01-13",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "0Rb3HhDMmdU",
     "title": "Smt. Parween Sultana (vocal) - Raga Pilu",
     "channel": "Tushar Dabral",
@@ -31419,9 +32357,187 @@
      "pilu"
     ],
     "form": "khayal"
+   },
+   {
+    "id": "crUttG0pesE",
+    "title": "Bhupali - Beghum Parveen Sultana II Raag Bhoopali II राग भूपाली - बेग़म परवीन सुल्ताना  II",
+    "channel": "Narsee Sangeet ",
+    "views": 1236,
+    "likes": 43,
+    "seconds": 1736,
+    "published": "2024-04-28",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "lSyjrIWSFlw",
+    "title": "Begum Parveen Sultana   Raag Pilu",
+    "channel": "Sgirishc Sg",
+    "views": 1224,
+    "likes": 16,
+    "seconds": 460,
+    "published": "2013-08-13",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "pilu"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "6X-p1u9qK6w",
+    "title": "Raga Puriya Dhanashri - Drut Teentaal Payaliya Jhankar",
+    "channel": "Parveen Sultana, Ustad Mohd. Dilshad Khan - Topic",
+    "views": 1208,
+    "likes": 53,
+    "seconds": 296,
+    "published": "2019-02-16",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "eRyGDBmICro",
+    "title": "parveen sultana classical | indian classical music | raag puriya dhanashree",
+    "channel": "ARTISTIC INDIA",
+    "views": 1191,
+    "likes": 27,
+    "seconds": 2927,
+    "published": "2023-01-21",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vg4qXsb8ZaU",
+    "title": "Parveen Sultana - Raga Gujri Todi",
+    "channel": "Günter Wick",
+    "views": 1046,
+    "likes": 20,
+    "seconds": 3238,
+    "published": "2017-05-02",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "gurjari-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "pgDBWs4OCCs",
+    "title": "Begum Parveen Sultana II Raag Bhairavi  || 1995 Bombya,",
+    "channel": "Diwan Singh",
+    "views": 773,
+    "likes": 28,
+    "seconds": 485,
+    "published": "2025-11-02",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "LNZuvJ1d85I",
+    "title": "Begum Parveen Sultana~ Malkauns & Tarana",
+    "channel": "Raju Asokan",
+    "views": 726,
+    "likes": 11,
+    "seconds": 694,
+    "published": "2025-09-27",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "motP2wtBe0Q",
+    "title": "Raga Multani - Drut Ektaal Aeri Aali Shubh Din Aaye",
+    "channel": "Parveen Sultana, Ustad Mohd. Dilshad Khan - Topic",
+    "views": 551,
+    "likes": 13,
+    "seconds": 314,
+    "published": "2019-02-16",
+    "artists": [
+     "parween-sultana",
+     "dilshad-khan"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "mpRr1zhFsnA",
+    "title": "“Ja ja re apne mandirwa” Raga Bhimpalasi drut by Begum Parveen Sultana",
+    "channel": "Manish Singh Thakur",
+    "views": 160,
+    "likes": 5,
+    "seconds": 388,
+    "published": "2026-08-26",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "LWHYHSxfu_U",
+    "title": "Parveen Sultana - Raag Maru Bihag (Sursagar Bangalore - Nov'06, 1/4)",
+    "channel": "RamPrasad Moudgalya",
+    "views": 40,
+    "likes": 0,
+    "seconds": 2710,
+    "published": "2021-08-07",
+    "artists": [
+     "parween-sultana"
+    ],
+    "raags": [
+     "maru-bihag"
+    ],
+    "form": "khayal"
    }
   ],
   "faiyaz-khan": [
+   {
+    "id": "cCen12S5M54",
+    "title": "Full Mehfil Video Of Ustad Abdul Latif Khan Sarangi Raag Bhairavi And Ustad Faiyaz Khan On Tabla",
+    "channel": "Swarakaar The Whizz",
+    "views": 68598,
+    "likes": 1765,
+    "seconds": 712,
+    "published": "2022-04-25",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
    {
     "id": "oihhI0aF8-c",
     "title": "Faiyaz Khan Tilak Kamod Thumri",
@@ -31487,6 +32603,22 @@
     "form": "khayal"
    },
    {
+    "id": "dSHuWmWCK4I",
+    "title": "Ustad Faiyaz Khan Saheb sings Darbari Kanada.",
+    "channel": "Sangeetveda1",
+    "views": 11212,
+    "likes": 187,
+    "seconds": 3891,
+    "published": "2016-06-07",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "Hid5-OIc_o8",
     "title": "Ustad Faiyaz Khan   -   Raga Kalingada Alap & Dhamar",
     "channel": "Subrata Chowdhury",
@@ -31535,6 +32667,22 @@
     "form": "khayal"
    },
    {
+    "id": "KnLmU_QK7WQ",
+    "title": "Ustad Faiyaaz Khan Hindustani vocal Live Raag Darbari 06092026",
+    "channel": "Sanjeev Kulkarni",
+    "views": 8860,
+    "likes": 57,
+    "seconds": 2330,
+    "published": "2026-09-27",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "77LBxyp23zY",
     "title": "Ustad Faiyaz Khan Saheb sings Raga Kedar",
     "channel": "Sangeetveda1",
@@ -31547,6 +32695,56 @@
     ],
     "raags": [
      "kedar"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "naWMCVJ1lJs",
+    "title": "Ustad Faiyaz Khan - Raga Yaman Kalyan",
+    "channel": "Subrata Chowdhury",
+    "views": 7091,
+    "likes": 148,
+    "seconds": 1259,
+    "published": "2015-02-19",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "D7lLIIuwAnU",
+    "title": "Raga Megh - Parveen Sultana - Tabla Ustad Faiyaz Khan",
+    "channel": "RaagRang",
+    "views": 6412,
+    "likes": 161,
+    "seconds": 276,
+    "published": "2020-12-10",
+    "artists": [
+     "parween-sultana",
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "megh"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "0dMzbKPpyd0",
+    "title": "Ustad Faiyaz Khan Saheb Raag Darbari with Ustad Sharafat Hussain Khan",
+    "channel": "Raju Asokan",
+    "views": 6050,
+    "likes": 116,
+    "seconds": 686,
+    "published": "2015-05-07",
+    "artists": [
+     "sharafat-hussain-khan",
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
     ],
     "form": "khayal"
    },
@@ -31567,6 +32765,22 @@
     "form": "khayal"
    },
    {
+    "id": "Rw2CPMz8UKQ",
+    "title": "Ustad Faiyaz Khan - Raga Maru Bihag",
+    "channel": "Subrata Chowdhury",
+    "views": 4964,
+    "likes": 109,
+    "seconds": 874,
+    "published": "2015-02-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "maru-bihag"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "8-4n6jr9R3Y",
     "title": "Ustad Faiyaz Khan   -   Raga Purvi",
     "channel": "Subrata Chowdhury",
@@ -31579,6 +32793,38 @@
     ],
     "raags": [
      "purvi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "G1ZwJaQCGaY",
+    "title": "Ustad Faiyaz Khan -  Raga Lalit",
+    "channel": "Subrata Chowdhury",
+    "views": 4330,
+    "likes": 75,
+    "seconds": 834,
+    "published": "2015-02-01",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "sqEBtvty2ag",
+    "title": "Ustad Faiyaz Khan - Tarana in Raag Bageshree",
+    "channel": "Tabla Nick",
+    "views": 4283,
+    "likes": 49,
+    "seconds": 922,
+    "published": "2014-10-04",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bageshri"
     ],
     "form": "khayal"
    },
@@ -31599,6 +32845,22 @@
     "form": "khayal"
    },
    {
+    "id": "1bAIrM5FSAI",
+    "title": "Ustad Faiyaz Khan - Raga Megh Malhar",
+    "channel": "Subrata Chowdhury",
+    "views": 4082,
+    "likes": 60,
+    "seconds": 1455,
+    "published": "2017-02-03",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "megh"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "JnaXl5lst3Y",
     "title": "Ustad Faiyaz Khan-Raga Bhupali",
     "channel": "Subrata Chowdhury",
@@ -31611,6 +32873,54 @@
     ],
     "raags": [
      "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "tp-VWXOBcgc",
+    "title": "Ustad Faiyaz Khan - Raga Hindol",
+    "channel": "Subrata Chowdhury",
+    "views": 3547,
+    "likes": 63,
+    "seconds": 883,
+    "published": "2015-02-01",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "hindol"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "UoA-V8Tw3Cc",
+    "title": "Ustad Faiyaz Khan - Raga Jaijaiwanti Alap",
+    "channel": "Subrata Chowdhury",
+    "views": 3271,
+    "likes": 54,
+    "seconds": 909,
+    "published": "2016-11-04",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "jaijaiwanti"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "pVi-O0YLI70",
+    "title": "Ustad Faiyaz Khan Saheb sings Bhimpalasi",
+    "channel": "Sangeetveda1",
+    "views": 3266,
+    "likes": 65,
+    "seconds": 913,
+    "published": "2016-06-06",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
     ],
     "form": "khayal"
    },
@@ -31647,6 +32957,86 @@
     "form": "khayal"
    },
    {
+    "id": "sH5twY-5DVw",
+    "title": "Faiyyaz Khan - Raag Lalat / Lalit (1938)",
+    "channel": "Archisman Mozumder",
+    "views": 2785,
+    "likes": 117,
+    "seconds": 401,
+    "published": "2020-01-12",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "MNTfwITqOL0",
+    "title": "Ustad Faiyaz Khan - Raga Kamod",
+    "channel": "Subrata Chowdhury",
+    "views": 2780,
+    "likes": 51,
+    "seconds": 919,
+    "published": "2015-02-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "kamod"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "VelJu-Kn2NQ",
+    "title": "Ustad Faiyaz Khan  Raga Marwa Bilambit & Drut",
+    "channel": "Subrata Chowdhury",
+    "views": 2439,
+    "likes": 41,
+    "seconds": 1810,
+    "published": "2015-02-24",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "1z2dl0wV-74",
+    "title": "Ustad Faiyaz Khan Saheb sings Raga Bilaskhani Todi",
+    "channel": "Sangeetveda1",
+    "views": 2291,
+    "likes": 55,
+    "seconds": 1655,
+    "published": "2016-05-31",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bilaskhani-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "AeqyRg2A048",
+    "title": "Faiyaz Khan  Rag Puria",
+    "channel": "Mukesh Narang",
+    "views": 2163,
+    "likes": 55,
+    "seconds": 872,
+    "published": "2016-02-15",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "PVzvjCCQHMw",
     "title": "Ustad Faiyaz Khan - Raga Sohini",
     "channel": "Subrata Chowdhury",
@@ -31659,6 +33049,166 @@
     ],
     "raags": [
      "sohni"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "yJmIboyuvCE",
+    "title": "Ustad Faiyyaz Khan - Thumri in Raga Bhairavi (Babul Mora)",
+    "channel": "Musicians Guild",
+    "views": 1999,
+    "likes": 65,
+    "seconds": 861,
+    "published": "2020-08-17",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "thumri"
+   },
+   {
+    "id": "GiUH3Zm39os",
+    "title": "Ustad Faiyaz Khan Saheb sings Raga Darbari Kanada",
+    "channel": "Sangeetveda1",
+    "views": 1999,
+    "likes": 35,
+    "seconds": 2399,
+    "published": "2016-06-07",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "_zLHY0RCavE",
+    "title": "Ustad Faiyaz Khan - Raga Darbari Khyal",
+    "channel": "Subrata Chowdhury",
+    "views": 1782,
+    "likes": 38,
+    "seconds": 758,
+    "published": "2017-02-22",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "wQxWXSwroWk",
+    "title": "Ustad Faiyaz Khan - Raga Shyam Kalyan Alap",
+    "channel": "Subrata Chowdhury",
+    "views": 1667,
+    "likes": 35,
+    "seconds": 885,
+    "published": "2015-02-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "shyam-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "WjcA75X3iAU",
+    "title": "Ustad Faiyaz Khan - Raga Bageshri Tarana",
+    "channel": "Subrata Chowdhury",
+    "views": 1571,
+    "likes": 20,
+    "seconds": 922,
+    "published": "2017-02-22",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "JcPg7XRNWm4",
+    "title": "Ustad Faiyaz Khan   -   Raga Bilaskhani Todi Alap",
+    "channel": "Subrata Chowdhury",
+    "views": 1567,
+    "likes": 21,
+    "seconds": 914,
+    "published": "2015-02-02",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bilaskhani-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "DduEmEIu1aA",
+    "title": "Ustad Faiyaz Khan   -   Raga Puriya",
+    "channel": "Subrata Chowdhury",
+    "views": 1565,
+    "likes": 32,
+    "seconds": 956,
+    "published": "2015-02-07",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Z8bNbscUyY8",
+    "title": "Faiyaz Khan Bhoop",
+    "channel": "Neil Maitra",
+    "views": 1452,
+    "likes": 23,
+    "seconds": 517,
+    "published": "2013-12-28",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "w0GFAvtDYRo",
+    "title": "Ustad Faiyaz Khan - Raga Desh Alap",
+    "channel": "Subrata Chowdhury",
+    "views": 1256,
+    "likes": 20,
+    "seconds": 1311,
+    "published": "2016-11-04",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "desh"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "zot7kjmV0P8",
+    "title": "Ustad Faiyaz Khan --Raga Darbari Alap",
+    "channel": "Subrata Chowdhury",
+    "views": 1213,
+    "likes": 29,
+    "seconds": 777,
+    "published": "2017-02-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
     ],
     "form": "khayal"
    },
@@ -31679,6 +33229,86 @@
     "form": "khayal"
    },
    {
+    "id": "mYPzmzY8ATg",
+    "title": "Ustad Faiyaz Khan   -   Raga Bilaskhani Todi Dhamar",
+    "channel": "Subrata Chowdhury",
+    "views": 1035,
+    "likes": 28,
+    "seconds": 958,
+    "published": "2015-02-02",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bilaskhani-todi"
+    ],
+    "form": "dhrupad"
+   },
+   {
+    "id": "vg3lB3BTJxs",
+    "title": "ustad Faiyaz Khan -  Raga Bhimpalashi",
+    "channel": "Subrata Chowdhury",
+    "views": 946,
+    "likes": 26,
+    "seconds": 958,
+    "published": "2015-02-24",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "mL-D5Mmhj4I",
+    "title": "ustaad faiyaaz khan sahab raag bageshri",
+    "channel": "m k naseer",
+    "views": 560,
+    "likes": 21,
+    "seconds": 2602,
+    "published": "2017-05-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "kfBospa6SN8",
+    "title": "USTAD FAIYAZ KHAN  RAAG BHIMPALASI",
+    "channel": "Das Piya Music",
+    "views": 510,
+    "likes": 28,
+    "seconds": 1691,
+    "published": "2024-02-29",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "1O6_VZ7VilM",
+    "title": "Pt. K.G.Ginde - Raga Bilaskhani Todi(Composition - Ustad Faiyaz Khan)",
+    "channel": "Ajay Ginde",
+    "views": 510,
+    "likes": 27,
+    "seconds": 672,
+    "published": "2020-08-03",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bilaskhani-todi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "o-ue4qDu-uQ",
     "title": "Ustad Faiyaz Khan | Vocal | Bageshree",
     "channel": "Das Piya Music",
@@ -31695,6 +33325,102 @@
     "form": "khayal"
    },
    {
+    "id": "19dNll5X6yQ",
+    "title": "Ustad Faiyyaz Khan - Raga Marwa",
+    "channel": "Musicians Guild",
+    "views": 477,
+    "likes": 10,
+    "seconds": 1592,
+    "published": "2020-07-31",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "v3OUeFV6bd8",
+    "title": "Ustad Faiyaz Khan Saheb sings Raga Lalat",
+    "channel": "Sangeetveda1",
+    "views": 470,
+    "likes": 7,
+    "seconds": 843,
+    "published": "2016-05-31",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "RF6WI9dcScQ",
+    "title": "Raag Yaman | Ustad Faiyaz Khan Saheb",
+    "channel": "Hindustani Vocal Sangeet",
+    "views": 364,
+    "likes": 15,
+    "seconds": 1248,
+    "published": "2020-06-12",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "kh1fHu6r1xs",
+    "title": "USTAD FAYAZ KHAN SAHIB RAAG DARBARI KANNADA",
+    "channel": "Debojeet Mukherjee",
+    "views": 324,
+    "likes": 16,
+    "seconds": 3891,
+    "published": "2021-04-21",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "oBWr8haxEcU",
+    "title": "Faiyaz Khan | Darbari Kanada 1| nom tom aalaap | सहेलरियां आई आई सब मिल के | 1930s rare  recording*",
+    "channel": "Sundeep Dougal",
+    "views": 315,
+    "likes": 10,
+    "seconds": 2572,
+    "published": "2023-04-14",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "GzAWu9QZESg",
+    "title": "Ustad Faiyyaz Khan - Raga Bhimpalasi",
+    "channel": "Musicians Guild",
+    "views": 313,
+    "likes": 7,
+    "seconds": 921,
+    "published": "2020-08-17",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "caCg9KunmQI",
     "title": "Raga Pilu - Bansuri: Harsh Wardhan - Tabla: Ustad Faiyaz Khan",
     "channel": "Harsh Wardhan - Bansuri & Hindustani music",
@@ -31707,6 +33433,118 @@
     ],
     "raags": [
      "pilu"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ksSnKYjjIRc",
+    "title": "USTAD FAIYAZ KHAN | RAAG MALKAUNS",
+    "channel": "Das Piya Music",
+    "views": 248,
+    "likes": 16,
+    "seconds": 910,
+    "published": "2023-12-05",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "r9u4HlUziVc",
+    "title": "Ustad Faiyaz Khan | Raga Miyan Ki Todi | Dhrupad | Chautaal | Nauharvani |",
+    "channel": "Satwik Bhattacharya",
+    "views": 242,
+    "likes": 0,
+    "seconds": 1520,
+    "published": "2025-01-15",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "dhrupad"
+   },
+   {
+    "id": "SMD85kHcEFM",
+    "title": "Faiyaz Khan | Bhairavi | बाबुल मोरा | baabul moraa (A.I.R.)",
+    "channel": "Sundeep Dougal",
+    "views": 224,
+    "likes": 11,
+    "seconds": 865,
+    "published": "2023-04-30",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "3Cw0nef_YcA",
+    "title": "Faiyaz Khan | Yaman Kalyan",
+    "channel": "Sundeep Dougal",
+    "views": 197,
+    "likes": 11,
+    "seconds": 426,
+    "published": "2023-03-27",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "V9LPPjvUceM",
+    "title": "Ustad Faiyaz Khan | Raag Yaman Kalyan",
+    "channel": "Hindustani Vocal Sangeet",
+    "views": 166,
+    "likes": 8,
+    "seconds": 1249,
+    "published": "2020-09-10",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "cOv5B3RY7A4",
+    "title": "Raga Puriya Kalyan - Bansuri: Harsh Wardhan - Tabla: Ustad Faiyaz Khan",
+    "channel": "Harsh Wardhan - Bansuri & Hindustani music",
+    "views": 97,
+    "likes": 7,
+    "seconds": 2857,
+    "published": "2022-09-15",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "puriya-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "NINmSWmVdio",
+    "title": "Ustad Faiyyaz Khan - Raga Bageshree",
+    "channel": "Musicians Guild",
+    "views": 85,
+    "likes": 3,
+    "seconds": 791,
+    "published": "2020-08-16",
+    "artists": [
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "bageshri"
     ],
     "form": "khayal"
    }
@@ -32268,6 +34106,23 @@
     "form": "khayal"
    },
    {
+    "id": "umepmS7rzaI",
+    "title": "Bhairavi Thumri live  by Milind Chittal (मिलिंद  चित्ताल) at Ustad Alladiya Khan festival",
+    "channel": "Swara Bhakti",
+    "views": 391,
+    "likes": 3,
+    "seconds": 618,
+    "published": "2016-02-22",
+    "artists": [
+     "alladiya-khan",
+     "milind-chittal"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "thumri"
+   },
+   {
     "id": "-7neVKULN-U",
     "title": "Milind Chittal  (मिलिंद  चित्ताल) - Raga Bilaskhani Todi",
     "channel": "Swara Bhakti",
@@ -32280,6 +34135,22 @@
     ],
     "raags": [
      "bilaskhani-todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ogaz8oGYm5o",
+    "title": "Raga Darbari Kanada",
+    "channel": "Milind Chittal - Topic",
+    "views": 281,
+    "likes": 6,
+    "seconds": 2021,
+    "published": "2014-07-21",
+    "artists": [
+     "milind-chittal"
+    ],
+    "raags": [
+     "darbari"
     ],
     "form": "khayal"
    },
@@ -33081,7 +34952,7 @@
     "id": "kH224Qvr4KQ",
     "title": "gangubai hangal raag bhairavi thumri",
     "channel": "Sp s",
-    "views": 2652,
+    "views": 2653,
     "likes": 53,
     "seconds": 868,
     "published": "2013-08-13",
@@ -33911,22 +35782,6 @@
     "form": "khayal"
    },
    {
-    "id": "fLBu3OpOzGY",
-    "title": "Gangubai Hangal - Bhairavi",
-    "channel": "Musicians Guild",
-    "views": 145,
-    "likes": 4,
-    "seconds": 926,
-    "published": "2020-07-11",
-    "artists": [
-     "gangubai-hangal"
-    ],
-    "raags": [
-     "bhairavi"
-    ],
-    "form": "khayal"
-   },
-   {
     "id": "oZpwDFxA5xg",
     "title": "Raag Bageshri | Vidushi Gangubai Hangal",
     "channel": "Naada Ranjani",
@@ -33939,6 +35794,22 @@
     ],
     "raags": [
      "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "fLBu3OpOzGY",
+    "title": "Gangubai Hangal - Bhairavi",
+    "channel": "Musicians Guild",
+    "views": 145,
+    "likes": 4,
+    "seconds": 926,
+    "published": "2020-07-11",
+    "artists": [
+     "gangubai-hangal"
+    ],
+    "raags": [
+     "bhairavi"
     ],
     "form": "khayal"
    },
@@ -38053,8 +39924,8 @@
     "id": "KwweZlDolqQ",
     "title": "Pandit Jasraj II Raga - Puriya Dhanashri",
     "channel": "AIR Raagam",
-    "views": 7501,
-    "likes": 133,
+    "views": 7516,
+    "likes": 134,
     "seconds": 1719,
     "published": "2022-04-09",
     "artists": [
@@ -41490,8 +43361,8 @@
     "id": "StR7c5yTZkw",
     "title": "Kaushiki Chakraborty || Raag Bhupali ||",
     "channel": "Tasaouf Tazim",
-    "views": 171634,
-    "likes": 2612,
+    "views": 173094,
+    "likes": 2622,
     "seconds": 2708,
     "published": "2023-01-26",
     "artists": [
@@ -41522,8 +43393,8 @@
     "id": "SRcBb2pxAiE",
     "title": "Kaushiki Chakraborty | Raag Abhogi | Music of India",
     "channel": "darbarfestival",
-    "views": 155496,
-    "likes": 2598,
+    "views": 156512,
+    "likes": 2605,
     "seconds": 504,
     "published": "2024-03-02",
     "artists": [
@@ -41650,8 +43521,8 @@
     "id": "RHVriTQ7lvM",
     "title": "Kaushiki Chakraborty | Raag Abhogi | Shadaj | 2021",
     "channel": "Shadaj Baithak",
-    "views": 58557,
-    "likes": 1099,
+    "views": 58753,
+    "likes": 1100,
     "seconds": 1990,
     "published": "2021-12-28",
     "artists": [
@@ -41875,8 +43746,8 @@
     "id": "X_8eE2RtKqY",
     "title": "Raag Rageshree - Preview | Kaushiki Chakraborty | Virtual Concert",
     "channel": "Kaushiki Chakraborty Official",
-    "views": 18620,
-    "likes": 443,
+    "views": 18961,
+    "likes": 446,
     "seconds": 1538,
     "published": "2025-06-13",
     "artists": [
@@ -42051,8 +43922,8 @@
     "id": "n1ROR4BaO4s",
     "title": "Raag Abhogi - Preview | Kaushiki Chakraborty | ITC Sangeet Sammelan 2019",
     "channel": "Kaushiki Chakraborty Official",
-    "views": 7747,
-    "likes": 269,
+    "views": 7822,
+    "likes": 270,
     "seconds": 2343,
     "published": "2025-04-04",
     "artists": [
@@ -42174,6 +44045,23 @@
     ],
     "raags": [
      "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Wcg57y7wZ4k",
+    "title": "Raag Bhairav by Pt Ajoy chakrabarty and Vidushi Kaushiki Chakroborty | Guru hamare antaryami.",
+    "channel": "Sa Pa Sa",
+    "views": 973,
+    "likes": 29,
+    "seconds": 565,
+    "published": "2023-02-11",
+    "artists": [
+     "ajoy-chakrabarty",
+     "kaushiki-chakraborty"
+    ],
+    "raags": [
+     "bhairav"
     ],
     "form": "khayal"
    },
@@ -42415,8 +44303,8 @@
     "id": "yWWQJ5SCrWM",
     "title": "Kesarbai Kerkar  Thumri Bhairavi",
     "channel": "Harini Calamur",
-    "views": 90280,
-    "likes": 1346,
+    "views": 90330,
+    "likes": 1347,
     "seconds": 1218,
     "published": "2014-01-19",
     "artists": [
@@ -42905,6 +44793,22 @@
     ],
     "raags": [
      "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "mYz5h5oNZTY",
+    "title": "Surashri Kesarbai Kerkar | Raag Bhairavi",
+    "channel": "Pandit Kansen",
+    "views": 37,
+    "likes": 2,
+    "seconds": 528,
+    "published": "2026-01-28",
+    "artists": [
+     "kesarbai-kerkar"
+    ],
+    "raags": [
+     "bhairavi"
     ],
     "form": "khayal"
    }
@@ -49215,6 +51119,22 @@
     "form": "khayal"
    },
    {
+    "id": "_RNr_sWBKDs",
+    "title": "Ustad Mushtaq Hussain Khan -  Raga Lalit",
+    "channel": "Subrata Chowdhury",
+    "views": 977,
+    "likes": 22,
+    "seconds": 523,
+    "published": "2015-01-18",
+    "artists": [
+     "mushtaq-hussain-khan"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "as_qklQY_Fc",
     "title": "MUstad Mushtaq Hussain Khan -  Raga Ramkali",
     "channel": "Subrata Chowdhury",
@@ -50116,6 +52036,38 @@
     "form": "khayal"
    },
    {
+    "id": "s3iEyriNn44",
+    "title": "Pandit Omkarnath Thakur  -   Raga Darbari",
+    "channel": "Subrata Chowdhury",
+    "views": 24294,
+    "likes": 357,
+    "seconds": 2637,
+    "published": "2015-03-17",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "y13Ii3KcAZs",
+    "title": "PANDIT | OMKARNATH THAKUR | RAAG DARBARI KANHADA",
+    "channel": "Rajasthani Folk ",
+    "views": 17136,
+    "likes": 146,
+    "seconds": 1715,
+    "published": "2012-01-26",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "lRHypI2RyeI",
     "title": "GREAT RENDERINGS-RAG BHIMPALASI 1-PT.OMKARNATH THAKUR",
     "channel": "thuryina",
@@ -50164,6 +52116,22 @@
     "form": "khayal"
    },
    {
+    "id": "aiMF_9Dzep8",
+    "title": "Omkarnath Thakur - Raag Yaman - Mera Mann Bandh Leeno",
+    "channel": "S Desai",
+    "views": 8116,
+    "likes": 90,
+    "seconds": 1658,
+    "published": "2014-02-15",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "9Qgw-AeAm6s",
     "title": "Pandit Omkarnath Thakur { Raga Malkauns }",
     "channel": "Maxworth Consumer Product Private Limited",
@@ -50196,6 +52164,86 @@
     "form": "khayal"
    },
    {
+    "id": "9_3KDZp--vE",
+    "title": "Pt Omkarnath Thakur -Madhuva Bhar la De -Raga Darbari Kanada",
+    "channel": "Raju Asokan",
+    "views": 3438,
+    "likes": 47,
+    "seconds": 855,
+    "published": "2014-07-22",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "aCoxiRh5_Ps",
+    "title": "Omkarnath Thakur - Raag Todi (1936)",
+    "channel": "Archisman Mozumder",
+    "views": 3427,
+    "likes": 125,
+    "seconds": 410,
+    "published": "2021-08-06",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "IcF_0eStt90",
+    "title": "Pandit Omkarnath Thakur ‎{ Raga Todi }",
+    "channel": "Maxworth Consumer Product Private Limited",
+    "views": 3055,
+    "likes": 0,
+    "seconds": 1211,
+    "published": "2020-05-08",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "SIdiBLx7bYA",
+    "title": "Pandit Omkarnath Thakur Malkauns pir na jani dekhi",
+    "channel": "arie lautenbach",
+    "views": 2902,
+    "likes": 24,
+    "seconds": 505,
+    "published": "2012-09-29",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ovJeiPYbaLs",
+    "title": "Pandit Omkarnath Thakur -  Raga Darbari, AIR Program",
+    "channel": "Subrata Chowdhury",
+    "views": 2866,
+    "likes": 58,
+    "seconds": 1758,
+    "published": "2015-03-07",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "H1obVh7Qej0",
     "title": "Pandit Omkarnath Thakur (vocal) - Raga Malkauns",
     "channel": "Tushar Dabral",
@@ -50208,6 +52256,38 @@
     ],
     "raags": [
      "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "dXvSZQIEhqU",
+    "title": "Pt Omkarnath Thakur, Raag Darbari Kanada, hajarata torekamaana jooke bala bala,vilambit khayal",
+    "channel": "Raju Asokan",
+    "views": 2194,
+    "likes": 29,
+    "seconds": 1640,
+    "published": "2016-06-03",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "pZOJtRjgb-Q",
+    "title": "Pt  Omkarnath Thakur - Raga Yaman Kalyan",
+    "channel": "Subrata Chowdhury",
+    "views": 1911,
+    "likes": 24,
+    "seconds": 1321,
+    "published": "2015-03-27",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman-kalyan"
     ],
     "form": "khayal"
    },
@@ -50228,6 +52308,198 @@
     "form": "khayal"
    },
    {
+    "id": "dMsoSm4ykk8",
+    "title": "Raag DARBARI - Pt Omkarnath Thakur | Pt Anokhe Lal Mishra Tabla | Pt Gopal Mishra Sarangi ",
+    "channel": "NaadAura",
+    "views": 1868,
+    "likes": 79,
+    "seconds": 2637,
+    "published": "2026-06-08",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "hlVQTzX-9GQ",
+    "title": "Omkarnath Thakur - Raag Malkauns (1948)",
+    "channel": "Archisman Mozumder",
+    "views": 1186,
+    "likes": 68,
+    "seconds": 1010,
+    "published": "2024-02-22",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "1bF2zabKsbQ",
+    "title": "Pandit Omkarnath Thakur (vocal) - Raga Darbari (live)",
+    "channel": "Tushar Dabral",
+    "views": 1038,
+    "likes": 24,
+    "seconds": 2637,
+    "published": "2023-06-02",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "o9WpA8U0Mg0",
+    "title": "Pt  Omkarnath Thakur -  Raga Bhimpalashi",
+    "channel": "Subrata Chowdhury",
+    "views": 978,
+    "likes": 19,
+    "seconds": 2320,
+    "published": "2015-03-07",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "5LrODKR68vg",
+    "title": "PAG GHUNGRU BAANDH - Malkauns/PANDIT OMKARNATH THAKUR",
+    "channel": "Khaled Sattar",
+    "views": 953,
+    "likes": 25,
+    "seconds": 518,
+    "published": "2022-09-03",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "56yop0pSXjo",
+    "title": "Pandit Parimal Yadav Disciple of Pt.Omkarnath Thakur🙏 singing Raag Multani",
+    "channel": "Om Yaduvansh Tabla",
+    "views": 880,
+    "likes": 29,
+    "seconds": 856,
+    "published": "2020-01-29",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "av1YVIPTSNg",
+    "title": "Pandit Omkarnath Thakur (vocal) - Raga Lalit (in concert)",
+    "channel": "Tushar Dabral",
+    "views": 799,
+    "likes": 21,
+    "seconds": 3158,
+    "published": "2022-12-09",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vNC5DaX-7kU",
+    "title": "Pandit Omkarnath Thakur (vocal) - Raga Todi",
+    "channel": "Tushar Dabral",
+    "views": 690,
+    "likes": 16,
+    "seconds": 407,
+    "published": "2022-12-04",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "HDedPxQl-vk",
+    "title": "Pt. Omkarnath Thakur- Raag: Behag",
+    "channel": "Dipankar Sen",
+    "views": 632,
+    "likes": 12,
+    "seconds": 1618,
+    "published": "2016-03-08",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "bihag"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Og8jagG_KeU",
+    "title": "Pt Omkarnath Thakur   Raga Bhimpalasi",
+    "channel": "Surendra Baxi",
+    "views": 601,
+    "likes": 19,
+    "seconds": 1960,
+    "published": "2019-11-25",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "jJYdmONKpuw",
+    "title": "Raag yaman | Pandit Omkarnath Thakur",
+    "channel": "Hindustani Vocal Sangeet",
+    "views": 570,
+    "likes": 16,
+    "seconds": 1661,
+    "published": "2020-06-12",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "L71uJgq7UjA",
+    "title": "Omkarnath Thakur Raga Kafi Patriotic Song",
+    "channel": "Pokri Poki",
+    "views": 527,
+    "likes": 19,
+    "seconds": 600,
+    "published": "2019-02-01",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "kafi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "SZEOVAr6rv4",
     "title": "Pandit Omkarnath Thakur (vocal) - Raga Alhaiya Bilawal",
     "channel": "Tushar Dabral",
@@ -50244,6 +52516,22 @@
     "form": "khayal"
    },
    {
+    "id": "rmmesgxpsGc",
+    "title": "Pandit Omkarnath Thakur  || Raag Yaman Kalyan ( मेरा मन बांध लीनो रे हा रे इन जोगीया के साथ )",
+    "channel": "Diwan Singh",
+    "views": 476,
+    "likes": 32,
+    "seconds": 2941,
+    "published": "2026-04-04",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "TP5Yp75MfTk",
     "title": "Sugara Bana (Bada Khayal in Vilambit Ektal in Raga Puriya)",
     "channel": "Pandit Omkarnath Thakur - Topic",
@@ -50256,6 +52544,102 @@
     ],
     "raags": [
      "puriya"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "4rl0SN8Nl5g",
+    "title": "Lecture - Demonstration On Raga Bilawal",
+    "channel": "Pt.omkarnath Thakur - Topic",
+    "views": 229,
+    "likes": 4,
+    "seconds": 1030,
+    "published": "2023-03-05",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "bilawal"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Y1qQNuwurVw",
+    "title": "Omkarnath Thakur | Malkauns | पग घुंगरु बांधकर नाची रे",
+    "channel": "Sundeep Dougal",
+    "views": 198,
+    "likes": 4,
+    "seconds": 256,
+    "published": "2023-03-25",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "8jW7YQgRUAM",
+    "title": "Pandit Omkarnath Thakur  Raag Shuddh Nat Raag Bhairavi",
+    "channel": "Diwan Singh",
+    "views": 168,
+    "likes": 16,
+    "seconds": 4180,
+    "published": "2025-11-26",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "-_ez5PQxEh8",
+    "title": "Rag, Jaijaivanti Dhrut (Treetal) bandish composed by Pt.Omkarnath Thakur",
+    "channel": "Music From Soul 🎶🎵",
+    "views": 163,
+    "likes": 10,
+    "seconds": 274,
+    "published": "2020-05-29",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "jaijaiwanti"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "10BVnV5Q68M",
+    "title": "Omkarnath Thakur | Darbari Kanada | 1956 | हजरत तोरे कमान hajrat tore kamaan*| मधुआ भर ला दे madhuaa",
+    "channel": "Sundeep Dougal",
+    "views": 154,
+    "likes": 3,
+    "seconds": 2554,
+    "published": "2023-04-14",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "7Cn0aayPEgQ",
+    "title": "Omkarnath Thakur | Yaman Kalyan",
+    "channel": "Hindustani Vocal Sangeet",
+    "views": 145,
+    "likes": 6,
+    "seconds": 1326,
+    "published": "2021-02-06",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman-kalyan"
     ],
     "form": "khayal"
    },
@@ -50283,6 +52667,70 @@
     "likes": 16,
     "seconds": 986,
     "published": "2024-08-04",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "1OlSdEMLoIA",
+    "title": "Pt omkarnath thakur jayanti nimitta raga yaman in concert ",
+    "channel": "Rajesh Thakurdwarkar",
+    "views": 119,
+    "likes": 5,
+    "seconds": 450,
+    "published": "2026-06-24",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Cu_H9OjagxU",
+    "title": "Omkarnath Thakur | Yaman Kalyan | मेरा मन बांध लीनो रे | मंदर मन लाये सखी",
+    "channel": "Sundeep Dougal",
+    "views": 118,
+    "likes": 3,
+    "seconds": 451,
+    "published": "2023-03-27",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "yaman-kalyan"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vgYYL2RQe30",
+    "title": "Omkarnath Thakur | Malkauns |  पीर न जानी रे पिया",
+    "channel": "Sundeep Dougal",
+    "views": 59,
+    "likes": 0,
+    "seconds": 504,
+    "published": "2023-03-25",
+    "artists": [
+     "omkarnath-thakur"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "9r5kkrgghlE",
+    "title": "Pandit Omkarnath Thakur - Raga Malkauns",
+    "channel": "Don Robertson's Musical Kaleidoscope",
+    "views": 43,
+    "likes": 1,
+    "seconds": 1022,
+    "published": "2024-10-31",
     "artists": [
      "omkarnath-thakur"
     ],
@@ -50338,6 +52786,22 @@
     ],
     "raags": [
      "kedar"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "JdFjYtSLkwo",
+    "title": "Vidushi Smt Padma Talwalkar Raag Lalit",
+    "channel": "Raju Asokan",
+    "views": 21453,
+    "likes": 307,
+    "seconds": 1788,
+    "published": "2017-05-06",
+    "artists": [
+     "padma-talwalkar"
+    ],
+    "raags": [
+     "lalit"
     ],
     "form": "khayal"
    },
@@ -50498,6 +52962,22 @@
     ],
     "raags": [
      "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "3awt85Gd5DI",
+    "title": "Raga Multani | Vidushi Padma Talwalkar",
+    "channel": "Swaralankar",
+    "views": 680,
+    "likes": 16,
+    "seconds": 1741,
+    "published": "2023-03-28",
+    "artists": [
+     "padma-talwalkar"
+    ],
+    "raags": [
+     "multani"
     ],
     "form": "khayal"
    },
@@ -53866,6 +56346,22 @@
      "kalavati"
     ],
     "form": "khayal"
+   },
+   {
+    "id": "otZ3C1tMWTs",
+    "title": "Roshan Ara Begum sings  Raag \" Marwa ” - From Audio Archives of Lutfullah Khan",
+    "channel": "Khursheed Abdullah",
+    "views": 359,
+    "likes": 14,
+    "seconds": 608,
+    "published": "2022-05-23",
+    "artists": [
+     "roshan-ara-begum"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
    }
   ],
   "roshanara-begum": [
@@ -55344,6 +57840,23 @@
     "form": "khayal"
    },
    {
+    "id": "0dMzbKPpyd0",
+    "title": "Ustad Faiyaz Khan Saheb Raag Darbari with Ustad Sharafat Hussain Khan",
+    "channel": "Raju Asokan",
+    "views": 6050,
+    "likes": 116,
+    "seconds": 686,
+    "published": "2015-05-07",
+    "artists": [
+     "sharafat-hussain-khan",
+     "faiyaz-khan"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "UOBiUxYo1N8",
     "title": "Ustad Sharafat Hussain Khan - Raga Asawari",
     "channel": "Subrata Chowdhury",
@@ -55392,6 +57905,22 @@
     "form": "khayal"
    },
    {
+    "id": "t2UfPBZAIM0",
+    "title": "Ustad Sharafat Hussain Khan Saheb : Raga Bhairavi.",
+    "channel": "Sangeetveda1",
+    "views": 3404,
+    "likes": 72,
+    "seconds": 1648,
+    "published": "2016-09-30",
+    "artists": [
+     "sharafat-hussain-khan"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "_h8NzhAGhGQ",
     "title": "Ustad Sharafat Hussain Khan - Raga Rageshri",
     "channel": "Subrata Chowdhury",
@@ -55420,6 +57949,22 @@
     ],
     "raags": [
      "nand"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "le6CipnSW-4",
+    "title": "Ustad Sharafat Hussain Khan - Raag Yaman Kalyan | Dhamaar",
+    "channel": "Anuran Chowdhury",
+    "views": 940,
+    "likes": 35,
+    "seconds": 898,
+    "published": "2021-07-10",
+    "artists": [
+     "sharafat-hussain-khan"
+    ],
+    "raags": [
+     "yaman-kalyan"
     ],
     "form": "khayal"
    },
@@ -56308,6 +58853,22 @@
   ],
   "shruti-sadolikar": [
    {
+    "id": "TkJ_hHVWxhY",
+    "title": "GRAND DAMES OF HINDUSTANI MUSIC-Vidushi Shruti Sadolikar katkar-raag yaman.",
+    "channel": "thuryina",
+    "views": 70560,
+    "likes": 348,
+    "seconds": 1675,
+    "published": "2011-10-16",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "kNt9N6O1QDE",
     "title": "Shruti Sadolikar Raga Maru Bihag",
     "channel": "rliesky56",
@@ -56356,6 +58917,38 @@
     "form": "khayal"
    },
    {
+    "id": "b1u_32QaDuU",
+    "title": "Shruti Sadolikar ~ Raga Ahir Bhairav",
+    "channel": "annaresti 431",
+    "views": 37001,
+    "likes": 431,
+    "seconds": 931,
+    "published": "2012-12-29",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "tzwzFu6KmTs",
+    "title": "Shruti Sadolikar - Raga Shree",
+    "channel": "PistaCherryfield",
+    "views": 27277,
+    "likes": 315,
+    "seconds": 925,
+    "published": "2013-05-19",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "shree"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "1EcRrZvc52o",
     "title": "Raga Shree | Shruti Sadolikar (Album: Evening Ragas)",
     "channel": "Music Today",
@@ -56368,6 +58961,22 @@
     ],
     "raags": [
      "shree"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "RyUj17pL7NI",
+    "title": "Vidushi Shruti Sadolikar - Raag Marwa",
+    "channel": "Sur Sadhana",
+    "views": 21906,
+    "likes": 284,
+    "seconds": 2225,
+    "published": "2015-07-07",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "marwa"
     ],
     "form": "khayal"
    },
@@ -56388,6 +58997,22 @@
     "form": "thumri"
    },
    {
+    "id": "2J40pqk5o5s",
+    "title": "Sushri Shruti Sadolikar~Brindabani Sarang",
+    "channel": "Raju Asokan",
+    "views": 16149,
+    "likes": 333,
+    "seconds": 1774,
+    "published": "2021-05-08",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "brindavani-sarang"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "Oz_PQQnCCrw",
     "title": "Sushri Shruti Sadolikar~Raag Nand",
     "channel": "Raju Asokan",
@@ -56400,6 +59025,22 @@
     ],
     "raags": [
      "nand"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "QoAqLpdoqAo",
+    "title": "Raga Patdeep | Shruti Sadolikar | ( Album: Afternoon Ragas Volume 3 )",
+    "channel": "Music Today",
+    "views": 14498,
+    "likes": 258,
+    "seconds": 895,
+    "published": "2016-03-02",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "patdeep"
     ],
     "form": "khayal"
    },
@@ -56420,6 +59061,38 @@
     "form": "khayal"
    },
    {
+    "id": "xeKkftrlq2Y",
+    "title": "Raga Ahir Bhairav",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 12369,
+    "likes": 118,
+    "seconds": 926,
+    "published": "2014-11-08",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "8ZGezN6ZN8k",
+    "title": "Raga Ahir Bhairav | Shruti Sadolikar | ( Album: Morning Ragas Volume 1 )",
+    "channel": "Music Today",
+    "views": 9115,
+    "likes": 152,
+    "seconds": 926,
+    "published": "2016-03-02",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ax43IZgtNXo",
     "title": "Shruti Sadolikar - Bhairavi (thumri). Baju band khul khul jan - Dipchandi",
     "channel": "Thomas Garcia",
@@ -56436,6 +59109,38 @@
     "form": "thumri"
    },
    {
+    "id": "7xrkRFqmll8",
+    "title": "Sushri Shruti Sadolikar~Bhimpalasi",
+    "channel": "Raju Asokan",
+    "views": 5265,
+    "likes": 150,
+    "seconds": 1715,
+    "published": "2021-05-07",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Dx_sJdd9KvM",
+    "title": "Shruti Sadolikar - Bhairavi",
+    "channel": "Ram Mohan J Rao",
+    "views": 5124,
+    "likes": 54,
+    "seconds": 758,
+    "published": "2015-08-16",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "6_fJ5OSCX5g",
     "title": "Shruti Sadolikar - Raag Yaman (1984)",
     "channel": "Archisman Mozumder",
@@ -56448,6 +59153,22 @@
     ],
     "raags": [
      "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ptUuvD7AFiY",
+    "title": "Raag Ramkali ~ VIdushi Shruti Sadolikar Katkar",
+    "channel": "Abhishek Samal",
+    "views": 3227,
+    "likes": 64,
+    "seconds": 1607,
+    "published": "2018-03-01",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ramkali"
     ],
     "form": "khayal"
    },
@@ -56468,6 +59189,22 @@
     "form": "khayal"
    },
    {
+    "id": "ViLlhzNhoxM",
+    "title": "Raag Todi ~ Vidushi Shruti Sadolikar Katkar",
+    "channel": "Abhishek Samal",
+    "views": 3037,
+    "likes": 60,
+    "seconds": 2414,
+    "published": "2018-03-01",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "qL6j-sd1zIs",
     "title": "Thumri Jhinjhoti: Pashtu Taal, 7 Beats, 'Holi Khelo Mose'",
     "channel": "Shruti Sadolikar - Topic",
@@ -56484,6 +59221,134 @@
     "form": "thumri"
    },
    {
+    "id": "7EF9dGr76eg",
+    "title": "Raga Miyan-Ki-Todi: Langara Kankariya Ji Na Maroi",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 2519,
+    "likes": 51,
+    "seconds": 514,
+    "published": "2016-02-17",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "RrDRKH3ZqhA",
+    "title": "Tilak Kamod",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 2313,
+    "likes": 40,
+    "seconds": 246,
+    "published": "2016-10-13",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "tilak-kamod"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "qn22V1yIca8",
+    "title": "Shruti Sadolikar - Raga Shree",
+    "channel": "Lord Shiva and Spirituality",
+    "views": 1880,
+    "likes": 28,
+    "seconds": 928,
+    "published": "2014-10-19",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "shree"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Cm5K-i8DFVk",
+    "title": "Raag Lalit ~ Vidushi Shruti Sadolikar Katkar",
+    "channel": "Abhishek Samal",
+    "views": 1780,
+    "likes": 37,
+    "seconds": 1608,
+    "published": "2019-02-06",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "0A_VpFZfWdw",
+    "title": "Shruti Sadolikar Katkar | Raag Desh | Bazm e Khas",
+    "channel": "BAZM-E-KHAS",
+    "views": 1732,
+    "likes": 51,
+    "seconds": 594,
+    "published": "2018-10-27",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "desh"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "IBdgjPHydwU",
+    "title": "Raag Multani ~ Vidushi Shruti Sadolikar Katkar",
+    "channel": "Abhishek Samal",
+    "views": 1715,
+    "likes": 43,
+    "seconds": 1998,
+    "published": "2019-02-13",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "i3AgpUWWoeY",
+    "title": "Raag Ahir Bhairav ~ Vidushi Shruti Sadolikar Katkar",
+    "channel": "Abhishek Samal",
+    "views": 1597,
+    "likes": 41,
+    "seconds": 2341,
+    "published": "2019-02-05",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ou4KgL9Prhc",
+    "title": "Punjabi Bhairavi | Shruti Sadolikar Katkar | Bazm e Khas",
+    "channel": "BAZM-E-KHAS",
+    "views": 1538,
+    "likes": 40,
+    "seconds": 537,
+    "published": "2018-10-27",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "_6Jt2biq80U",
     "title": "Vidushi Shruti Sadolikar Live in Cerritos, California, in 1983 Raga Bhoop",
     "channel": "Shoumyo Dasgupta",
@@ -56496,6 +59361,120 @@
     ],
     "raags": [
      "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "BhoYZBxwMDw",
+    "title": "Raag Bhimpalasi राग भीमपलास | Shruti Sadolikar विदुषी श्रुती सडोलीकर-काटकर | Indian Classical Music",
+    "channel": "सर्वेश्वर संगीत विद्यालय",
+    "views": 1304,
+    "likes": 58,
+    "seconds": 1940,
+    "published": "2023-02-19",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "HX0mKEyRrjc",
+    "title": "Shruti Sadolikar - Raga Ahir Bhairav",
+    "channel": "Lord Shiva and Spirituality",
+    "views": 1205,
+    "likes": 11,
+    "seconds": 926,
+    "published": "2014-10-19",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "QHDZVAA52GA",
+    "title": "Raag Multani | Shruti Sadolikar | Hrishikesh Residential Sangeet Sammelan 2024",
+    "channel": "ABHIJAT MUSIC FORUM",
+    "views": 1180,
+    "likes": 38,
+    "seconds": 2007,
+    "published": "2024-08-16",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "QpXkmLxfVRY",
+    "title": "\"Smt Shruti Sadolikar Katkar - Miya Ki Todi\"",
+    "channel": "Kansen Sangit",
+    "views": 1163,
+    "likes": 30,
+    "seconds": 3129,
+    "published": "2021-11-27",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "todi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "pOpYfMf89jg",
+    "title": "Raga Ahir Bhairav | Shruti Sadolikar (Album : Thaat Bhairavi)",
+    "channel": "Music Today",
+    "views": 1109,
+    "likes": 16,
+    "seconds": 928,
+    "published": "2016-03-09",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav",
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "4M093IphCYA",
+    "title": "Kalyan Thaat (Raag Hameer: Ada Chautal Taal, 14 Beats \"Dekhi Aisi Pyari\")",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 1051,
+    "likes": 38,
+    "seconds": 325,
+    "published": "2018-10-11",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "yaman",
+     "hameer"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "AqA_4zxZ6K4",
+    "title": "Raga Bhairavi | Vidushi Shruti Sadolikar Katkar | Panjabi Bandish | Gaansaraswati Mahotsav, Pune",
+    "channel": "Swaralankar",
+    "views": 996,
+    "likes": 31,
+    "seconds": 588,
+    "published": "2020-11-28",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
     ],
     "form": "khayal"
    },
@@ -56516,6 +59495,38 @@
     "form": "khayal"
    },
    {
+    "id": "i8PZA6Q-Rz0",
+    "title": "Shruti Sadolikar Katkar sings Raag Ramkali – From Audio Archives of Lutfullah Khan",
+    "channel": "Khursheed Abdullah",
+    "views": 742,
+    "likes": 13,
+    "seconds": 1810,
+    "published": "2020-11-11",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ramkali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "g_iIic7RoE0",
+    "title": "Raag Bhairavi by Shruti Sadolikar Katkar",
+    "channel": "Mohak Shukla",
+    "views": 629,
+    "likes": 7,
+    "seconds": 604,
+    "published": "2017-03-29",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ZryvXAS1I-o",
     "title": "Shruti Sadolikar ; Hey Shyaam ; Raga Vibhas ; Vilambit Classical Indian Bhartiya Shastriya Sangeet",
     "channel": "kiran kunjara",
@@ -56528,6 +59539,23 @@
     ],
     "raags": [
      "bibhas"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "DDJwX5EX3dc",
+    "title": "Kalyan Thaat (Raag Kedar: Deepchandi Taal, 14 Beats \"Khelan Ko Aayo\")",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 549,
+    "likes": 25,
+    "seconds": 391,
+    "published": "2018-10-11",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "yaman",
+     "kedar"
     ],
     "form": "khayal"
    },
@@ -56548,6 +59576,134 @@
     "form": "khayal"
    },
    {
+    "id": "fzXXFaqr1vk",
+    "title": "Bhairavi Thaat (Raag Bhairavi: Punjabi Theka Taal, 16 Beats \"Kaise Samajhaoon\")",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 477,
+    "likes": 16,
+    "seconds": 357,
+    "published": "2018-10-11",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "CMzg0SpAYcY",
+    "title": "Raga Ahir Bhairav - Raga Ahir Bhairav - Ektaal - Teentaal",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 457,
+    "likes": 13,
+    "seconds": 926,
+    "published": "2020-07-25",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "hPO5vBC4xMw",
+    "title": "Raag Deshkar - Shruti Sadolikar Katkar",
+    "channel": "AJ Ko",
+    "views": 456,
+    "likes": 11,
+    "seconds": 276,
+    "published": "2019-11-01",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "deshkar"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "h0RhKowR-cI",
+    "title": "Vidushi Shruti Sadolikar | Raag Des | Shadaj | 2018",
+    "channel": "Shadaj Baithak",
+    "views": 419,
+    "likes": 13,
+    "seconds": 609,
+    "published": "2021-05-21",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "desh"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "O-_UoogR248",
+    "title": "Shruti Sadolikar Raag Shree",
+    "channel": "Ashish Gawarikar",
+    "views": 402,
+    "likes": 0,
+    "seconds": 931,
+    "published": "2022-11-17",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "shree"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "e8jdvtUKBWA",
+    "title": "Beete Nahin Raina Piya Bin (Raag Bhairav-Thath: Tritaal, 16 Beats)",
+    "channel": "Shruti Sadolikar - Topic",
+    "views": 386,
+    "likes": 14,
+    "seconds": 390,
+    "published": "2017-10-05",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "vZ1khM1uhLQ",
+    "title": "Bhupali - Shruti Sadolikar II Raag Bhoopali II Bhoop II राग भूपाली - श्रुति साडोलिकर II",
+    "channel": "Narsee Sangeet ",
+    "views": 362,
+    "likes": 8,
+    "seconds": 2405,
+    "published": "2024-04-28",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "7pk4m-PLrYk",
+    "title": "Shruti Sadolikar Katkar: Raga Puriya",
+    "channel": "Amartya Mukherjee",
+    "views": 285,
+    "likes": 13,
+    "seconds": 2515,
+    "published": "2025-01-14",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "puriya"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "j4XxTKfcILA",
     "title": "Raga Marwa (Khayal in Vilambit Ektaal)",
     "channel": "Shruti Sadolikar - Topic",
@@ -56560,6 +59716,54 @@
     ],
     "raags": [
      "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "3hS79ygG3u8",
+    "title": "Raag Bhairavi - Shruti Sadolikar Katkar",
+    "channel": "AJ Ko",
+    "views": 245,
+    "likes": 14,
+    "seconds": 340,
+    "published": "2019-11-17",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "ScVzSdTF4q0",
+    "title": "Vidushi Shruti Sadolikar | Raag Bhairavi | Shadaj | 2018",
+    "channel": "Shadaj Baithak",
+    "views": 208,
+    "likes": 6,
+    "seconds": 441,
+    "published": "2021-05-21",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "jANNKYuNCXY",
+    "title": "Raag Yaman | Vidushi Shruti Sadolikar",
+    "channel": "Hindustani Vocal Sangeet",
+    "views": 182,
+    "likes": 9,
+    "seconds": 1639,
+    "published": "2020-08-04",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "yaman"
     ],
     "form": "khayal"
    },
@@ -56577,6 +59781,22 @@
     ],
     "raags": [
      "malkauns"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "6AoVGvtrvc4",
+    "title": "Vidushi Shruti Sadolikar Katkar || Raag Lalit",
+    "channel": "Diwan Singh",
+    "views": 98,
+    "likes": 14,
+    "seconds": 1880,
+    "published": "2025-12-02",
+    "artists": [
+     "shruti-sadolikar"
+    ],
+    "raags": [
+     "lalit"
     ],
     "form": "khayal"
    }
@@ -59080,8 +62300,8 @@
     "id": "uiFTx-omFKE",
     "title": "Joy in the Morning - Pt Ulhas Kashalkar Sings Alhaiya Bilawal",
     "channel": "havanurmic",
-    "views": 156421,
-    "likes": 1777,
+    "views": 156751,
+    "likes": 1780,
     "seconds": 1971,
     "published": "2012-11-22",
     "artists": [
@@ -59560,7 +62780,7 @@
     "id": "pDr-4IGcFEU",
     "title": "Live concert Recording - Raag Bahar - Pt. Ulhas Kashalkar",
     "channel": "Ulhas Kashalkar",
-    "views": 19354,
+    "views": 19379,
     "likes": 342,
     "seconds": 1572,
     "published": "2020-04-01",
@@ -61103,8 +64323,8 @@
     "id": "U0qloeBNQIw",
     "title": "GREAT RENDERINGS 2-RAAG CHAYANAT-vidushi veena sahasrabuddhe-chayanat",
     "channel": "thuryina",
-    "views": 124427,
-    "likes": 1334,
+    "views": 124891,
+    "likes": 1340,
     "seconds": 627,
     "published": "2010-02-06",
     "artists": [
@@ -61132,6 +64352,22 @@
     "form": "khayal"
    },
    {
+    "id": "CWoi5P897Mo",
+    "title": "Vidushi Veena Sahasrabuddhe Raag Puriya Dhanashree, Tampa, FL, 2003",
+    "channel": "Raju Asokan",
+    "views": 93999,
+    "likes": 920,
+    "seconds": 2862,
+    "published": "2015-10-10",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "9q-kuhpxps4",
     "title": "Vidushi Smt Veena Sahasrabuddhe  Raag, Bageshri  Sakhi Mana Lage Na & Shyaam Ghan Chhaye",
     "channel": "Raju Asokan",
@@ -61151,8 +64387,8 @@
     "id": "WlKw2Z7aANA",
     "title": "Raga Bihag - Vilambit Khayal - Kaise Sukh Sowe - Ektaal",
     "channel": "Veena Sahasrabuddhe - Topic",
-    "views": 74350,
-    "likes": 1750,
+    "views": 74757,
+    "likes": 1754,
     "seconds": 1800,
     "published": "2016-12-24",
     "artists": [
@@ -61240,6 +64476,22 @@
     ],
     "raags": [
      "hamsadhwani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "MDGWd_CrpX8",
+    "title": "Veena Sahasrabuddhe   Raga Maru Bihag",
+    "channel": "Harini Calamur",
+    "views": 50855,
+    "likes": 579,
+    "seconds": 1497,
+    "published": "2014-01-19",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "maru-bihag"
     ],
     "form": "khayal"
    },
@@ -61388,6 +64640,38 @@
     "form": "khayal"
    },
    {
+    "id": "2gGP6Lfwac4",
+    "title": "Raga Puriya Dhanashri: \"Ajahun Na Aye\" (Vilambit Ektal)",
+    "channel": "Veena Sahasrabuddhe - Topic",
+    "views": 31174,
+    "likes": 685,
+    "seconds": 2322,
+    "published": "2017-04-15",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "qZrUAnSn--A",
+    "title": "Raga Puriya Dhanashri: \"Mushkil Karo Asan\" (Sitarkhani)",
+    "channel": "Veena Sahasrabuddhe - Topic",
+    "views": 26026,
+    "likes": 439,
+    "seconds": 663,
+    "published": "2017-04-15",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "Tq7wtQEBYfM",
     "title": "Vidushi Smt Veena Sahasrabuddhe  Raag Kamod alap  & Tarana",
     "channel": "Raju Asokan",
@@ -61484,6 +64768,22 @@
     "form": "khayal"
    },
    {
+    "id": "LtQhWxcaZgA",
+    "title": "Raga Puriya Dhanashri: Tarana (Drut Ada) (Chautal)",
+    "channel": "Veena Sahasrabuddhe - Topic",
+    "views": 14438,
+    "likes": 278,
+    "seconds": 363,
+    "published": "2017-04-15",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ArctPPbQSOc",
     "title": "Vidushi Smt  Veena Sahasrabuddhe~ Raag Kalavati",
     "channel": "Raju Asokan",
@@ -61516,6 +64816,54 @@
     "form": "khayal"
    },
    {
+    "id": "NOyJWf4gUdQ",
+    "title": "Smt Veena Sahasrabuddhe Raag Bhoop",
+    "channel": "Raju Asokan",
+    "views": 11055,
+    "likes": 185,
+    "seconds": 2442,
+    "published": "2021-04-05",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "fsSI34fOdUc",
+    "title": "Vidushi Smt Veena Sahasrabuddhe  Raag Marwa alap  & Tarana, madhya teentaal,chalo hato jao drut ekta",
+    "channel": "Raju Asokan",
+    "views": 9542,
+    "likes": 146,
+    "seconds": 589,
+    "published": "2017-06-25",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "LIG1RfmHn14",
+    "title": "GREAT ALAPS-vidushi veena sahasrabuddhe-raag multani",
+    "channel": "thuryina",
+    "views": 8673,
+    "likes": 44,
+    "seconds": 1147,
+    "published": "2011-05-26",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "8EKTCxaNqMc",
     "title": "Raag Madhmad Sarang | Vidushi Veena Sahasrabuddhe | Rang de rangrejwa... | 110/11",
     "channel": "Vibhuti Productions",
@@ -61528,6 +64876,22 @@
     ],
     "raags": [
      "madhmad-sarang"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "yVMOTKkkbBU",
+    "title": "Vidushi Smt Veena Sahasrabuddhe Raga Shree",
+    "channel": "Raju Asokan",
+    "views": 7985,
+    "likes": 142,
+    "seconds": 1431,
+    "published": "2017-05-06",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "shree"
     ],
     "form": "khayal"
    },
@@ -61644,6 +65008,54 @@
     "form": "khayal"
    },
    {
+    "id": "b1OhGa_6wZo",
+    "title": "Vidushi Smt.Veena Sahasrabuddhe-Raag Multani, nainanume aanabaana",
+    "channel": "Raju Asokan",
+    "views": 3104,
+    "likes": 67,
+    "seconds": 406,
+    "published": "2017-03-06",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "KcmUinVH34c",
+    "title": "Vidushi Veena Sahasrabuddhe sings Raga Marubihag",
+    "channel": "Sangeetveda1",
+    "views": 3100,
+    "likes": 62,
+    "seconds": 1507,
+    "published": "2018-02-28",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "maru-bihag"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "QIJZYkdh3Vk",
+    "title": "Smt Veena Sahasrabuddhe Raag Puriya Dhanashree",
+    "channel": "Raju Asokan",
+    "views": 3043,
+    "likes": 69,
+    "seconds": 2957,
+    "published": "2021-04-05",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "wlU4ezgf_-Y",
     "title": "veena sahasrabuddhe unaccompanied aalap yaman",
     "channel": "Shailesh Rawat",
@@ -61672,6 +65084,70 @@
     ],
     "raags": [
      "ahir-bhairav"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "S6wcZR3d-OM",
+    "title": "Vidushi  Veena Sahasrabuddhe~ Raag Multani",
+    "channel": "Raju Asokan",
+    "views": 1781,
+    "likes": 56,
+    "seconds": 1887,
+    "published": "2021-11-22",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "bANJA5Hrl-I",
+    "title": "Raag - Jaunpuri | Vidushi Smt Veena Sahasrabuddhe - 05_",
+    "channel": "Sur Naad",
+    "views": 1741,
+    "likes": 35,
+    "seconds": 2790,
+    "published": "2020-05-30",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "jaunpuri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "FRfzJtw91Us",
+    "title": "Raag Lalit | Vidushi Veena Sahasrabuddhe | Sadarang Adarang... | 110/2",
+    "channel": "Vibhuti Productions",
+    "views": 1627,
+    "likes": 38,
+    "seconds": 704,
+    "published": "2021-06-13",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "-DGl8CbhwxY",
+    "title": "Vidushi  Veena Sahasrabuddhe || Raag Jaunpuri",
+    "channel": "Diwan Singh",
+    "views": 1324,
+    "likes": 41,
+    "seconds": 2804,
+    "published": "2024-11-21",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "jaunpuri"
     ],
     "form": "khayal"
    },
@@ -61708,6 +65184,54 @@
     "form": "khayal"
    },
    {
+    "id": "B3eBYGk7Sw4",
+    "title": "Raag Lalit | Vidushi Veena Sahasrabuddhe | Aiso nilaj laal tero ari mai... | 110/3",
+    "channel": "Vibhuti Productions",
+    "views": 954,
+    "likes": 21,
+    "seconds": 714,
+    "published": "2021-06-15",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "lalit"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Q68NlMj3gwo",
+    "title": "Raga Bhoop   Veena Sahasrabuddhe",
+    "channel": "Musicians Guild",
+    "views": 753,
+    "likes": 21,
+    "seconds": 2473,
+    "published": "2022-10-04",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "gSunKi2jFa8",
+    "title": "Mood Pensive (Raga Pooriya Dhanashri)- Veena Sahasrabuddhe (1996)",
+    "channel": "The Musical Revival",
+    "views": 750,
+    "likes": 15,
+    "seconds": 3578,
+    "published": "2024-12-13",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "QTgfUcic4FE",
     "title": "Raga Bhairavi   Veena Sahasrabuddhe",
     "channel": "Musicians Guild",
@@ -61736,6 +65260,22 @@
     ],
     "raags": [
      "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "-kB2ZUfgXKY",
+    "title": "Search for spirituality Part 3 Veena Sahasrabuddhe Raag  Puriya dhyanesree",
+    "channel": "Mita Saha",
+    "views": 696,
+    "likes": 5,
+    "seconds": 281,
+    "published": "2012-07-24",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya"
     ],
     "form": "khayal"
    },
@@ -61772,6 +65312,22 @@
     "form": "khayal"
    },
    {
+    "id": "Ak7d6efayB8",
+    "title": "Raga Hamir II   Veena Sahasrabuddhe",
+    "channel": "Musicians Guild",
+    "views": 345,
+    "likes": 11,
+    "seconds": 914,
+    "published": "2022-10-05",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "hameer"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "Gz78a7B_kSI",
     "title": "Raga Bhimpalasi (Khyal in Vilambit Teentaal)",
     "channel": "Veena Sahasrabuddhe - Topic",
@@ -61784,6 +65340,22 @@
     ],
     "raags": [
      "bhimpalasi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "Mnq3iK4Mhxg",
+    "title": "Veena Sahasrabuddhe ~ Raga Puriya Dhanashri: \"Ajahun Na Aye\" (Vilambit Ektal)",
+    "channel": "SRINIVAS DIXIT",
+    "views": 278,
+    "likes": 0,
+    "seconds": 2325,
+    "published": "2020-04-01",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
     ],
     "form": "khayal"
    },
@@ -61820,6 +65392,22 @@
     "form": "khayal"
    },
    {
+    "id": "m--IZyMO7Mg",
+    "title": "Vidushi Veena Sahasrabuddhe || Raag Bhupali",
+    "channel": "Diwan Singh",
+    "views": 210,
+    "likes": 34,
+    "seconds": 2499,
+    "published": "2026-07-18",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "8zXibYDa7TQ",
     "title": "Veena Sahasrabuddhe | Yaman | देवो दान मोहे | devo daan mohe | 1996",
     "channel": "Sundeep Dougal",
@@ -61832,6 +65420,22 @@
     ],
     "raags": [
      "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "1nZBovelTEI",
+    "title": "Veena Sahasrabuddhe ~ Raga - Pooriya dhanashri and alap in raga bheem",
+    "channel": "SRINIVAS DIXIT",
+    "views": 76,
+    "likes": 0,
+    "seconds": 1019,
+    "published": "2020-04-01",
+    "artists": [
+     "veena-sahasrabuddhe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
     ],
     "form": "khayal"
    }
@@ -62640,6 +66244,22 @@
     "form": "khayal"
    },
    {
+    "id": "Fxl5eQXike4",
+    "title": "Raag Puriya Dhanashri (FULL) | Pt. Vinayak Torvi LIVE",
+    "channel": "Pt. Vinayak Torvi Music Foundation",
+    "views": 1199,
+    "likes": 18,
+    "seconds": 2468,
+    "published": "2020-07-12",
+    "artists": [
+     "vinayak-torvi"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "54SRCayFJ9c",
     "title": "Raag Poorvi (FULL) | Pt. Vinayak Torvi | VTMF",
     "channel": "Pt. Vinayak Torvi Music Foundation",
@@ -63358,6 +66978,22 @@
     "form": "dhrupad"
    },
    {
+    "id": "x5N32DotFZs",
+    "title": "राग मालकौंस | Raag Malkauns | Padmashree Ustad Faiyaz Wasifuddin Dagar | Dhrupad",
+    "channel": "Raaggiri",
+    "views": 742,
+    "likes": 20,
+    "seconds": 898,
+    "published": "2019-10-01",
+    "artists": [
+     "wasifuddin-dagar"
+    ],
+    "raags": [
+     "malkauns"
+    ],
+    "form": "dhrupad"
+   },
+   {
     "id": "bdK6xpm-Hu0",
     "title": "Ustad F. Wasifuddin Dagar - Raag Bihaag",
     "channel": "Baithak Archives",
@@ -63386,6 +67022,22 @@
     ],
     "raags": [
      "bageshri"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "qbmCaQtM6us",
+    "title": "Ustad Faiyaz Wasifuddin Dagar (vocal) - Raga Multani",
+    "channel": "Tushar Dabral",
+    "views": 438,
+    "likes": 16,
+    "seconds": 1005,
+    "published": "2023-05-16",
+    "artists": [
+     "wasifuddin-dagar"
+    ],
+    "raags": [
+     "multani"
     ],
     "form": "khayal"
    },
@@ -63785,8 +67437,8 @@
     "id": "q5trNs7M3MU",
     "title": "Zia Mohiuddin Dagar - Dhrupad - Raga Yaman",
     "channel": "rliesky56",
-    "views": 3578333,
-    "likes": 50038,
+    "views": 3580766,
+    "likes": 50055,
     "seconds": 4212,
     "published": "2014-08-31",
     "artists": [
@@ -63862,6 +67514,40 @@
     "form": "khayal"
    }
   ],
+  "anol-chatterjee": [
+   {
+    "id": "q-rXPHi8IOc",
+    "title": "Anol Chatterjee - Raag Bairagi | Hindustani Classical Vocal Recital",
+    "channel": "Ananjan Chakraborty",
+    "views": 42492,
+    "likes": 921,
+    "seconds": 1896,
+    "published": "2016-07-16",
+    "artists": [
+     "anol-chatterjee"
+    ],
+    "raags": [
+     "bairagi"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "6U48wwCSs2w",
+    "title": "Raag Marwa Live Performance by Anol Chatterjee | Part - I",
+    "channel": "Raaga With Rani",
+    "views": 3471,
+    "likes": 102,
+    "seconds": 3828,
+    "published": "2021-02-07",
+    "artists": [
+     "anol-chatterjee"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   }
+  ],
   "kumar-mardur": [
    {
     "id": "CLgm_M7faCY",
@@ -63892,6 +67578,76 @@
     ],
     "raags": [
      "madhmad-sarang"
+    ],
+    "form": "khayal"
+   }
+  ],
+  "abdul-rashid-khan": [
+   {
+    "id": "AEo3mRDZpw8",
+    "title": "Tirwat (Raga Bhupali)",
+    "channel": "Ustad Abdul Rashid Khan - Topic",
+    "views": 1022,
+    "likes": 28,
+    "seconds": 477,
+    "published": "2018-08-17",
+    "artists": [
+     "abdul-rashid-khan"
+    ],
+    "raags": [
+     "bhupali"
+    ],
+    "form": "khayal"
+   }
+  ],
+  "sameehan-kashalkar": [
+   {
+    "id": "jKbQiMQFVJ8",
+    "title": "Raag Basant | Sameehan Kashalkar | Music of India",
+    "channel": "darbarfestival",
+    "views": 39662,
+    "likes": 883,
+    "seconds": 597,
+    "published": "2024-05-05",
+    "artists": [
+     "sameehan-kashalkar"
+    ],
+    "raags": [
+     "basant"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "iwW0he5SaX8",
+    "title": "Sameehan Kashalkar I Raag Puriya Dhanashri I Bhavitavya I Savani I",
+    "channel": "Savani Events",
+    "views": 4897,
+    "likes": 149,
+    "seconds": 3491,
+    "published": "2021-07-24",
+    "artists": [
+     "sameehan-kashalkar"
+    ],
+    "raags": [
+     "puriya-dhanashri"
+    ],
+    "form": "khayal"
+   }
+  ],
+  "veenaji-sahasrabuddhe": [
+   {
+    "id": "thEoVlnqpiQ",
+    "title": "Vidushi Veenaji Sahasrabuddhe sings Raga Bilaskhani Todi",
+    "channel": "dattaji",
+    "views": 3639,
+    "likes": 71,
+    "seconds": 1730,
+    "published": "2018-01-10",
+    "artists": [
+     "veenaji-sahasrabuddhe"
+    ],
+    "raags": [
+     "bilaskhani-todi"
     ],
     "form": "khayal"
    }
@@ -64242,40 +67998,6 @@
     "form": "khayal"
    }
   ],
-  "anol-chatterjee": [
-   {
-    "id": "q-rXPHi8IOc",
-    "title": "Anol Chatterjee - Raag Bairagi | Hindustani Classical Vocal Recital",
-    "channel": "Ananjan Chakraborty",
-    "views": 42492,
-    "likes": 921,
-    "seconds": 1896,
-    "published": "2016-07-16",
-    "artists": [
-     "anol-chatterjee"
-    ],
-    "raags": [
-     "bairagi"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "6U48wwCSs2w",
-    "title": "Raag Marwa Live Performance by Anol Chatterjee | Part - I",
-    "channel": "Raaga With Rani",
-    "views": 3471,
-    "likes": 102,
-    "seconds": 3828,
-    "published": "2021-02-07",
-    "artists": [
-     "anol-chatterjee"
-    ],
-    "raags": [
-     "marwa"
-    ],
-    "form": "khayal"
-   }
-  ],
   "prem-kumar-mallick": [
    {
     "id": "tYiuSNldDxc",
@@ -64342,40 +68064,6 @@
      "khamaj"
     ],
     "form": "tappa"
-   }
-  ],
-  "sameehan-kashalkar": [
-   {
-    "id": "jKbQiMQFVJ8",
-    "title": "Raag Basant | Sameehan Kashalkar | Music of India",
-    "channel": "darbarfestival",
-    "views": 39662,
-    "likes": 883,
-    "seconds": 597,
-    "published": "2024-05-05",
-    "artists": [
-     "sameehan-kashalkar"
-    ],
-    "raags": [
-     "basant"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "iwW0he5SaX8",
-    "title": "Sameehan Kashalkar I Raag Puriya Dhanashri I Bhavitavya I Savani I",
-    "channel": "Savani Events",
-    "views": 4897,
-    "likes": 149,
-    "seconds": 3491,
-    "published": "2021-07-24",
-    "artists": [
-     "sameehan-kashalkar"
-    ],
-    "raags": [
-     "puriya-dhanashri"
-    ],
-    "form": "khayal"
    }
   ],
   "moumita-mitra": [
@@ -65526,38 +69214,57 @@
     "form": "khayal"
    }
   ],
-  "abdul-rashid-khan": [
+  "alladiya-khan": [
    {
-    "id": "AEo3mRDZpw8",
-    "title": "Tirwat (Raga Bhupali)",
-    "channel": "Ustad Abdul Rashid Khan - Topic",
-    "views": 1022,
-    "likes": 28,
-    "seconds": 477,
-    "published": "2018-08-17",
+    "id": "umepmS7rzaI",
+    "title": "Bhairavi Thumri live  by Milind Chittal (मिलिंद  चित्ताल) at Ustad Alladiya Khan festival",
+    "channel": "Swara Bhakti",
+    "views": 391,
+    "likes": 3,
+    "seconds": 618,
+    "published": "2016-02-22",
     "artists": [
-     "abdul-rashid-khan"
+     "alladiya-khan",
+     "milind-chittal"
     ],
     "raags": [
-     "bhupali"
+     "bhairavi"
+    ],
+    "form": "thumri"
+   }
+  ],
+  "sardarbai-karadgekar": [
+   {
+    "id": "VANKPQnmMK0",
+    "title": "Vidushi Sardarbai Karadgekar sings Raga Puriya",
+    "channel": "Saumitra Kulkarni",
+    "views": 718,
+    "likes": 31,
+    "seconds": 866,
+    "published": "2022-08-07",
+    "artists": [
+     "sardarbai-karadgekar"
+    ],
+    "raags": [
+     "puriya"
     ],
     "form": "khayal"
    }
   ],
-  "veenaji-sahasrabuddhe": [
+  "nivrutibuwa-sarnaik": [
    {
-    "id": "thEoVlnqpiQ",
-    "title": "Vidushi Veenaji Sahasrabuddhe sings Raga Bilaskhani Todi",
-    "channel": "dattaji",
-    "views": 3639,
-    "likes": 71,
-    "seconds": 1730,
-    "published": "2018-01-10",
+    "id": "HRl3LWSU-bc",
+    "title": "Pandit Nivrutibuwa Sarnaik sings Raga Lalat.",
+    "channel": "Sangeetveda1",
+    "views": 1065,
+    "likes": 15,
+    "seconds": 1326,
+    "published": "2015-05-24",
     "artists": [
-     "veenaji-sahasrabuddhe"
+     "nivrutibuwa-sarnaik"
     ],
     "raags": [
-     "bilaskhani-todi"
+     "lalit"
     ],
     "form": "khayal"
    }
@@ -65579,6 +69286,7 @@
   "salma-ghosh": "Salma Ghosh",
   "sohan-singh": "Sohan Singh",
   "zia-mohiuddin-dagar": "Zia Mohiuddin Dagar",
+  "veenaji-sahasrabuddhe": "Veenaji Sahasrabuddhe",
   "nirmalya-dey": "Nirmalya Dey",
   "niloy-ahsan-zulkernaeen": "Niloy Ahsan Zulkernaeen",
   "ashoka-dhar": "Ashoka Dhar",
@@ -65623,6 +69331,7 @@
   "tejaswini-vernekar": "Tejaswini Vernekar",
   "tanmaya-kshirsagar": "Tanmaya Kshirsagar",
   "manzoor-hussain-khan": "Manzoor Hussain Khan",
-  "veenaji-sahasrabuddhe": "Veenaji Sahasrabuddhe"
+  "sardarbai-karadgekar": "Sardarbai Karadgekar",
+  "nivrutibuwa-sarnaik": "Nivrutibuwa Sarnaik"
  }
 }

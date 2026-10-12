@@ -35,6 +35,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Nirmalya Dey** (`nirmalya-dey`): Pandit Nirmalya Dey | Raga Ahir Bhairav | Dhrupad | Chautaal | Dagarvani | · Pt Nirmalya Dey | Raga - Basant | Alap - Dhamar and Dhrupad · Pt. Nirmalya Dey | Rag Gaud Sarang (dhrupad vocal) | Afternoon Raga series
 - **Nishad Bakre** (`nishad-bakre`): Raag Kalingada Bandish | Nishad Bakre | Pt. Dinkar Kaikini | Suranjan | Khayal Ep 3
 - **Nishant Mallick** (`nishant-mallick`): Dhrupad Vocal by Prashant & Nishant Mallick (Mallick Brothers) Raag Jaijaiwanti
+- **Nivrutibuwa Sarnaik** (`nivrutibuwa-sarnaik`): Pandit Nivrutibuwa Sarnaik sings Raga Lalat.
 - **Pelva Naik** (`pelva-naik`): Pelva Naik | Raga Puriya Dhanashree | Dhrupad Alāp
 - **Prem Kumar Mallick** (`prem-kumar-mallick`): Raga Basant - Dhamar by Pt. Ram Kumar Mallick & Pt.  Prem Kumar Mallick.
 - **R. Fahimuddin Dagar** (`r-fahimuddin-dagar`): R. Fahimuddin Dagar, Raga Lalat, Dhrupad. Live in Switzerland, 1989.
@@ -44,6 +45,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Salma Ghosh** (`salma-ghosh`): Dhrupad Surtaal & Dhammar (Raag Todi) Salma Ghosh
 - **Samit Mallick** (`samit-mallick`): Dhrupad(Char Taal) in Raga Lalit by Dr Samit Mallick.
 - **Sangborti Das** (`sangborti-das`): Sangborti Das - Thumri in Raag Desh
+- **Sardarbai Karadgekar** (`sardarbai-karadgekar`): Vidushi Sardarbai Karadgekar sings Raga Puriya
 - **Satender Verma** (`satender-verma`): Raag Chandrakauns | Vocals | Satender Verma and Ishaan Nigam
 - **Shamsuddin Faridi Desai** (`shamsuddin-faridi-desai`): Shamsuddin Faridi Desai - Dhrupad - Raga Darbari Kanada
 - **Sharad Sathe** (`sharad-sathe`): Sharad Sathe: Tappa in Raag Bhairavi · Pt. Sharad Sathe: Tappa in Raag Bhairavi · Sharad Sathe: Tappa in Raag Kafi
@@ -61,4 +63,4 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Veenaji Sahasrabuddhe** (`veenaji-sahasrabuddhe`): Vidushi Veenaji Sahasrabuddhe sings Raga Bilaskhani Todi
 - **Vinod Kumar** (`vinod-kumar`): Raag Puriya Dhrupad by Pt. Vinod Kumar dwivedi
 - **Vrinda Mundkur** (`vrinda-mundkur`): Smt. Vrinda Mundkur: Raga Nayaki Kanada | Raga Desh Dadra
-- **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Zia Mohiuddin Dagar - Dhrupad - Raga Chandrakauns · Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar  - Dhrupad - Raga Darbari Kanada - Live
+- **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Zia Mohiuddin Dagar - Dhrupad - Raga Chandrakauns · Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar - Dhrupad - Raga Yaman
