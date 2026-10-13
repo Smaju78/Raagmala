@@ -19,7 +19,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Harish Tiwari** (`harish-tiwari`): Bandish in Raag Jhinjhoti | Rupak & Teentaal | Pt  Harish Tiwari | Bazm e khas
 - **Heerabai Badodekar** (`heerabai-badodekar`): Heerabai Badodekar sings Thumari in Raga Tilak Kamod.
 - **Hussain Sayeeduddin Dagar** (`hussain-sayeeduddin-dagar`): Ustad Hussain Sayeeduddin Dagar | Raga Jaijaiwanti | Dhrupad | Dagarvani | 
-- **Indrani Mukherjee** (`indrani-mukherjee`): Raag Malkauns | Indrani Mukherjee | Khayal Vocal | Music of India · Stunning Raag Todi | Indrani Mukherjee | Kirana-Rampur Khayal vocal | Music of India
+- **Indrani Mukherjee** (`indrani-mukherjee`): Raag Malkauns | Indrani Mukherjee | Khayal Vocal | Music of India · Stunning Raag Todi | Indrani Mukherjee | Kirana-Rampur Khayal vocal | Music of India · Mesmerising Raag Lalit | Indrani Mukherjee | Kirana-Rampur Khayal | Music of India
 - **Kumkum Sanyal** (`kumkum-sanyal`): Raga Puriya Kalyan - Khayal and Tarana
 - **Legendary Duet** (`legendary-duet`): Raag Bhoopali (Khayal & Tarana) -by Legendary Duet of Nazakat~Salamat
 - **Madhuri Mattoo** (`madhuri-mattoo`): Rare - Moray Balam Naahi Aaye | Thumri In Raag Pilu | Vidushi Madhuri Mattoo |
@@ -37,8 +37,10 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Nishant Mallick** (`nishant-mallick`): Dhrupad Vocal by Prashant & Nishant Mallick (Mallick Brothers) Raag Jaijaiwanti
 - **Nivrutibuwa Sarnaik** (`nivrutibuwa-sarnaik`): Pandit Nivrutibuwa Sarnaik sings Raga Lalat.
 - **Pelva Naik** (`pelva-naik`): Pelva Naik | Raga Puriya Dhanashree | Dhrupad Alāp
+- **Prabhakar Karekar** (`prabhakar-karekar`): Pt. Prabhakar Karekar - Raga Malkauns - Bandish In Addha Chautaal
 - **Prem Kumar Mallick** (`prem-kumar-mallick`): Raga Basant - Dhamar by Pt. Ram Kumar Mallick & Pt.  Prem Kumar Mallick.
 - **R. Fahimuddin Dagar** (`r-fahimuddin-dagar`): R. Fahimuddin Dagar, Raga Lalat, Dhrupad. Live in Switzerland, 1989.
+- **Rajan Mishra** (`rajan-mishra`): Pandit Rajan Mishra (vocal) & Pandit Sajan Mishra (vocal) - Raga Multani
 - **Roman Das** (`roman-das`): Raag Des I #Dhrupad by Niloy Ahsan I Roman Das · Raag Malkauns I #dhrupad by Niloy Ahsan I Roman Das I (Hall audio)
 - **Roshanara Begum** (`roshanara-begum`): Roshanara Begum (vocal) - Raga Kedar
 - **Rudra Veena** (`rudra-veena`): Raag Jogiya | Rudra Veena | Dhrupad in Teevra Taal
