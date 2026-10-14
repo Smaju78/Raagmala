@@ -4,6 +4,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 
 - **Abhay Narayan Mallick** (`abhay-narayan-mallick`): Abhay Narayan Mallick - Dhrupad - Raga Jaijaivanti
 - **Aditya Modak** (`aditya-modak`): Raag Jaunpuri - Aditya Modak | Soulful Hindustani Classical Vocal Performance | · Tilak Kamod - Aditya Modak | Sur Sangat | Soulful Hindustani Classical Vocal Performance |
+- **Amit Chaudhuri** (`amit-chaudhuri`): Amit Chaudhuri sings raga Marwa live at Pandit A Kanan's house, 1995
 - **Ankita Joshi** (`ankita-joshi`): Raag Megh | Ankita Joshi | Classical Vocal | Lonavala Khandala Sangeet Sammelan 2025
 - **Antubuwa Joshi** (`antubuwa-joshi`): Pandit Antubuwa Joshi sings Raga Jayjaywanti
 - **Ashoka Dhar** (`ashoka-dhar`): Vidushi Ashoka Dhar | Raga Ahir Bhairav | Dhrupad | Chautaal | Dagarvani |
@@ -19,8 +20,10 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Harish Tiwari** (`harish-tiwari`): Bandish in Raag Jhinjhoti | Rupak & Teentaal | Pt  Harish Tiwari | Bazm e khas
 - **Heerabai Badodekar** (`heerabai-badodekar`): Heerabai Badodekar sings Thumari in Raga Tilak Kamod.
 - **Hussain Sayeeduddin Dagar** (`hussain-sayeeduddin-dagar`): Ustad Hussain Sayeeduddin Dagar | Raga Jaijaiwanti | Dhrupad | Dagarvani | 
-- **Indrani Mukherjee** (`indrani-mukherjee`): Raag Malkauns | Indrani Mukherjee | Khayal Vocal | Music of India · Stunning Raag Todi | Indrani Mukherjee | Kirana-Rampur Khayal vocal | Music of India · Mesmerising Raag Lalit | Indrani Mukherjee | Kirana-Rampur Khayal | Music of India
+- **Indrani Mukherjee** (`indrani-mukherjee`): Mesmerising Raag Lalit | Indrani Mukherjee | Kirana-Rampur Khayal | Music of India · Raag Malkauns | Indrani Mukherjee | Khayal Vocal | Music of India · Stunning Raag Todi | Indrani Mukherjee | Kirana-Rampur Khayal vocal | Music of India
+- **Kamal Tambe** (`kamal-tambe`): Vidushi Kamal Tambe sings Raag Puriya Dhanashree
 - **Kumkum Sanyal** (`kumkum-sanyal`): Raga Puriya Kalyan - Khayal and Tarana
+- **Kumudini Katdare** (`kumudini-katdare`): Vidushi Kumudini Katdare - Thumri /  Raag Mishra Bhairavi
 - **Legendary Duet** (`legendary-duet`): Raag Bhoopali (Khayal & Tarana) -by Legendary Duet of Nazakat~Salamat
 - **Madhuri Mattoo** (`madhuri-mattoo`): Rare - Moray Balam Naahi Aaye | Thumri In Raag Pilu | Vidushi Madhuri Mattoo |
 - **Manjiri Asnare Kelkar** (`manjiri-asnare-kelkar`): Tappa in Raag Kafi | Manjiri Asnare Kelkar | Music of India
@@ -36,13 +39,14 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Nishad Bakre** (`nishad-bakre`): Raag Kalingada Bandish | Nishad Bakre | Pt. Dinkar Kaikini | Suranjan | Khayal Ep 3
 - **Nishant Mallick** (`nishant-mallick`): Dhrupad Vocal by Prashant & Nishant Mallick (Mallick Brothers) Raag Jaijaiwanti
 - **Nivrutibuwa Sarnaik** (`nivrutibuwa-sarnaik`): Pandit Nivrutibuwa Sarnaik sings Raga Lalat.
+- **Pandita Heerabai Badodekar** (`pandita-heerabai-badodekar`): Pandita Heerabai Badodekar sings Raga Yaman. · Pandita Heerabai Badodekar sings Raga Darbari.
 - **Pelva Naik** (`pelva-naik`): Pelva Naik | Raga Puriya Dhanashree | Dhrupad Alāp
 - **Prabhakar Karekar** (`prabhakar-karekar`): Pt. Prabhakar Karekar - Raga Malkauns - Bandish In Addha Chautaal
 - **Prem Kumar Mallick** (`prem-kumar-mallick`): Raga Basant - Dhamar by Pt. Ram Kumar Mallick & Pt.  Prem Kumar Mallick.
 - **R. Fahimuddin Dagar** (`r-fahimuddin-dagar`): R. Fahimuddin Dagar, Raga Lalat, Dhrupad. Live in Switzerland, 1989.
 - **Rajan Mishra** (`rajan-mishra`): Pandit Rajan Mishra (vocal) & Pandit Sajan Mishra (vocal) - Raga Multani
 - **Roman Das** (`roman-das`): Raag Des I #Dhrupad by Niloy Ahsan I Roman Das · Raag Malkauns I #dhrupad by Niloy Ahsan I Roman Das I (Hall audio)
-- **Roshanara Begum** (`roshanara-begum`): Roshanara Begum (vocal) - Raga Kedar
+- **Roshanara Begum** (`roshanara-begum`): Roshanara Begum (vocal) - Raga Kedar · Roshanara Begum | Bhimpalasi | Need help with the Bandish 'ऐरी बना दे' · Roshanara Begum (vocal) - Raga Shankara
 - **Rudra Veena** (`rudra-veena`): Raag Jogiya | Rudra Veena | Dhrupad in Teevra Taal
 - **Salma Ghosh** (`salma-ghosh`): Dhrupad Surtaal & Dhammar (Raag Todi) Salma Ghosh
 - **Samit Mallick** (`samit-mallick`): Dhrupad(Char Taal) in Raga Lalit by Dr Samit Mallick.
@@ -65,4 +69,4 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Veenaji Sahasrabuddhe** (`veenaji-sahasrabuddhe`): Vidushi Veenaji Sahasrabuddhe sings Raga Bilaskhani Todi
 - **Vinod Kumar** (`vinod-kumar`): Raag Puriya Dhrupad by Pt. Vinod Kumar dwivedi
 - **Vrinda Mundkur** (`vrinda-mundkur`): Smt. Vrinda Mundkur: Raga Nayaki Kanada | Raga Desh Dadra
-- **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Zia Mohiuddin Dagar - Dhrupad - Raga Chandrakauns · Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar - Dhrupad - Raga Yaman
+- **Zia Mohiuddin Dagar** (`zia-mohiuddin-dagar`): Zia Mohiuddin Dagar - Dhrupad - Raga Chandrakauns · Ustad Zia Mohiuddin Dagar (rudra veena) & Ustad Fariduddin Dagar (vocal) -  Raga Miyan ki Todi · Zia Mohiuddin Dagar  - Dhrupad - Raga Darbari Kanada - Live
