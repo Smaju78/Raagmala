@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T08:31:20+00:00",
+ "updated": "2026-10-16T08:30:54+00:00",
  "searched": {
   "raags": [
    "abhogi:khayal",
@@ -3325,24 +3325,6 @@
      "form": "dhrupad"
     }
    ],
-   "dadra": [
-    {
-     "id": "aqFzQYDk55w",
-     "title": "Raga Bageshree & Dadra  I  Kaushiki Chakraborty  I  Live at BCMF 2014",
-     "channel": "Bengal Foundation",
-     "views": 43645,
-     "likes": 993,
-     "seconds": 4078,
-     "published": "2023-03-14",
-     "artists": [
-      "kaushiki-chakraborty"
-     ],
-     "raags": [
-      "bageshri"
-     ],
-     "form": "dadra"
-    }
-   ],
    "thumri": [
     {
      "id": "WsoMTOtlo-8",
@@ -3359,6 +3341,24 @@
       "bageshri"
      ],
      "form": "thumri"
+    }
+   ],
+   "dadra": [
+    {
+     "id": "aqFzQYDk55w",
+     "title": "Raga Bageshree & Dadra  I  Kaushiki Chakraborty  I  Live at BCMF 2014",
+     "channel": "Bengal Foundation",
+     "views": 43645,
+     "likes": 993,
+     "seconds": 4078,
+     "published": "2023-03-14",
+     "artists": [
+      "kaushiki-chakraborty"
+     ],
+     "raags": [
+      "bageshri"
+     ],
+     "form": "dadra"
     }
    ]
   },
@@ -17889,8 +17889,8 @@
     "id": "8UeO6QjcZ2k",
     "title": "Ustad Fateh Ali Khan  & Amjat Amanat Ali Khan-Yaman",
     "channel": "Raju Asokan",
-    "views": 69138,
-    "likes": 709,
+    "views": 69198,
+    "likes": 710,
     "seconds": 357,
     "published": "2008-10-09",
     "artists": [
@@ -17922,7 +17922,7 @@
     "id": "1vSHgXZSwN4",
     "title": "GREAT TARANAS-RAG YAMAN 2-USTAD FATEH ALI KHAN",
     "channel": "thuryina",
-    "views": 35282,
+    "views": 35289,
     "likes": 360,
     "seconds": 609,
     "published": "2010-02-25",
@@ -18234,7 +18234,7 @@
     "id": "_jiWHGUfxEg",
     "title": "Yaman - Ustad Fateh Ali Khan & Amjad Amanat Ali  Khan || राग यमन - उस्ताद फ़तेह अली खान ||",
     "channel": "Narsee Sangeet ",
-    "views": 5035,
+    "views": 5041,
     "likes": 124,
     "seconds": 1646,
     "published": "2021-03-03",
@@ -18501,7 +18501,7 @@
     "id": "Hq840uk-2l4",
     "title": "Raga Puriya Dhanashri - Early evening",
     "channel": "Ustad Bary Fateh Ali Khan - Topic",
-    "views": 1397,
+    "views": 1401,
     "likes": 33,
     "seconds": 1501,
     "published": "2015-03-21",
@@ -18600,7 +18600,7 @@
     "id": "5kfkMzLZDFQ",
     "title": "Amanat Ali Khan & Fateh Ali Khan :Raag Puriya (Part 5a) - Audio Archives of Lutfullah Khan",
     "channel": "Khursheed Abdullah",
-    "views": 1129,
+    "views": 1132,
     "likes": 26,
     "seconds": 1742,
     "published": "2021-02-01",
@@ -19103,8 +19103,8 @@
     "id": "8UeO6QjcZ2k",
     "title": "Ustad Fateh Ali Khan  & Amjat Amanat Ali Khan-Yaman",
     "channel": "Raju Asokan",
-    "views": 69138,
-    "likes": 709,
+    "views": 69198,
+    "likes": 710,
     "seconds": 357,
     "published": "2008-10-09",
     "artists": [
@@ -19289,7 +19289,7 @@
     "id": "_jiWHGUfxEg",
     "title": "Yaman - Ustad Fateh Ali Khan & Amjad Amanat Ali  Khan || राग यमन - उस्ताद फ़तेह अली खान ||",
     "channel": "Narsee Sangeet ",
-    "views": 5035,
+    "views": 5041,
     "likes": 124,
     "seconds": 1646,
     "published": "2021-03-03",
@@ -19543,7 +19543,7 @@
     "id": "5kfkMzLZDFQ",
     "title": "Amanat Ali Khan & Fateh Ali Khan :Raag Puriya (Part 5a) - Audio Archives of Lutfullah Khan",
     "channel": "Khursheed Abdullah",
-    "views": 1129,
+    "views": 1132,
     "likes": 26,
     "seconds": 1742,
     "published": "2021-02-01",
@@ -24013,7 +24013,7 @@
     "id": "yAXTlGoU8BU",
     "title": "Raga Lalit | Vidushi Dr. Ashwini Bhide Deshpande | Sau Sau Baar Balma | Ja Ja Re Ja Balam",
     "channel": "Swaralankar",
-    "views": 16576,
+    "views": 16679,
     "likes": 278,
     "seconds": 1764,
     "published": "2022-01-01",
@@ -24739,7 +24739,7 @@
     "id": "5zw9aU4c438",
     "title": "Shri. D.V. Paluskar - Piyu Piyu Ratat Papihara - Raag Lalit",
     "channel": "Anuradha Krishnan",
-    "views": 6850,
+    "views": 6853,
     "likes": 156,
     "seconds": 839,
     "published": "2022-07-03",
@@ -26329,7 +26329,7 @@
     "id": "bHj6J99roek",
     "title": "Bade Ghulam Ali Khan | Yaman 4 | साजन गल बांईं saajan gal baaii | आज रंग लगा aaj raNg lagaa | तराना",
     "channel": "Sundeep Dougal",
-    "views": 228,
+    "views": 230,
     "likes": 6,
     "seconds": 2713,
     "published": "2023-03-27",
@@ -40597,6 +40597,22 @@
     "form": "khayal"
    },
    {
+    "id": "TDFJvui94q4",
+    "title": "Vidushi Hirabai Barodekar (vocal) - Raga Multani",
+    "channel": "Tushar Dabral",
+    "views": 1182,
+    "likes": 30,
+    "seconds": 1144,
+    "published": "2023-02-02",
+    "artists": [
+     "hirabai-barodekar"
+    ],
+    "raags": [
+     "multani"
+    ],
+    "form": "khayal"
+   },
+   {
     "id": "ZZmRvr85dbU",
     "title": "Hirabai Barodekar Raga Multani",
     "channel": "Pokri Poki",
@@ -40629,18 +40645,18 @@
     "form": "khayal"
    },
    {
-    "id": "TDFJvui94q4",
-    "title": "Vidushi Hirabai Barodekar (vocal) - Raga Multani",
+    "id": "3DC46DKYPsw",
+    "title": "Vidushi Hirabai Barodekar (vocal) - Raga Kedar",
     "channel": "Tushar Dabral",
-    "views": 1168,
-    "likes": 30,
-    "seconds": 1144,
-    "published": "2023-02-02",
+    "views": 1153,
+    "likes": 36,
+    "seconds": 1650,
+    "published": "2023-01-25",
     "artists": [
      "hirabai-barodekar"
     ],
     "raags": [
-     "multani"
+     "kedar"
     ],
     "form": "khayal"
    },
@@ -40673,22 +40689,6 @@
     ],
     "raags": [
      "yaman"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "3DC46DKYPsw",
-    "title": "Vidushi Hirabai Barodekar (vocal) - Raga Kedar",
-    "channel": "Tushar Dabral",
-    "views": 1117,
-    "likes": 36,
-    "seconds": 1650,
-    "published": "2023-01-25",
-    "artists": [
-     "hirabai-barodekar"
-    ],
-    "raags": [
-     "kedar"
     ],
     "form": "khayal"
    },
@@ -40728,7 +40728,7 @@
     "id": "x__AnUZjWUo",
     "title": "Hirabai Barodekar | Raag : Lalit",
     "channel": "AIR Raagam",
-    "views": 1076,
+    "views": 1077,
     "likes": 40,
     "seconds": 1761,
     "published": "2020-10-11",
@@ -40889,7 +40889,7 @@
     "id": "LFl4I5JfRnY",
     "title": "Hirabai Barodekar - Raag Multani (1962)",
     "channel": "Archisman Mozumder",
-    "views": 599,
+    "views": 626,
     "likes": 11,
     "seconds": 1128,
     "published": "2026-10-09",
@@ -59349,7 +59349,7 @@
     "id": "HltMpcCusmY",
     "title": "Ustad Salamat Ali Khan and Ustad Nazakat Ali Khan - Raga Bhimpalashri",
     "channel": "Subrata Chowdhury",
-    "views": 20197,
+    "views": 20201,
     "likes": 349,
     "seconds": 2894,
     "published": "2016-05-16",
@@ -59413,8 +59413,8 @@
     "id": "UAPw2vLszSw",
     "title": "Salamat Ali Khan & Nazakat Ali Khan - Raag Bageshri",
     "channel": "syedinsham",
-    "views": 9356,
-    "likes": 124,
+    "views": 9360,
+    "likes": 125,
     "seconds": 409,
     "published": "2011-04-26",
     "artists": [
@@ -59783,7 +59783,7 @@
     "id": "jciFciG6xWU",
     "title": "Bhimpalasi - Ustad Salamat Ali Khan  Ustad Nazakat Ali Khan || Raag Bhimplasi ||",
     "channel": "Narsee Sangeet ",
-    "views": 1950,
+    "views": 1963,
     "likes": 51,
     "seconds": 1211,
     "published": "2021-05-05",
@@ -59927,7 +59927,7 @@
     "id": "eq1soSiwPKE",
     "title": "Bageshri - Ustad Nazakat Ali Salamat Ali Khan || Raag Bageshree ||",
     "channel": "Narsee Sangeet ",
-    "views": 1143,
+    "views": 1145,
     "likes": 20,
     "seconds": 2711,
     "published": "2021-05-07",
@@ -70688,7 +70688,7 @@
     "id": "yvaO7-AdS68",
     "title": "Ulhas Kashalkar- Puriya Dhanashree",
     "channel": "Shobha",
-    "views": 1017,
+    "views": 1025,
     "likes": 25,
     "seconds": 2400,
     "published": "2020-09-27",
@@ -70787,7 +70787,7 @@
     "id": "Vpth7Fxg-vw",
     "title": "Gajananbuwa Joshi teaching Darbari Kanada sargam to Ulhas Kashalkar | taaliim sessions",
     "channel": "Sundeep Dougal",
-    "views": 495,
+    "views": 496,
     "likes": 16,
     "seconds": 1371,
     "published": "2023-04-21",
@@ -72116,8 +72116,8 @@
     "id": "oiGsDOnTGIE",
     "title": "Veena Sahasrabuddhe - Raag Ahir Bhairav (1986)",
     "channel": "Archisman Mozumder",
-    "views": 1827,
-    "likes": 54,
+    "views": 1840,
+    "likes": 55,
     "seconds": 1850,
     "published": "2023-10-27",
     "artists": [
@@ -74678,6 +74678,40 @@
     "form": "khayal"
    }
   ],
+  "pandita-heerabai-badodekar": [
+   {
+    "id": "dztDkRyd1O0",
+    "title": "Pandita Heerabai Badodekar sings Raga Yaman.",
+    "channel": "Sangeetveda1",
+    "views": 1659,
+    "likes": 29,
+    "seconds": 2226,
+    "published": "2016-06-28",
+    "artists": [
+     "pandita-heerabai-badodekar"
+    ],
+    "raags": [
+     "yaman"
+    ],
+    "form": "khayal"
+   },
+   {
+    "id": "9-SPabkgqWQ",
+    "title": "Pandita Heerabai Badodekar sings Raga Darbari.",
+    "channel": "Sangeetveda1",
+    "views": 939,
+    "likes": 20,
+    "seconds": 2296,
+    "published": "2016-06-27",
+    "artists": [
+     "pandita-heerabai-badodekar"
+    ],
+    "raags": [
+     "darbari"
+    ],
+    "form": "khayal"
+   }
+  ],
   "kumar-mardur": [
    {
     "id": "CLgm_M7faCY",
@@ -74708,6 +74742,60 @@
     ],
     "raags": [
      "madhmad-sarang"
+    ],
+    "form": "khayal"
+   }
+  ],
+  "kumudini-katdare": [
+   {
+    "id": "5DjUzYXObLE",
+    "title": "Vidushi Kumudini Katdare - Thumri /  Raag Mishra Bhairavi",
+    "channel": "Swar-Utsav",
+    "views": 285,
+    "likes": 17,
+    "seconds": 747,
+    "published": "2020-05-23",
+    "artists": [
+     "kumudini-katdare"
+    ],
+    "raags": [
+     "bhairavi"
+    ],
+    "form": "thumri"
+   }
+  ],
+  "amit-chaudhuri": [
+   {
+    "id": "Pk_DteDhUsc",
+    "title": "Amit Chaudhuri sings raga Marwa live at Pandit A Kanan's house, 1995",
+    "channel": "Amit Chaudhuri",
+    "views": 248,
+    "likes": 9,
+    "seconds": 1447,
+    "published": "2021-06-26",
+    "artists": [
+     "amit-chaudhuri"
+    ],
+    "raags": [
+     "marwa"
+    ],
+    "form": "khayal"
+   }
+  ],
+  "kamal-tambe": [
+   {
+    "id": "DDnG3rgzt2U",
+    "title": "Vidushi Kamal Tambe sings Raag Puriya Dhanashree",
+    "channel": "Saumitra Kulkarni",
+    "views": 561,
+    "likes": 28,
+    "seconds": 2191,
+    "published": "2020-07-25",
+    "artists": [
+     "kamal-tambe"
+    ],
+    "raags": [
+     "puriya-dhanashri"
     ],
     "form": "khayal"
    }
@@ -76393,94 +76481,6 @@
     ],
     "form": "thumri"
    }
-  ],
-  "pandita-heerabai-badodekar": [
-   {
-    "id": "dztDkRyd1O0",
-    "title": "Pandita Heerabai Badodekar sings Raga Yaman.",
-    "channel": "Sangeetveda1",
-    "views": 1659,
-    "likes": 29,
-    "seconds": 2226,
-    "published": "2016-06-28",
-    "artists": [
-     "pandita-heerabai-badodekar"
-    ],
-    "raags": [
-     "yaman"
-    ],
-    "form": "khayal"
-   },
-   {
-    "id": "9-SPabkgqWQ",
-    "title": "Pandita Heerabai Badodekar sings Raga Darbari.",
-    "channel": "Sangeetveda1",
-    "views": 939,
-    "likes": 20,
-    "seconds": 2296,
-    "published": "2016-06-27",
-    "artists": [
-     "pandita-heerabai-badodekar"
-    ],
-    "raags": [
-     "darbari"
-    ],
-    "form": "khayal"
-   }
-  ],
-  "kumudini-katdare": [
-   {
-    "id": "5DjUzYXObLE",
-    "title": "Vidushi Kumudini Katdare - Thumri /  Raag Mishra Bhairavi",
-    "channel": "Swar-Utsav",
-    "views": 285,
-    "likes": 17,
-    "seconds": 747,
-    "published": "2020-05-23",
-    "artists": [
-     "kumudini-katdare"
-    ],
-    "raags": [
-     "bhairavi"
-    ],
-    "form": "thumri"
-   }
-  ],
-  "kamal-tambe": [
-   {
-    "id": "DDnG3rgzt2U",
-    "title": "Vidushi Kamal Tambe sings Raag Puriya Dhanashree",
-    "channel": "Saumitra Kulkarni",
-    "views": 561,
-    "likes": 28,
-    "seconds": 2191,
-    "published": "2020-07-25",
-    "artists": [
-     "kamal-tambe"
-    ],
-    "raags": [
-     "puriya-dhanashri"
-    ],
-    "form": "khayal"
-   }
-  ],
-  "amit-chaudhuri": [
-   {
-    "id": "Pk_DteDhUsc",
-    "title": "Amit Chaudhuri sings raga Marwa live at Pandit A Kanan's house, 1995",
-    "channel": "Amit Chaudhuri",
-    "views": 248,
-    "likes": 9,
-    "seconds": 1447,
-    "published": "2021-06-26",
-    "artists": [
-     "amit-chaudhuri"
-    ],
-    "raags": [
-     "marwa"
-    ],
-    "form": "khayal"
-   }
   ]
  },
  "guessed": {
@@ -76501,6 +76501,10 @@
   "zia-mohiuddin-dagar": "Zia Mohiuddin Dagar",
   "nivrutibuwa-sarnaik": "Nivrutibuwa Sarnaik",
   "sardarbai-karadgekar": "Sardarbai Karadgekar",
+  "pandita-heerabai-badodekar": "Pandita Heerabai Badodekar",
+  "kumudini-katdare": "Kumudini Katdare",
+  "amit-chaudhuri": "Amit Chaudhuri",
+  "kamal-tambe": "Kamal Tambe",
   "indrani-mukherjee": "Indrani Mukherjee",
   "prabhakar-karekar": "Prabhakar Karekar",
   "rajan-mishra": "Rajan Mishra",
@@ -76547,10 +76551,6 @@
   "sunita-avani-amin": "Sunita Avani Amin",
   "tejaswini-vernekar": "Tejaswini Vernekar",
   "tanmaya-kshirsagar": "Tanmaya Kshirsagar",
-  "manzoor-hussain-khan": "Manzoor Hussain Khan",
-  "pandita-heerabai-badodekar": "Pandita Heerabai Badodekar",
-  "kumudini-katdare": "Kumudini Katdare",
-  "kamal-tambe": "Kamal Tambe",
-  "amit-chaudhuri": "Amit Chaudhuri"
+  "manzoor-hussain-khan": "Manzoor Hussain Khan"
  }
 }

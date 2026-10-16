@@ -39,7 +39,7 @@ Check these; to merge one into a known artist add `Spelling = artist-id` to data
 - **Nishad Bakre** (`nishad-bakre`): Raag Kalingada Bandish | Nishad Bakre | Pt. Dinkar Kaikini | Suranjan | Khayal Ep 3
 - **Nishant Mallick** (`nishant-mallick`): Dhrupad Vocal by Prashant & Nishant Mallick (Mallick Brothers) Raag Jaijaiwanti
 - **Nivrutibuwa Sarnaik** (`nivrutibuwa-sarnaik`): Pandit Nivrutibuwa Sarnaik sings Raga Lalat.
-- **Pandita Heerabai Badodekar** (`pandita-heerabai-badodekar`): Pandita Heerabai Badodekar sings Raga Yaman. · Pandita Heerabai Badodekar sings Raga Darbari.
+- **Pandita Heerabai Badodekar** (`pandita-heerabai-badodekar`): Pandita Heerabai Badodekar sings Raga Darbari. · Pandita Heerabai Badodekar sings Raga Yaman.
 - **Pelva Naik** (`pelva-naik`): Pelva Naik | Raga Puriya Dhanashree | Dhrupad Alāp
 - **Prabhakar Karekar** (`prabhakar-karekar`): Pt. Prabhakar Karekar - Raga Malkauns - Bandish In Addha Chautaal
 - **Prem Kumar Mallick** (`prem-kumar-mallick`): Raga Basant - Dhamar by Pt. Ram Kumar Mallick & Pt.  Prem Kumar Mallick.
