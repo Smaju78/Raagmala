@@ -621,3 +621,8 @@ html[data-theme=dark] .pcard.cur{--sh:22%}
 .pcard p a{color:var(--fg);border-bottom:1px solid var(--line2)}
 .pcard p a:hover{color:var(--gold);border-color:var(--gold)}
 .gh{font-family:var(--sans);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:22px 0 -4px}
+
+/* Link back to the Sur hub (smaju78.github.io) */
+.hub{display:inline-grid;place-items:center;width:34px;height:34px;flex:none;border-radius:50%;margin-right:4px}
+.hub svg{width:24px;height:24px}
+.hub:hover{background:rgba(127,127,127,.14)}
